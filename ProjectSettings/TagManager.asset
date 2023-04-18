@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: I don't want to see this
+    uniqueID: 834592181
+    locked: 0
+  - name: Backgournd
+    uniqueID: 2703664727
+    locked: 1
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Details and Character
+    uniqueID: 2489148449
     locked: 0
