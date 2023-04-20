@@ -43,7 +43,7 @@ TagManager:
     locked: 0
   - name: Backgournd
     uniqueID: 2703664727
-    locked: 1
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
