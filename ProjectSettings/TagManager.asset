@@ -38,11 +38,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: I don't want to see this
+  - name: Background
     uniqueID: 834592181
     locked: 0
-  - name: Backgournd
+  - name: ground
     uniqueID: 2703664727
+    locked: 0
+  - name: Foliage
+    uniqueID: 3282220221
+    locked: 0
+  - name: Buildings
+    uniqueID: 2389448247
     locked: 0
   - name: Default
     uniqueID: 0
