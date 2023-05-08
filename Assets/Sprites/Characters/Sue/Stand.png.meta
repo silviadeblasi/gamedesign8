@@ -117,85 +117,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stand_back
+      name: Stand_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 37
-        height: 43
+        x: 8
+        y: 3
+        width: 24
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b573681aaa77f430abf764f4686dac98
-      internalID: -1887267959
+      spriteID: fa948401e5baa4e51bc0481097967f24
+      internalID: 1712852593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stand_front
+      name: Stand_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
-        width: 37
-        height: 43
+        x: 57
+        y: 3
+        width: 24
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ff7f7e7f93c04485aba0748e886b405
-      internalID: 758133632
+      spriteID: ee579602316fd48a98332b79731def48
+      internalID: -1558931809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stand_dx
+      name: Stand_2
       rect:
         serializedVersion: 2
-        x: 99
-        y: 0
-        width: 37
-        height: 43
+        x: 106
+        y: 3
+        width: 24
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70ce9e7428bba430cb7c7ddfa76cabc7
-      internalID: 1119876255
+      spriteID: 90e285584f237417689d0637eb4fb2e5
+      internalID: 167041201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stand_sx
+      name: Stand_3
       rect:
         serializedVersion: 2
-        x: 148
-        y: 0
-        width: 37
-        height: 43
+        x: 155
+        y: 3
+        width: 24
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f3ea3e58089f4c77bb4198276419ad1
-      internalID: -453845436
+      spriteID: c313ca05b161b46deaa5dec6b43b4543
+      internalID: -1742185590
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Stand_dx: 1119876255
-      Stand_front: 758133632
-      Stand_sx: -453845436
-      Stand_back: -1887267959
+      Stand_2: 167041201
+      Stand_1: -1558931809
+      Stand_3: -1742185590
+      Stand_0: 1712852593
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
