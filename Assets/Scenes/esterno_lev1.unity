@@ -2025,7 +2025,7 @@ GameObject:
   - component: {fileID: 569341680}
   - component: {fileID: 569341679}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: trigger_interno1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2043,7 +2043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e596c10431fe410f88426635d57db6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeScenaDaCaricare: sylvia_scene
+  nomeScenaDaCaricare: interno1
 --- !u!61 &569341680
 BoxCollider2D:
   m_ObjectHideFlags: 0

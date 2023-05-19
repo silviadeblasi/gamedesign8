@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f6f33c61236e448529c3828cb0884cc0
+guid: 32dde50c306c94e6f8052ac0b590b4b4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -68,7 +68,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 50
@@ -117,127 +117,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dx_0
+      name: front_corsa1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 8
+        x: 0
+        y: 4
         width: 35
-        height: 58
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9376f6a1a20ca40ba83fab9fa7ed0e30
-      internalID: -1873495665
+      spriteID: e0a08fc001a034264ade92276f0ec44f
+      internalID: -1730902860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dx_1
+      name: front_corsa2
       rect:
         serializedVersion: 2
-        x: 80
-        y: 8
+        x: 64
+        y: 4
         width: 35
-        height: 58
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cd269e0a8d054741bce31d526d8f348
-      internalID: 1952481088
+      spriteID: e66f7518bbb974f84928f7a9408ec680
+      internalID: 402308669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dx_2
+      name: front_corsa3
       rect:
         serializedVersion: 2
-        x: 144
-        y: 8
+        x: 128
+        y: 4
         width: 35
-        height: 58
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328cd7807871a4bc69d87c0e608f95db
-      internalID: 2050114648
+      spriteID: 0371a8b45af714a658743810a2839f37
+      internalID: -945590290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dx_3
+      name: front_corsa4
       rect:
         serializedVersion: 2
-        x: 208
-        y: 8
+        x: 192
+        y: 4
         width: 35
-        height: 58
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a1cdd52b3d114f219d7f1b498192be3
-      internalID: 386807167
+      spriteID: f3447a06032d54b3f9c5bbfdf5f2d2f9
+      internalID: -1350115321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dx_4
+      name: front_corsa5
       rect:
         serializedVersion: 2
-        x: 272
-        y: 8
+        x: 256
+        y: 4
         width: 35
-        height: 58
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d9510960ff5f48069a099dd6ee80176
-      internalID: 1549357007
+      spriteID: f94b6daa32fd2480a97c9a577f846e3d
+      internalID: -249607531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dx_5
+      name: front_corsa6
       rect:
         serializedVersion: 2
-        x: 336
-        y: 8
+        x: 320
+        y: 4
         width: 35
-        height: 58
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9f57b6ff6c2e4408b64f095d6847169
-      internalID: -1215910587
+      spriteID: cd44a5319279f4c068ec9fed5d6bb1a3
+      internalID: 339321806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_corsa7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726e4902de72947a38ac2f8ef9541c4c
+      internalID: -315732378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_corsa8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 4
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf4fac6956cc40bdbba6f0b18bba064
+      internalID: 178976259
       vertices: []
       indices: 
       edges: []
@@ -253,12 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dx_4: 1549357007
-      Dx_3: 386807167
-      Dx_2: 2050114648
-      Dx_0: -1873495665
-      Dx_5: -1215910587
-      Dx_1: 1952481088
+      front_corsa1: -1730902860
+      front_corsa5: -249607531
+      front_corsa4: -1350115321
+      front_corsa6: 339321806
+      front_corsa7: -315732378
+      front_corsa2: 402308669
+      front_corsa8: 178976259
+      front_corsa3: -945590290
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f6f33c61236e448529c3828cb0884cc0
+guid: ec7620c25b3b84922b881efab3caebe6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,11 +117,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dx_0
+      name: corsa_back_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 8
+        x: 2
+        y: 0
         width: 35
         height: 58
       alignment: 0
@@ -131,18 +131,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9376f6a1a20ca40ba83fab9fa7ed0e30
-      internalID: -1873495665
+      spriteID: df3cf2cb41f67412f9f39ad0b1236872
+      internalID: -589588635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dx_1
+      name: corsa_back_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 8
+        x: 66
+        y: 0
         width: 35
         height: 58
       alignment: 0
@@ -152,18 +152,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cd269e0a8d054741bce31d526d8f348
-      internalID: 1952481088
+      spriteID: 1a729746d36f34443b859a3ebefcd0c4
+      internalID: -159956244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dx_2
+      name: corsa_back_2
       rect:
         serializedVersion: 2
-        x: 144
-        y: 8
+        x: 130
+        y: 0
         width: 35
         height: 58
       alignment: 0
@@ -173,18 +173,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328cd7807871a4bc69d87c0e608f95db
-      internalID: 2050114648
+      spriteID: 7a9704cdff64946f0bf8392893898656
+      internalID: -340819827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dx_3
+      name: corsa_back_3
       rect:
         serializedVersion: 2
-        x: 208
-        y: 8
+        x: 194
+        y: 0
         width: 35
         height: 58
       alignment: 0
@@ -194,18 +194,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a1cdd52b3d114f219d7f1b498192be3
-      internalID: 386807167
+      spriteID: ee8003b5698c54a1c9d5d34b2cffa0a9
+      internalID: -1624019282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dx_4
+      name: corsa_back_4
       rect:
         serializedVersion: 2
-        x: 272
-        y: 8
+        x: 258
+        y: 0
         width: 35
         height: 58
       alignment: 0
@@ -215,18 +215,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d9510960ff5f48069a099dd6ee80176
-      internalID: 1549357007
+      spriteID: da468dc9a006445be9009b6b5e2559b2
+      internalID: -1034886080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dx_5
+      name: corsa_back_5
       rect:
         serializedVersion: 2
-        x: 336
-        y: 8
+        x: 322
+        y: 0
         width: 35
         height: 58
       alignment: 0
@@ -236,8 +236,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9f57b6ff6c2e4408b64f095d6847169
-      internalID: -1215910587
+      spriteID: 4a684e1653a92486c88e6fdeddd8b40d
+      internalID: -1121565392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corsa_back_6
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f5678a202c64395bb59630dc6c9962
+      internalID: -1843068389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corsa_back_7
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f08aa6948c34c74b1ae86fab310ae2
+      internalID: -2132215920
       vertices: []
       indices: 
       edges: []
@@ -253,12 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dx_4: 1549357007
-      Dx_3: 386807167
-      Dx_2: 2050114648
-      Dx_0: -1873495665
-      Dx_5: -1215910587
-      Dx_1: 1952481088
+      corsa_back_2: -340819827
+      corsa_back_1: -159956244
+      corsa_back_6: -1843068389
+      corsa_back_5: -1121565392
+      corsa_back_4: -1034886080
+      corsa_back_7: -2132215920
+      corsa_back_3: -1624019282
+      corsa_back_0: -589588635
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
