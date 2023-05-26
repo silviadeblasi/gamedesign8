@@ -2261,27 +2261,13 @@ GameObject:
   m_Component:
   - component: {fileID: 569341681}
   - component: {fileID: 569341680}
-  - component: {fileID: 569341679}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: trigger_interno1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &569341679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569341678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e596c10431fe410f88426635d57db6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nomeScenaDaCaricare: interno1
 --- !u!61 &569341680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5059,7 +5045,8 @@ GameObject:
   - component: {fileID: 1790527606}
   - component: {fileID: 1790527608}
   - component: {fileID: 1790527610}
-  m_Layer: 0
+  - component: {fileID: 1790527611}
+  m_Layer: 6
   m_Name: palyer
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5167,7 +5154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentstate: 0
-  speed: 2
+  speed: 6
 --- !u!95 &1790527608
 Animator:
   serializedVersion: 4
@@ -5211,7 +5198,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790527602}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -5230,6 +5217,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7498197, y: 0.38632607}
   m_EdgeRadius: 0
+--- !u!114 &1790527611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790527602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3794cbc3cfe42d19894c2ec2990a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1815258733
 GameObject:
   m_ObjectHideFlags: 0

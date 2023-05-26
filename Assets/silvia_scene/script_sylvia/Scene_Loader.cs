@@ -13,7 +13,8 @@ public static class Scene_Loader
 public enum Scene{
     Loading,
     Esterno_lev1,
-    Interno_lev1
+    Casa_sue
+
 
 }
 
@@ -26,7 +27,6 @@ public enum Scene{
         //set the callback action to load the target scene
         onLoaderCallBack = () =>
         {
-     
             SceneManager.LoadScene(scene.ToString());
         };
 

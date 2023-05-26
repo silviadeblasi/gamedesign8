@@ -9,7 +9,7 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     // Start is called before the first frame update
     bool isPressed = false;
-    public AudioSource Clap;
+    public AudioSource sound_pressed;
     void Start()
     {
         
@@ -21,7 +21,7 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         if(isPressed)
         {
             
-            //mettere suono
+            //StartCoroutine(PlaySound());
             //mettere animazione
             //mettere cambio scena
             StartCoroutine(TimeDelay());
@@ -33,11 +33,12 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         Scene_Loader.Load(Scene_Loader.Scene.Esterno_lev1);
     }
 
-    public IEnumerator PlayClap()
+    /*public IEnumerator PlaySound()
     {
         yield return new WaitForSecondsRealtime(0.4f);
-        Clap.Play();
-    }
+        sound_pressed.Play();
+    }*/
+
      public void OnPointerDown(PointerEventData eventData)
     {
         isPressed = true;
