@@ -29,12 +29,12 @@ public PlayableDirector timeline_paper; //timeline
         credits_button = credits_button.GetComponent<Button>();
         tutorial_button = tutorial_button.GetComponent<Button>();
 
-        start_button.enabled = false;
-        load_button.enabled = false;
-        option_button.enabled = false;
-        exit_button.enabled = false;
-        credits_button.enabled = false;
-        tutorial_button.enabled = false;
+        start_button.gameObject.SetActive(false);
+        load_button.gameObject.SetActive(false);
+        option_button.gameObject.SetActive(false);
+        exit_button.gameObject.SetActive(false);
+        credits_button.gameObject.SetActive(false);
+        tutorial_button.gameObject.SetActive(false);
 
     //check sulla timeline per capire se si è conclusa animazione
     //inserire i bottoni come variabili per renderli attivi solo alla fine dell'animazione
@@ -43,13 +43,17 @@ public PlayableDirector timeline_paper; //timeline
  }
 
     void Update() {
+
+        Debug.Log(timeline_paper.state);
+
         if (timeline_paper.state == PlayState.Paused) {
-            start_button.interactable = true;
-            load_button.interactable = true;
-            option_button.interactable = true;
-            exit_button.interactable = true;
-            credits_button.interactable = true;
-            tutorial_button.interactable = true;
+            start_button.gameObject.SetActive(true);
+            load_button.gameObject.SetActive(true);
+            option_button.gameObject.SetActive(true);
+            exit_button.gameObject.SetActive(true);
+            credits_button.gameObject.SetActive(true);
+            tutorial_button.gameObject.SetActive(true);
         }
+        
     }
 }
