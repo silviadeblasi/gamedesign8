@@ -9,7 +9,7 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     // Start is called before the first frame update
     bool isPressed = false;
-    public AudioSource sound_pressed;
+    //public AudioSource sound_pressed;
     void Start()
     {
         
@@ -36,7 +36,7 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     /*public IEnumerator PlaySound()
     {
         yield return new WaitForSecondsRealtime(0.4f);
-        sound_pressed.Play();
+        sound_pressed.gameObject.SetActive(true);
     }*/
 
      public void OnPointerDown(PointerEventData eventData)
