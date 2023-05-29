@@ -1,0 +1,651 @@
+fileFormatVersion: 2
+guid: a8df8d4daccaa764ca405505350da567
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a2196c029ee944494ca202d925de22
+      internalID: 497977561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 600
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44578fcc5abd99743a9de7d873332b9a
+      internalID: -505954927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 600
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb3054f7082b8148b5fab323fc5dfff
+      internalID: 1357525307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 600
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe9fc9dd16cae046b85ba88d7ab69c2
+      internalID: 546939101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 600
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db468f20344823a409fbedcdb0b872b6
+      internalID: 542468369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_5
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 600
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e71b721d38f9e418dfa0fa2d9e5f64
+      internalID: 1209341590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c77e5ac398a943448f94fc6f3567ea3
+      internalID: 182281823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 400
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a37aa9371405643940b8ee4000ac76
+      internalID: -622514837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 400
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ad0227aef764b449ee28bcdf1064b9
+      internalID: -642776097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 400
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c939b267ffbce4d9f9e5cc123e318b
+      internalID: -1041505281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_10
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 400
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce7afbff1932aa4783bab65424091dc
+      internalID: 304564737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_11
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 400
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc260d5824134c34283060df45789003
+      internalID: -579858592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d10b8708a2a8e419176f8712e558b4
+      internalID: 1063360641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 200
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a75c6c43b772f479ca7da698b113dd
+      internalID: 665505666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 200
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dd81151ffc5ef46a310553a92a2bc2
+      internalID: 1486229149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_15
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 200
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59692ed9127bdde4abe4f9826b740d4e
+      internalID: 1086082292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 200
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26937acdd9f0532489c720088534f655
+      internalID: 1386216223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_17
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 200
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b769e5dda1c3384c8e5e1a78e8ffbf5
+      internalID: 1872327566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca49690ae52ba56458074ccc16c282d0
+      internalID: 1294070034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412a75294747c794eb8f88e39a548947
+      internalID: -239858145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_20
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aee81dbd4008f241ba2b70343628997
+      internalID: -575821716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667add41b2cd71846af3085ca84e8032
+      internalID: 179244593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_22
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1e90c7ed5f0fe4c94187fa423ea4f3
+      internalID: -1247767271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thick_Stone_01_WindowA-SW-144x200_23
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588934c14fe5e6548b5ef4f9e4332b24
+      internalID: 1792789947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Thick_Stone_01_WindowA-SW-144x200_2: 1357525307
+      Thick_Stone_01_WindowA-SW-144x200_16: 1386216223
+      Thick_Stone_01_WindowA-SW-144x200_23: 1792789947
+      Thick_Stone_01_WindowA-SW-144x200_21: 179244593
+      Thick_Stone_01_WindowA-SW-144x200_19: -239858145
+      Thick_Stone_01_WindowA-SW-144x200_1: -505954927
+      Thick_Stone_01_WindowA-SW-144x200_10: 304564737
+      Thick_Stone_01_WindowA-SW-144x200_17: 1872327566
+      Thick_Stone_01_WindowA-SW-144x200_18: 1294070034
+      Thick_Stone_01_WindowA-SW-144x200_6: 182281823
+      Thick_Stone_01_WindowA-SW-144x200_5: 1209341590
+      Thick_Stone_01_WindowA-SW-144x200_11: -579858592
+      Thick_Stone_01_WindowA-SW-144x200_7: -622514837
+      Thick_Stone_01_WindowA-SW-144x200_13: 665505666
+      Thick_Stone_01_WindowA-SW-144x200_9: -1041505281
+      Thick_Stone_01_WindowA-SW-144x200_15: 1086082292
+      Thick_Stone_01_WindowA-SW-144x200_20: -575821716
+      Thick_Stone_01_WindowA-SW-144x200_4: 542468369
+      Thick_Stone_01_WindowA-SW-144x200_8: -642776097
+      Thick_Stone_01_WindowA-SW-144x200_14: 1486229149
+      Thick_Stone_01_WindowA-SW-144x200_12: 1063360641
+      Thick_Stone_01_WindowA-SW-144x200_3: 546939101
+      Thick_Stone_01_WindowA-SW-144x200_0: 497977561
+      Thick_Stone_01_WindowA-SW-144x200_22: -1247767271
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
