@@ -30,9 +30,12 @@ public class PlayerMovement : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-                if (Input.GetButtonDown("attack") && currentstate != PlayerState.attack) {
+        if (Input.GetButtonDown("attack") && currentstate != PlayerState.attack) 
+        {
             StartCoroutine(AttackCo());
-        } else if (currentstate == PlayerState.walk) {
+        } 
+        else if (currentstate == PlayerState.walk) 
+        {
             UpdateAnimationAndMove();
         }
     }
