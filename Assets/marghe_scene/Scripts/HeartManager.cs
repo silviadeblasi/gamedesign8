@@ -28,7 +28,7 @@ public class HeartManager : MonoBehaviour
 
     public void UpdateHearts()
     {
-        float tempHealth = playerCurrentHealth.initialValue / 2;
+        float tempHealth = playerCurrentHealth.RuntimeValue / 2; // 2 perché considero ogni cuore come 2 punti vita
         for(int i = 0; i < heartContainers.initialValue; i++)
         {
             if(i <= tempHealth - 1)
