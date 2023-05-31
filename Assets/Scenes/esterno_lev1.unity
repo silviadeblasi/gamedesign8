@@ -2418,7 +2418,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  health: 5
+  maxHealth: {fileID: 11400000, guid: 537807f433b959d40b1c97fbc59ec4ca, type: 2}
+  health: 0
   enemyName: Jerry the enemy
   baseAttack: 1
   moveSpeed: 1.5
@@ -2467,6 +2468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   knockTime: 0.6
+  damage: 0
 --- !u!1 &568006108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2690,6 +2692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.4
+  damage: 1
 --- !u!1 &736595165 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7291290714032911011, guid: 91869f739053f42b3b7f8ce9857ddccc, type: 3}
@@ -2776,6 +2779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.4
+  damage: 1
 --- !u!1 &920989073
 GameObject:
   m_ObjectHideFlags: 0
@@ -9513,6 +9517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.4
+  damage: 1
 --- !u!1 &2034063739
 GameObject:
   m_ObjectHideFlags: 0
@@ -10456,6 +10461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.4
+  damage: 1
 --- !u!1001 &987438680753832576
 PrefabInstance:
   m_ObjectHideFlags: 0
