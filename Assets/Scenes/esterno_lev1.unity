@@ -2600,8 +2600,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 2
-  knockTime: 0.2
+  thrust: 1
+  knockTime: 0.6
 --- !u!1 &568006108
 GameObject:
   m_ObjectHideFlags: 0
