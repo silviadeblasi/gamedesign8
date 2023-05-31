@@ -6,6 +6,7 @@ public enum PlayerState{
     idle,
     walk,
     attack,
+    run,
     interact,
     stagger
 }
@@ -13,7 +14,7 @@ public enum PlayerState{
 public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currentState;
-    public float speed;
+    private float speed = 5;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
@@ -41,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(AttackCo());
         } 
-        else if (currentState == PlayerState.walk || currentState == PlayerState.idle) 
+        else if (currentState == PlayerState.walk || currentState == PlayerState.idle || currentState == PlayerState.run) 
         {
             UpdateAnimationAndMove();
         }
@@ -65,6 +66,15 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("moving", true);
         } else {
             animator.SetBool("moving", false);
+        }
+        if(change != Vector3.zero && Input.GetKey(KeyCode.LeftShift)){
+            currentState = PlayerState.run;
+            animator.SetBool("run", true);
+            speed = 10;
+        } else {
+            currentState = PlayerState.walk;
+            animator.SetBool("run", false);
+            speed = 5;
         }
     }
 
