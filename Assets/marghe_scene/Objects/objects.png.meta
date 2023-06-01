@@ -1536,13 +1536,13 @@ TextureImporter:
       name: objects_71
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
-        width: 32
-        height: 32
+        x: 148
+        y: 52
+        width: 40
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 12, y: 12, z: 12, w: 10}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2000,8 +2000,8 @@ TextureImporter:
       objects_28: 2051365809
       objects_70: -174794113
       objects_87: 433849925
-      objects_80: -1097460836
       objects_7: 381369152
+      objects_80: -1097460836
       objects_22: 1333203065
       objects_47: 769660825
       objects_42: 1797806266
