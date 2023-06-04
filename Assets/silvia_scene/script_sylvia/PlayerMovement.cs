@@ -14,7 +14,7 @@ public enum PlayerState{
 public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currentState;
-    private float speed = 5;
+    private float speed = 4;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
@@ -70,11 +70,11 @@ public class PlayerMovement : MonoBehaviour
         if(change != Vector3.zero && Input.GetKey(KeyCode.LeftShift)){
             currentState = PlayerState.run;
             animator.SetBool("run", true);
-            speed = 10;
+            speed = 7;
         } else {
             currentState = PlayerState.walk;
             animator.SetBool("run", false);
-            speed = 5;
+            speed = 4;
         }
     }
 

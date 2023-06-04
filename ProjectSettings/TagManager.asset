@@ -52,6 +52,9 @@ TagManager:
   - name: Objects
     uniqueID: 3836529991
     locked: 0
+  - name: player
+    uniqueID: 1707300359
+    locked: 0
   - name: dialogue
     uniqueID: 3952058405
     locked: 0
