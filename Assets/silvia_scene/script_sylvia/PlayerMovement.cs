@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
         if(change != Vector3.zero && Input.GetKey(KeyCode.LeftShift)){
             currentState = PlayerState.run;
             animator.SetBool("run", true);
-            speed = 7;
+            speed = 8;
         } else {
             currentState = PlayerState.walk;
             animator.SetBool("run", false);
