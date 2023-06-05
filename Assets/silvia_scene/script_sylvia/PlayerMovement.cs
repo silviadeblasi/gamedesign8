@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
+    public AudioSource footsteps;
+    public AudioSource machete1;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
+        
     }
 
     // Update is called once per frame
@@ -52,9 +55,11 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetBool("attacking", true);
         currentState = PlayerState.attack;
+        machete1.enabled = true;
         yield return null;
         animator.SetBool("attacking", false);
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.3f); 
+        machete1.enabled = false;
         currentState = PlayerState.walk;
     }
 
@@ -64,8 +69,10 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);
+            footsteps.enabled = true;
         } else {
             animator.SetBool("moving", false);
+            footsteps.enabled = false;
         }
         if(change != Vector3.zero && Input.GetKey(KeyCode.LeftShift)){
             currentState = PlayerState.run;
@@ -110,4 +117,9 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity = Vector2.zero;
         }
     }
+
+    //funzione per riprodurre suono passi
+    /*void Footstepsound(){
+        footsteps.Play();
+    }*/
 }
