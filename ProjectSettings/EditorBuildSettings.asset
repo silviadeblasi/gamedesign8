@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/esterno_lev1.unity
     guid: c50b20d2894334b8ba757c33ca63888d
   - enabled: 1
-    path: Assets/Scenes/Casa_sue.unity
+    path: Assets/Scenes/Casa_sue_vecchia.unity
     guid: d6e8c3d4e5e5740d89ac46c99c4258bf
   - enabled: 1
     path: Assets/Scenes/start_menu.unity
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 9decb79c4df0e4157a510b2f79c0584e
+  - enabled: 1
+    path: Assets/Scenes/Casa_sue.unity
+    guid: a64b316ddc3034f49b7f65e7e55d6f67
   m_configObjects: {}

@@ -9,10 +9,10 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     // Start is called before the first frame update
     bool isPressed = false;
-    //public AudioSource sound_pressed;
+    public AudioSource sound_pressed;
     void Start()
     {
-        
+        sound_pressed.enabled = false;
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         if(isPressed)
         {
             
-            //StartCoroutine(PlaySound());
+            sound_pressed.enabled = true;
             //mettere animazione
             //mettere cambio scena
             StartCoroutine(TimeDelay());
@@ -30,7 +30,7 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     IEnumerator TimeDelay()
     {
         yield return new WaitForSeconds(1);
-        Scene_Loader.Load(Scene_Loader.Scene.Esterno_lev1);
+        Scene_Loader.Load(Scene_Loader.Scene.Casa_sue);
     }
 
     /*public IEnumerator PlaySound()

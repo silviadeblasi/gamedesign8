@@ -15,7 +15,8 @@ public Button option_button;
 public Button exit_button;
 public Button credits_button;
 public Button tutorial_button;
-//public AudioSource sound_start;
+public AudioSource sound_pressed;
+
 public PlayableDirector timeline_paper; //timeline
 
     void Start(){
@@ -28,7 +29,7 @@ public PlayableDirector timeline_paper; //timeline
         exit_button = exit_button.GetComponent<Button>();
         credits_button = credits_button.GetComponent<Button>();
         tutorial_button = tutorial_button.GetComponent<Button>();
-        //sound_start = sound_start.GetComponent<AudioSource>();
+        
 
         start_button.gameObject.SetActive(false);
         load_button.gameObject.SetActive(false);
@@ -36,7 +37,6 @@ public PlayableDirector timeline_paper; //timeline
         exit_button.gameObject.SetActive(false);
         credits_button.gameObject.SetActive(false);
         tutorial_button.gameObject.SetActive(false);
-        //sound_start.gameObject.SetActive(false);   
     //check sulla timeline per capire se si è conclusa animazione
     //inserire i bottoni come variabili per renderli attivi solo alla fine dell'animazione
     //controllo eventuale audio 
@@ -49,6 +49,7 @@ public PlayableDirector timeline_paper; //timeline
 
         if (timeline_paper.state == PlayState.Paused) {
             start_button.gameObject.SetActive(true);
+            sound_pressed.enabled = false;
             load_button.gameObject.SetActive(true);
             option_button.gameObject.SetActive(true);
             exit_button.gameObject.SetActive(true);
