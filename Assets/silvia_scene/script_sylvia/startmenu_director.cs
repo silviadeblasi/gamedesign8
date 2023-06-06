@@ -49,7 +49,6 @@ public PlayableDirector timeline_paper; //timeline
 
         if (timeline_paper.state == PlayState.Paused) {
             start_button.gameObject.SetActive(true);
-            sound_pressed.enabled = false;
             load_button.gameObject.SetActive(true);
             option_button.gameObject.SetActive(true);
             exit_button.gameObject.SetActive(true);

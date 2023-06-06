@@ -805,6 +805,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: palyer
       objectReference: {fileID: 0}
+    - target: {fileID: 4969887180977412433, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969887180977412433, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -458437305
+      objectReference: {fileID: 0}
     - target: {fileID: 4969887180977412438, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
       propertyPath: m_RootOrder
       value: 2
