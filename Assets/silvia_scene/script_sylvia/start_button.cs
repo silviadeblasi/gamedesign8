@@ -21,7 +21,7 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         if(isPressed)
         {
             
-            sound_pressed.enabled = true;
+            StartCoroutine(PlaySound());
             //mettere animazione
             //mettere cambio scena
             StartCoroutine(TimeDelay());
@@ -33,11 +33,11 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         Scene_Loader.Load(Scene_Loader.Scene.Casa_sue);
     }
 
-    /*public IEnumerator PlaySound()
+    public IEnumerator PlaySound()
     {
         yield return new WaitForSecondsRealtime(0.4f);
-        sound_pressed.gameObject.SetActive(true);
-    }*/
+        sound_pressed.enabled = true;
+    }
 
      public void OnPointerDown(PointerEventData eventData)
     {

@@ -15,7 +15,7 @@ public Button option_button;
 public Button exit_button;
 public Button credits_button;
 public Button tutorial_button;
-public AudioSource sound_pressed;
+
 
 public PlayableDirector timeline_paper; //timeline
 
