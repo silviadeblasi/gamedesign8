@@ -43,6 +43,14 @@ public class interactable_object : MonoBehaviour
        
     }
 
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.CompareTag("openable") && this.gameObject.CompareTag("Player"))
+        {
+            
+            //il canvas c'è appena inzio il gioco e non appena entro nel trigger
+            other.GetComponent<openable>().Open();
+        }
+    }
 
 
     // Update is called once per frame
