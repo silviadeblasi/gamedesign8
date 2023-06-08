@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 24351
+  m_Name: Thick_Stone_01_WindowB-SW-144x200_4
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 63dda0984eba2bd4189f5b9c3d5be7d5, type: 3}
+  m_Sprite: {fileID: 1762913439, guid: 15e5fd793a03ccc4195095fac540481d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
