@@ -53,6 +53,9 @@ TagManager:
   - name: Objects
     uniqueID: 3836529991
     locked: 0
+  - name: placeable
+    uniqueID: 1888944525
+    locked: 0
   - name: player
     uniqueID: 1707300359
     locked: 0
