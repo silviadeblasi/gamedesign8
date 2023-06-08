@@ -23,11 +23,11 @@ public class openable : MonoBehaviour
 
     public void Open()
     {
-        if(Input.GetKeyDown(KeyCode.X)){
-            anim.SetBool("open", true);
-            StartCoroutine(openCo());
-            Destroy(comunicazione_comandi_clone, 0.5f);
-        }
+        Debug.Log("sono dentro open");
+        anim.SetBool("open", true);
+        StartCoroutine(openCo());
+        Destroy(comunicazione_comandi_clone, 0.5f);
+        
         
     }
 
