@@ -227,10 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 987438680729027729}
   lines:
-  - What do you know about them?
-  - I can listen now
-  - Who am I going to meet? But what does that mean?
-  - Nonsense
+  - 'And how do you know?               '
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0
@@ -250,7 +247,7 @@ GameObject:
   - component: {fileID: 987438681667126824}
   - component: {fileID: 987438681667126823}
   m_Layer: 5
-  m_Name: scena 4
+  m_Name: scena 3.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
