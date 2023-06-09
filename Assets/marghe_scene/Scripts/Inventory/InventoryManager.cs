@@ -33,7 +33,6 @@ public class InventoryManager : MonoBehaviour
             {
                 GameObject temp = Instantiate(blankInventorySlot, 
                     inventoryPanel.transform.position, Quaternion.identity);
-                    //).GetComponent<InventorySlot>();
                 temp.transform.SetParent(inventoryPanel.transform);
                 InventorySlot newSlot = temp.GetComponent<InventorySlot>();
                 
@@ -45,14 +44,12 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         MakeInventorySlots();
         SetTextAndButton("", false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         

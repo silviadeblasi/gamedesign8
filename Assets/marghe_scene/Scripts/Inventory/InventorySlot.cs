@@ -15,7 +15,6 @@ public class InventorySlot : MonoBehaviour
     public InventoryItem thisItem;
     public InventoryManager thisManager;
 
-
     public void Setup(InventoryItem newItem, InventoryManager newManager)
     {
         thisItem = newItem;
