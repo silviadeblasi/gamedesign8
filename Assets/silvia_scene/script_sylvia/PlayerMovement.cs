@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public Signal playerHealthSignal;
     public AudioSource footsteps;
     public AudioSource machete1;
-    public vector_value starting_position; //scriptable object per salvare la posizione del player
+    //public vector_value starting_position; //scriptable object per salvare la posizione del player
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("moveY", -1);
         footsteps.enabled = false;
         machete1.enabled = false;
-        transform.position = starting_position.initialValue;
+        //transform.position = starting_position.initialValue;
     }
 
     // Update is called once per frame
