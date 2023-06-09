@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 571640a70907d1e408bf31ff75f316c2, type: 3}
-  m_Name: Solider Sword
+  m_Name: Bow
   m_EditorClassIdentifier: 
-  itemName: Soldier Sword
-  itemDescription: The sword your father left you, the blade is quite dull, but it
-    gets the job done.
-  itemImage: {fileID: 1221638266, guid: d03071c1d9cfc30459478b9279c6f712, type: 3}
+  itemName: Bow
+  itemDescription: The bow you found after winning against Larry the Log
+  itemImage: {fileID: 21300000, guid: 64f3ceab711481c42a899b6f68db806c, type: 3}
   numberHeld: 1
   usable: 0
   unique: 1
