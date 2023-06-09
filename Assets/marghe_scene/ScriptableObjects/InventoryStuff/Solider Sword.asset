@@ -15,10 +15,7 @@ MonoBehaviour:
   itemName: Soldier Sword
   itemDescription: The sword your father left you, the blade is quite dull, but it
     gets the job done.
-  itemImage: {fileID: 1221638266, guid: d03071c1d9cfc30459478b9279c6f712, type: 3}
+  itemImage: {fileID: 21300000, guid: 2a18c0e173d2baf409309d03767a58af, type: 3}
   numberHeld: 1
-  usable: 0
+  usable: 1
   unique: 1
-  thisEvent:
-    m_PersistentCalls:
-      m_Calls: []
