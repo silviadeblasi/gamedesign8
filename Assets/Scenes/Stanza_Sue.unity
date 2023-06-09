@@ -502,6 +502,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: palyer
       objectReference: {fileID: 0}
+    - target: {fileID: 4969887180977412433, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969887180977412433, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1707300359
+      objectReference: {fileID: 0}
     - target: {fileID: 4969887180977412436, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
       propertyPath: starting_position
       value: 
@@ -512,7 +520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4969887180977412438, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.75675654
+      value: 0.51
       objectReference: {fileID: 0}
     - target: {fileID: 4969887180977412438, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2066,7 +2074,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821417479}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
