@@ -10,12 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 571640a70907d1e408bf31ff75f316c2, type: 3}
-  m_Name: Solider Sword
+  m_Name: Machete
   m_EditorClassIdentifier: 
-  itemName: Soldier Sword
-  itemDescription: The sword your father left you, the blade is quite dull, but it
-    gets the job done.
-  itemImage: {fileID: 21300000, guid: 2a18c0e173d2baf409309d03767a58af, type: 3}
+  itemName: Machete
+  itemDescription: The machete your father left you, the blade is quite dull, but
+    it gets the job done.
+  itemImage: {fileID: 21300000, guid: 69cd693d526a13045864100575c8e967, type: 3}
   numberHeld: 1
-  usable: 1
+  usable: 0
   unique: 1
+  thisEvent:
+    m_PersistentCalls:
+      m_Calls: []
