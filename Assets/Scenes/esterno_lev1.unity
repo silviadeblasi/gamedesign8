@@ -3678,6 +3678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player_position: {x: 0, y: 1}
   player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
+  trigger: {fileID: 569341678}
 --- !u!1 &614190345
 GameObject:
   m_ObjectHideFlags: 0

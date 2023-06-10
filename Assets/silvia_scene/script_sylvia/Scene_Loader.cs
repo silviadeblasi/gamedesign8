@@ -13,9 +13,8 @@ public static class Scene_Loader
 public enum Scene{
     Loading,
     Esterno_lev1,
-    Casa_sue
-
-
+    Casa_sue,
+    Stanza_sue
 }
 
     private static Action onLoaderCallBack;
