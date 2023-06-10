@@ -27,5 +27,10 @@ public class scene_transition : MonoBehaviour
             Scene_Loader.Load(Scene_Loader.Scene.Stanza_sue);
             player_storage.initialValue = player_position;
         }
+
+        if(other.CompareTag("Player") && !other.isTrigger && trigger.gameObject.layer == 13){
+            Scene_Loader.Load(Scene_Loader.Scene.Casa_sue);
+            player_storage.initialValue = player_position;
+        }
     }
 }

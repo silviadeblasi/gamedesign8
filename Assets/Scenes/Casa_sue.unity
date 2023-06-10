@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2768c059624f741f1847fd5e086e8be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_position: {x: 2, y: 0.5}
+  player_position: {x: 2, y: 1}
   player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
   trigger: {fileID: 851272511}
 --- !u!60 &851272514
