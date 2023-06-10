@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 17692693}
   - component: {fileID: 17692692}
   - component: {fileID: 17692694}
+  - component: {fileID: 17692696}
   - component: {fileID: 17692695}
   m_Layer: 0
   m_Name: Upstairs
@@ -518,19 +519,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.7373614, y: 3.5148497}
-      - {x: -6.4287214, y: 1.5551443}
-      - {x: -4.7392483, y: 0.7322405}
-      - {x: -4.0311637, y: 1.1470664}
-      - {x: -4.0353165, y: 1.3841438}
-      - {x: -3.9010782, y: 1.3885846}
-      - {x: -3.7778342, y: 1.2686152}
-      - {x: -3.7802963, y: 0.88136375}
-      - {x: -4.3923464, y: 0.59046257}
-      - {x: -0.45723164, y: -1.3902392}
-      - {x: -0.19137782, y: -1.3022716}
-      - {x: 3.4685428, y: 0.45429015}
-      - {x: 0.74151134, y: 1.8951252}
+    - - {x: -2.6960537, y: 3.9768348}
+      - {x: -6.8492455, y: 1.7707831}
+      - {x: -5.983939, y: 1.3717526}
+      - {x: -2.6563797, y: -0.37687665}
+      - {x: -2.5321193, y: -0.23796523}
+      - {x: -5.942242, y: 1.5213598}
+      - {x: -5.29865, y: 1.9518211}
+      - {x: -4.383524, y: 2.3880463}
+      - {x: -3.8912704, y: 2.272291}
+      - {x: -3.5644534, y: 2.526765}
+      - {x: -3.4598427, y: 2.829033}
+      - {x: -2.1896281, y: 2.2403653}
+      - {x: -1.5135317, y: 2.856063}
+      - {x: -0.5241012, y: 2.5013497}
+      - {x: 0.24447197, y: 2.0634363}
+      - {x: 1.1541495, y: 1.500342}
+      - {x: 1.2624273, y: 1.6129831}
+      - {x: -0.3669537, y: 2.568228}
+      - {x: -2.2711513, y: 3.523041}
+      - {x: -2.4519358, y: 3.4539087}
 --- !u!60 &17692695
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -556,11 +564,45 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.790759, y: 3.6976926}
-      - {x: -6.5602036, y: 1.6504406}
-      - {x: -6.574881, y: 1.5331025}
-      - {x: -0.3730793, y: -1.5564256}
-      - {x: 3.8455272, y: 0.4645958}
+    - - {x: -0.34003514, y: -1.3596103}
+      - {x: -2.3744044, y: -0.29736686}
+      - {x: -1.6525856, y: 0.086130574}
+      - {x: -1.7501237, y: 0.22665101}
+      - {x: -2.6728926, y: -0.2628361}
+      - {x: -0.37505078, y: -1.5255057}
+      - {x: 3.3549738, y: 0.2774772}
+      - {x: 3.1711884, y: 0.3859952}
+--- !u!60 &17692696
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17692690}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.0774212, y: 1.6480757}
+      - {x: -0.97561395, y: 0.6082681}
+      - {x: -0.9784811, y: 0.42502505}
+      - {x: 1.0463705, y: 1.4098964}
+      - {x: 3.2659495, y: 0.28200078}
+      - {x: 3.4701166, y: 0.3765394}
 --- !u!4 &99961860 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4969887180977412438, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
@@ -1289,11 +1331,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4969887180977412438, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.13
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 4969887180977412438, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.59
+      value: 0.706
       objectReference: {fileID: 0}
     - target: {fileID: 4969887180977412438, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1333,7 +1375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4969887180977412443, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4969887180977412446, guid: ba8edab952f4541c5bc3c77b172093b4, type: 3}
       propertyPath: m_Enabled
@@ -1900,11 +1942,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -4.3946476, y: 1.1517688}
-      - {x: -4.5718055, y: 1.223734}
-      - {x: -4.8486123, y: 1.1169496}
+    - - {x: -4.031846, y: 1.5458462}
+      - {x: -4.221514, y: 1.1736925}
+      - {x: -4.5860386, y: 1.3585117}
+      - {x: -4.9236746, y: 1.192012}
       - {x: -4.7999663, y: 0.78243196}
       - {x: -4.2294035, y: 0.51458216}
       - {x: -3.9724894, y: 0.6540451}
-      - {x: -4.0054502, y: 0.9332661}
-      - {x: -4.1829615, y: 1.0302095}
+      - {x: -3.7552426, y: 0.8206725}
+      - {x: -3.6825454, y: 1.4180318}
