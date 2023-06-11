@@ -48,9 +48,11 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    void Start()
+    private void OnEnable() 
     {
+        ClearInventorySlots();
         MakeInventorySlots();
+        Debug.Log("Inventory Manager Start");
         SetTextAndButton("", false);
     }
 
