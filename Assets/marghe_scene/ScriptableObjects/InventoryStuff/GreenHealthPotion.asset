@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Green Health Potion
   itemDescription: This potion gives you back a heart
   itemImage: {fileID: -1596205411, guid: 7851d2e783162bb40a32119a269d6123, type: 3}
-  numberHeld: 1
+  numberHeld: 4
   usable: 1
   unique: 0
   thisEvent:
@@ -29,6 +29,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000}
+        m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
+        m_MethodName: DecreaseAmount
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
