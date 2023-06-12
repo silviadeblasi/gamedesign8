@@ -25,14 +25,21 @@ public class reload_player : MonoBehaviour
             Destroy(clonedialogue,5f);
         //qui parte animazione morte
 
-            Respawn(); //faccio una coroutine per farlo respawnare dopo qaulche secondi il tempo di mostrare animazione morte
+            StartCoroutine(WaitAndRespawn()); //faccio una coroutine per farlo respawnare dopo qaulche secondi il tempo di mostrare animazione morte
         }
     }
 
-    public void Respawn(){
+    /*public void Respawn(){
         SceneManager.LoadScene(checkpoint_position.Scenename);
         player.transform.position = checkpoint_position.initialValue;
         currentHealth.RuntimeValue = 10;
 
+    }*/
+
+    private IEnumerator WaitAndRespawn(){
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(checkpoint_position.Scenename);
+        player.transform.position = checkpoint_position.initialValue;
+        currentHealth.RuntimeValue = 10;
     }
 }
