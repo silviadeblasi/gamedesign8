@@ -18,8 +18,13 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
-    public FloatValue currentHealth;
-    public Signal playerHealthSignal;
+
+    //DON'T DELETE THIS COMMENTED CODE
+    //Health: first version of health system
+    /*public FloatValue currentHealth;
+    public Signal playerHealthSignal; */
+
+    //Audio 
     public AudioSource footsteps;
     public AudioSource machete1;
     public vector_value starting_position; //scriptable object per salvare la posizione del player
@@ -97,7 +102,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void Knock(float knockTime, float damage)
     {
-        currentHealth.RuntimeValue -= damage;
+        StartCoroutine(KnockCo(knockTime)); //Health: second version of health system
+        
+        //DON'T DELETE THIS COMMENTED CODE
+        //Health: first version of health system
+        /*currentHealth.RuntimeValue -= damage;
         playerHealthSignal.Raise();
 
         if(currentHealth.RuntimeValue > 0)
@@ -107,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             this.gameObject.SetActive(false);
-        }
+        }*/
     }
 
     private IEnumerator KnockCo(float knockTime)
