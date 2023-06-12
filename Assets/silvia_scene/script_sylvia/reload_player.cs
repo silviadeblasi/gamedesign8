@@ -12,6 +12,7 @@ public class reload_player : MonoBehaviour
     //public GameObject last_scheckpoint;
     public vector_value_scene checkpoint_position;
     public GameObject player;
+    public bool isDead = false;
     void Start()
     {
         
@@ -20,9 +21,11 @@ public class reload_player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentHealth.RuntimeValue == 0){
-            clonedialogue =(GameObject)GameObject.Instantiate(gameOverCanvas, transform.position, Quaternion.identity);
+        if(currentHealth.RuntimeValue == 0 && isDead == false){
+            Debug.Log("morto");
+            clonedialogue = (GameObject)GameObject.Instantiate(gameOverCanvas, transform.position, Quaternion.identity);
             Destroy(clonedialogue,5f);
+            isDead = true;
         //qui parte animazione morte
 
             StartCoroutine(WaitAndRespawn()); //faccio una coroutine per farlo respawnare dopo qaulche secondi il tempo di mostrare animazione morte
@@ -37,9 +40,10 @@ public class reload_player : MonoBehaviour
     }*/
 
     private IEnumerator WaitAndRespawn(){
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(checkpoint_position.Scenename);
+        
+        //SceneManager.LoadScene(checkpoint_position.Scenename);
         player.transform.position = checkpoint_position.initialValue;
-        currentHealth.RuntimeValue = 10;
+        currentHealth.RuntimeValue = 6;
+        yield return new WaitForSeconds(2f);
     }
 }
