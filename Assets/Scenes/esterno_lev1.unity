@@ -14813,7 +14813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint_position: {fileID: 11400000, guid: 499661c1861d04ba59a8437533a12752, type: 2}
-  communication_checkpoint: {fileID: 0}
+  communication_checkpoint: {fileID: 8688396363754058710, guid: a5cfd61a8fea9429b86cf74f6100897c, type: 3}
 --- !u!212 &2084852282
 SpriteRenderer:
   m_ObjectHideFlags: 0
