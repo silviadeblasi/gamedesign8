@@ -6607,6 +6607,11 @@ MonoBehaviour:
   emptyHeart: {fileID: 1279704777, guid: c67f3e991c4b043f58d4d055764e4ed8, type: 3}
   heartContainers: {fileID: 11400000, guid: 43bdbc6af89608149852c389b38e74c1, type: 2}
   playerCurrentHealth: {fileID: 11400000, guid: 7b7307a9eb5a8704ebb14664ea18550e, type: 2}
+--- !u!1 &1112844918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8688396363754058710, guid: 7913653bab2fc41f8baf033b37718974, type: 3}
+  m_PrefabInstance: {fileID: 81298785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1189029528
 GameObject:
   m_ObjectHideFlags: 0
@@ -8954,7 +8959,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af9f607c83004eac808e7936e9a479d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelToDisappear: {fileID: 0}
+  panelToDisappear: {fileID: 1353907055}
+  canvasToDisappear: {fileID: 1112844918}
+  canvas: {fileID: 1112844918}
   fadeDuration: 1
 --- !u!1001 &1362837385
 PrefabInstance:
@@ -15168,7 +15175,7 @@ PrefabInstance:
     - target: {fileID: 7100331091601713990, guid: 30e766787510c47b883ffe421ab57c26, type: 3}
       propertyPath: canvasToDisappear
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1112844918}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30e766787510c47b883ffe421ab57c26, type: 3}
 --- !u!1001 &2038228646767391215
