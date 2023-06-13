@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class GenericHealth : MonoBehaviour
 {
+    public GameObject canvasToDisappear; // Riferimento al canvas da far scomparire
+    //public float fadeDuration = 1f; // Durata del fading in secondi
+
     public FloatValue maxHealth;
     public float currentHealth; //This means that the value can be changed in the inspector, but not by other scripts
 
@@ -43,7 +46,8 @@ public class GenericHealth : MonoBehaviour
     //Virtual means that we can override this method in other scripts
     public virtual void Damage(float amountToDamage) 
     {
-        currentHealth -= amountToDamage; 
+        currentHealth -= amountToDamage;
+        canvasToDisappear.SetActive(true); 
         if (currentHealth < 0) 
         {
             currentHealth = 0; 
