@@ -23,8 +23,9 @@ public class reload_player : MonoBehaviour
     {
         if(currentHealth.RuntimeValue == 0 && isDead == false){
             Debug.Log("morto");
-            clonedialogue = (GameObject)GameObject.Instantiate(gameOverCanvas, transform.position, Quaternion.identity);
-            Destroy(clonedialogue,5f);
+            //clonedialogue = (GameObject)GameObject.Instantiate(gameOverCanvas, transform.position, Quaternion.identity);
+            //Destroy(clonedialogue,5f);
+            gameOverCanvas.SetActive(true);
             isDead = true;
         //qui parte animazione morte
 
@@ -40,10 +41,10 @@ public class reload_player : MonoBehaviour
     }*/
 
     private IEnumerator WaitAndRespawn(){
-        
+        yield return new WaitForSeconds(2f);
         //SceneManager.LoadScene(checkpoint_position.Scenename);
         player.transform.position = checkpoint_position.initialValue;
         currentHealth.RuntimeValue = 6;
-        yield return new WaitForSeconds(2f);
+        
     }
 }

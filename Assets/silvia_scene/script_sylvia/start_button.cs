@@ -30,7 +30,7 @@ public class start_button :MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     IEnumerator TimeDelay()
     {
         yield return new WaitForSeconds(1);
-        Scene_Loader.Load(Scene_Loader.Scene.Casa_sue);
+        Scene_Loader.Load(Scene_Loader.Scene.Stanza_sue);
     }
 
     public IEnumerator PlaySound()
