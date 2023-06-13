@@ -28,7 +28,6 @@ public PlayableDirector timeline_paper; //timeline
         option_button = option_button.GetComponent<Button>();
         exit_button = exit_button.GetComponent<Button>();
         credits_button = credits_button.GetComponent<Button>();
-        tutorial_button = tutorial_button.GetComponent<Button>();
         
 
         start_button.gameObject.SetActive(false);
@@ -36,7 +35,6 @@ public PlayableDirector timeline_paper; //timeline
         option_button.gameObject.SetActive(false);
         exit_button.gameObject.SetActive(false);
         credits_button.gameObject.SetActive(false);
-        tutorial_button.gameObject.SetActive(false);
     //check sulla timeline per capire se si è conclusa animazione
     //inserire i bottoni come variabili per renderli attivi solo alla fine dell'animazione
     //controllo eventuale audio 
@@ -53,7 +51,6 @@ public PlayableDirector timeline_paper; //timeline
             option_button.gameObject.SetActive(true);
             exit_button.gameObject.SetActive(true);
             credits_button.gameObject.SetActive(true);
-            tutorial_button.gameObject.SetActive(true);
         }
         
     }
