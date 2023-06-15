@@ -24,8 +24,11 @@ public class EnemyLv1 : GeneralEnemy
     }
 
     // Update is called once per frame
-    private void FixedUpdate() {
+    private void FixedUpdate() 
+    {
         CheckDistance();
+        anim.SetFloat("moveX", target.position.x - transform.position.x);
+        anim.SetFloat("moveY", target.position.y - transform.position.y);
     }
 
     void CheckDistance()
@@ -46,11 +49,10 @@ public class EnemyLv1 : GeneralEnemy
                 StartCoroutine(AttackCo());
             }
 
-        } else{
+        } else {
             anim.SetBool("walking", false);
             ChangeState(EnemyState.idle);
         }
-        
     }
 
     private void ChangeState(EnemyState newState)
@@ -64,13 +66,21 @@ public class EnemyLv1 : GeneralEnemy
 
     private IEnumerator AttackCo() 
     {
-        yield return new WaitForSeconds(.6f);
+        //yield return new WaitForSeconds(.6f);
+        //anim.SetBool("attacking", true);
+        //currentState = EnemyState.attack;
+        //yield return null;
+        //anim.SetBool("attacking", false);
+        //yield return new WaitForSeconds(.1f);
+        //currentState = EnemyState.walk;
+
         anim.SetBool("attacking", true);
         currentState = EnemyState.attack;
-        yield return null;
+        yield return new WaitForSeconds(.6f);
         anim.SetBool("attacking", false);
         yield return new WaitForSeconds(.1f);
         currentState = EnemyState.walk;
     }
+
 
 }
