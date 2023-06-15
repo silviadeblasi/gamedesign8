@@ -766,13 +766,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      invetory_1.1_14: 1456002777
+      invetory_1.1_16: -1202848075
       invetory_1.1_5: 413269709
       invetory_1.1_13: 1373243782
-      invetory_1.1_16: -1202848075
-      invetory_1.1_12: -109385374
       invetory_1.1_21: -1694799999
-      invetory_1.1_24: -267117762
+      invetory_1.1_12: -109385374
+      invetory_1.1_4: -1186547051
       invetory_1.1_17: -619625074
       invetory_1.1_23: -881956515
       invetory_1.1_1: 1247201120
@@ -794,9 +793,10 @@ TextureImporter:
       invetory_1.1_11: 12301516
       invetory_1.1_22: 1994246430
       invetory_1.1_3: -753351816
+      invetory_1.1_14: 1456002777
       invetory_1.1_7: 1415686587
-      invetory_1.1_4: -1186547051
       invetory_1.1_20: 677610562
+      invetory_1.1_24: -267117762
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
