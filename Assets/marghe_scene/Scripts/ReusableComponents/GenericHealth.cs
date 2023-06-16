@@ -4,6 +4,7 @@ public class GenericHealth : MonoBehaviour
 {
     public GameObject canvasToDisappear; // Riferimento al canvas da far scomparire
     //public float fadeDuration = 1f; // Durata del fading in secondi
+    public Animator myAnim; // Riferimento all'animator
 
     public FloatValue maxHealth;
     public float currentHealth; //This means that the value can be changed in the inspector, but not by other scripts
@@ -18,7 +19,10 @@ public class GenericHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(currentHealth <= 0)
+        {
+            myAnim.SetTrigger("death");
+        }
     }
 
     //This method let us heal the player by adding the amount of health we want to heal to the current health
