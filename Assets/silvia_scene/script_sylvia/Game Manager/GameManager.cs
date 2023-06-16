@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public static GameManager gamemanager;
+    public GameObject player;
+
+    private void Awake() {
+        if(gamemanager == null){
+            gamemanager = this;
+        }
+        else if(gamemanager != this){
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void StartingGame(Scene scene){
+        if(scene.sceneName == "Stanza_sue"){
+            if(scene.isFirstTime){
+                player.SetActive(true);
+            }
+        }
     }
 }

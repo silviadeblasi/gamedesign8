@@ -19,7 +19,7 @@ public class CanvasDisappearing : MonoBehaviour
 
     private IEnumerator routine_damage()
     {
-        yield return new WaitForSeconds(2f); // Opzionale: puoi aggiungere un ritardo prima che inizi a scomparire il canvas
+        yield return new WaitForSeconds(1.5f); // Opzionale: puoi aggiungere un ritardo prima che inizi a scomparire il canvas
         fadeDuration = 1f;
         float elapsedTime = 0f;
         Image panelImage = panelToDisappear.GetComponent<Image>();
