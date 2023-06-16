@@ -19,8 +19,8 @@ public class EnemyLv1 : GeneralEnemy
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
-        anim.SetFloat("moveX", 0);
-        anim.SetFloat("moveY", -1);
+        //anim.SetFloat("moveX", 0);
+        //anim.SetFloat("moveY", -1);
     }
 
     // Update is called once per frame
