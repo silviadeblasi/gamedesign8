@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bfae479a574c341b87c5ccc5bf2f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasToDisappear: {fileID: 0}
   maxHealth: {fileID: 11400000, guid: 7b7307a9eb5a8704ebb14664ea18550e, type: 2}
   currentHealth: 0
   healthSignal: {fileID: 11400000, guid: 9f686b63c2b77014e9f0a9f0f2ef5af1, type: 2}
@@ -486,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78eca012c224942e083692cd91064d81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenu_prefab: {fileID: 0}
+  MainMenu_prefab: {fileID: 1227784775404843082, guid: 2bac7b208ed984a7992c12f0208eb201, type: 3}
   Inventory_prefab: {fileID: 0}
   Map_prefab: {fileID: 0}
   player: {fileID: 0}
