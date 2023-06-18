@@ -12,7 +12,7 @@ public class MainMenuAppears : MonoBehaviour
     void Update(){
         
         //tasto esc apro il menu principale
-     if (Input.GetKeyDown(KeyCode.Escape)) 
+    /* if (Input.GetKeyDown(KeyCode.Escape)) 
         {
             if (MainMenu_prefab.activeSelf == false)
             {
@@ -24,7 +24,8 @@ public class MainMenuAppears : MonoBehaviour
                 player.GetComponent<PlayerMovement>().enabled = true;
                 MainMenu_prefab.SetActive(false);
             }
-        }
+        }*/
+
         //tasto i apro l'inventario 
         if(Input.GetKeyDown(KeyCode.I)){
             if (Inventory_prefab.activeSelf == false)
