@@ -7,7 +7,7 @@ public class checkpoint : MonoBehaviour
 {
     //quando player entra nel trigger salvo la coordinata del checkpoint
     public vector_value_scene checkpoint_position;
-    public GameObject communication_checkpoint;
+    [SerializeField] private GameObject communication_checkpoint;
     private GameObject cloneDialogue;
     public BoxCollider2D _point;
     private void Start() {

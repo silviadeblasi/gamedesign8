@@ -50,11 +50,18 @@ public class GenericHealth : MonoBehaviour
     //Virtual means that we can override this method in other scripts
     public virtual void Damage(float amountToDamage) 
     {
-        currentHealth -= amountToDamage;
-        canvasToDisappear.SetActive(true); 
-        if (currentHealth < 0) 
+        if(currentHealth == 0)
         {
-            currentHealth = 0; 
+            currentHealth -= amountToDamage;
+    
+        }
+        currentHealth -= amountToDamage;
+        if (currentHealth != 0){
+            canvasToDisappear.SetActive(true); 
+            if (currentHealth < 0) 
+            {
+                currentHealth = 0; 
+            }
         }
     }
 
