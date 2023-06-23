@@ -4,20 +4,24 @@ using System.Collections;
 public class CameraShake : MonoBehaviour
 {
     public Transform cameraTransform; // Riferimento al transform della camera
-    public float shakeDuration = 15f; // Durata dello shake
-    public float shakeMagnitude = 0.5f; // Intensità dello shake
+    public GameObject main_camera; //mi serve per riattivare il codice che segue il player 
+    public GameObject target;
+    private float shakeDuration = 5f; // Durata dello shake
+    private float shakeMagnitude = 0.1f; // Intensità dello shake
 
     private Vector3 originalPosition; // Posizione originale della camera
 
     private void Start()
     {
-        originalPosition = new Vector3 (0,0,0);
+        originalPosition = cameraTransform.localPosition;
+        ShakeCamera();
     }
 
     public void ShakeCamera()
     {
         // Avvia la coroutine per lo shake della camera
         StartCoroutine(ShakeCoroutine());
+        main_camera.GetComponent<camera_movement>().enabled = true;
     }
 
     private IEnumerator ShakeCoroutine()
@@ -32,12 +36,12 @@ public class CameraShake : MonoBehaviour
             // Applica lo spostamento casuale alla posizione della camera
             cameraTransform.localPosition = originalPosition + randomOffset;
 
-            elapsed += 0.1f;
+            elapsed += Time.deltaTime;
 
+            yield return null;
         }
 
         // Ripristina la posizione originale della camera
         cameraTransform.localPosition = originalPosition;
-        yield return null;
     }
 }

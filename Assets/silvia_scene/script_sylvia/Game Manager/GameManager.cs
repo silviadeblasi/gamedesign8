@@ -8,17 +8,20 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     private bool firstTime = true;
     public SoundManager soundManager;
-    public DialoghiManager dialoghiManager;
+    public DialoghiUIManager dialoghiManager;
     public GameObject Camera;
     
     private void Update() {
 
         if( current_scene.ToString() == "Stanza_sue"){
+
             if(firstTime){
-            //player.GetComponent<PlayerMovement>().enabled = false;
-            //FirstScene(Camera.GetComponent<Camera>());
-            Debug.Log("Stanza_sue");
-            firstTime = false;
+                player.GetComponent<PlayerMovement>().enabled = false;
+                FirstScene(Camera.GetComponent<Camera>());
+
+                //dialoghiManager.StartDialoghi("scena 1");
+                Debug.Log("Stanza_sue");
+                firstTime = false;
             }
 
         }
@@ -35,23 +38,17 @@ public class GameManager : MonoBehaviour
     }
     
     private void FirstScene(Camera main){
-        //StartCoroutine(FirstSceneCoroutine(main));
-        Camera.GetComponent<CameraShake>().enabled = true;
+        StartCoroutine(FirstSceneCoroutine());
+
         Camera.GetComponent<camera_movement>().enabled = false;
+        Camera.GetComponent<CameraShake>().enabled = true;
         soundManager.PlaySoundEffect("Urla");
         soundManager.PlaySoundEffect("Rottura_vetro");
+        
     }
 
-    /*IEnumerator FirstSceneCoroutine(Camera main){
-
-        yield return new WaitForSeconds(1f);
-        main.transform.position = new Vector3(0.2f,0.2f, 0);
-        yield return new WaitForSeconds(1f);
-        main.transform.position = new Vector3(0,0, 0);
-        yield return new WaitForSeconds(1f);
-        main.transform.position = new Vector3(-0.2f,-0.2f, 0);
-        yield return new WaitForSeconds(1f);
-        main.transform.position = new Vector3(0,0, 0);
-        
-    }*/
+    IEnumerator FirstSceneCoroutine() {
+        yield return new WaitForSeconds(6f);
+        dialoghiManager.StartDialoghi("scena 1");
+    }
 }

@@ -13,6 +13,7 @@ public class SoundManager : MonoBehaviour
         // Crea e inizializza la sorgente audio per gli effetti sonori
         soundEffectSource = gameObject.AddComponent<AudioSource>();
         soundEffectSource.playOnAwake = false;
+        soundEffectSource.loop = true;
 
         // Crea e inizializza la sorgente audio per la musica di sottofondo
         backgroundMusicSource = gameObject.AddComponent<AudioSource>();
