@@ -2349,9 +2349,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 416628040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cb6ac88e6c7e4e4a8bebdec40a0b9cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e85b3ca587c4676a2cdf2bc60940d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialoghi:
+  - {fileID: 987438681667126822, guid: becadffc5042247bf885feb2df7e78f4, type: 3}
+  UI: []
 --- !u!1 &1821417479
 GameObject:
   m_ObjectHideFlags: 0
