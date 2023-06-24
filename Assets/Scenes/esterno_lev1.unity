@@ -583,6 +583,7 @@ MonoBehaviour:
   enemyName: Jerry the enemy
   baseAttack: 1
   moveSpeed: 1.5
+  myAnimator: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 3
   attackRadius: 1
@@ -734,6 +735,7 @@ GameObject:
   - component: {fileID: 109812532}
   - component: {fileID: 109812531}
   - component: {fileID: 109812533}
+  - component: {fileID: 109812534}
   m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
@@ -819,7 +821,20 @@ MonoBehaviour:
   inventoryPanel: {fileID: 2095293794}
   descriptionText: {fileID: 1913534181}
   useButton: {fileID: 1709527984}
+  player: {fileID: 1525643977}
   currentItem: {fileID: 0}
+--- !u!114 &109812534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109812529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7004c0b7a4494c2fb5db4a7ab60b115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &144496603
 GameObject:
   m_ObjectHideFlags: 0
@@ -4477,7 +4492,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1597744783, guid: 593b0784ce316fb4786a0bee23d2f022, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.875, y: 1.171875}
@@ -4542,7 +4557,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6875, y: 1.0208334}
+    oldSize: {x: 1.25, y: 1.0416666}
     newSize: {x: 0.875, y: 1.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4590,6 +4605,7 @@ MonoBehaviour:
   enemyName: Jerry the enemy
   baseAttack: 1
   moveSpeed: 1.5
+  myAnimator: {fileID: 312846142}
   target: {fileID: 0}
   chaseRadius: 2
   attackRadius: 1
@@ -4612,7 +4628,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6875, y: 1.0208334}
+    oldSize: {x: 1.25, y: 1.0416666}
     newSize: {x: 0.875, y: 1.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8745,6 +8761,7 @@ MonoBehaviour:
   enemyName: Jerry the enemy
   baseAttack: 1
   moveSpeed: 1.5
+  myAnimator: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 2
   attackRadius: 1
@@ -8951,6 +8968,11 @@ PolygonCollider2D:
       - {x: 0.16623658, y: -0.2448855}
       - {x: 0.24962413, y: -0.16267371}
       - {x: 0.2756238, y: -0.046993494}
+--- !u!1 &1525643977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5942363594374112703, guid: 30e766787510c47b883ffe421ab57c26, type: 3}
+  m_PrefabInstance: {fileID: 1625538037893081444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1535580325
 GameObject:
   m_ObjectHideFlags: 0
@@ -17000,6 +17022,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5942363594374112688, guid: 30e766787510c47b883ffe421ab57c26, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1525643977}
+    - target: {fileID: 5942363594374112688, guid: 30e766787510c47b883ffe421ab57c26, type: 3}
+      propertyPath: Inventory_prefab
+      value: 
+      objectReference: {fileID: 6113204482811993927, guid: ca144dd0711afb84f8c215fde3fd6e79, type: 3}
     - target: {fileID: 5942363594374112697, guid: 30e766787510c47b883ffe421ab57c26, type: 3}
       propertyPath: m_RootOrder
       value: 0

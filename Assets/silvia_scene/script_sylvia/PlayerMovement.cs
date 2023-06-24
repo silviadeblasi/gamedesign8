@@ -8,7 +8,8 @@ public enum PlayerState{
     attack,
     run,
     interact,
-    stagger
+    stagger,
+    dead
 }
 
 public class PlayerMovement : MonoBehaviour

@@ -27,7 +27,8 @@ public class MainMenuAppears : MonoBehaviour
         }*/
 
         //tasto i apro l'inventario 
-        if(Input.GetKeyDown(KeyCode.I)){
+        if(Input.GetKeyDown(KeyCode.I))
+        { 
             if (Inventory_prefab.activeSelf == false)
             {
                 Inventory_prefab.SetActive(true);
@@ -39,6 +40,7 @@ public class MainMenuAppears : MonoBehaviour
                 Inventory_prefab.SetActive(false);
             }
         }
+
         //tasto m apro la mappa
         if(Input.GetKeyDown(KeyCode.M)){
             if (Map_prefab.activeSelf == false)
@@ -52,6 +54,5 @@ public class MainMenuAppears : MonoBehaviour
                 Map_prefab.SetActive(false);
             }
         }
-
     }
 }

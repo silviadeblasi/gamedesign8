@@ -18,6 +18,7 @@ public class GeneralEnemy : MonoBehaviour
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
+    public Animator myAnimator;
 
     private void Awake() 
     {
@@ -27,9 +28,17 @@ public class GeneralEnemy : MonoBehaviour
     private void TakeDamage(float damage)
     {
         health -= damage;
+
+        myAnimator.SetTrigger("hurt");
+
         if(health <= 0)
         {
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
+            // Da implementare: animazione di morte
+            Debug.Log("Enemy " + enemyName + " died.");
+            myAnimator.SetBool("isDead", true);
+            GetComponent<Collider2D>().enabled = false;
+            this.enabled = false;
         }
     }
 

@@ -11,7 +11,25 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject inventoryPanel;
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private GameObject useButton;
+    [SerializeField] private GameObject player;
     public InventoryItem currentItem;
+
+    //private void Update()
+    //{
+    //    if(Input.GetButtonDown("Inventory"))
+    //    {
+    //        if(inventoryPanel.activeInHierarchy)
+    //        {
+    //            inventoryPanel.SetActive(false);
+    //            player.GetComponent<PlayerMovement>().currentState = PlayerState.walk;
+    //        }
+    //        else
+    //        {
+    //            inventoryPanel.SetActive(true);
+    //            player.GetComponent<PlayerMovement>().currentState = PlayerState.interact;
+    //        }
+    //    }
+    //}
 
     public void SetTextAndButton(string description, bool buttonActive)
     {
