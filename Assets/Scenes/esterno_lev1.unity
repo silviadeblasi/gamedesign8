@@ -556,7 +556,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.515625, y: 0.765625}
+    oldSize: {x: 0.6875, y: 1.0208334}
     newSize: {x: 0.875, y: 1.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -605,7 +605,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.515625, y: 0.765625}
+    oldSize: {x: 0.6875, y: 1.0208334}
     newSize: {x: 0.875, y: 1.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4542,7 +4542,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.515625, y: 0.765625}
+    oldSize: {x: 0.6875, y: 1.0208334}
     newSize: {x: 0.875, y: 1.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4612,7 +4612,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.515625, y: 0.765625}
+    oldSize: {x: 0.6875, y: 1.0208334}
     newSize: {x: 0.875, y: 1.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5220,6 +5220,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1189029529}
+  - component: {fileID: 1898441465}
+  - component: {fileID: 1898441464}
+  - component: {fileID: 1898441466}
+  - component: {fileID: 1898441463}
   m_Layer: 0
   m_Name: 'Recovery GameObject for Transform (ID in file: 1189029529)'
   m_TagString: Untagged
@@ -8714,7 +8718,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.515625, y: 0.765625}
+    oldSize: {x: 0.6875, y: 1.0208334}
     newSize: {x: 0.875, y: 1.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8763,7 +8767,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.515625, y: 0.765625}
+    oldSize: {x: 0.6875, y: 1.0208334}
     newSize: {x: 0.875, y: 1.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -12484,7 +12488,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 2147483649
   - first: {x: -28, y: 17, z: 0}
     second:
       serializedVersion: 2
@@ -17002,11 +17006,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5942363594374112697, guid: 30e766787510c47b883ffe421ab57c26, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.146
+      value: -1.78
       objectReference: {fileID: 0}
     - target: {fileID: 5942363594374112697, guid: 30e766787510c47b883ffe421ab57c26, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.678
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5942363594374112697, guid: 30e766787510c47b883ffe421ab57c26, type: 3}
       propertyPath: m_LocalPosition.z
