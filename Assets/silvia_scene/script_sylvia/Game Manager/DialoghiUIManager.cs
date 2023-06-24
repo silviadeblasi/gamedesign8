@@ -17,10 +17,10 @@ public class DialoghiUIManager : MonoBehaviour
 
         if(dialogo != null){
             CloneDialogueBox = (GameObject)GameObject.Instantiate(dialogo, transform.position, Quaternion.identity);
-            dialogo_fine = ((CloneDialogueBox.transform.Find("Canvas Dialogue")?.gameObject).transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>();
+            /*dialogo_fine = ((CloneDialogueBox.transform.Find("Canvas Dialogue")?.gameObject).transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>();
             if(dialogo_fine.fine_dialogo == true){
                 finedialogo = true;
-            }
+            }*/
         }
         else{
             Debug.LogWarning("Dialogo non trovato: " + dialogo_name);

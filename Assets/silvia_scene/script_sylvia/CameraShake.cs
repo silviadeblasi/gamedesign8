@@ -7,7 +7,7 @@ public class CameraShake : MonoBehaviour
     public GameObject main_camera; //mi serve per riattivare il codice che segue il player 
     public GameObject target;
     private float shakeDuration = 5f; // Durata dello shake
-    private float shakeMagnitude = 0.1f; // Intensità dello shake
+    private float shakeMagnitude = 0.5f; // Intensità dello shake
 
     private Vector3 originalPosition; // Posizione originale della camera
 
