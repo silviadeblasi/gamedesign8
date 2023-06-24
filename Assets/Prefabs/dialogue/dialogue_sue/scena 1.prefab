@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39, y: -71}
+  m_AnchoredPosition: {x: 70, y: -89}
   m_SizeDelta: {x: 628.7, y: 193.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &987438680729027730
@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '*testo_dialogo'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 42515ce8791774669bf47a906e3ad5a8, type: 2}
+  m_sharedMaterial: {fileID: -6546122913188944635, guid: 42515ce8791774669bf47a906e3ad5a8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 78.66
-  m_fontSizeBase: 78.66
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -436.8428, y: -16.719955, z: -332.88422, w: 31.177261}
+  m_margin: {x: -679.66406, y: -66.874985, z: -544.0492, w: -52.414642}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0
-  _soundeffect: {fileID: 0}
+  _soundeffect: {fileID: 8300000, guid: fda2814095e4f4db0aec783928a57ecd, type: 3}
   stopAudioSource: 0
   frequencyLevel: 2
 --- !u!1 &987438681667126822

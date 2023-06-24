@@ -11,6 +11,9 @@ public class dialogue_script : MonoBehaviour
     public bool fine_dialogo = false;
     public int _index;
 
+    //[SerializeField] private GameObject _press_to_End_text;
+    //private GameObject _clone_press_to_End_text;
+
     //audio
     [SerializeField] private AudioClip _soundeffect;
     private AudioSource audioSource;
@@ -21,7 +24,6 @@ public class dialogue_script : MonoBehaviour
     [Range(1,5)]
     [SerializeField] private int frequencyLevel = 2;
 
-    
     void Start()
     {
         textComponent.text = string.Empty;
@@ -31,9 +33,10 @@ public class dialogue_script : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    
     {
-        
-     if (Input.GetKeyDown(KeyCode.Mouse0)){
+        //se premo invio, se c'è altro, mostra nuovo testo : se è finito chiude il dialogBox
+        if (Input.GetKeyDown(KeyCode.Mouse0)){
             if (textComponent.text == lines[_index]){
                 NextLine();
             }
@@ -50,7 +53,6 @@ public class dialogue_script : MonoBehaviour
         StartCoroutine(TypeLine());
     }
 
-    //coroutine per la scrittura del testo
     IEnumerator TypeLine()
     {
         foreach (char letter in lines[_index].ToCharArray())
@@ -62,24 +64,29 @@ public class dialogue_script : MonoBehaviour
         }
     }
 
-    void NextLine(){
+    private void PlayDialogueSound(int currentDisplayCharacterCount)
+    {
+        if (currentDisplayCharacterCount % frequencyLevel == 0)
+        {
+            if (stopAudioSource)
+            {
+                audioSource.Stop();
+            }
+            audioSource.PlayOneShot(_soundeffect);
+        }
+
+    }
+
+    void NextLine (){
         if (_index < lines.Length - 1){
             _index++;
             textComponent.text = string.Empty;
-            maxvisibleCharacter = 0;
             StartCoroutine(TypeLine());
         }
         else{
-            textComponent.text = string.Empty;
             fine_dialogo = true;
+            gameObject.SetActive(false);
         }
     }
 
-    void PlayDialogueSound(int maxvisibleCharacter){
-        if (maxvisibleCharacter % frequencyLevel == 0){
-            if(stopAudioSource)
-                audioSource.Stop();
-            audioSource.PlayOneShot(_soundeffect);
-        }
-    }
 }
