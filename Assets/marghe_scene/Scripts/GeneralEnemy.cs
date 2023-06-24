@@ -7,7 +7,8 @@ public enum EnemyState
     idle,
     walk,
     attack,
-    stagger
+    stagger,
+    dead
 }
 
 public class GeneralEnemy : MonoBehaviour
@@ -36,7 +37,7 @@ public class GeneralEnemy : MonoBehaviour
             //this.gameObject.SetActive(false);
             // Da implementare: animazione di morte
             Debug.Log("Enemy " + enemyName + " died.");
-            myAnimator.SetBool("isDead", true);
+            myAnimator.SetBool("dead", true);
             GetComponent<Collider2D>().enabled = false;
             this.enabled = false;
         }

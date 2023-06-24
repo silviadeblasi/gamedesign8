@@ -587,7 +587,6 @@ MonoBehaviour:
   target: {fileID: 0}
   chaseRadius: 3
   attackRadius: 1
-  homePosition: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &96838846
 BoxCollider2D:
@@ -4557,7 +4556,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1.0416666}
+    oldSize: {x: 0.6875, y: 1.0208334}
     newSize: {x: 0.875, y: 1.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4609,8 +4608,7 @@ MonoBehaviour:
   target: {fileID: 0}
   chaseRadius: 2
   attackRadius: 1
-  homePosition: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 312846142}
 --- !u!61 &312846146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4628,7 +4626,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1.0416666}
+    oldSize: {x: 0.6875, y: 1.0208334}
     newSize: {x: 0.875, y: 1.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8765,7 +8763,6 @@ MonoBehaviour:
   target: {fileID: 0}
   chaseRadius: 2
   attackRadius: 1
-  homePosition: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1436669694
 BoxCollider2D:
