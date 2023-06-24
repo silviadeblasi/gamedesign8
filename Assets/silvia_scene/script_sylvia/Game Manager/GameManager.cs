@@ -18,6 +18,11 @@ public class GameManager : MonoBehaviour
             if(firstTime){
                 player.GetComponent<PlayerMovement>().enabled = false;
                 FirstScene(Camera.GetComponent<Camera>());
+
+                if(dialoghiManager.finedialogo == true){
+                    player.GetComponent<PlayerMovement>().enabled = true;
+                }
+
                 /*if(dialoghiManager.finedialogo == true){
                     player.GetComponent<PlayerMovement>().enabled = true;
                 }*/

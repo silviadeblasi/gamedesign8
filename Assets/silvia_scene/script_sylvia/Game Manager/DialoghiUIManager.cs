@@ -12,15 +12,19 @@ public class DialoghiUIManager : MonoBehaviour
        
     }
 
+    private void Update() {
+        //Debug.Log(dialogo_fine.fine_dialogo);
+        if(dialogo_fine!=null && dialogo_fine.fine_dialogo == true){
+            finedialogo = true;
+            Debug.Log("fine dialogo");
+        }
+    }
     public void StartDialoghi(string dialogo_name){
         GameObject dialogo = FindDialoghi(dialoghi, dialogo_name);
 
         if(dialogo != null){
             CloneDialogueBox = (GameObject)GameObject.Instantiate(dialogo, transform.position, Quaternion.identity);
-            /*dialogo_fine = ((CloneDialogueBox.transform.Find("Canvas Dialogue")?.gameObject).transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>();
-            if(dialogo_fine.fine_dialogo == true){
-                finedialogo = true;
-            }*/
+            dialogo_fine = (dialogo.transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>();
         }
         else{
             Debug.LogWarning("Dialogo non trovato: " + dialogo_name);
@@ -29,9 +33,6 @@ public class DialoghiUIManager : MonoBehaviour
 
     }
 
-    /*public void StartDialoghi(){
-        //CloneDialogueBox = (GameObject)GameObject.Instantiate(dialoghi, transform.position, Quaternion.identity);
-    }*/
     // mi fa comparire il dialogo in base al nome 
     private GameObject FindDialoghi(GameObject[] dialpoghi, string dialogo_name){
         foreach (GameObject dialogo in dialoghi)
