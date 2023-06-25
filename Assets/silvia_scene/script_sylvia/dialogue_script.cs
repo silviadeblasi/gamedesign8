@@ -73,6 +73,7 @@ public class dialogue_script : MonoBehaviour
                 audioSource.Stop();
             }
             audioSource.PlayOneShot(_soundeffect);
+            audioSource.volume = 0.3f;
         }
 
     }

@@ -4,39 +4,49 @@ using UnityEngine;
 
 public class openable : MonoBehaviour
 {
-    private Animator anim;
-    public GameObject comunicazione_comandi;
-    private GameObject comunicazione_comandi_clone;
+    public GameObject[] comunicazione_comandi;
+    public GameObject[] oggetti_da_attivare;
+    public GameObject[] oggetti_da_disattivare;
+    public SoundManager soundManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
-        comunicazione_comandi_clone = (GameObject)GameObject.Instantiate(comunicazione_comandi, transform.position, Quaternion.identity);
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    
     }
+    //in questo on trigger stay metto tutti i layer con cui voglio interagire, nel senso di aprire o fare azioni
+    //per interagire nel senso di aprire canvas --> usare interactable_object.cs
+   private void OnTriggerStay2D(Collider2D other) {
+        
+        if(other.gameObject.layer == 11){
+            GameObject oggetto = FindOggetti(oggetti_da_attivare, "baule_aperto");
+            GameObject oggetto2 = FindOggetti(oggetti_da_disattivare, "baule_chiuso");
+            GameObject comandi = FindOggetti(comunicazione_comandi, "Interazione");
+            if(Input.GetKeyDown(KeyCode.X)){
+                soundManager.PlaySoundEffect("InterazioneOggetto", 0.5f);
+                oggetto.SetActive(true);
+                oggetto2.SetActive(false);
+                comandi.SetActive(false);
+              }
+        }
+   }
 
-    public void Open()
-    {
-        Debug.Log("sono dentro open");
-        anim.SetBool("open", true);
-        StartCoroutine(openCo());
-        Destroy(comunicazione_comandi_clone, 0.5f);
-        
-        
-    }
 
-    IEnumerator openCo()
-    {
-        //in questo caso il baule non deve scomparire ma deve rimanere aperto per sempre
-        // piuttosto deve partire animazione della mappa che sale 
-        //e il dialogue box che ti informa che hai trovato la mappa e puoi aprirla premendo M
-        yield return new WaitForSeconds(.3f);
-        //this.gameObject.SetActive(false);
+    private GameObject FindOggetti(GameObject[] oggetti, string oggetto_name){
+        foreach (GameObject oggetto in oggetti)
+        {
+            if(oggetto.name == oggetto_name){
+                return oggetto;
+            }
+        }
+        return null;
     }
+   
 }

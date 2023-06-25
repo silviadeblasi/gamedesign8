@@ -228,12 +228,12 @@ MonoBehaviour:
   textComponent: {fileID: 987438680729027729}
   lines:
   - 'And now what do these assholes want? '
-  - 'It''s time to start the fight '
+  - I have to hurry!
   - But first I must replenish my supplies
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0
-  _soundeffect: {fileID: 0}
+  _soundeffect: {fileID: 8300000, guid: aeb709987cb06a0438f81054e5b49c73, type: 3}
   stopAudioSource: 0
   frequencyLevel: 2
 --- !u!1 &987438681667126822

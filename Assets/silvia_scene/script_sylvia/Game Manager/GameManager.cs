@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     public SoundManager soundManager;
     public DialoghiUIManager dialoghiManager;
     public GameObject Camera;
-    private bool finedialogo = false;
     private bool fine_scenapostprologo = true;
     private bool commandnotshow = false;
     
@@ -21,16 +20,13 @@ public class GameManager : MonoBehaviour
         if( current_scene.ToString() == "Stanza_sue"){
 
             if(firstTime){
+                soundManager.PlayBackgroundMusic("Casa2", 0.7f);
                 player.GetComponent<PlayerMovement>().enabled = false;
                 dialoghiManager.StartDialoghi("scena_postprologo");
                 Debug.Log("Stanza_sue");
                 firstTime = false;
                 //dialoghiManager.StartUI("wasd"); 
             }
-
-            
-            finedialogo = dialoghiManager.FineDialogo("scena_postprologo");
-            finedialogo = dialoghiManager.FineDialogo("scena 1");
             
             if(dialoghiManager.FineDialogo("scena_postprologo") == true){
                 player.GetComponent<PlayerMovement>().enabled = true;
@@ -70,8 +66,8 @@ public class GameManager : MonoBehaviour
         
         Camera.GetComponent<camera_movement>().enabled = false;
         Camera.GetComponent<CameraShake>().enabled = true;
-        soundManager.PlaySoundEffect("Urla");
-        soundManager.PlaySoundEffect("Rottura_vetro");
+        soundManager.PlaySoundEffect("Urla", 0.3f);
+        soundManager.PlaySoundEffect("Rottura_vetro", 0.4f);
         
     }
 

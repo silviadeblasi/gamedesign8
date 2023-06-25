@@ -21,19 +21,22 @@ public class SoundManager : MonoBehaviour
         backgroundMusicSource.playOnAwake = false;
     }
 
-    public void PlaySoundEffect(string soundName)
+    public void PlaySoundEffect(string soundName, float volume)
     {
         // Trova il clip audio corrispondente al nome passato come parametro
         AudioClip clip = FindClip(soundEffects, soundName);
 
         // Riproduci il suono se il clip è stato trovato
-        if (clip != null)
+        if (clip != null){
             soundEffectSource.PlayOneShot(clip);
-        else
+            soundEffectSource.volume = volume;
+        }
+        else{
             Debug.LogWarning("Sound effect not found: " + soundName);
+        }
     }
 
-    public void PlayBackgroundMusic(string musicName)
+    public void PlayBackgroundMusic(string musicName, float volume)
     {
         // Trova il clip audio corrispondente al nome passato come parametro
         AudioClip clip = FindClip(backgroundMusic, musicName);
@@ -64,4 +67,5 @@ public class SoundManager : MonoBehaviour
 
         return null; // Ritorna null se il clip non viene trovato
     }
+
 }

@@ -228,11 +228,11 @@ MonoBehaviour:
   textComponent: {fileID: 987438680729027729}
   lines:
   - ...
-  - Time to get ready e kill all those bastards
+  - It's time to kill all those bastards!
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0
-  _soundeffect: {fileID: 8300000, guid: fda2814095e4f4db0aec783928a57ecd, type: 3}
+  _soundeffect: {fileID: 8300000, guid: aeb709987cb06a0438f81054e5b49c73, type: 3}
   stopAudioSource: 0
   frequencyLevel: 2
 --- !u!1 &987438681667126822

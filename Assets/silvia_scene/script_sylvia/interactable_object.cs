@@ -34,26 +34,10 @@ public class interactable_object : MonoBehaviour
                     dialogueBoxClone2 = (GameObject)GameObject.Instantiate(Canvas_perchiusura, transform.position, Quaternion.identity);
                     Destroy(dialogueBoxClone2, 3f);
                 }
-            }  
-
-        if(other.gameObject.layer == 11) //baule
-        {
-            Debug.Log("sono dentro interactable object");
-            if(Input.GetKeyDown(KeyCode.X))
-            
-                //il canvas c'è appena inzio il gioco e non appena entro nel trigger
-                other.GetComponent<openable>().Open();
+            } 
         }
-           /* if(Input.GetKeyDown(KeyCode.Z)){
-                Destroy(dialogueBoxClone, 0.5f);
-                player.GetComponent<PlayerMovement>().enabled = true;
-            }*/
-        }
-       
-    }
-
     
-
+    }
 
     // Update is called once per frame
     void Update()
