@@ -6,9 +6,11 @@ public class DialoghiUIManager : MonoBehaviour
     public GameObject[] dialoghi; //solo dialoghi (capire ancora se devo aggiungere un altra categoria per NPC e player)
     private dialogue_script dialogo_fine; //dialogo fine scena
     public GameObject[] UI; //ad esempio tutorial o altro che deve essere comunicato interente al gioco 
+    private UI_script ui_fine; //ui fine scena
     private GameObject CloneDialogueBox; //clona il dialogo per poterlo usare in altre scene(non devo inserire il dialogo nella scena ma mi clona il riferimento nei prefab)
     private GameObject CloneUI; //clona il dialogo per poterlo usare in altre scene(non devo inserire il dialogo nella scena ma mi clona il riferimento nei prefab)
     public bool finedialogo = false; // variabile che uso nel game manager per capire se il dialogo è finito
+    public bool fineUI = false; // variabile che uso nel game manager per capire se il dialogo è finito
     private bool dialogo_iniziato = false;
     private void Awake() {
        
@@ -27,7 +29,6 @@ public class DialoghiUIManager : MonoBehaviour
         if(dialogo != null){
             dialogo_iniziato = true;
             CloneDialogueBox = (GameObject)GameObject.Instantiate(dialogo, transform.position, Quaternion.identity);
-            dialogo_fine = (dialogo.transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>();
             dialogo_fine = (CloneDialogueBox.transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>(); //trovo lo script che gestisce il dialogo
         }
         else{
@@ -62,9 +63,11 @@ public class DialoghiUIManager : MonoBehaviour
     }
 
     public void StartUI(string UI_name){
-        GameObject ui = FindUI(UI, "tutorial");
+        GameObject ui = FindUI(UI, UI_name);
         if(ui != null){
             GameObject CloneUI = (GameObject)GameObject.Instantiate(ui, transform.position, Quaternion.identity);
+            ui_fine = (CloneUI.transform.Find("Panel")?.gameObject).GetComponent<UI_script>();
+
         }
         else{
             Debug.LogWarning("UI non trovato: " + ui);
@@ -79,5 +82,13 @@ public class DialoghiUIManager : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public bool FineUI(string UI_name){
+        GameObject ui = FindUI(UI, UI_name);
+        if(ui_fine.fine_ui == true){
+            return fineUI = true;
+        }
+        return fineUI = false;
     }
 }

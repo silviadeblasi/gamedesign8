@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public DialoghiUIManager dialoghiManager;
     public GameObject Camera;
     private bool finedialogo = false;
-    private bool fine_scenapostoprologo = false;
+    private bool fine_scenapostprologo = false;
     
     private void Update() {
 
@@ -21,24 +21,26 @@ public class GameManager : MonoBehaviour
 
             if(firstTime){
                 player.GetComponent<PlayerMovement>().enabled = false;
-                dialoghiManager.StartDialoghi("scena_postoprologo");
+                dialoghiManager.StartDialoghi("scena_postprologo");
                 Debug.Log("Stanza_sue");
                 firstTime = false;
             }
 
             
-            finedialogo = dialoghiManager.FineDialogo("scena_postoprologo");
+            finedialogo = dialoghiManager.FineDialogo("scena_postprologo");
             finedialogo = dialoghiManager.FineDialogo("scena 1");
             
             if(finedialogo == true){
                 player.GetComponent<PlayerMovement>().enabled = true;
-                fine_scenapostoprologo = true;
+                fine_scenapostprologo = true;
+                finedialogo = false;
             }
 
-            if(fine_scenapostoprologo == true){
+            if(fine_scenapostprologo == true){
                 soundManager.PlayBackgroundMusic("Casa");
                 dialoghiManager.StartUI("wasd");
-                //StartCoroutine(FirstScene(Camera.GetComponent<Camera>()));
+                if(dialoghiManager.FineUI("wasd") == true)
+                    StartCoroutine(FirstScene(Camera.GetComponent<Camera>()));
             }
         }
 

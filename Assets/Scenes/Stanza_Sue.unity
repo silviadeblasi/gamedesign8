@@ -2248,9 +2248,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoghi:
   - {fileID: 987438681667126822, guid: becadffc5042247bf885feb2df7e78f4, type: 3}
+  - {fileID: 987438681667126822, guid: feb929fe4d74940db806c6a04d08029c, type: 3}
   UI:
   - {fileID: 4302788510394407191, guid: 5788d9bfaf23a43afa83081b18d1e4b7, type: 3}
   finedialogo: 0
+  fineUI: 0
 --- !u!1 &1821417479
 GameObject:
   m_ObjectHideFlags: 0
