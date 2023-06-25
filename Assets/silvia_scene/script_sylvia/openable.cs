@@ -24,20 +24,27 @@ public class openable : MonoBehaviour
     //in questo on trigger stay metto tutti i layer con cui voglio interagire, nel senso di aprire o fare azioni
     //per interagire nel senso di aprire canvas --> usare interactable_object.cs
    private void OnTriggerStay2D(Collider2D other) {
-        
+       
         if(other.gameObject.layer == 11){
             GameObject oggetto = FindOggetti(oggetti_da_attivare, "baule_aperto");
             GameObject oggetto2 = FindOggetti(oggetti_da_disattivare, "baule_chiuso");
             GameObject comandi = FindOggetti(comunicazione_comandi, "Interazione");
+            GameObject comunicazione = FindOggetti(comunicazione_comandi, "comunicazione_machete");
             if(Input.GetKeyDown(KeyCode.X)){
                 soundManager.PlaySoundEffect("InterazioneOggetto", 0.5f);
                 oggetto.SetActive(true);
                 oggetto2.SetActive(false);
                 comandi.SetActive(false);
+                StartCoroutine(comunicazione_ogg_trovato(comunicazione));
               }
         }
    }
-
+    IEnumerator comunicazione_ogg_trovato(GameObject comunicazione){
+        yield return new WaitForSeconds(1f);
+        comunicazione.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        comunicazione.SetActive(false);
+    }
 
     private GameObject FindOggetti(GameObject[] oggetti, string oggetto_name){
         foreach (GameObject oggetto in oggetti)
