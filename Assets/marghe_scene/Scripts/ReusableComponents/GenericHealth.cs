@@ -21,7 +21,7 @@ public class GenericHealth : MonoBehaviour
     {
         if(currentHealth <= 0)
         {
-            myAnim.SetTrigger("death");
+            //myAnim.SetTrigger("death");
         }
     }
 

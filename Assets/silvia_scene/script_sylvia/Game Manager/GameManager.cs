@@ -6,7 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public Scene_Loader.Scene current_scene; //uso direttamente Scene_Loader perche ho gia l'elenco delle scene
     public GameObject player;
-    private bool firstTime = true;
+    private bool firstTime_StanzaSue = true;
+    private bool firstTime_CasaSue = true;
     public SoundManager soundManager;
     public DialoghiUIManager dialoghiManager;
     public GameObject Camera;
@@ -19,12 +20,12 @@ public class GameManager : MonoBehaviour
         
         if( current_scene.ToString() == "Stanza_sue"){
 
-            if(firstTime){
+            if(firstTime_StanzaSue){
                 soundManager.PlayBackgroundMusic("Casa2", 0.7f);
                 player.GetComponent<PlayerMovement>().enabled = false;
                 dialoghiManager.StartDialoghi("scena_postprologo");
                 Debug.Log("Stanza_sue");
-                firstTime = false;
+                firstTime_StanzaSue = false;
                 //dialoghiManager.StartUI("wasd"); 
             }
             
@@ -49,6 +50,9 @@ public class GameManager : MonoBehaviour
         }
 
         if(current_scene.ToString() == "Casa_sue"){
+            if(firstTime_CasaSue){
+
+            }
             Debug.Log("Casa_sue");
             //soundManager.PlayBackgroundMusic("Casa");
         }
