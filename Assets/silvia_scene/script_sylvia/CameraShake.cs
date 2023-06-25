@@ -6,7 +6,7 @@ public class CameraShake : MonoBehaviour
     public Transform cameraTransform; // Riferimento al transform della camera
     public GameObject main_camera; //mi serve per riattivare il codice che segue il player 
     public GameObject target;
-    private float shakeDuration = 5f; // Durata dello shake
+    private float shakeDuration = 3f; // Durata dello shake
     private float shakeMagnitude = 0.3f; // Intensità dello shake
 
     private Vector3 originalPosition; // Posizione originale della camera

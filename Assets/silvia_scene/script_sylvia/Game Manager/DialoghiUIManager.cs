@@ -7,6 +7,7 @@ public class DialoghiUIManager : MonoBehaviour
     private dialogue_script dialogo_fine; //dialogo fine scena
     public GameObject[] UI; //ad esempio tutorial o altro che deve essere comunicato interente al gioco 
     private GameObject CloneDialogueBox; //clona il dialogo per poterlo usare in altre scene(non devo inserire il dialogo nella scena ma mi clona il riferimento nei prefab)
+    private GameObject CloneUI; //clona il dialogo per poterlo usare in altre scene(non devo inserire il dialogo nella scena ma mi clona il riferimento nei prefab)
     public bool finedialogo = false; // variabile che uso nel game manager per capire se il dialogo è finito
     private bool dialogo_iniziato = false;
     private void Awake() {
@@ -58,5 +59,25 @@ public class DialoghiUIManager : MonoBehaviour
             }
         }
         return finedialogo = false;
+    }
+
+    public void StartUI(string UI_name){
+        GameObject ui = FindUI(UI, "tutorial");
+        if(ui != null){
+            GameObject CloneUI = (GameObject)GameObject.Instantiate(ui, transform.position, Quaternion.identity);
+        }
+        else{
+            Debug.LogWarning("UI non trovato: " + ui);
+        }
+    }
+
+    private GameObject FindUI(GameObject[] UI, string UI_name){
+        foreach (GameObject ui in UI)
+        {
+            if(ui.name == UI_name){
+                return ui;
+            }
+        }
+        return null;
     }
 }

@@ -11,23 +11,35 @@ public class GameManager : MonoBehaviour
     public DialoghiUIManager dialoghiManager;
     public GameObject Camera;
     private bool finedialogo = false;
+    private bool fine_scenapostoprologo = false;
     
     private void Update() {
 
+        //primissima scena stanza di sue di sue 
+        
         if( current_scene.ToString() == "Stanza_sue"){
 
-            finedialogo = dialoghiManager.FineDialogo("scena 1");
-            if(finedialogo == true){
-                    player.GetComponent<PlayerMovement>().enabled = true;
-            }
             if(firstTime){
                 player.GetComponent<PlayerMovement>().enabled = false;
-                FirstScene(Camera.GetComponent<Camera>());
-
+                dialoghiManager.StartDialoghi("scena_postoprologo");
                 Debug.Log("Stanza_sue");
                 firstTime = false;
             }
 
+            
+            finedialogo = dialoghiManager.FineDialogo("scena_postoprologo");
+            finedialogo = dialoghiManager.FineDialogo("scena 1");
+            
+            if(finedialogo == true){
+                player.GetComponent<PlayerMovement>().enabled = true;
+                fine_scenapostoprologo = true;
+            }
+
+            if(fine_scenapostoprologo == true){
+                soundManager.PlayBackgroundMusic("Casa");
+                dialoghiManager.StartUI("wasd");
+                //StartCoroutine(FirstScene(Camera.GetComponent<Camera>()));
+            }
         }
 
         if(current_scene.ToString() == "Casa_sue"){
@@ -41,9 +53,11 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    private void FirstScene(Camera main){
+    IEnumerator FirstScene(Camera main){
+        
+        yield return new WaitForSeconds(4f);
         StartCoroutine(FirstSceneCoroutine());
-
+        
         Camera.GetComponent<camera_movement>().enabled = false;
         Camera.GetComponent<CameraShake>().enabled = true;
         soundManager.PlaySoundEffect("Urla");
@@ -52,7 +66,7 @@ public class GameManager : MonoBehaviour
     }
 
     IEnumerator FirstSceneCoroutine() {
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(4f);
         dialoghiManager.StartDialoghi("scena 1");
     }
 }
