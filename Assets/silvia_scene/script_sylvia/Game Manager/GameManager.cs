@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     public DialoghiUIManager dialoghiManager;
     public GameObject Camera;
     private bool finedialogo = false;
-    private bool fine_scenapostprologo = false;
+    private bool fine_scenapostprologo = true;
+    private bool commandnotshow = false;
     
     private void Update() {
 
@@ -24,23 +25,30 @@ public class GameManager : MonoBehaviour
                 dialoghiManager.StartDialoghi("scena_postprologo");
                 Debug.Log("Stanza_sue");
                 firstTime = false;
+                //dialoghiManager.StartUI("wasd"); 
             }
 
             
             finedialogo = dialoghiManager.FineDialogo("scena_postprologo");
             finedialogo = dialoghiManager.FineDialogo("scena 1");
             
-            if(finedialogo == true){
+            if(dialoghiManager.FineDialogo("scena_postprologo") == true){
                 player.GetComponent<PlayerMovement>().enabled = true;
-                fine_scenapostprologo = true;
-                finedialogo = false;
+
+                if(commandnotshow == false){
+                    dialoghiManager.StartUI("wasd");
+                    player.GetComponent<PlayerMovement>().enabled = false;
+                    commandnotshow = true;
+                }
+
+                if(dialoghiManager.FineUI("wasd") == true && fine_scenapostprologo == true){
+                    fine_scenapostprologo = false;
+                    StartCoroutine(FirstScene(Camera.GetComponent<Camera>()));
+                }
             }
 
-            if(fine_scenapostprologo == true){
-                soundManager.PlayBackgroundMusic("Casa");
-                dialoghiManager.StartUI("wasd");
-                if(dialoghiManager.FineUI("wasd") == true)
-                    StartCoroutine(FirstScene(Camera.GetComponent<Camera>()));
+            if(dialoghiManager.FineDialogo("scena 1") == true){
+                player.GetComponent<PlayerMovement>().enabled = true;
             }
         }
 
@@ -71,4 +79,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(4f);
         dialoghiManager.StartDialoghi("scena 1");
     }
+
+    
 }

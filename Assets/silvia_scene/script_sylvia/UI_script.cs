@@ -6,8 +6,8 @@ public class UI_script : MonoBehaviour {
     public bool fine_ui = false;
     private void Update() {
         if(Input.GetKeyDown(KeyCode.E)){
-            Destroy(this.gameObject);
             fine_ui = true;
+            gameObject.SetActive(false);
         }
     }
 }
