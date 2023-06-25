@@ -233,7 +233,7 @@ MonoBehaviour:
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0
-  _soundeffect: {fileID: 8300000, guid: fda2814095e4f4db0aec783928a57ecd, type: 3}
+  _soundeffect: {fileID: 0}
   stopAudioSource: 0
   frequencyLevel: 2
 --- !u!1 &987438681667126822

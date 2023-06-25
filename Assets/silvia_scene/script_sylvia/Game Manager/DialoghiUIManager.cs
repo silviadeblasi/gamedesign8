@@ -12,6 +12,7 @@ public class DialoghiUIManager : MonoBehaviour
     public bool finedialogo = false; // variabile che uso nel game manager per capire se il dialogo è finito
     public bool fineUI = false; // variabile che uso nel game manager per capire se il dialogo è finito
     private bool dialogo_iniziato = false;
+    private bool UI_iniziato = false;
     private void Awake() {
        
     }
@@ -21,6 +22,11 @@ public class DialoghiUIManager : MonoBehaviour
         if(dialogo_fine!=null && dialogo_fine.fine_dialogo == true){
             finedialogo = true;
             Debug.Log("fine dialogo");
+        }
+
+        if(ui_fine!=null && ui_fine.fine_ui == true){
+            fineUI = true;
+            Debug.Log("fine ui");
         }
     }
 
@@ -39,7 +45,7 @@ public class DialoghiUIManager : MonoBehaviour
     }
 
     // mi fa comparire il dialogo in base al nome 
-    private GameObject FindDialoghi(GameObject[] dialpoghi, string dialogo_name){
+    private GameObject FindDialoghi(GameObject[] dialoghi, string dialogo_name){
         foreach (GameObject dialogo in dialoghi)
         {
             if(dialogo.name == dialogo_name){
@@ -65,6 +71,7 @@ public class DialoghiUIManager : MonoBehaviour
     public void StartUI(string UI_name){
         GameObject ui = FindUI(UI, UI_name);
         if(ui != null){
+            UI_iniziato = true;
             GameObject CloneUI = (GameObject)GameObject.Instantiate(ui, transform.position, Quaternion.identity);
             ui_fine = (CloneUI.transform.Find("Panel")?.gameObject).GetComponent<UI_script>();
 
@@ -86,9 +93,10 @@ public class DialoghiUIManager : MonoBehaviour
 
     public bool FineUI(string UI_name){
         GameObject ui = FindUI(UI, UI_name);
-        if(ui_fine.fine_ui == true){
-            return fineUI = true;
-        }
+        if(UI_iniziato)
+            if(ui_fine.fine_ui == true){
+                return fineUI = true;
+            }
         return fineUI = false;
     }
 }
