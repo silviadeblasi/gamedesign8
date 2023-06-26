@@ -8,6 +8,7 @@ public class openable : MonoBehaviour
     public GameObject[] oggetti_da_attivare;
     public GameObject[] oggetti_da_disattivare;
     public SoundManager soundManager;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class openable : MonoBehaviour
     //in questo on trigger stay metto tutti i layer con cui voglio interagire, nel senso di aprire o fare azioni
     //per interagire nel senso di aprire canvas --> usare interactable_object.cs
    private void OnTriggerStay2D(Collider2D other) {
-       
+        //il layer 11 è quello del baule, ogni oggetto ha il suo laure in questo modo posso attivare e disattivare i giusti oggetti e canvas
         if(other.gameObject.layer == 11){
             GameObject oggetto = FindOggetti(oggetti_da_attivare, "baule_aperto");
             GameObject oggetto2 = FindOggetti(oggetti_da_disattivare, "baule_chiuso");
@@ -39,13 +40,18 @@ public class openable : MonoBehaviour
               }
         }
    }
+   //coroutine che utilizzo per far comparire e scomparire il canvas che mi dice che ho trovato l'oggetto
+   //la richiamo per ogni oggetto cambiando la comunicazione
     IEnumerator comunicazione_ogg_trovato(GameObject comunicazione){
         yield return new WaitForSeconds(1f);
+        player.GetComponent<PlayerMovement>().enabled = false;
         comunicazione.SetActive(true);
         yield return new WaitForSeconds(3f);
         comunicazione.SetActive(false);
+        player.GetComponent<PlayerMovement>().enabled = true;
     }
-
+    //funzione che mi permette di trovare un oggetto in un array di oggetti, lo uso per cercare oggetto da disattivare e attivare
+    //e per cercare il canvas da attivare
     private GameObject FindOggetti(GameObject[] oggetti, string oggetto_name){
         foreach (GameObject oggetto in oggetti)
         {
@@ -57,3 +63,4 @@ public class openable : MonoBehaviour
     }
    
 }
+//quello che devo fare è creare un layre e lettarlmente copiare questo codice e magari attivare oggetto trovato nell'inventario 

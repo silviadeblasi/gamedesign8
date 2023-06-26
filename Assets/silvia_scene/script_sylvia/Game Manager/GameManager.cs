@@ -13,7 +13,9 @@ public class GameManager : MonoBehaviour
     public GameObject Camera;
     private bool fine_scenapostprologo = true;
     private bool commandnotshow = false;
-    
+    private void Awake() {
+        DontDestroyOnLoad(this.gameObject);
+    }
     private void Update() {
 
         //primissima scena stanza di sue di sue 
