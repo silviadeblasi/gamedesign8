@@ -13,7 +13,7 @@ public class openable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
         
     }
 
@@ -31,25 +31,32 @@ public class openable : MonoBehaviour
             GameObject oggetto2 = FindOggetti(oggetti_da_disattivare, "baule_chiuso");
             GameObject comandi = FindOggetti(comunicazione_comandi, "Interazione");
             GameObject comunicazione = FindOggetti(comunicazione_comandi, "comunicazione_machete");
+            GameObject comunicazione_utilizzo = FindOggetti(comunicazione_comandi, "machete");
             if(Input.GetKeyDown(KeyCode.X)){
                 soundManager.PlaySoundEffect("InterazioneOggetto", 0.5f);
                 oggetto.SetActive(true);
                 oggetto2.SetActive(false);
                 comandi.SetActive(false);
-                StartCoroutine(comunicazione_ogg_trovato(comunicazione));
+                StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo));
               }
         }
    }
+
    //coroutine che utilizzo per far comparire e scomparire il canvas che mi dice che ho trovato l'oggetto
    //la richiamo per ogni oggetto cambiando la comunicazione
-    IEnumerator comunicazione_ogg_trovato(GameObject comunicazione){
+    IEnumerator comunicazione_ogg_trovato(GameObject comunicazione, GameObject comunicazione_utilizzo){
         yield return new WaitForSeconds(1f);
         player.GetComponent<PlayerMovement>().enabled = false;
         comunicazione.SetActive(true);
         yield return new WaitForSeconds(3f);
         comunicazione.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        comunicazione_utilizzo.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        comunicazione_utilizzo.SetActive(false);
         player.GetComponent<PlayerMovement>().enabled = true;
     }
+    
     //funzione che mi permette di trovare un oggetto in un array di oggetti, lo uso per cercare oggetto da disattivare e attivare
     //e per cercare il canvas da attivare
     private GameObject FindOggetti(GameObject[] oggetti, string oggetto_name){
@@ -63,4 +70,5 @@ public class openable : MonoBehaviour
     }
    
 }
+
 //quello che devo fare è creare un layre e lettarlmente copiare questo codice e magari attivare oggetto trovato nell'inventario 
