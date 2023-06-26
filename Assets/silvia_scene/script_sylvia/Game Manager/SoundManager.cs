@@ -80,14 +80,10 @@ public class SoundManager : MonoBehaviour
     }
 
 
-    public void UpdateMusicValue()
+    public void UpdateMixerValue()
     {
-       
-    }
-
-    public void UpdateSfxValue()
-    {
-
+        backgroundMixerGroup.audioMixer.SetFloat("Music Value", SoundOptionManager.backgroundMusicVolume);
+        soundEffectsMixerGroup.audioMixer.SetFloat("Music Value", SoundOptionManager.sfxVolume);
     }
 
 }
