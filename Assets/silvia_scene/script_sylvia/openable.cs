@@ -40,8 +40,22 @@ public class openable : MonoBehaviour
                 StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo));
               }
         }
+   
+        if(other.gameObject.layer == 14){
+            GameObject oggetto = FindOggetti(oggetti_da_attivare, "mattonella_da_attivare");
+            GameObject oggetto2 = FindOggetti(oggetti_da_disattivare, "mattonella_da_disattivare");
+            GameObject comandi = FindOggetti(comunicazione_comandi, "Interazione");
+            //GameObject comunicazione = FindOggetti(comunicazione_comandi, "comunicazione_porta");
+            //GameObject comunicazione_utilizzo = FindOggetti(comunicazione_comandi, "porta");
+            if(Input.GetKeyDown(KeyCode.X)){
+                soundManager.PlaySoundEffect("InterazioneOggetto", 0.5f);
+                oggetto.SetActive(true);
+                oggetto2.SetActive(false);
+                comandi.SetActive(false);
+                //StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo));
+              }
+        }
    }
-
    //coroutine che utilizzo per far comparire e scomparire il canvas che mi dice che ho trovato l'oggetto
    //la richiamo per ogni oggetto cambiando la comunicazione
     IEnumerator comunicazione_ogg_trovato(GameObject comunicazione, GameObject comunicazione_utilizzo){
