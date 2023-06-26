@@ -46,7 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   current_scene: 0
+  player: {fileID: 0}
   soundManager: {fileID: 0}
+  dialoghiManager: {fileID: 0}
+  Camera: {fileID: 0}
 --- !u!114 &6273590329130541159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,5 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2314c89c3dc44060af4b256785559af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundMixerGroup: {fileID: 8186537914470028131, guid: cd00f80ccaa3b6c42b1eac5731820d68, type: 2}
+  soundEffectsMixerGroup: {fileID: -1129345424946631625, guid: cd00f80ccaa3b6c42b1eac5731820d68, type: 2}
   soundEffects: []
   backgroundMusic: []

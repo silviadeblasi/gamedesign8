@@ -1,7 +1,11 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
+    [SerializeField] private AudioMixerGroup backgroundMixerGroup;
+    [SerializeField] private AudioMixerGroup soundEffectsMixerGroup;
+
     public AudioClip[] soundEffects; // Array di clip audio degli effetti sonori
     public AudioClip[] backgroundMusic; // Array di clip audio della musica di sottofondo
 
@@ -10,15 +14,22 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
+
         // Crea e inizializza la sorgente audio per gli effetti sonori
         soundEffectSource = gameObject.AddComponent<AudioSource>();
         soundEffectSource.playOnAwake = false;
         soundEffectSource.loop = true;
 
+        //aggiungo l audio source all audio mixer per poter controllare il volume 
+        soundEffectSource.outputAudioMixerGroup = soundEffectsMixerGroup;
+
         // Crea e inizializza la sorgente audio per la musica di sottofondo
         backgroundMusicSource = gameObject.AddComponent<AudioSource>();
         backgroundMusicSource.loop = true;
         backgroundMusicSource.playOnAwake = false;
+
+        //aggiungo l audio source all audio mixer per poter controllare il volume 
+        backgroundMusicSource.outputAudioMixerGroup = backgroundMixerGroup;
     }
 
     public void PlaySoundEffect(string soundName, float volume)
@@ -66,6 +77,17 @@ public class SoundManager : MonoBehaviour
         }
 
         return null; // Ritorna null se il clip non viene trovato
+    }
+
+
+    public void UpdateMusicValue()
+    {
+       
+    }
+
+    public void UpdateSfxValue()
+    {
+
     }
 
 }
