@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager instance;
     public Scene_Loader.Scene current_scene; //uso direttamente Scene_Loader perche ho gia l'elenco delle scene
     public GameObject player;
     private bool firstTime_StanzaSue = true;
@@ -14,7 +15,13 @@ public class GameManager : MonoBehaviour
     private bool fine_scenapostprologo = true;
     private bool commandnotshow = false;
     private void Awake() {
-        DontDestroyOnLoad(this.gameObject);
+        if(instance == null){
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else{
+            Destroy(gameObject);
+        }
     }
     private void Update() {
 

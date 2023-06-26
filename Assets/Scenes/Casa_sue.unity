@@ -222,6 +222,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7047672862900148588, guid: d30748da4a8fa46a48e774be3a833987, type: 3}
   m_PrefabInstance: {fileID: 1639710301}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &270816861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7058340390840657619, guid: 0763ee0ccd44442858642c4d87563794, type: 3}
+  m_PrefabInstance: {fileID: 504923561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &394615969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,6 +1713,18 @@ PrefabInstance:
     - target: {fileID: 1553234212947570961, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: Camera
+      value: 
+      objectReference: {fileID: 270816861}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1326229160}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: current_scene
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
