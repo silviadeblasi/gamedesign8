@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 239915380}
   - component: {fileID: 239915379}
   m_Layer: 14
-  m_Name: stone_N
+  m_Name: mattonella_da_disattivare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 596207082}
   - component: {fileID: 596207081}
   m_Layer: 0
-  m_Name: stoneTile_N
+  m_Name: mattonella_da_attivare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -40,7 +40,7 @@ public class openable : MonoBehaviour
                 StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo));
               }
         }
-   
+        //casa del cairo oggetto
         if(other.gameObject.layer == 14){
             GameObject oggetto = FindOggetti(oggetti_da_attivare, "mattonella_da_attivare");
             GameObject oggetto2 = FindOggetti(oggetti_da_disattivare, "mattonella_da_disattivare");
@@ -48,7 +48,7 @@ public class openable : MonoBehaviour
             //GameObject comunicazione = FindOggetti(comunicazione_comandi, "comunicazione_porta");
             //GameObject comunicazione_utilizzo = FindOggetti(comunicazione_comandi, "porta");
             if(Input.GetKeyDown(KeyCode.X)){
-                soundManager.PlaySoundEffect("InterazioneOggetto", 0.5f);
+                //soundManager.PlaySoundEffect("InterazioneOggetto", 0.5f);
                 oggetto.SetActive(true);
                 oggetto2.SetActive(false);
                 comandi.SetActive(false);
