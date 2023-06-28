@@ -71,6 +71,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9a8e5b60d270c0c45aa0549618c45a56, type: 3}
   backgroundMusic:
   - {fileID: 8300000, guid: e317edef94af7684e81619674915469c, type: 3}
+  - {fileID: 8300000, guid: 674b1d360fcad49c39546d4ea51ed55d, type: 3}
 --- !u!114 &2223010519362696031
 MonoBehaviour:
   m_ObjectHideFlags: 0
