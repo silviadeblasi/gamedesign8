@@ -820,7 +820,7 @@ MonoBehaviour:
   inventoryPanel: {fileID: 2095293794}
   descriptionText: {fileID: 1913534181}
   useButton: {fileID: 1709527984}
-  player: {fileID: 0}
+  player: {fileID: 131299055}
   currentItem: {fileID: 0}
 --- !u!114 &109812534
 MonoBehaviour:
@@ -7056,6 +7056,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3747286361303236686, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 776408777}
+    - target: {fileID: 4613773642290738341, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: myAnim
+      value: 
+      objectReference: {fileID: 348793674}
+    - target: {fileID: 4613773642290738341, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: canvasToDisappear
+      value: 
+      objectReference: {fileID: 1112844918}
+    - target: {fileID: 8140712728902351443, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: Inventory_prefab
+      value: 
+      objectReference: {fileID: 6113204482811993927, guid: ca144dd0711afb84f8c215fde3fd6e79, type: 3}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7106,6 +7122,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+--- !u!95 &348793674 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8140712728902351446, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+  m_PrefabInstance: {fileID: 348793673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &349951779
 GameObject:
   m_ObjectHideFlags: 0
@@ -8272,6 +8293,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73c9692354d6b4a8e8ad9d3396ef0b6b, type: 3}
+--- !u!1 &776408777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7331201167755124394, guid: 73c9692354d6b4a8e8ad9d3396ef0b6b, type: 3}
+  m_PrefabInstance: {fileID: 776408776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &831629821
 GameObject:
   m_ObjectHideFlags: 0
