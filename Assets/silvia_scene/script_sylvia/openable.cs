@@ -49,6 +49,21 @@ public class openable : MonoBehaviour
                 //StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo,index));
               }
         }
+
+        //casa_sue : pendant vicino cadavere
+        if( other.gameObject.layer == 16){
+
+        }
+
+        //casa_sue : lettera sfratto
+        if( other.gameObject.layer == 17){
+
+        }
+
+        //casa_sue : mappa
+        if( other.gameObject.layer == 18){
+
+        }
    }
    //coroutine che utilizzo per far comparire e scomparire il canvas che mi dice che ho trovato l'oggetto
    //la richiamo per ogni oggetto cambiando la comunicazione

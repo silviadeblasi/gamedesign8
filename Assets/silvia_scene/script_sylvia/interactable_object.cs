@@ -7,11 +7,15 @@ public class interactable_object : MonoBehaviour
     [SerializeField] private GameObject Canvas_tomba;
     [SerializeField] private GameObject Canvas_perchiusura; //per ricordare all'utente che premendo Z chiude il canvas
 
-    private GameObject dialogueBoxClone;
-    private GameObject dialogueBoxClone2; //per ricordare all'utente che premendo Z chiude il canvas
+    //private GameObject dialogueBoxClone;
+    //private GameObject dialogueBoxClone2; //per ricordare all'utente che premendo Z chiude il canvas
     public GameObject player; 
+    public GameObject[] canvas_trama;
+    public GameObject Canvas_per_chiusura;
+    public SoundManager soundManager;
+    public bool[] flag_interacted;
     private Animator animator;
-    private bool canvas_already_spawned = false;
+    //private bool canvas_already_spawned = false;
     //attenzione è ontrigger se voglio chiudere il cavas devo usare ontriggerexit/stay e non oncollisionexit/stay
     //blocca il player
     void Start(){
@@ -21,31 +25,82 @@ public class interactable_object : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other) {
 
         if(other.gameObject.layer == 8){ //creo un layer per la visione dei canvas relativi a questo script (layer 8)
+            GameObject canvas_tomba = FindOggetti(canvas_trama, "Canvas_tomba");
+
             if(Input.GetKeyDown(KeyCode.X)){
-                if (canvas_already_spawned == false)
-                {
-                   dialogueBoxClone = (GameObject)GameObject.Instantiate(Canvas_tomba, transform.position, Quaternion.identity);
-                   player.GetComponent<PlayerMovement>().enabled = false;
-                    animator.SetBool("moving", false);
-                    canvas_already_spawned = true;
-                }
-                if (canvas_already_spawned == true)
-                {
-                    dialogueBoxClone2 = (GameObject)GameObject.Instantiate(Canvas_perchiusura, transform.position, Quaternion.identity);
-                    Destroy(dialogueBoxClone2, 3f);
-                }
-            } 
+                canvas_tomba.SetActive(true);
+                Canvas_per_chiusura.SetActive(true);
+                player.GetComponent<PlayerMovement>().enabled = false;
+                animator.SetBool("moving", false);
+            }
+            if(Input.GetKeyDown(KeyCode.Z)){
+                canvas_tomba.SetActive(false);
+                Canvas_per_chiusura.SetActive(false);
+                player.GetComponent<PlayerMovement>().enabled = true;
+                animator.SetBool("moving", true);
+            }
+        }
+
+        if(other.gameObject.layer == 16){ //casa sue : pendant madre vicino cadaver
+            GameObject canvas = FindOggetti(canvas_trama, "Canvas_pendant_madre");
+
+            if(Input.GetKeyDown(KeyCode.X)){
+                canvas.SetActive(true);
+                Canvas_per_chiusura.SetActive(true);
+                player.GetComponent<PlayerMovement>().enabled = false;
+                animator.SetBool("moving", false);
+            }
+            if(Input.GetKeyDown(KeyCode.Z)){
+                canvas.SetActive(false);
+                Canvas_per_chiusura.SetActive(false);
+                player.GetComponent<PlayerMovement>().enabled = true;
+                animator.SetBool("moving", true);
+            }
+        }
+
+        if(other.gameObject.layer == 18){ //casa sue : lettera sfratto vicino scale
+            GameObject canvas = FindOggetti(canvas_trama, "Canvas_lettera_sfratto");
+
+            if(Input.GetKeyDown(KeyCode.X)){
+                canvas.SetActive(true);
+                Canvas_per_chiusura.SetActive(true);
+                player.GetComponent<PlayerMovement>().enabled = false;
+                animator.SetBool("moving", false);
+            }
+            if(Input.GetKeyDown(KeyCode.Z)){
+                canvas.SetActive(false);
+                Canvas_per_chiusura.SetActive(false);
+                player.GetComponent<PlayerMovement>().enabled = true;
+                animator.SetBool("moving", true);
+            }
+        }
+
+        if(other.gameObject.layer == 17){ //casa sue : mappa vicino libreria
+            GameObject canvas = FindOggetti(canvas_trama, "Canvas_mappa");
+
+            if(Input.GetKeyDown(KeyCode.X)){
+                canvas.SetActive(true);
+                Canvas_per_chiusura.SetActive(true);
+                player.GetComponent<PlayerMovement>().enabled = false;
+                animator.SetBool("moving", false);
+            }
+            if(Input.GetKeyDown(KeyCode.Z)){
+                canvas.SetActive(false);
+                Canvas_per_chiusura.SetActive(false);
+                player.GetComponent<PlayerMovement>().enabled = true;
+                animator.SetBool("moving", true);
+            }
         }
     
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Z)){
-                Destroy(dialogueBoxClone, 0.5f);
-                player.GetComponent<PlayerMovement>().enabled = true;
-                canvas_already_spawned = false;
+    private GameObject FindOggetti(GameObject[] oggetti, string oggetto_name){
+        foreach (GameObject oggetto in oggetti)
+        {
+            if(oggetto.name == oggetto_name){
+                return oggetto;
             }
+        }
+        return null;
     }
 }
