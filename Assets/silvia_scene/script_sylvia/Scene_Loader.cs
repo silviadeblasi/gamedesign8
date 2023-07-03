@@ -16,7 +16,8 @@ public enum Scene{
     Casa_sue,
     Stanza_sue,
     Prologue,
-    start_menu
+    start_menu,
+    casa_del_cairo,
 }
 
     private static Action onLoaderCallBack;

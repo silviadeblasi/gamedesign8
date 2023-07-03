@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private static GameManager instance;
+    private static GameManager instance = new GameManager();
     public Scene_Loader.Scene current_scene; //uso direttamente Scene_Loader perche ho gia l'elenco delle scene
     public GameObject player;
     private bool firstTime_StanzaSue = true;
@@ -14,7 +14,17 @@ public class GameManager : MonoBehaviour
     public GameObject Camera;
     private bool fine_scenapostprologo = true;
     private bool commandnotshow = false;
-    private void Awake() {
+
+    /*private GameManager(){
+        //current_scene = Scene_Loader.Scene.start_menu;
+    }
+
+    public static GameManager Instance{
+        get{
+            return instance;
+        }
+    }
+    /*private void Awake() {
         if(instance == null){
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -22,13 +32,13 @@ public class GameManager : MonoBehaviour
         else{
             Destroy(gameObject);
         }
-    }
+    }*/
+
     private void Update() {
 
         //primissima scena stanza di sue di sue 
         
         if( current_scene.ToString() == "Stanza_sue"){
-
             if(firstTime_StanzaSue){
                 soundManager.PlayBackgroundMusic("Casa2", 0.7f);
                 player.GetComponent<PlayerMovement>().enabled = false;
@@ -39,8 +49,9 @@ public class GameManager : MonoBehaviour
             }
             
             if(dialoghiManager.FineDialogo("scena_postprologo") == true){
+                
                 player.GetComponent<PlayerMovement>().enabled = true;
-
+               
                 if(commandnotshow == false){
                     dialoghiManager.StartUI("wasd");
                     player.GetComponent<PlayerMovement>().enabled = false;
@@ -59,8 +70,9 @@ public class GameManager : MonoBehaviour
         }
 
         if(current_scene.ToString() == "Casa_sue"){
+            
             if(firstTime_CasaSue){
-
+                
             }
             Debug.Log("Casa_sue");
             //soundManager.PlayBackgroundMusic("Casa");
@@ -73,10 +85,9 @@ public class GameManager : MonoBehaviour
     }
     
     IEnumerator FirstScene(Camera main){
-        
+
         yield return new WaitForSeconds(4f);
-        StartCoroutine(FirstSceneCoroutine());
-        
+        StartCoroutine(FirstSceneCoroutine());    
         Camera.GetComponent<camera_movement>().enabled = false;
         Camera.GetComponent<CameraShake>().enabled = true;
         soundManager.PlaySoundEffect("Urla", 0.3f);
@@ -86,6 +97,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator FirstSceneCoroutine() {
         yield return new WaitForSeconds(4f);
+        player.GetComponent<PlayerMovement>().enabled = false;
         dialoghiManager.StartDialoghi("scena 1");
     }
 

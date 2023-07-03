@@ -9,13 +9,7 @@ public class openable : MonoBehaviour
     public GameObject[] oggetti_da_disattivare;
     public SoundManager soundManager;
     public GameObject player;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-        
-    }
+    public  bool[] flag_opened;
 
     // Update is called once per frame
     void Update()
@@ -37,7 +31,7 @@ public class openable : MonoBehaviour
                 oggetto.SetActive(true);
                 oggetto2.SetActive(false);
                 comandi.SetActive(false);
-                StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo));
+                StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo, 0));
               }
         }
         //casa del cairo oggetto
@@ -52,13 +46,13 @@ public class openable : MonoBehaviour
                 oggetto.SetActive(true);
                 oggetto2.SetActive(false);
                 comandi.SetActive(false);
-                //StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo));
+                //StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo,index));
               }
         }
    }
    //coroutine che utilizzo per far comparire e scomparire il canvas che mi dice che ho trovato l'oggetto
    //la richiamo per ogni oggetto cambiando la comunicazione
-    IEnumerator comunicazione_ogg_trovato(GameObject comunicazione, GameObject comunicazione_utilizzo){
+    IEnumerator comunicazione_ogg_trovato(GameObject comunicazione, GameObject comunicazione_utilizzo, int index){
         yield return new WaitForSeconds(1f);
         player.GetComponent<PlayerMovement>().enabled = false;
         comunicazione.SetActive(true);
@@ -69,6 +63,7 @@ public class openable : MonoBehaviour
         yield return new WaitForSeconds(3f);
         comunicazione_utilizzo.SetActive(false);
         player.GetComponent<PlayerMovement>().enabled = true;
+        flag_opened[index] = true;
     }
     
     //funzione che mi permette di trovare un oggetto in un array di oggetti, lo uso per cercare oggetto da disattivare e attivare
