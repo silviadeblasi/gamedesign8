@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class reload_player : MonoBehaviour
 {
     //public vector_value last_position; //forse basta solo sapere la poszione dei checkpoint
-    public FloatValue currentHealth;
+    //public FloatValue currentHealth;
+    public HeartManager playerHealth;
     public GameObject gameOverCanvas;
     private GameObject clonedialogue;
     //public GameObject last_scheckpoint;
@@ -21,7 +22,7 @@ public class reload_player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentHealth.RuntimeValue == 0 && isDead == false){
+        if(playerHealth.playerCurrentHealth.RuntimeValue == 0 && isDead == false){
             Debug.Log("morto");
             //clonedialogue = (GameObject)GameObject.Instantiate(gameOverCanvas, transform.position, Quaternion.identity);
             //Destroy(clonedialogue,5f);
@@ -44,7 +45,8 @@ public class reload_player : MonoBehaviour
         yield return new WaitForSeconds(2f);
         //SceneManager.LoadScene(checkpoint_position.Scenename);
         player.transform.position = checkpoint_position.initialValue;
-        currentHealth.RuntimeValue = 6;
+        playerHealth.playerCurrentHealth.RuntimeValue = 6;
+        playerHealth.UpdateHearts();
         
     }
 }

@@ -35,14 +35,9 @@ public class scene_transition : MonoBehaviour
         
         //ingresso stanza
         if(other.CompareTag("Player") && !other.isTrigger && trigger.gameObject.layer == 12){
-            if(opened.flag_opened[0] == true){
-                Scene_Loader.Load(Scene_Loader.Scene.Stanza_sue);
-                player_storage.initialValue = player_position;
-            }else{
-                Debug.Log("Devi aprire il baule");
-                interazione_non_completa.SetActive(true);
-                StartCoroutine(interazione_non_completata(interazione_non_completa));
-            }
+            
+            Scene_Loader.Load(Scene_Loader.Scene.Stanza_sue);
+            player_storage.initialValue = player_position;
             
         }
 
