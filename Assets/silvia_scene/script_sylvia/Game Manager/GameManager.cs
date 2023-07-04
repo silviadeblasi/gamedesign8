@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject Camera;
     private bool fine_scenapostprologo = true;
     private bool commandnotshow = false;
+    public interactable_object canvas_trama;
 
     /*private GameManager(){
         //current_scene = Scene_Loader.Scene.start_menu;
@@ -71,11 +72,11 @@ public class GameManager : MonoBehaviour
 
         if(current_scene.ToString() == "Casa_sue"){
             
-            if(firstTime_CasaSue){
-                
+            soundManager.PlayBackgroundMusic("Casa2", 0.7f);
+            if (canvas_trama.pendant_trovato == true){
+                dialoghiManager.StartDialoghi("pendant_dialogue");
             }
-            Debug.Log("Casa_sue");
-            //soundManager.PlayBackgroundMusic("Casa");
+            
         }
 
         if(current_scene.ToString() == "Esterno_lev1"){

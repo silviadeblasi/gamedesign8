@@ -13,8 +13,10 @@ public class interactable_object : MonoBehaviour
     public GameObject[] canvas_trama;
     public GameObject Canvas_per_chiusura;
     public SoundManager soundManager;
-    public bool[] flag_interacted;
     private Animator animator;
+    public bool pendant_trovato = false;
+    public bool lettera_sfratto_trovata = false;
+    public bool mappa_trovata = false;  
     //private bool canvas_already_spawned = false;
     //attenzione è ontrigger se voglio chiudere il cavas devo usare ontriggerexit/stay e non oncollisionexit/stay
     //blocca il player
@@ -41,10 +43,12 @@ public class interactable_object : MonoBehaviour
             }
         }
 
-        if(other.gameObject.layer == 16){ //casa sue : pendant madre vicino cadaver
+        //casa sue : pendant madre vicino cadavere
+        if(other.gameObject.layer == 16){ 
             GameObject canvas = FindOggetti(canvas_trama, "Canvas_pendant_madre");
 
             if(Input.GetKeyDown(KeyCode.X)){
+                soundManager.PlaySoundEffect("Amuleto", 0.5f);
                 canvas.SetActive(true);
                 Canvas_per_chiusura.SetActive(true);
                 player.GetComponent<PlayerMovement>().enabled = false;
@@ -55,13 +59,16 @@ public class interactable_object : MonoBehaviour
                 Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
                 animator.SetBool("moving", true);
+                pendant_trovato = true;
             }
         }
 
-        if(other.gameObject.layer == 18){ //casa sue : lettera sfratto vicino scale
+        //casa sue : lettera sfratto vicino scale
+        if(other.gameObject.layer == 18){ 
             GameObject canvas = FindOggetti(canvas_trama, "Canvas_lettera_sfratto");
 
             if(Input.GetKeyDown(KeyCode.X)){
+                soundManager.PlaySoundEffect("CartaOggetto", 0.5f);
                 canvas.SetActive(true);
                 Canvas_per_chiusura.SetActive(true);
                 player.GetComponent<PlayerMovement>().enabled = false;
@@ -72,13 +79,16 @@ public class interactable_object : MonoBehaviour
                 Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
                 animator.SetBool("moving", true);
+                lettera_sfratto_trovata = true;
             }
         }
 
-        if(other.gameObject.layer == 17){ //casa sue : mappa vicino libreria
+        //casa sue : mappa vicino libreria
+        if(other.gameObject.layer == 17){ 
             GameObject canvas = FindOggetti(canvas_trama, "Canvas_mappa");
 
             if(Input.GetKeyDown(KeyCode.X)){
+                soundManager.PlaySoundEffect("AperturaMappa", 0.5f);
                 canvas.SetActive(true);
                 Canvas_per_chiusura.SetActive(true);
                 player.GetComponent<PlayerMovement>().enabled = false;
@@ -89,6 +99,7 @@ public class interactable_object : MonoBehaviour
                 Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
                 animator.SetBool("moving", true);
+                mappa_trovata = true;
             }
         }
     
@@ -103,4 +114,5 @@ public class interactable_object : MonoBehaviour
         }
         return null;
     }
+
 }

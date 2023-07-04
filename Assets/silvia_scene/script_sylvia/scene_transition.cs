@@ -10,6 +10,7 @@ public class scene_transition : MonoBehaviour
     public GameObject trigger; //questo è il trgger a cui è associato  lo script
     public GameObject interazione_non_completa;
     public openable opened;
+    public interactable_object interactable; //verificare di aver trovato tutti i canvas prima di uscire dalla stanza
     private void OnTriggerEnter2D(Collider2D other) {
 
         //ingresso casa 

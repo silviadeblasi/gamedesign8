@@ -2030,6 +2030,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3561913691899334708, guid: b7ca6996141f24843b97586151a91395, type: 3}
+      propertyPath: m_Name
+      value: Panel
+      objectReference: {fileID: 0}
     - target: {fileID: 6506354019494427550, guid: b7ca6996141f24843b97586151a91395, type: 3}
       propertyPath: m_Camera
       value: 

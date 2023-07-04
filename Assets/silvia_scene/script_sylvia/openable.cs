@@ -9,13 +9,9 @@ public class openable : MonoBehaviour
     public GameObject[] oggetti_da_disattivare;
     public SoundManager soundManager;
     public GameObject player;
-    public  bool[] flag_opened;
+    public bool[] flag_opened;
 
-    // Update is called once per frame
-    void Update()
-    {
     
-    }
     //in questo on trigger stay metto tutti i layer con cui voglio interagire, nel senso di aprire o fare azioni
     //per interagire nel senso di aprire canvas --> usare interactable_object.cs
    private void OnTriggerStay2D(Collider2D other) {
@@ -49,21 +45,6 @@ public class openable : MonoBehaviour
                 //StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo,index));
               }
         }
-
-        //casa_sue : pendant vicino cadavere
-        if( other.gameObject.layer == 16){
-
-        }
-
-        //casa_sue : lettera sfratto
-        if( other.gameObject.layer == 17){
-
-        }
-
-        //casa_sue : mappa
-        if( other.gameObject.layer == 18){
-
-        }
    }
    //coroutine che utilizzo per far comparire e scomparire il canvas che mi dice che ho trovato l'oggetto
    //la richiamo per ogni oggetto cambiando la comunicazione
@@ -94,5 +75,3 @@ public class openable : MonoBehaviour
     }
    
 }
-
-//quello che devo fare è creare un layre e lettarlmente copiare questo codice e magari attivare oggetto trovato nell'inventario 
