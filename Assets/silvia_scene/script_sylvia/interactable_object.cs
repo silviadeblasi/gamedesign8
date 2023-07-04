@@ -46,7 +46,6 @@ public class interactable_object : MonoBehaviour
         //casa sue : pendant madre vicino cadavere
         if(other.gameObject.layer == 16){ 
             GameObject canvas = FindOggetti(canvas_trama, "Canvas_pendant_madre");
-            Debug.Log("layer 16");
             if(Input.GetKeyDown(KeyCode.X)){
                 soundManager.PlaySoundEffect("Amuleto", 0.6f);
                 canvas.SetActive(true);

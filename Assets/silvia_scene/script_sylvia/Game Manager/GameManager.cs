@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private static GameManager instance = new GameManager();
     public Scene_Loader.Scene current_scene; //uso direttamente Scene_Loader perche ho gia l'elenco delle scene
     public GameObject player;
     private bool firstTime_StanzaSue = true;
-    private bool firstTime_CasaSue = true;
-    private bool firstTime_EsternoLev1 = true;
+    //private bool firstTime_EsternoLev1 = true;
     public SoundManager soundManager;
     public DialoghiUIManager dialoghiManager;
     public GameObject Camera;
@@ -18,25 +16,6 @@ public class GameManager : MonoBehaviour
     private bool amuleto = false;
     public interactable_object canvas_trama;
     
-
-    /*private GameManager(){
-        //current_scene = Scene_Loader.Scene.start_menu;
-    }
-
-    public static GameManager Instance{
-        get{
-            return instance;
-        }
-    }
-    /*private void Awake() {
-        if(instance == null){
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else{
-            Destroy(gameObject);
-        }
-    }*/
 
     private void Update() {
 
@@ -74,15 +53,15 @@ public class GameManager : MonoBehaviour
         }
 
         if(current_scene.ToString() == "Casa_sue"){
-            if(firstTime_CasaSue)
-                soundManager.PlayBackgroundMusic("Casa2", 0.7f);
-                if (canvas_trama.pendant_trovato == true){
-                   amuleto = true;
-                }
-                if(amuleto == true){
-                    dialoghiManager.StartDialoghi("pendant_dialogue");
-                    amuleto = false;
-                }
+
+            soundManager.PlayBackgroundMusic("Casa2", 0.7f);
+            soundManager.PlaySoundEffect("Urla", 0.5f);
+            soundManager.PlaySoundEffect("Rottura_vetro", 0.5f);
+            
+            if (canvas_trama.pendant_trovato == true && amuleto == false){
+                dialoghiManager.StartDialoghi("pendant_dialogue");
+                amuleto = true;
+            }
         }
 
         if(current_scene.ToString() == "Esterno_lev1"){
