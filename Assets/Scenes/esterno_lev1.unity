@@ -7155,11 +7155,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.179
+      value: -2.652
       objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.359
+      value: 19.038
       objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17230,6 +17230,7 @@ GameObject:
   - component: {fileID: 1559620778}
   - component: {fileID: 1559620777}
   - component: {fileID: 1559620776}
+  - component: {fileID: 1559620779}
   m_Layer: 0
   m_Name: villager
   m_TagString: Untagged
@@ -17249,9 +17250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 418975fdbe1474d5998aacea6b223609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  maxdistance: 0
-  range: 0
+  speed: 0.5
+  maxdistance: 4
+  range: 0.5
 --- !u!212 &1559620777
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17319,6 +17320,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1559620779
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559620775}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f4f2ded4ecb64199af5639e46c6ddb3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1568616189
 GameObject:
   m_ObjectHideFlags: 0
