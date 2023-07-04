@@ -22,8 +22,15 @@ public class scene_transition : MonoBehaviour
             
         //uscita casa
         if(other.CompareTag("Player") && !other.isTrigger && trigger.gameObject.layer == 10){
-            Scene_Loader.Load(Scene_Loader.Scene.Esterno_lev1);
-            player_storage.initialValue = player_position;
+            if(interactable.pendant_trovato == true && interactable.lettera_sfratto_trovata == true && interactable.mappa_trovata == true){
+                Scene_Loader.Load(Scene_Loader.Scene.Esterno_lev1);
+                player_storage.initialValue = player_position;
+            }
+            else{
+                Debug.Log("Devi trovare tutti gli oggetti");
+                interazione_non_completa.SetActive(true);
+                StartCoroutine(interazione_non_completata(interazione_non_completa));
+            }
         }
         
         //ingresso stanza

@@ -46,15 +46,17 @@ public class interactable_object : MonoBehaviour
         //casa sue : pendant madre vicino cadavere
         if(other.gameObject.layer == 16){ 
             GameObject canvas = FindOggetti(canvas_trama, "Canvas_pendant_madre");
-
+            Debug.Log("layer 16");
             if(Input.GetKeyDown(KeyCode.X)){
-                soundManager.PlaySoundEffect("Amuleto", 0.5f);
+                soundManager.PlaySoundEffect("Amuleto", 0.6f);
                 canvas.SetActive(true);
                 Canvas_per_chiusura.SetActive(true);
                 player.GetComponent<PlayerMovement>().enabled = false;
                 animator.SetBool("moving", false);
             }
+
             if(Input.GetKeyDown(KeyCode.Z)){
+                soundManager.PlaySoundEffect("Amuleto", 0.6f);
                 canvas.SetActive(false);
                 Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
@@ -68,13 +70,15 @@ public class interactable_object : MonoBehaviour
             GameObject canvas = FindOggetti(canvas_trama, "Canvas_lettera_sfratto");
 
             if(Input.GetKeyDown(KeyCode.X)){
-                soundManager.PlaySoundEffect("CartaOggetto", 0.5f);
+                soundManager.PlaySoundEffect("CartaOggetto", 0.6f);
                 canvas.SetActive(true);
                 Canvas_per_chiusura.SetActive(true);
                 player.GetComponent<PlayerMovement>().enabled = false;
                 animator.SetBool("moving", false);
             }
+
             if(Input.GetKeyDown(KeyCode.Z)){
+                soundManager.PlaySoundEffect("CartaOggetto", 0.6f);
                 canvas.SetActive(false);
                 Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
@@ -88,13 +92,14 @@ public class interactable_object : MonoBehaviour
             GameObject canvas = FindOggetti(canvas_trama, "Canvas_mappa");
 
             if(Input.GetKeyDown(KeyCode.X)){
-                soundManager.PlaySoundEffect("AperturaMappa", 0.5f);
+                soundManager.PlaySoundEffect("AperturaMappa", 0.6f);
                 canvas.SetActive(true);
                 Canvas_per_chiusura.SetActive(true);
                 player.GetComponent<PlayerMovement>().enabled = false;
                 animator.SetBool("moving", false);
             }
             if(Input.GetKeyDown(KeyCode.Z)){
+                soundManager.PlaySoundEffect("AperturaMappa", 0.6f);
                 canvas.SetActive(false);
                 Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;

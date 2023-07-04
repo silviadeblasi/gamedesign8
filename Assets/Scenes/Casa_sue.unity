@@ -165,11 +165,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.1656971, y: 0.10523391}
-      - {x: -0.487104, y: -0.1659821}
-      - {x: -0.6540641, y: -0.58808696}
-      - {x: 0.88604033, y: -1.4497135}
-      - {x: 1.591753, y: -0.82877165}
+    - - {x: 1.3739872, y: -0.5217359}
+      - {x: 0.25904655, y: 0.1950208}
+      - {x: -0.24168736, y: -0.15230069}
+      - {x: -0.6909763, y: -0.5389184}
+      - {x: 0.9165393, y: -1.477504}
+      - {x: 1.6209698, y: -0.7481058}
 --- !u!4 &27266773
 Transform:
   m_ObjectHideFlags: 0
@@ -507,11 +508,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.1412618, y: 0.7264744}
-      - {x: 0.18077344, y: -0.17201072}
-      - {x: 0.3365429, y: -0.44117218}
-      - {x: 0.5972172, y: -0.8656085}
-      - {x: 1.5075397, y: 0.016627729}
+    - - {x: 0.8238735, y: 0.53977525}
+      - {x: 0.26404566, y: -0.17601866}
+      - {x: 0.4218766, y: -0.40360194}
+      - {x: 0.9167825, y: -0.5025185}
+      - {x: 1.6382294, y: 0.20332676}
 --- !u!1 &270816861 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7058340390840657619, guid: 0763ee0ccd44442858642c4d87563794, type: 3}
@@ -1503,6 +1504,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140712728902351451, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: m_SleepingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351452, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
@@ -4450,10 +4455,10 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.38673913, y: 0.9999997}
-      - {x: 0.1908865, y: 0.79449797}
-      - {x: 0.34690827, y: 0.18409473}
-      - {x: 1.1719689, y: -0.014527619}
-      - {x: 1.4776797, y: 0.3748452}
+      - {x: 0.06210828, y: 0.55661833}
+      - {x: 0.46869075, y: 0.15490657}
+      - {x: 0.9524913, y: -0.07321364}
+      - {x: 1.5290601, y: 0.27208465}
 --- !u!4 &1753443281
 Transform:
   m_ObjectHideFlags: 0

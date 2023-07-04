@@ -9,12 +9,15 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     private bool firstTime_StanzaSue = true;
     private bool firstTime_CasaSue = true;
+    private bool firstTime_EsternoLev1 = true;
     public SoundManager soundManager;
     public DialoghiUIManager dialoghiManager;
     public GameObject Camera;
     private bool fine_scenapostprologo = true;
     private bool commandnotshow = false;
+    private bool amuleto = false;
     public interactable_object canvas_trama;
+    
 
     /*private GameManager(){
         //current_scene = Scene_Loader.Scene.start_menu;
@@ -71,12 +74,15 @@ public class GameManager : MonoBehaviour
         }
 
         if(current_scene.ToString() == "Casa_sue"){
-            
-            soundManager.PlayBackgroundMusic("Casa2", 0.7f);
-            if (canvas_trama.pendant_trovato == true){
-                dialoghiManager.StartDialoghi("pendant_dialogue");
-            }
-            
+            if(firstTime_CasaSue)
+                soundManager.PlayBackgroundMusic("Casa2", 0.7f);
+                if (canvas_trama.pendant_trovato == true){
+                   amuleto = true;
+                }
+                if(amuleto == true){
+                    dialoghiManager.StartDialoghi("pendant_dialogue");
+                    amuleto = false;
+                }
         }
 
         if(current_scene.ToString() == "Esterno_lev1"){
