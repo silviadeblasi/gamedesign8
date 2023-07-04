@@ -7262,6 +7262,10 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 776408777}
+    - target: {fileID: 3747286361303236686, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: currentHealth_player
+      value: 
+      objectReference: {fileID: 1658499329}
     - target: {fileID: 4613773642290738341, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: myAnim
       value: 
@@ -18603,6 +18607,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1658499329 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4613773642290738341, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+  m_PrefabInstance: {fileID: 348793673}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bfae479a574c341b87c5ccc5bf2f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1664132666
 GameObject:
   m_ObjectHideFlags: 0
