@@ -55,9 +55,7 @@ public class GameManager : MonoBehaviour
         if(current_scene.ToString() == "Casa_sue"){
 
             soundManager.PlayBackgroundMusic("Casa2", 0.7f);
-            soundManager.PlaySoundEffect("Urla", 0.5f);
-            soundManager.PlaySoundEffect("Rottura_vetro", 0.5f);
-            
+
             if (canvas_trama.pendant_trovato == true && amuleto == false){
                 dialoghiManager.StartDialoghi("pendant_dialogue");
                 amuleto = true;
