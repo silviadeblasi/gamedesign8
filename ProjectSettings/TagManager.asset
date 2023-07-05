@@ -17,7 +17,7 @@ TagManager:
   - oggetti_salute
   - interno_casa
   - 'tomba '
-  - 
+  - interactable_npc
   - esterno_casa
   - baule
   - scala_pianosuperiore

@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         }
 
         if(current_scene.ToString() == "Esterno_lev1"){
-            Debug.Log("Esterno_lev1");
+            //Debug.Log("Esterno_lev1");
             //soundManager.PlayBackgroundMusic("Esterno");
         }
     }
