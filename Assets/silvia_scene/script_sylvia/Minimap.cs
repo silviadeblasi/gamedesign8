@@ -34,7 +34,6 @@ public class Minimap : MonoBehaviour
     }
 }*/
 
-
 using UnityEngine;
 
 public class Minimap : MonoBehaviour
