@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BoundedNPC : MonoBehaviour {
-    private Vector3 directionVector;
+    public Vector3 directionVector;
     private Transform myTransform;
     public float speed; 
     private Rigidbody2D myRigidbody;
