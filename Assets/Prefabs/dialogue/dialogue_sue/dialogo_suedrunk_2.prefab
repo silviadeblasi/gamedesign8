@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39, y: -71}
+  m_AnchoredPosition: {x: -176, y: 3}
   m_SizeDelta: {x: 628.7, y: 193.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &987438680729027730
@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '*testo_dialogo'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93601baf2cfe74b5db7c45e8bdef5890, type: 2}
-  m_sharedMaterial: {fileID: -5350969496794257232, guid: 93601baf2cfe74b5db7c45e8bdef5890, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 42515ce8791774669bf47a906e3ad5a8, type: 2}
+  m_sharedMaterial: {fileID: -6546122913188944635, guid: 42515ce8791774669bf47a906e3ad5a8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 78.66
-  m_fontSizeBase: 78.66
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -436.8428, y: -16.719955, z: -332.88422, w: 31.177261}
+  m_margin: {x: -405.24954, y: -7.656487, z: -806.7846, w: -122.90079}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 987438680729027729}
   lines:
-  - What do you know about them?
+  - How do you know about them?
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 987438681667126824}
   - component: {fileID: 987438681667126823}
   m_Layer: 5
-  m_Name: scena 4.1
+  m_Name: dialogo_suedrunk_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

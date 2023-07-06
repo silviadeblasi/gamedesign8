@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 70, y: -89}
+  m_AnchoredPosition: {x: -165, y: -18}
   m_SizeDelta: {x: 628.7, y: 193.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &987438680729027730
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -679.66406, y: -66.874985, z: -544.0492, w: -52.414642}
+  m_margin: {x: -405.24954, y: -7.656487, z: -806.7846, w: -122.90079}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -227,13 +227,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 987438680729027729}
   lines:
-  - 'And now what do these assholes want? '
-  - 'It''s time to start the fight '
-  - But first I must replenish my supplies
+  - Is it your business?
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0
-  _soundeffect: {fileID: 8300000, guid: fda2814095e4f4db0aec783928a57ecd, type: 3}
+  _soundeffect: {fileID: 0}
   stopAudioSource: 0
   frequencyLevel: 2
 --- !u!1 &987438681667126822
@@ -249,7 +247,7 @@ GameObject:
   - component: {fileID: 987438681667126824}
   - component: {fileID: 987438681667126823}
   m_Layer: 5
-  m_Name: scena 3
+  m_Name: dialogo_suedrunk_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
