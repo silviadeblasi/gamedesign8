@@ -7365,6 +7365,21 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 8140712728902351446, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
   m_PrefabInstance: {fileID: 348793673}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &348793688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131299055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f37c9276a97b447297d78f2ab21b640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoghiUIManager: {fileID: 1038702853}
+  player: {fileID: 131299055}
+  veggente: {fileID: 1562058770}
 --- !u!1 &349951779
 GameObject:
   m_ObjectHideFlags: 0
@@ -14040,6 +14055,38 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[2]
+      value: 
+      objectReference: {fileID: 987438681667126822, guid: e667aa4245e2245f29021862c8a992cf, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[3]
+      value: 
+      objectReference: {fileID: 987438681667126822, guid: 9b0e5886943824bf08edf20ee3496be1, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[4]
+      value: 
+      objectReference: {fileID: 987438681667126822, guid: e728a9aa964054aaa9714f204e88f813, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[5]
+      value: 
+      objectReference: {fileID: 5340625349727367952, guid: 4fc49896352b14bf0be85d6ae35a5428, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[6]
+      value: 
+      objectReference: {fileID: 5340625349727367952, guid: 1c3b2b65eff3a411a9b08a9e837d09da, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[7]
+      value: 
+      objectReference: {fileID: 5340625349727367952, guid: 7f3491e73f998459f8b55c457ab03f75, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[8]
+      value: 
+      objectReference: {fileID: 5340625349727367952, guid: 9d58eaef314df4dd583de2e925af1706, type: 3}
     - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: Camera
       value: 
@@ -16993,6 +17040,17 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1038702853 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+  m_PrefabInstance: {fileID: 849490751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e85b3ca587c4676a2cdf2bc60940d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1083521433
 GameObject:
   m_ObjectHideFlags: 0
@@ -18509,6 +18567,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.6337204, y: 0.33313465}
+  m_EdgeRadius: 0
+--- !u!61 &1562058781
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562058770}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.31203508, y: 0.016830444}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0.5}
+    oldSize: {x: 0.8055556, y: 1.1388888}
+    newSize: {x: 0.453125, y: 0.640625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1451273, y: 0.99892807}
   m_EdgeRadius: 0
 --- !u!1 &1568616189
 GameObject:
@@ -28473,6 +28557,10 @@ PrefabInstance:
     - target: {fileID: 1841522888060858219, guid: 43254b74614ad48e0a5d85705d67abf6, type: 3}
       propertyPath: m_Name
       value: NPCveggente
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841522888380112509, guid: 43254b74614ad48e0a5d85705d67abf6, type: 3}
+      propertyPath: m_Layer
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43254b74614ad48e0a5d85705d67abf6, type: 3}

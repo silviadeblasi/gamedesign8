@@ -227,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 987438680729027729}
   lines:
-  - Is it your business?
+  - 'And how do you know?               '
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 987438681667126824}
   - component: {fileID: 987438681667126823}
   m_Layer: 5
-  m_Name: scena 3.1
+  m_Name: dialogo_sueveggente_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

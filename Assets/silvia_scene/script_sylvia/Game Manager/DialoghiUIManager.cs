@@ -63,7 +63,7 @@ public class DialoghiUIManager : MonoBehaviour
             if(dialogo_fine.fine_dialogo == true){
                 Debug.Log(dialogo_fine.fine_dialogo);
                 return finedialogo = true;
-                Destry(CloneDialogueBox);
+                Destroy(CloneDialogueBox);
             }
         }
         return finedialogo = false;
