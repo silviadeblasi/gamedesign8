@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7910072362837052672}
   - component: {fileID: 7910072362837052734}
   - component: {fileID: 7910072362837052673}
+  - component: {fileID: 7910072362837052735}
   - component: {fileID: 5333769025611172988}
-  - component: {fileID: 930706506242544490}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -80,23 +80,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5333769025611172988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7910072362837052675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433fd1656a81e684696128d2b90a1cc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemNumberText: {fileID: 7910072362966721931}
-  itemImage: {fileID: 7910072364003058421}
-  thisItem: {fileID: 0}
-  thisManager: {fileID: 0}
---- !u!114 &930706506242544490
+--- !u!114 &7910072362837052735
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,7 +99,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -152,6 +136,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5333769025611172988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7910072362837052675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433fd1656a81e684696128d2b90a1cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNumberText: {fileID: 7910072362966721931}
+  itemImage: {fileID: 7910072364003058421}
+  thisItem: {fileID: 0}
+  thisManager: {fileID: 0}
 --- !u!1 &7910072362966721933
 GameObject:
   m_ObjectHideFlags: 0
