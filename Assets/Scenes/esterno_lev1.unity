@@ -7278,6 +7278,10 @@ PrefabInstance:
       propertyPath: canvasToDisappear
       value: 
       objectReference: {fileID: 1112844918}
+    - target: {fileID: 5299933362371079722, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e01f01942b24fe040b3021c0ad4ff08f, type: 3}
     - target: {fileID: 8140712728902351443, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: Inventory_prefab
       value: 

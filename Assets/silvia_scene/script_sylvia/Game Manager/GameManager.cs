@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
                 dialoghiManager.StartDialoghi("pendant_dialogue");
                 amuleto = true;
             }
+            dialoghiManager.FineDialogo("pendant_dialogue");
         }
 
         if(current_scene.ToString() == "Esterno_lev1"){
