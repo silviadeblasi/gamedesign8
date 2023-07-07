@@ -22,7 +22,8 @@ public class EnemyHealth : MonoBehaviour
         currentHelath -= damage;
         if(currentHelath <= 0)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false); //non posso distruggerlo
+            
         }
     }
 }

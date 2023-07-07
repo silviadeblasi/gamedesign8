@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour
     private bool commandnotshow = false;
     private bool amuleto = false;
     private bool flag_tomba = false;
+    private bool just_once = true;
     public interactable_object canvas_trama;
-    
+    public GameObject Combattimento;
 
     private void Update() {
 
@@ -71,6 +72,11 @@ public class GameManager : MonoBehaviour
             if(canvas_trama.tomba_madre == true && flag_tomba == false){
                 dialoghiManager.StartDialoghi("tomba_madre");
                 flag_tomba = true;
+            }
+            bool enemies = ((Combattimento.transform.Find("Combattimento (1)")?.gameObject).transform.Find("enemies (1.1)")?.gameObject).activeInHierarchy;
+            if(((Combattimento.transform.Find("Combattimento (1)")?.gameObject).transform.Find("enemies (1.1)")?.gameObject).activeInHierarchy == false && ((Combattimento.transform.Find("Combattimento (1)")?.gameObject).transform.Find("enemies (1.2)")?.gameObject).activeInHierarchy == false && ((Combattimento.transform.Find("Combattimento (1)")?.gameObject).transform.Find("enemies (1.3)")?.gameObject).activeInHierarchy == false && just_once == true){
+                dialoghiManager.StartDialoghi("fine_combattimento_1");
+                just_once = false;
             }
         }
     }
