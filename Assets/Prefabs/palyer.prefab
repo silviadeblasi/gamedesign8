@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 8140712727543292758}
   - component: {fileID: 8140712727543292759}
   - component: {fileID: 8140712727543292757}
+  - component: {fileID: 6072652311600206880}
   m_Layer: 6
   m_Name: upHitbox
   m_TagString: Player
@@ -158,6 +159,20 @@ MonoBehaviour:
   thrust: 2
   knockTime: 0.4
   damage: 1
+--- !u!114 &6072652311600206880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8140712727543292761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ef92cf3c0a9d645998f9481927b4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  otherTag: enemy
 --- !u!1 &8140712727784541970
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +184,7 @@ GameObject:
   - component: {fileID: 8140712727784541971}
   - component: {fileID: 8140712727784541968}
   - component: {fileID: 8140712727784542062}
+  - component: {fileID: 3469932452092705950}
   m_Layer: 6
   m_Name: rightHitbox
   m_TagString: Player
@@ -240,6 +256,20 @@ MonoBehaviour:
   thrust: 2
   knockTime: 0.4
   damage: 1
+--- !u!114 &3469932452092705950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8140712727784541970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ef92cf3c0a9d645998f9481927b4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  otherTag: enemy
 --- !u!1 &8140712728628480714
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +281,7 @@ GameObject:
   - component: {fileID: 8140712728628480715}
   - component: {fileID: 8140712728628480712}
   - component: {fileID: 8140712728628480710}
+  - component: {fileID: 3045839964239461476}
   m_Layer: 6
   m_Name: leftHitbox
   m_TagString: Player
@@ -323,6 +354,20 @@ MonoBehaviour:
   thrust: 2
   knockTime: 0.4
   damage: 1
+--- !u!114 &3045839964239461476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8140712728628480714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ef92cf3c0a9d645998f9481927b4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  otherTag: enemy
 --- !u!1 &8140712728673101084
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +379,7 @@ GameObject:
   - component: {fileID: 8140712728673101085}
   - component: {fileID: 8140712728673101082}
   - component: {fileID: 8140712728673101080}
+  - component: {fileID: 8789923634949164411}
   m_Layer: 6
   m_Name: downHitbox
   m_TagString: Player
@@ -405,6 +451,20 @@ MonoBehaviour:
   thrust: 2
   knockTime: 0.4
   damage: 1
+--- !u!114 &8789923634949164411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8140712728673101084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ef92cf3c0a9d645998f9481927b4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  otherTag: enemy
 --- !u!1 &8140712728902351452
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,6 +897,12 @@ MonoBehaviour:
   Canvas_tomba: {fileID: 8688396363754058710, guid: 5f710492d8e9349e5acd3a23b6beafbe, type: 3}
   Canvas_perchiusura: {fileID: 8688396363754058710, guid: 06a0c8fa49a40471abd75243df69280d, type: 3}
   player: {fileID: 8140712728902351452}
+  canvas_trama: []
+  Canvas_per_chiusura: {fileID: 0}
+  soundManager: {fileID: 0}
+  pendant_trovato: 0
+  lettera_sfratto_trovata: 0
+  mappa_trovata: 0
 --- !u!114 &3747286361303236666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,7 +928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4b575b91b84e495380a778473dd174d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: {fileID: 11400000, guid: 7b7307a9eb5a8704ebb14664ea18550e, type: 2}
+  currentHealth_player: {fileID: 0}
+  playerHealth: {fileID: 0}
   gameOverCanvas: {fileID: 0}
   checkpoint_position: {fileID: 11400000, guid: 499661c1861d04ba59a8437533a12752, type: 2}
   player: {fileID: 8140712728902351452}
@@ -889,3 +956,4 @@ MonoBehaviour:
   - {fileID: 0}
   soundManager: {fileID: 0}
   player: {fileID: 8140712728902351452}
+  flag_opened: 
