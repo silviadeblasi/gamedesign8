@@ -7272,8 +7272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e25faca0990ef0941ba7f5168c56de6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: {fileID: 11400000, guid: 537807f433b959d40b1c97fbc59ec4ca, type: 2}
-  health: 0
+  currentHelath: 2
+  maxHealth: 4
 --- !u!1001 &348793673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7397,7 +7397,11 @@ PrefabInstance:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8789923634949164411, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+    - {fileID: 3469932452092705950, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+    - {fileID: 3045839964239461476, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+    - {fileID: 6072652311600206880, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
 --- !u!95 &348793674 stripped
 Animator:
@@ -7714,7 +7718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ef92cf3c0a9d645998f9481927b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 0.5
   otherTag: Player
 --- !u!1 &460115591 stripped
 GameObject:
@@ -17504,7 +17508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ef92cf3c0a9d645998f9481927b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 0.5
   otherTag: Player
 --- !u!1 &1198350395
 GameObject:
@@ -18245,7 +18249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ef92cf3c0a9d645998f9481927b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 0.5
   otherTag: Player
 --- !u!1 &1515133517
 GameObject:
@@ -18786,7 +18790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ef92cf3c0a9d645998f9481927b4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 0.5
   otherTag: Player
 --- !u!1 &1569320474
 GameObject:

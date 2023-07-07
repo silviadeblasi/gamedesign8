@@ -7,7 +7,15 @@ public class GenericDamage : MonoBehaviour
     [SerializeField] private string otherTag; //We are using a tag to identify the object we want to damage
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag(otherTag) && other.isTrigger) 
+        if(other.tag == "enemy")
+        {
+           EnemyHealth enemyHealth = other.GetComponent<EnemyHealth>();
+            if(enemyHealth)
+            {
+                enemyHealth.Damage(damage);
+            }
+        }
+        else if (other.gameObject.CompareTag(otherTag) && other.isTrigger) 
         {
             GenericHealth temp = other.GetComponent<GenericHealth>();
             if (temp)
