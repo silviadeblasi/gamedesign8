@@ -30,9 +30,8 @@ public class EnemyController : MonoBehaviour
         {
             AttackPlayer();
         }
-        else if(Vector3.Distance(transform.position, target.position) >= walkRange || playerHealth.GetComponent<PlayerHealth>().currentHealth <= 0)
+        else if(Vector3.Distance(transform.position, target.position) >= walkRange)
         {
-            myAnim.SetBool("attacking", false);
             ReturnHomePosition();
         }
     }

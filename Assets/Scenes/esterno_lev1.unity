@@ -7239,6 +7239,7 @@ MonoBehaviour:
   minRange: 0.6
   attackRange: 0.75
   homePosition: {fileID: 1708836327}
+  playerHealth: {fileID: 460115591}
 --- !u!1001 &348793673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7681,6 +7682,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   otherTag: Player
+--- !u!1 &460115591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7811454072795011154, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+  m_PrefabInstance: {fileID: 348793673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &481655800
 GameObject:
   m_ObjectHideFlags: 0
@@ -17472,6 +17478,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1346206579522746313, guid: d30748da4a8fa46a48e774be3a833987, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1887552479026964473, guid: d30748da4a8fa46a48e774be3a833987, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -17519,6 +17529,10 @@ PrefabInstance:
     - target: {fileID: 5321616236276994980, guid: d30748da4a8fa46a48e774be3a833987, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321616236276994983, guid: d30748da4a8fa46a48e774be3a833987, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.0200195
       objectReference: {fileID: 0}
     - target: {fileID: 5321616237369257798, guid: d30748da4a8fa46a48e774be3a833987, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -17631,6 +17645,10 @@ PrefabInstance:
     - target: {fileID: 5476037793286049445, guid: d30748da4a8fa46a48e774be3a833987, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951752889795754140, guid: d30748da4a8fa46a48e774be3a833987, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.980011
       objectReference: {fileID: 0}
     - target: {fileID: 7376340450679081101, guid: d30748da4a8fa46a48e774be3a833987, type: 3}
       propertyPath: m_AnchorMax.x
@@ -18996,7 +19014,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4613773642290738341, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
   m_PrefabInstance: {fileID: 348793673}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 460115591}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2bfae479a574c341b87c5ccc5bf2f48, type: 3}
