@@ -12,8 +12,8 @@ public class NPC_interactable : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject veggente;
     public GameObject ubriacone;
-    public Rigidbody2D rb_veggente;
-    public Rigidbody2D rb_ubriacone;
+    private Rigidbody2D rb_veggente;
+    private Rigidbody2D rb_ubriacone;
     private bool fine1 = false;
     private bool fine2 = false;
     private bool fine3 = false;
@@ -39,6 +39,11 @@ public class NPC_interactable : MonoBehaviour
         if(other.gameObject.layer == 19){ // veggente
         
             if(Input.GetKeyDown(KeyCode.X)){
+                fine1 = false;
+                fine2 = false;
+                fine3 = false;
+                fine4 = false;
+                fine5 = false;
                 Vector3 dir = veggente.GetComponent<BoundedNPC>().directionVector;
                 anim_veggente.SetBool("interact", true);
                 anim_veggente.SetFloat("moveX", dir.x);

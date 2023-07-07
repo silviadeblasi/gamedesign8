@@ -15,8 +15,10 @@ public class interactable_object : MonoBehaviour
     public SoundManager soundManager;
     private Animator animator;
     public bool pendant_trovato = false;
+    public bool tomba_madre = false;
     public bool lettera_sfratto_trovata = false;
-    public bool mappa_trovata = false;  
+    public bool mappa_trovata = false; 
+
     //private bool canvas_already_spawned = false;
     //attenzione è ontrigger se voglio chiudere il cavas devo usare ontriggerexit/stay e non oncollisionexit/stay
     //blocca il player
@@ -40,6 +42,7 @@ public class interactable_object : MonoBehaviour
                 Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
                 animator.SetBool("moving", true);
+                tomba_madre = true;
             }
         }
 

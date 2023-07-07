@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     private bool fine_scenapostprologo = true;
     private bool commandnotshow = false;
     private bool amuleto = false;
+    private bool flag_tomba = false;
     public interactable_object canvas_trama;
     
 
@@ -64,8 +65,13 @@ public class GameManager : MonoBehaviour
         }
 
         if(current_scene.ToString() == "Esterno_lev1"){
-            //Debug.Log("Esterno_lev1");
-            //soundManager.PlayBackgroundMusic("Esterno");
+
+            soundManager.PlayBackgroundMusic("TemaPrincipale2", 0.7f);
+
+            if(canvas_trama.tomba_madre == true && flag_tomba == false){
+                dialoghiManager.StartDialoghi("tomba_madre");
+                flag_tomba = true;
+            }
         }
     }
     
