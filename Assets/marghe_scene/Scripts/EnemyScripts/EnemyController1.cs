@@ -27,13 +27,15 @@ public class EnemyController1 : MonoBehaviour
 
     void Update() 
     {
-        if(Vector3.Distance(transform.position, target.position) <= walkRange && Vector3.Distance(transform.position, target.position) >= attackRange)
+        if(Vector3.Distance(transform.position, target.position) <= walkRange && Vector3.Distance(transform.position, target.position) > attackRange)
         {
             FollowPlayer();
-        }
-        else if(Vector3.Distance(transform.position, target.position) <= attackRange && Vector3.Distance(transform.position, target.position) >= minRange)
-        {
-            AttackPlayer();
+
+            if(Vector3.Distance(transform.position, target.position) <= attackRange) //&& Vector3.Distance(transform.position, target.position) >= minRange
+            {
+                AttackPlayer();
+            }
+
         }
         else if(Vector3.Distance(transform.position, target.position) >= walkRange)
         {
@@ -51,8 +53,8 @@ public class EnemyController1 : MonoBehaviour
 
     public void AttackPlayer()
     {
-        Debug.Log("Attacking");
-        myAnim.SetBool("walking", false);
+        //Debug.Log("Attacking");
+        //myAnim.SetBool("walking", false);
         myAnim.SetBool("attacking", true);
         myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
