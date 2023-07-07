@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class EnemyController1 : MonoBehaviour
 {
+    [Header("Enemy Stats")]
+    public string enemyName;
+
+
+    [Header("Enemy Movement")]
     private Animator myAnim;
     private Transform target;
     [SerializeField] private float speed = 1f;
