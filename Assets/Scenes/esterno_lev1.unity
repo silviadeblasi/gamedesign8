@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Alex 5.1
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -2195,7 +2195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Aiden 5.4
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -2865,7 +2865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Saxon 4.2
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -10147,7 +10147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Ken 3.4
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -11867,7 +11867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: King 3.3
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -19272,7 +19272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Adam 5.3
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -22799,7 +22799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Kevin 3.2
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -23214,7 +23214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Sean 4.5
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -24334,7 +24334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Sawyer 4.3
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -24709,7 +24709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Scott 4.4
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -24924,7 +24924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Aaron 5.2
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -25638,7 +25638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Sam 4.1
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -26859,7 +26859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Karter 3.5
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -28502,7 +28502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Albert 5.5
   speed: 1
   walkRange: 2
   minRange: 0.6
@@ -31430,7 +31430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Tim 1.1
+  enemyName: Kim 3.1
   speed: 1
   walkRange: 2
   minRange: 0.6
