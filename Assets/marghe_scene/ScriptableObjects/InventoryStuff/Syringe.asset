@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 571640a70907d1e408bf31ff75f316c2, type: 3}
-  m_Name: GreenHealthPotion
+  m_Name: Syringe
   m_EditorClassIdentifier: 
-  itemName: Green Health Potion
-  itemDescription: This potion gives you back a heart
-  itemImage: {fileID: -1596205411, guid: 7851d2e783162bb40a32119a269d6123, type: 3}
+  itemName: Syringe
+  itemDescription: This syringe gives you back a whole heart
+  itemImage: {fileID: 1253124589, guid: 7adc871fbc0cc5148ac9cc7a1e344319, type: 3}
   numberHeld: 0
   usable: 1
   unique: 0
