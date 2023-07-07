@@ -9979,6 +9979,10 @@ PrefabInstance:
       propertyPath: Inventory_prefab
       value: 
       objectReference: {fileID: 6113204482811993927, guid: ca144dd0711afb84f8c215fde3fd6e79, type: 3}
+    - target: {fileID: 8140712728902351448, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: starting_position
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_RootOrder
       value: 3

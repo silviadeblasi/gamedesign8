@@ -743,8 +743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2768c059624f741f1847fd5e086e8be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_position: {x: 1, y: 0.6}
-  player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
+  player_position: {x: 0, y: 0}
+  player_storage: {fileID: 0}
   trigger: {fileID: 52206224}
   interazione_non_completa: {fileID: 8688396365038799263}
   opened: {fileID: 5942363595206977310}
