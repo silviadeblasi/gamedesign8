@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float minRange = 0.5f;
     [SerializeField] private float attackRange = 1f;
     public Transform homePosition;
+    public GameObject playerHealth;
     
 
     void Start() 
@@ -29,8 +30,9 @@ public class EnemyController : MonoBehaviour
         {
             AttackPlayer();
         }
-        else if(Vector3.Distance(transform.position, target.position) >= walkRange)
+        else if(Vector3.Distance(transform.position, target.position) >= walkRange || playerHealth.GetComponent<PlayerHealth>().currentHealth <= 0)
         {
+            myAnim.SetBool("attacking", false);
             ReturnHomePosition();
         }
     }
@@ -38,7 +40,7 @@ public class EnemyController : MonoBehaviour
     public void FollowPlayer()
     {
         myAnim.SetBool("walking", true);
-        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
+        myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
@@ -48,7 +50,7 @@ public class EnemyController : MonoBehaviour
         Debug.Log("Attacking");
         myAnim.SetBool("walking", false);
         myAnim.SetBool("attacking", true);
-        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
+        myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
@@ -57,14 +59,15 @@ public class EnemyController : MonoBehaviour
     {
         myAnim.SetBool("walking", true);
         myAnim.SetBool("attacking", false);
-        myAnim.SetFloat("moveX", (homePosition.position.x - transform.position.x));
+        myAnim.SetFloat("moveX", (transform.position.x - homePosition.position.x));
         myAnim.SetFloat("moveY", (homePosition.position.y - transform.position.y));
         transform.position = Vector3.MoveTowards(transform.position, homePosition.position, speed * Time.deltaTime);
 
         if(transform.position == homePosition.position)
         {
             myAnim.SetBool("walking", false);
-            myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
+            myAnim.SetBool("attacking", false);
+            myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
             myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         }
     }
