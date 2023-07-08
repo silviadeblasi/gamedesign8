@@ -27,7 +27,7 @@ public class openable : MonoBehaviour
                 oggetto.SetActive(true);
                 oggetto2.SetActive(false);
                 comandi.SetActive(false);
-                StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo, 0));
+                StartCoroutine(comunicazione_ogg_trovato_utilizzo(comunicazione, comunicazione_utilizzo, 0));
               }
         }
         //casa del cairo oggetto
@@ -35,20 +35,20 @@ public class openable : MonoBehaviour
             GameObject oggetto = FindOggetti(oggetti_da_attivare, "mattonella_da_attivare");
             GameObject oggetto2 = FindOggetti(oggetti_da_disattivare, "mattonella_da_disattivare");
             GameObject comandi = FindOggetti(comunicazione_comandi, "Interazione");
-            //GameObject comunicazione = FindOggetti(comunicazione_comandi, "comunicazione_porta");
+            GameObject comunicazione = FindOggetti(comunicazione_comandi, "comunicazione_pistola");
             //GameObject comunicazione_utilizzo = FindOggetti(comunicazione_comandi, "porta");
             if(Input.GetKeyDown(KeyCode.X)){
                 //soundManager.PlaySoundEffect("InterazioneOggetto", 0.5f);
                 oggetto.SetActive(true);
                 oggetto2.SetActive(false);
                 comandi.SetActive(false);
-                //StartCoroutine(comunicazione_ogg_trovato(comunicazione, comunicazione_utilizzo,index));
+                StartCoroutine(comunicazione_ogg_trovato(comunicazione));
               }
         }
    }
    //coroutine che utilizzo per far comparire e scomparire il canvas che mi dice che ho trovato l'oggetto
    //la richiamo per ogni oggetto cambiando la comunicazione
-    IEnumerator comunicazione_ogg_trovato(GameObject comunicazione, GameObject comunicazione_utilizzo, int index){
+    IEnumerator comunicazione_ogg_trovato_utilizzo(GameObject comunicazione, GameObject comunicazione_utilizzo, int index){
         yield return new WaitForSeconds(1f);
         player.GetComponent<PlayerMovement>().enabled = false;
         comunicazione.SetActive(true);
@@ -62,6 +62,14 @@ public class openable : MonoBehaviour
         flag_opened[index] = true;
     }
     
+    IEnumerator comunicazione_ogg_trovato(GameObject comunicazione){
+        yield return new WaitForSeconds(1f);
+        player.GetComponent<PlayerMovement>().enabled = false;
+        comunicazione.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        comunicazione.SetActive(false);
+        player.GetComponent<PlayerMovement>().enabled = true;
+    }
     //funzione che mi permette di trovare un oggetto in un array di oggetti, lo uso per cercare oggetto da disattivare e attivare
     //e per cercare il canvas da attivare
     private GameObject FindOggetti(GameObject[] oggetti, string oggetto_name){

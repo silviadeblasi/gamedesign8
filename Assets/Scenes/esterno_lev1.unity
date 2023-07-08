@@ -3042,7 +3042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2768c059624f741f1847fd5e086e8be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_position: {x: -4, y: 4}
+  player_position: {x: -4, y: 5}
   player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
   trigger: {fileID: 182318522}
   interazione_non_completa: {fileID: 0}
@@ -9972,7 +9972,7 @@ PrefabInstance:
     - target: {fileID: 8140712728902351448, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: starting_position
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_RootOrder
       value: 3

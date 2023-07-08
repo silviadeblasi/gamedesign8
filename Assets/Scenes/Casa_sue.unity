@@ -3879,7 +3879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_position: {x: -26, y: -17}
-  player_storage: {fileID: 0}
+  player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
   trigger: {fileID: 1646020550}
   interazione_non_completa: {fileID: 674182245}
   opened: {fileID: 613770911}
