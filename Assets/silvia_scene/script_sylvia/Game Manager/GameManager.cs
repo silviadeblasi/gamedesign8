@@ -73,12 +73,12 @@ public class GameManager : MonoBehaviour
                 dialoghiManager.StartDialoghi("tomba_madre");
                 flag_tomba = true;
             }
-            bool enemies = ((Combattimento.transform.Find("Combattimento (1)")?.gameObject).transform.Find("enemies (1.1)")?.gameObject).activeInHierarchy;
+            /*bool enemies = ((Combattimento.transform.Find("Combattimento (1)")?.gameObject).transform.Find("enemies (1.1)")?.gameObject).activeInHierarchy;
             if(((Combattimento.transform.Find("Combattimento (1)")?.gameObject).transform.Find("enemies (1.1)")?.gameObject).activeInHierarchy == false && ((Combattimento.transform.Find("Combattimento (1)")?.gameObject).transform.Find("enemies (1.2)")?.gameObject).activeInHierarchy == false && ((Combattimento.transform.Find("Combattimento (1)")?.gameObject).transform.Find("enemies (1.3)")?.gameObject).activeInHierarchy == false && just_once == true){
                 dialoghiManager.StartDialoghi("fine_combattimento_1");
                 just_once = false;
                 Debug.Log("fine_combattimento_1");
-            }
+            }*/
         }
     }
     
