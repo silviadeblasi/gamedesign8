@@ -6,30 +6,13 @@ using TMPro;
 public class InventoryManager : MonoBehaviour
 {
     [Header("Inventory Information")]
-    public PlayerInventory playerInventory;
+    public PlayerInventory playerInventoryList;
     [SerializeField] private GameObject blankInventorySlot;
-    [SerializeField] private GameObject inventoryPanel;
+    [SerializeField] private GameObject inventoryPanelContent;
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private GameObject useButton;
     [SerializeField] private GameObject player;
     public InventoryItem currentItem;
-
-    //private void Update()
-    //{
-    //    if(Input.GetButtonDown("Inventory"))
-    //    {
-    //        if(inventoryPanel.activeInHierarchy)
-    //        {
-    //            inventoryPanel.SetActive(false);
-    //            player.GetComponent<PlayerMovement>().currentState = PlayerState.walk;
-    //        }
-    //        else
-    //        {
-    //            inventoryPanel.SetActive(true);
-    //            player.GetComponent<PlayerMovement>().currentState = PlayerState.interact;
-    //        }
-    //    }
-    //}
 
     public void SetTextAndButton(string description, bool buttonActive)
     {
@@ -46,20 +29,20 @@ public class InventoryManager : MonoBehaviour
 
     void MakeInventorySlots()
     {
-        if(playerInventory)
+        if(playerInventoryList)
         {
-            for(int i = 0; i < playerInventory.myInventory.Count; i++)
+            for(int i = 0; i < playerInventoryList.myInventory.Count; i++)
             {
-                if(playerInventory.myInventory[i].numberHeld > 0)
+                if(playerInventoryList.myInventory[i].numberHeld > 0)
                 {
-                    GameObject temp = Instantiate(blankInventorySlot, 
-                        inventoryPanel.transform.position, inventoryPanel.transform.rotation, inventoryPanel.transform);
-                    temp.transform.SetParent(inventoryPanel.transform);
+                    GameObject temp = Instantiate(blankInventorySlot, inventoryPanelContent.transform.position, 
+                        inventoryPanelContent.transform.rotation, inventoryPanelContent.transform);
+                    temp.transform.SetParent(inventoryPanelContent.transform);
                     InventorySlot newSlot = temp.GetComponent<InventorySlot>();
                     
                     if(newSlot)
                     {
-                        newSlot.Setup(playerInventory.myInventory[i], this);
+                        newSlot.Setup(playerInventoryList.myInventory[i], this);
                     }
                 }
             }
@@ -83,9 +66,9 @@ public class InventoryManager : MonoBehaviour
 
     void ClearInventorySlots()
     {
-        for(int i = 0; i < inventoryPanel.transform.childCount; i++)
+        for(int i = 0; i < inventoryPanelContent.transform.childCount; i++)
         {
-            Destroy(inventoryPanel.transform.GetChild(i).gameObject);
+            Destroy(inventoryPanelContent.transform.GetChild(i).gameObject);
         }
     }
 
