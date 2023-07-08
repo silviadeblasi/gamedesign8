@@ -32,10 +32,6 @@ public class Boss_walk : StateMachineBehaviour
         {
             animator.SetTrigger("attack");
         }
-        // else if(Vector3.Distance(player.position, rb.position) > followRange)
-        // {
-        //     animator.SetBool("idle", true);
-        // }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
