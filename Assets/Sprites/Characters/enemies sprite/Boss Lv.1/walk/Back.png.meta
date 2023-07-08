@@ -120,10 +120,10 @@ TextureImporter:
       name: Back_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 9
-        width: 47
-        height: 50
+        x: 13
+        y: 17
+        width: 19
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: Back_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 9
-        width: 47
-        height: 50
+        x: 76
+        y: 17
+        width: 19
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: Back_2
       rect:
         serializedVersion: 2
-        x: 126
-        y: 9
-        width: 47
-        height: 50
+        x: 141
+        y: 18
+        width: 19
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: Back_3
       rect:
         serializedVersion: 2
-        x: 189
-        y: 9
-        width: 47
-        height: 50
+        x: 206
+        y: 17
+        width: 19
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

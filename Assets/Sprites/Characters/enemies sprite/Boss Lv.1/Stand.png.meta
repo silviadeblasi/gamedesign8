@@ -120,10 +120,10 @@ TextureImporter:
       name: Stand_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 37
-        height: 36
+        x: 7
+        y: 6
+        width: 19
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: Stand_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 0
-        width: 37
-        height: 36
+        x: 59
+        y: 5
+        width: 16
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: Stand_2
       rect:
         serializedVersion: 2
-        x: 98
-        y: 0
-        width: 37
-        height: 36
+        x: 107
+        y: 6
+        width: 19
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: Stand_3
       rect:
         serializedVersion: 2
-        x: 147
-        y: 0
-        width: 37
-        height: 36
+        x: 160
+        y: 4
+        width: 16
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
