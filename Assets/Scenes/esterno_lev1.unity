@@ -975,8 +975,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 23.75, y: -13.68}
-  m_SizeDelta: {x: 14.5, y: 25}
+  m_AnchoredPosition: {x: 20, y: -8.845}
+  m_SizeDelta: {x: 12, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &50329903
 MonoBehaviour:
@@ -1169,7 +1169,6 @@ MonoBehaviour:
   enemyName: Alex 5.1
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 292069995}
   playerHealth: {fileID: 460115591}
@@ -1489,7 +1488,6 @@ MonoBehaviour:
   enemyName: Jack 2.2
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 2128194800}
   playerHealth: {fileID: 460115591}
@@ -2590,7 +2588,6 @@ MonoBehaviour:
   enemyName: Aiden 5.4
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1945628052}
   playerHealth: {fileID: 460115591}
@@ -3228,7 +3225,6 @@ MonoBehaviour:
   enemyName: Saxon 4.2
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1963021764}
   playerHealth: {fileID: 460115591}
@@ -9908,7 +9904,6 @@ MonoBehaviour:
   enemyName: Jim 2.1
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1708836327}
   playerHealth: {fileID: 460115591}
@@ -10947,7 +10942,6 @@ MonoBehaviour:
   enemyName: Ken 3.4
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1676349473}
   playerHealth: {fileID: 460115591}
@@ -11866,8 +11860,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.5}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 153, y: -99}
-  m_SizeDelta: {x: 122.94, y: 76.31}
+  m_AnchoredPosition: {x: 107.29999, y: -81.619995}
+  m_SizeDelta: {x: 77.09, y: 59.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519560608
 MonoBehaviour:
@@ -12374,7 +12368,6 @@ MonoBehaviour:
   enemyName: Toby 1.3
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1559726447}
   playerHealth: {fileID: 460115591}
@@ -13127,7 +13120,6 @@ MonoBehaviour:
   enemyName: King 3.3
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 375657547}
   playerHealth: {fileID: 460115591}
@@ -13884,7 +13876,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 14.5, y: 25}
+  m_SizeDelta: {x: 12, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &669103410
 MonoBehaviour:
@@ -14520,7 +14512,6 @@ MonoBehaviour:
   enemyName: Tom 1.2
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1121973556}
   playerHealth: {fileID: 460115591}
@@ -15229,7 +15220,6 @@ MonoBehaviour:
   enemyName: John 2.3
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1328533289}
   playerHealth: {fileID: 460115591}
@@ -20963,7 +20953,6 @@ MonoBehaviour:
   enemyName: Adam 5.3
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1203110056}
   playerHealth: {fileID: 460115591}
@@ -24627,7 +24616,6 @@ MonoBehaviour:
   enemyName: Kevin 3.2
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1784780142}
   playerHealth: {fileID: 460115591}
@@ -25042,7 +25030,6 @@ MonoBehaviour:
   enemyName: Sean 4.5
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 2145478025}
   playerHealth: {fileID: 460115591}
@@ -25252,7 +25239,6 @@ MonoBehaviour:
   enemyName: Jensen 2.5
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1495858176}
   playerHealth: {fileID: 460115591}
@@ -25899,8 +25885,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64.86, y: -5.3}
-  m_SizeDelta: {x: 118.59, y: 27.36}
+  m_AnchoredPosition: {x: 73.6, y: -2.5}
+  m_SizeDelta: {x: 125.1, y: 17.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1107232447
 MonoBehaviour:
@@ -25992,7 +25978,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.056}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1016.8, y: -543}
+  m_AnchoredPosition: {x: 1016.7999, y: -543}
   m_SizeDelta: {x: -1439.16, y: -776.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1116112193
@@ -26375,7 +26361,6 @@ MonoBehaviour:
   enemyName: Sawyer 4.3
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 445407077}
   playerHealth: {fileID: 460115591}
@@ -26750,7 +26735,6 @@ MonoBehaviour:
   enemyName: Scott 4.4
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1916203919}
   playerHealth: {fileID: 460115591}
@@ -26960,7 +26944,6 @@ MonoBehaviour:
   enemyName: Aaron 5.2
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 2110442858}
   playerHealth: {fileID: 460115591}
@@ -27811,7 +27794,6 @@ MonoBehaviour:
   enemyName: Sam 4.1
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1918979738}
   playerHealth: {fileID: 460115591}
@@ -28713,7 +28695,6 @@ MonoBehaviour:
   enemyName: Tim 1.1
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1930001418}
   playerHealth: {fileID: 460115591}
@@ -29417,7 +29398,6 @@ MonoBehaviour:
   enemyName: Karter 3.5
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1211429075}
   playerHealth: {fileID: 460115591}
@@ -31097,7 +31077,6 @@ MonoBehaviour:
   enemyName: Albert 5.5
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 954959776}
   playerHealth: {fileID: 460115591}
@@ -33509,7 +33488,6 @@ MonoBehaviour:
   enemyName: Jason 2.4
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 927985544}
   playerHealth: {fileID: 460115591}
@@ -34346,8 +34324,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 56.75, y: -13.68}
-  m_SizeDelta: {x: 14.5, y: 25}
+  m_AnchoredPosition: {x: 48, y: -8.845}
+  m_SizeDelta: {x: 12, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1870737200
 MonoBehaviour:
@@ -34733,7 +34711,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.093886375, y: 0.05969715}
+  m_Offset: {x: -0.10129166, y: 0.063399315}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -34744,7 +34722,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.78572655, y: 1.1893635}
+  m_Size: {x: 0.53396606, y: 0.93019676}
   m_EdgeRadius: 0
 --- !u!114 &1904024220
 MonoBehaviour:
@@ -34758,12 +34736,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0739433d1b34a5847bdca747eb091e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  attackOffset: {x: 0, y: 0, z: 0}
+  damage: 2
+  attackOffset: {x: -1.5, y: 0.35, z: 0}
+  upAttackOffset: {x: 0.35, y: 1.5, z: 0}
+  downAttackOffset: {x: 0.35, y: -1.5, z: 0}
   attackRange: 1
   attackMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!1 &1909785120
 GameObject:
   m_ObjectHideFlags: 0
@@ -34917,7 +34897,6 @@ MonoBehaviour:
   enemyName: Kim 3.1
   speed: 1
   walkRange: 2
-  minRange: 0.6
   attackRange: 1
   homePosition: {fileID: 1644348837}
   playerHealth: {fileID: 460115591}
@@ -45807,8 +45786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 40.25, y: -13.68}
-  m_SizeDelta: {x: 14.5, y: 25}
+  m_AnchoredPosition: {x: 34, y: -8.845}
+  m_SizeDelta: {x: 12, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2042350430
 MonoBehaviour:
@@ -46979,6 +46958,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 606528799227829544, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.3999863
+      objectReference: {fileID: 0}
     - target: {fileID: 3135027459754899096, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_Pivot.x
       value: 0

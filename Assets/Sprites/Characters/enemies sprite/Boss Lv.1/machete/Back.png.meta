@@ -108,10 +108,10 @@ TextureImporter:
       name: Back_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 55
-        height: 59
+        x: 14
+        y: 17
+        width: 19
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,10 +129,10 @@ TextureImporter:
       name: Back_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 55
-        height: 59
+        x: 76
+        y: 21
+        width: 19
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: Back_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 55
-        height: 59
+        x: 135
+        y: 18
+        width: 26
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: Back_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 55
-        height: 59
+        x: 212
+        y: 12
+        width: 21
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: Back_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 55
-        height: 59
+        x: 279
+        y: 16
+        width: 19
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: Back_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 55
-        height: 59
+        x: 342
+        y: 15
+        width: 20
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: Back_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 55
-        height: 59
+        x: 401
+        y: 15
+        width: 26
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
