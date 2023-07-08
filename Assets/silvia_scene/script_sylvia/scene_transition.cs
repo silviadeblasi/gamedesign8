@@ -56,8 +56,15 @@ public class scene_transition : MonoBehaviour
             Scene_Loader.Load(Scene_Loader.Scene.casa_del_cairo);
             player_storage.initialValue = player_position;
         }
+
+        if(other.CompareTag("Player") && !other.isTrigger && trigger.gameObject.layer == 21){ //uscita casa del cairo
+            Scene_Loader.Load(Scene_Loader.Scene.Esterno_lev1); 
+            player_storage.initialValue = player_position;
+        }
     }
 
+
+        
     IEnumerator interazione_non_completata(GameObject interazione_non_completa){
         yield return new WaitForSeconds(3f);
         interazione_non_completa.SetActive(false);
