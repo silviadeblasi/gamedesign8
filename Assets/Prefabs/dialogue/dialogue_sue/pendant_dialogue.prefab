@@ -132,13 +132,13 @@ RectTransform:
   m_LocalScale: {x: 0.94303745, y: 0.46960714, z: 0.4078}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1410485886996493177}
+  - {fileID: 6260006883967594893}
   m_Father: {fileID: 1410485885791302083}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -243}
+  m_AnchoredPosition: {x: 0, y: -407}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1410485886622626828
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a71e047f82e946ff803d6194c460f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 1410485886996493176}
+  textComponent: {fileID: 2696731574162572589}
   lines:
   - Now that I have my mother with me I am ready
   textSpeed: 0.08
@@ -200,7 +200,7 @@ MonoBehaviour:
   _soundeffect: {fileID: 8300000, guid: aeb709987cb06a0438f81054e5b49c73, type: 3}
   stopAudioSource: 0
   frequencyLevel: 2
---- !u!1 &1410485886996493158
+--- !u!1 &4019331659271004832
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,9 +208,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1410485886996493177}
-  - component: {fileID: 1410485886996493179}
-  - component: {fileID: 1410485886996493176}
+  - component: {fileID: 6260006883967594893}
+  - component: {fileID: 1831190816471810743}
+  - component: {fileID: 2696731574162572589}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -218,16 +218,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1410485886996493177
+--- !u!224 &6260006883967594893
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410485886996493158}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.76855814, y: 1.3449768, z: 0.76855814}
+  m_GameObject: {fileID: 4019331659271004832}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 220.69643}
+  m_LocalScale: {x: 0.9330913, y: 1.5583878, z: 0.88928396}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1410485886622626826}
@@ -235,24 +235,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -415, y: 1}
+  m_AnchoredPosition: {x: -202.53706, y: -72.40094}
   m_SizeDelta: {x: 628.7, y: 193.48}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1410485886996493179
+--- !u!222 &1831190816471810743
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410485886996493158}
+  m_GameObject: {fileID: 4019331659271004832}
   m_CullTransparentMesh: 1
---- !u!114 &1410485886996493176
+--- !u!114 &2696731574162572589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410485886996493158}
+  m_GameObject: {fileID: 4019331659271004832}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -293,8 +293,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130.1
-  m_fontSizeBase: 130.1
+  m_fontSize: 160
+  m_fontSizeBase: 160
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -197.6146, y: 5.721764, z: -1179.7445, w: -160.66226}
+  m_margin: {x: -831.2064, y: -56.136353, z: -1047.1842, w: -125.16994}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

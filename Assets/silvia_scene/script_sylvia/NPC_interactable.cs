@@ -7,13 +7,16 @@ public class NPC_interactable : MonoBehaviour
     private Animator anim;
     private Animator anim_veggente;
     private Animator anim_ubriacone;
+    private Animator anim_village_pistola;
     public DialoghiUIManager dialoghiUIManager; //cerco i dialoghi e li faccio comparire
     public GameObject player;
-    public Rigidbody2D rb;
+    public Rigidbody2D rb_player;
     public GameObject veggente;
     public GameObject ubriacone;
+    public GameObject villager_pistola;
     private Rigidbody2D rb_veggente;
     private Rigidbody2D rb_ubriacone;
+    
     private bool fine1 = false;
     private bool fine2 = false;
     private bool fine3 = false;
@@ -29,7 +32,7 @@ public class NPC_interactable : MonoBehaviour
         anim = GetComponent<Animator>();
         anim_veggente = veggente.GetComponent<Animator>();
         anim_ubriacone = ubriacone.GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        rb_player = GetComponent<Rigidbody2D>();
         rb_veggente = veggente.GetComponent<Rigidbody2D>();
         rb_ubriacone = ubriacone.GetComponent<Rigidbody2D>();
     }
@@ -50,7 +53,7 @@ public class NPC_interactable : MonoBehaviour
                 anim_veggente.SetFloat("moveY", dir.y);
                 rb_veggente.constraints = RigidbodyConstraints2D.FreezeAll;
                 veggente.GetComponent<BoundedNPC>().enabled = false;
-                rb.constraints = RigidbodyConstraints2D.FreezeAll;
+                rb_player.constraints = RigidbodyConstraints2D.FreezeAll;
                 player.GetComponent<PlayerMovement>().enabled = false;
                 dialoghiUIManager.StartDialoghi("dialogue_veggente_1"); //i bet you are looking for...
             }
@@ -74,8 +77,8 @@ public class NPC_interactable : MonoBehaviour
                 fine5 = true;
                 dialoghiUIManager.StartDialoghi("dialogo_sueveggente_3"); //CHE VUOL DIREE
                 player.GetComponent<PlayerMovement>().enabled = true;
-                rb.constraints = RigidbodyConstraints2D.None;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb_player.constraints = RigidbodyConstraints2D.None;
+                rb_player.constraints = RigidbodyConstraints2D.FreezeRotation;
                 rb_veggente.constraints = RigidbodyConstraints2D.None;
                 rb_veggente.constraints = RigidbodyConstraints2D.FreezeRotation;
                 anim_veggente.SetBool("interact", false);
@@ -85,20 +88,23 @@ public class NPC_interactable : MonoBehaviour
         }
 
         if(other.gameObject.layer == 20){ //ubriacone
-        
+       
             if(Input.GetKeyDown(KeyCode.X)){
                 fine1 = false;
                 fine2 = false;
                 fine3 = false;
                 fine4 = false;
                 fine5 = false;
+                fine6 = false;
+                fine7 = false;
+                fine8 = false;
                 Vector3 dir = ubriacone.GetComponent<BoundedNPC>().directionVector;
                 anim_ubriacone.SetBool("interact", true);
                 anim_ubriacone.SetFloat("moveX", dir.x);
                 anim_ubriacone.SetFloat("moveY", dir.y);
                 rb_ubriacone.constraints = RigidbodyConstraints2D.FreezeAll;
                 ubriacone.GetComponent<BoundedNPC>().enabled = false;
-                rb.constraints = RigidbodyConstraints2D.FreezeAll;
+                rb_player.constraints = RigidbodyConstraints2D.FreezeAll;
                 player.GetComponent<PlayerMovement>().enabled = false;
                 dialoghiUIManager.StartDialoghi("dialogue_drunk_1"); 
             }
@@ -134,8 +140,8 @@ public class NPC_interactable : MonoBehaviour
                 fine8 = true;
                 dialoghiUIManager.StartDialoghi("dialogo_suedrunk_3"); 
                 player.GetComponent<PlayerMovement>().enabled = true;
-                rb.constraints = RigidbodyConstraints2D.None;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb_player.constraints = RigidbodyConstraints2D.None;
+                rb_player.constraints = RigidbodyConstraints2D.FreezeRotation;
                 rb_ubriacone.constraints = RigidbodyConstraints2D.None;
                 rb_ubriacone.constraints = RigidbodyConstraints2D.FreezeRotation;
                 anim_ubriacone.SetBool("interact", false);
@@ -144,7 +150,7 @@ public class NPC_interactable : MonoBehaviour
 
         }
 
-        /*if(other.gameObject.layer == 20){ //villager pistola
+        /*if(other.gameObject.layer == 21){ //villager pistola
         
             if(Input.GetKeyDown(KeyCode.X)){
                 fine1 = false;
