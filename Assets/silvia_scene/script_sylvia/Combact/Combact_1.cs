@@ -6,13 +6,11 @@ public class Combact_1 : Combact{
     public GameObject player;
     private Animator anim;
     private GameObject dialogueBoxClone;
-    private GameObject dialogueBoxClone2;
     public GameObject Dialogo_primo_combattimento;
     public GameObject first_battle;
     public GameObject Combattimento1;
     private bool dialogo_iniziale = false;
     private bool fine_dialogo_inizio_combattimento = false;
-    private int totale_nemici = 0;
     private bool dead_1 = false;
     private bool dead_2 = false;
     private bool dead_3 = false;
