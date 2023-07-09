@@ -14,7 +14,6 @@ public class Combact_1 : Combact{
     private bool dead_1 = false;
     private bool dead_2 = false;
     private bool dead_3 = false;
-    private bool start_battle = false;
 
     private void Start() {
         anim = player.GetComponent<Animator>();
@@ -38,7 +37,16 @@ public class Combact_1 : Combact{
 
             CombactManager.combactManager.CombactRequest(this);
 
-            first_battle.SetActive(true);
+            if(CombactManager.combactManager.currentCombact.id == 0){
+
+                first_battle.SetActive(true);
+            }else{
+                first_battle.SetActive(false);
+            }
+
+            
+                
+            
         
             //player.GetComponent<PlayerMovement>().enabled = false;
             //anim.SetBool("isWalking", false); //??
