@@ -29992,8 +29992,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inTrigger: 0
   trigger_startcombact: {fileID: 1405141244}
-  availableCombactIDs: 
-  receivableCombactID: 0
+  availableCombactIDs: 02000000
+  receivableCombactID: 2
   combattimento1: {fileID: 0}
   combattimento: {fileID: 1405141244}
   combact: {fileID: 1405141246}

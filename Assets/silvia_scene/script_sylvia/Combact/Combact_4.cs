@@ -36,10 +36,10 @@ public class Combact_4: Combact{
 
         if(CombactManager.combactManager.FirstCombactDone == true){
             
-            CombactManager.combactManager.CombactRequest(this);
+            
 
             if(combact._inTrigger){
-
+            CombactManager.combactManager.CombactRequest(this);
                 
             //player.GetComponent<PlayerMovement>().enabled = false;
             //anim.SetBool("isWalking", false); //??
@@ -55,32 +55,32 @@ public class Combact_4: Combact{
            //CombactManager.combactManager.CombactRequest(this);//assegna come corrente il combattimento 1
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
             //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
-                Combattimento2.transform.Find("enemies (2.1)").gameObject.GetComponent<EnemyController1>().enabled = true;
-                Combattimento2.transform.Find("enemies (2.2)").gameObject.GetComponent<EnemyController1>().enabled = true;
-                Combattimento2.transform.Find("enemies (2.3)").gameObject.GetComponent<EnemyController1>().enabled = true;
-                Combattimento2.transform.Find("enemies (2.4)").gameObject.GetComponent<EnemyController1>().enabled = true;
-                Combattimento2.transform.Find("enemies (2.5)").gameObject.GetComponent<EnemyController1>().enabled = true;
+                Combattimento2.transform.Find("enemies (4.1)").gameObject.GetComponent<EnemyController1>().enabled = true;
+                Combattimento2.transform.Find("enemies (4.2)").gameObject.GetComponent<EnemyController1>().enabled = true;
+                Combattimento2.transform.Find("enemies (4.3)").gameObject.GetComponent<EnemyController1>().enabled = true;
+                Combattimento2.transform.Find("enemies (4.4)").gameObject.GetComponent<EnemyController1>().enabled = true;
+                Combattimento2.transform.Find("enemies (4.5)").gameObject.GetComponent<EnemyController1>().enabled = true;
 
             }
 
-           if(Combattimento2.transform.Find("enemies (2.1)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_1 == false){
+           if(Combattimento2.transform.Find("enemies (4.1)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_1 == false){
                CombactManager.combactManager.currentCombact.CombactObjectiveCount ++; //ho ucciso un nemico e sommo 1 al contatore;
                 dead_1 = true;
            }
-           if(Combattimento2.transform.Find("enemies (2.2)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_2 == false){
+           if(Combattimento2.transform.Find("enemies (4.2)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_2 == false){
                 CombactManager.combactManager.currentCombact.CombactObjectiveCount ++; //ho ucciso un nemico e sommo 1 al contatore;
                 dead_2 = true;
 
            }
-            if(Combattimento2.transform.Find("enemies (2.3)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_3 == false){
+            if(Combattimento2.transform.Find("enemies (4.3)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_3 == false){
                 CombactManager.combactManager.currentCombact.CombactObjectiveCount ++; //ho ucciso un nemico e sommo 1 al contatore;
                 dead_3 = true;
             }
-            if(Combattimento2.transform.Find("enemies (2.4)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_4 == false){
+            if(Combattimento2.transform.Find("enemies (4.4)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_4 == false){
                 CombactManager.combactManager.currentCombact.CombactObjectiveCount ++; //ho ucciso un nemico e sommo 1 al contatore;
                 dead_4 = true;
             }
-            if(Combattimento2.transform.Find("enemies (2.5)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_5 == false){
+            if(Combattimento2.transform.Find("enemies (4.5)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_5 == false){
                 CombactManager.combactManager.currentCombact.CombactObjectiveCount ++; //ho ucciso un nemico e sommo 1 al contatore;
                 dead_5 = true;
             }

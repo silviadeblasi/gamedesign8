@@ -39,7 +39,6 @@ public class Combact_2: Combact{
             
 
             if(combact._inTrigger){
-
             CombactManager.combactManager.CombactRequest(this);
             //player.GetComponent<PlayerMovement>().enabled = false;
             //anim.SetBool("isWalking", false); //??
@@ -53,6 +52,7 @@ public class Combact_2: Combact{
                 //inizia il combattimento
             }*/
            //CombactManager.combactManager.CombactRequest(this);//assegna come corrente il combattimento 1
+           
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
             //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
                 Combattimento2.transform.Find("enemies (2.1)").gameObject.GetComponent<EnemyController1>().enabled = true;
