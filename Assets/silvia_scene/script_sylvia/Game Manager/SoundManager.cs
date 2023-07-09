@@ -68,6 +68,12 @@ public class SoundManager : MonoBehaviour
             Debug.LogWarning("Background music not found: " + musicName);
         }
     }
+    //non so se mi serve
+    public void StopBackgroundMusic(string musicName)
+    {
+        AudioClip clip = FindClip(backgroundMusic, musicName);
+        backgroundMusicSource.Stop();
+    }
 
     private AudioClip FindClip(AudioClip[] clips, string clipName)
     {
@@ -87,5 +93,7 @@ public class SoundManager : MonoBehaviour
         backgroundMixerGroup.audioMixer.SetFloat("BgVolume", Mathf.Log10( SoundOptionManager.BgVolume) *20);
         soundEffectsMixerGroup.audioMixer.SetFloat("SfxVolume", Mathf.Log10(SoundOptionManager.SfxVolume) *20);
     }
+    
+    
 
 }

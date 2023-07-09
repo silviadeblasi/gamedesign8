@@ -42,22 +42,10 @@ public class Combact_2: Combact{
             if(combact._inTrigger){
             CombactManager.combactManager.CombactRequest(this);
 
-
+            if(CombactManager.combactManager.currentCombact.id == 1){   
                 second_battle.SetActive(true);
-                //player.GetComponent<PlayerMovement>().enabled = false;
-                //anim.SetBool("isWalking", false); //??
-                /*if(dialogo_iniziale == false)
-                    dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_primo_combattimento, transform.position, Quaternion.identity);
-                    dialogo_iniziale = true;
-                if(fine_dialogo_inizio_combattimento == false && (((dialogueBoxClone.transform.Find("Canvas_dialogue")?.gameObject).transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>()).fine_dialogo == true){
-                    fine_dialogo_inizio_combattimento = true;
-                    Debug.Log("combact 1");
-                    player.GetComponent<PlayerMovement>().enabled = true;
-                    //inizia il combattimento
-                }*/
-                //CombactManager.combactManager.CombactRequest(this);//assegna come corrente il combattimento 1
 
-                if (CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
+            if (CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
             //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
                 Combattimento2.transform.Find("enemies (2.1)").gameObject.GetComponent<EnemyController1>().enabled = true;
                 Combattimento2.transform.Find("enemies (2.2)").gameObject.GetComponent<EnemyController1>().enabled = true;
@@ -95,6 +83,25 @@ public class Combact_2: Combact{
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
                 second_battle.SetActive(false);
               }
+
+                }else{
+                    second_battle.SetActive(false);
+                }
+
+                //player.GetComponent<PlayerMovement>().enabled = false;
+                //anim.SetBool("isWalking", false); //??
+                /*if(dialogo_iniziale == false)
+                    dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_primo_combattimento, transform.position, Quaternion.identity);
+                    dialogo_iniziale = true;
+                if(fine_dialogo_inizio_combattimento == false && (((dialogueBoxClone.transform.Find("Canvas_dialogue")?.gameObject).transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>()).fine_dialogo == true){
+                    fine_dialogo_inizio_combattimento = true;
+                    Debug.Log("combact 1");
+                    player.GetComponent<PlayerMovement>().enabled = true;
+                    //inizia il combattimento
+                }*/
+                //CombactManager.combactManager.CombactRequest(this);//assegna come corrente il combattimento 1
+
+
 
            /*if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.COMPLETE){
                 //dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_fine_primo_combattimento, transform.position, Quaternion.identity);
