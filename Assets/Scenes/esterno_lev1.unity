@@ -12459,6 +12459,10 @@ PrefabInstance:
       value: BackgroundMusicSlider
       objectReference: {fileID: 0}
     - target: {fileID: 3135027458503820639, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.0999756
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135027458503820639, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.33999634
       objectReference: {fileID: 0}
@@ -12561,6 +12565,10 @@ PrefabInstance:
     - target: {fileID: 3135027459754899108, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_Name
       value: Main_menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135027460467777601, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 3370788776464674638, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -20970,7 +20978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &849374906
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21045,7 +21053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventoryList: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
-  blankInventorySlot: {fileID: 480885810163975600, guid: e883cc0380444794bbdb29211f236279, type: 3}
+  blankInventorySlot: {fileID: 9130288929711619122, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
   inventoryPanelContent: {fileID: 982160204}
   descriptionText: {fileID: 25324755}
   useButton: {fileID: 285175426}
@@ -24903,7 +24911,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 15}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &982160206
 MonoBehaviour:
