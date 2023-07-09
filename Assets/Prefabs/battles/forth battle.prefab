@@ -111,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233405318187107960}
   m_Layer: 0
-  m_Name: final battle
+  m_Name: forth battle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,16 +160,16 @@ RectTransform:
   m_GameObject: {fileID: 1109784474774529599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.59995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5101025647336432775}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.46600002}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 132.84239}
-  m_SizeDelta: {x: 0, y: -265.6848}
+  m_AnchoredPosition: {x: 0, y: 26}
+  m_SizeDelta: {x: 0, y: 204.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8542623382123475524
 CanvasRenderer:
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 908333ea41d212442b76dcc49de92c85, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1abed8168ccf9434fb0a5318b23a5339, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

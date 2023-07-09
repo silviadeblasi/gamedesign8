@@ -9,6 +9,7 @@ public class Combact_3: Combact{
     public GameObject Dialogo_primo_combattimento;
     public GameObject Dialogo_fine_primo_combattimento;
     public GameObject Combattimento3;
+    public GameObject third_battle;
     private bool dialogo_iniziale = false;
     private bool fine_dialogo_inizio_combattimento = false;
     private bool dead_1 = false;
@@ -39,8 +40,9 @@ public class Combact_3: Combact{
             
 
             if(combact._inTrigger){
-            CombactManager.combactManager.CombactRequest(this);
+                CombactManager.combactManager.CombactRequest(this);
                 
+               third_battle.SetActive(true);
             //player.GetComponent<PlayerMovement>().enabled = false;
             //anim.SetBool("isWalking", false); //??
             /*if(dialogo_iniziale == false)
@@ -83,12 +85,14 @@ public class Combact_3: Combact{
             if(Combattimento3.transform.Find("enemies (3.5)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_5 == false){
                 CombactManager.combactManager.currentCombact.CombactObjectiveCount ++; //ho ucciso un nemico e sommo 1 al contatore;
                 dead_5 = true;
-            }
+                 
+                }
 
 
            if(CombactManager.combactManager.currentCombact.CombactObjectiveCount == CombactManager.combactManager.currentCombact.CombactObjectiveRequirement){
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
-           }
+                third_battle.SetActive(false);
+                }
 
            /*if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.COMPLETE){
                 //dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_fine_primo_combattimento, transform.position, Quaternion.identity);

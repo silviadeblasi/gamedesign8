@@ -9,6 +9,7 @@ public class Combact_5: Combact{
     public GameObject Dialogo_primo_combattimento;
     public GameObject Dialogo_fine_primo_combattimento;
     public GameObject Combattimento2;
+    public GameObject fifth_battle;
     private bool dialogo_iniziale = false;
     private bool fine_dialogo_inizio_combattimento = false;
     private bool dead_1 = false;
@@ -40,20 +41,24 @@ public class Combact_5: Combact{
 
             if(combact._inTrigger){
             CombactManager.combactManager.CombactRequest(this);
-                
-            //player.GetComponent<PlayerMovement>().enabled = false;
-            //anim.SetBool("isWalking", false); //??
-            /*if(dialogo_iniziale == false)
-                dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_primo_combattimento, transform.position, Quaternion.identity);
-                dialogo_iniziale = true;
-            if(fine_dialogo_inizio_combattimento == false && (((dialogueBoxClone.transform.Find("Canvas_dialogue")?.gameObject).transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>()).fine_dialogo == true){
-                fine_dialogo_inizio_combattimento = true;
-                Debug.Log("combact 1");
-                player.GetComponent<PlayerMovement>().enabled = true;
-                //inizia il combattimento
-            }*/
-           //CombactManager.combactManager.CombactRequest(this);//assegna come corrente il combattimento 1
-            if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
+
+
+                fifth_battle.SetActive(true);
+
+
+                //player.GetComponent<PlayerMovement>().enabled = false;
+                //anim.SetBool("isWalking", false); //??
+                /*if(dialogo_iniziale == false)
+                    dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_primo_combattimento, transform.position, Quaternion.identity);
+                    dialogo_iniziale = true;
+                if(fine_dialogo_inizio_combattimento == false && (((dialogueBoxClone.transform.Find("Canvas_dialogue")?.gameObject).transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>()).fine_dialogo == true){
+                    fine_dialogo_inizio_combattimento = true;
+                    Debug.Log("combact 1");
+                    player.GetComponent<PlayerMovement>().enabled = true;
+                    //inizia il combattimento
+                }*/
+                //CombactManager.combactManager.CombactRequest(this);//assegna come corrente il combattimento 1
+                if (CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
             //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
                 Combattimento2.transform.Find("enemies (5.1)").gameObject.GetComponent<EnemyController1>().enabled = true;
                 Combattimento2.transform.Find("enemies (5.2)").gameObject.GetComponent<EnemyController1>().enabled = true;
@@ -83,12 +88,13 @@ public class Combact_5: Combact{
             if(Combattimento2.transform.Find("enemies (5.5)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_5 == false){
                 CombactManager.combactManager.currentCombact.CombactObjectiveCount ++; //ho ucciso un nemico e sommo 1 al contatore;
                 dead_5 = true;
-            }
+                }
 
 
-           if(CombactManager.combactManager.currentCombact.CombactObjectiveCount == CombactManager.combactManager.currentCombact.CombactObjectiveRequirement){
+            if(CombactManager.combactManager.currentCombact.CombactObjectiveCount == CombactManager.combactManager.currentCombact.CombactObjectiveRequirement){
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
-           }
+                fifth_battle.SetActive(false);
+            }
 
            /*if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.COMPLETE){
                 //dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_fine_primo_combattimento, transform.position, Quaternion.identity);
