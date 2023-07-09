@@ -51,6 +51,8 @@ MonoBehaviour:
   soundManager: {fileID: 5317059424758054845}
   dialoghiManager: {fileID: 2223010519362696031}
   Camera: {fileID: 0}
+  canvas_trama: {fileID: 0}
+  Combattimento: {fileID: 0}
 --- !u!114 &5317059424758054845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,15 +65,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2314c89c3dc44060af4b256785559af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMixerGroup: {fileID: 8186537914470028131, guid: cd00f80ccaa3b6c42b1eac5731820d68, type: 2}
-  soundEffectsMixerGroup: {fileID: -1129345424946631625, guid: cd00f80ccaa3b6c42b1eac5731820d68, type: 2}
+  backgroundMixerGroup: {fileID: -2656644310174815327, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
+  soundEffectsMixerGroup: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
   soundEffects:
   - {fileID: 8300000, guid: 9a618e1d4032546d4a40ac20d75bf68e, type: 3}
   - {fileID: 8300000, guid: e3e994ce06591449ab0c1f981389d31c, type: 3}
   - {fileID: 8300000, guid: 9a8e5b60d270c0c45aa0549618c45a56, type: 3}
+  - {fileID: 8300000, guid: e390d9533c59b4855bdce280603820d8, type: 3}
+  - {fileID: 8300000, guid: 56cb5dc2c7c77a14c935a8873913619f, type: 3}
+  - {fileID: 8300000, guid: 02006031740fca541915f850c80deec5, type: 3}
+  - {fileID: 8300000, guid: da62e1fce9d2afa4fb7ffa5bda9702b5, type: 3}
+  - {fileID: 8300000, guid: f79ab9cc01ac3c14c92f1e1071d8ca63, type: 3}
+  - {fileID: 8300000, guid: 5636432ba34754e438390b8ee3753183, type: 3}
+  - {fileID: 8300000, guid: e3e994ce06591449ab0c1f981389d31c, type: 3}
+  - {fileID: 8300000, guid: 79474f0ca26c2ac4bbf9bcf8efd5c797, type: 3}
+  - {fileID: 8300000, guid: 5b67bac33a84e284ea483a45bc020c96, type: 3}
+  - {fileID: 8300000, guid: d38f31dfdfb34c74ca9f582029196934, type: 3}
+  - {fileID: 8300000, guid: 6883c7a267670314ba603812329be0c1, type: 3}
+  - {fileID: 8300000, guid: da23566c4cce88c4a8b12a82f0e9ea67, type: 3}
+  - {fileID: 8300000, guid: 9032e8d4afebb44acaeb11ae276e46ac, type: 3}
+  - {fileID: 8300000, guid: 2f29029a86886e541ae13488d061ad4f, type: 3}
+  - {fileID: 8300000, guid: 7c2b1ee635335514dbe0d952eb80064a, type: 3}
+  - {fileID: 8300000, guid: 6a50aec51b4fe4b2e9e2c9a76d3ed989, type: 3}
+  - {fileID: 8300000, guid: 962ecb626c495459b88a087e0955cece, type: 3}
+  - {fileID: 8300000, guid: 9a8e5b60d270c0c45aa0549618c45a56, type: 3}
   backgroundMusic:
   - {fileID: 8300000, guid: e317edef94af7684e81619674915469c, type: 3}
   - {fileID: 8300000, guid: 674b1d360fcad49c39546d4ea51ed55d, type: 3}
+  - {fileID: 8300000, guid: 43f3c7c42108ce047b3239aaf8f7426e, type: 3}
 --- !u!114 &2223010519362696031
 MonoBehaviour:
   m_ObjectHideFlags: 0

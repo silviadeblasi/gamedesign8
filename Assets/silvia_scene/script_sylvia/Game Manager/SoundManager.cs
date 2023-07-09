@@ -12,8 +12,7 @@ public class SoundManager : MonoBehaviour
     private AudioSource soundEffectSource; // Sorgente audio per gli effetti sonori
     private AudioSource backgroundMusicSource; // Sorgente audio per la musica di sottofondo
 
-    public static SoundManager Instance
-        ;
+    public static SoundManager Instance;
 
     private void Awake()
     {
@@ -85,8 +84,8 @@ public class SoundManager : MonoBehaviour
 
     public void UpdateMixerValue()
     {
-        backgroundMixerGroup.audioMixer.SetFloat("BgVolume", Mathf.Log10( SoundOptionManager.BgVolume)*20);
-        soundEffectsMixerGroup.audioMixer.SetFloat("sfxVolume", Mathf.Log10(SoundOptionManager.sfxVolume)*20);
+        backgroundMixerGroup.audioMixer.SetFloat("BgVolume", Mathf.Log10( SoundOptionManager.BgVolume) *20);
+        soundEffectsMixerGroup.audioMixer.SetFloat("SfxVolume", Mathf.Log10(SoundOptionManager.SfxVolume) *20);
     }
 
 }
