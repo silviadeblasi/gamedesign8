@@ -22,6 +22,7 @@ public class CombactManager : MonoBehaviour
 
     public void CombactRequest(Combact combact)
     {
+        Debug.Log("Quest Request");
         //available quests
         if(combact.availableCombactIDs.Count > 0)
         {
@@ -50,13 +51,15 @@ public class CombactManager : MonoBehaviour
 
 
     //ACCEPT QUEST
-    public void AcceptCombact(int questID)
+    public void AcceptCombact(int combactID)
     {
+        Debug.Log("Accept Quest");
         for(int i = 0; i < combactList.Count; i++)
         {
             Debug.Log(currentCombact.id);
-            if (combactList[i].id == questID && combactList[i].progress == GeneralCombact.CombactProgress.AVAILABLE && currentCombact.id == -1)
+            if (combactList[i].id == combactID && combactList[i].progress == GeneralCombact.CombactProgress.AVAILABLE && currentCombact.id == -1)
             {
+                Debug.Log("tanto lo so che qui non arrivi mai bastardo");
                 combactList[i].progress = GeneralCombact.CombactProgress.ACCEPTED;
                 currentCombact = combactList[i];
             } else if (currentCombact.id != -1)

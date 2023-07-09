@@ -12187,7 +12187,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568118605}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
@@ -14196,7 +14196,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718611522}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
@@ -26089,7 +26089,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.056}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 852.5, y: -469.80005}
+  m_AnchoredPosition: {x: 852.5, y: -469.80008}
   m_SizeDelta: {x: -1439.16, y: -776.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1116112193
@@ -26909,7 +26909,7 @@ MonoBehaviour:
     CombactObjectiveRequirement: 3
   currentCombact:
     title: 
-    id: 0
+    id: -1
     progress: 0
     description: 
     questObjective: 
@@ -28935,7 +28935,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372411529}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 859a26cdc932cb649b26700ff2a92402, type: 3}
   m_Name: 
