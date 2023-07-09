@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &3803266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,6 +795,27 @@ MonoBehaviour:
     questObjective: 
     CombactObjectiveCount: 0
     CombactObjectiveRequirement: 5
+  - title: Combact_3
+    id: 2
+    progress: 0
+    description: 'terzo combattimento '
+    questObjective: 
+    CombactObjectiveCount: 0
+    CombactObjectiveRequirement: 5
+  - title: Combact_4
+    id: 3
+    progress: 0
+    description: 'quarto combattimento '
+    questObjective: Canvas ruba gioiello madre
+    CombactObjectiveCount: 0
+    CombactObjectiveRequirement: 5
+  - title: Combact_5
+    id: 4
+    progress: 0
+    description: 'quinto combattimento '
+    questObjective: 
+    CombactObjectiveCount: 0
+    CombactObjectiveRequirement: 5
   currentCombact:
     title: 
     id: 0
@@ -1438,7 +1459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8244566480170547976, guid: 7913653bab2fc41f8baf033b37718974, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8244566480170547976, guid: 7913653bab2fc41f8baf033b37718974, type: 3}
       propertyPath: m_AnchorMax.x
@@ -9892,7 +9913,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10435,7 +10456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -126.66998, y: -94.740005}
+  m_AnchoredPosition: {x: -126.66998, y: -94.73999}
   m_SizeDelta: {x: -733.67, y: -394.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &391630588
@@ -11326,6 +11347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 451274523}
   - component: {fileID: 451274524}
+  - component: {fileID: 451274525}
   m_Layer: 0
   m_Name: 'Combattimento (4): ruba ciondolo'
   m_TagString: Untagged
@@ -11366,16 +11388,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inTrigger: 0
-  trigger_startcombact: {fileID: 0}
-  availableCombactIDs: 
-  receivableCombactID: 0
+  trigger_startcombact: {fileID: 451274522}
+  availableCombactIDs: 03000000
+  receivableCombactID: 3
   combattimento1: {fileID: 0}
-  combattimento: {fileID: 0}
-  combact: {fileID: 0}
-  player: {fileID: 0}
+  combattimento: {fileID: 451274522}
+  combact: {fileID: 451274524}
+  player: {fileID: 131299055}
   Dialogo_primo_combattimento: {fileID: 0}
   Dialogo_fine_primo_combattimento: {fileID: 0}
-  Combattimento2: {fileID: 0}
+  Combattimento2: {fileID: 451274522}
+--- !u!60 &451274525
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451274522}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 72.3834, y: 29.11081}
+      - {x: 64.70368, y: 24.75059}
+      - {x: 67.01672, y: 23.250328}
+      - {x: 75.66126, y: 18.044453}
+      - {x: 83.60832, y: 23.018005}
 --- !u!1 &457894731
 GameObject:
   m_ObjectHideFlags: 0
@@ -12333,7 +12385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3135027458503820639, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.3400116
+      value: -0.33999634
       objectReference: {fileID: 0}
     - target: {fileID: 3135027459408485536, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -14115,7 +14167,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -137.06, y: -98.229996}
+  m_AnchoredPosition: {x: -137.06, y: -98.22998}
   m_SizeDelta: {x: -752.45, y: -401.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &672230302
@@ -24778,7 +24830,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -127.16998, y: -94.740005}
+  m_AnchoredPosition: {x: -127.16998, y: -94.73999}
   m_SizeDelta: {x: -732.67, y: -394.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &989179402
@@ -27240,7 +27292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -126.66998, y: -94.740005}
+  m_AnchoredPosition: {x: -126.66998, y: -94.73999}
   m_SizeDelta: {x: -733.67, y: -394.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1163671537
@@ -29669,6 +29721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1385663319}
   - component: {fileID: 1385663320}
+  - component: {fileID: 1385663321}
   m_Layer: 0
   m_Name: Combattimento (5)
   m_TagString: Untagged
@@ -29709,16 +29762,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inTrigger: 0
-  trigger_startcombact: {fileID: 0}
-  availableCombactIDs: 
-  receivableCombactID: 0
+  trigger_startcombact: {fileID: 1385663318}
+  availableCombactIDs: 04000000
+  receivableCombactID: 4
   combattimento1: {fileID: 0}
-  combattimento: {fileID: 0}
-  combact: {fileID: 0}
-  player: {fileID: 0}
+  combattimento: {fileID: 1385663318}
+  combact: {fileID: 1385663320}
+  player: {fileID: 131299055}
   Dialogo_primo_combattimento: {fileID: 0}
   Dialogo_fine_primo_combattimento: {fileID: 0}
-  Combattimento2: {fileID: 0}
+  Combattimento2: {fileID: 1385663318}
+--- !u!60 &1385663321
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385663318}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 34.229446, y: 51.2977}
+      - {x: 29.97875, y: 49.078598}
+      - {x: 29.292137, y: 48.57923}
+      - {x: 23.70303, y: 45.29661}
+      - {x: 36.34078, y: 36.660217}
+      - {x: 46.96615, y: 43.942814}
 --- !u!1 &1405081763
 GameObject:
   m_ObjectHideFlags: 0
@@ -29866,6 +29950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1405141245}
   - component: {fileID: 1405141246}
+  - component: {fileID: 1405141247}
   m_Layer: 0
   m_Name: Combattimento (3)
   m_TagString: Untagged
@@ -29906,16 +29991,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inTrigger: 0
-  trigger_startcombact: {fileID: 0}
+  trigger_startcombact: {fileID: 1405141244}
   availableCombactIDs: 
   receivableCombactID: 0
   combattimento1: {fileID: 0}
-  combattimento: {fileID: 0}
-  combact: {fileID: 0}
-  player: {fileID: 0}
+  combattimento: {fileID: 1405141244}
+  combact: {fileID: 1405141246}
+  player: {fileID: 131299055}
   Dialogo_primo_combattimento: {fileID: 0}
   Dialogo_fine_primo_combattimento: {fileID: 0}
-  Combattimento3: {fileID: 0}
+  Combattimento3: {fileID: 1405141244}
+--- !u!60 &1405141247
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405141244}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 59.300995, y: 19.93017}
+      - {x: 52.6541, y: 16.488014}
+      - {x: 49.573517, y: 14.528719}
+      - {x: 59.595146, y: 7.83099}
+      - {x: 68.68979, y: 13.148819}
 --- !u!1 &1410912764
 GameObject:
   m_ObjectHideFlags: 0
