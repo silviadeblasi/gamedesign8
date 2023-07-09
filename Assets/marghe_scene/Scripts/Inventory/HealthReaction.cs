@@ -13,3 +13,4 @@ public class HealthReaction : MonoBehaviour
         healthSignal.Raise();
     }
 }
+

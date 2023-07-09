@@ -3641,7 +3641,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 285175428}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 849374909}
+        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
+        m_MethodName: UseButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &291012784
 GameObject:
   m_ObjectHideFlags: 0
@@ -9759,7 +9771,7 @@ PrefabInstance:
       objectReference: {fileID: 348793674}
     - target: {fileID: 4613773642290738341, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: currentHealth
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4613773642290738341, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: canvasToDisappear
@@ -23786,7 +23798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -266.14996, y: 131.72998}
+  m_AnchoredPosition: {x: -266.14996, y: 131.73}
   m_SizeDelta: {x: 1.65, y: 2.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &941144758
@@ -33734,10 +33746,7 @@ MonoBehaviour:
   trigger_startcombact: {fileID: 1788197760}
   availableCombactIDs: 00000000
   receivableCombactID: 0
-  _combactAvailable: {fileID: 1788197760}
-  _combactCompleted: {fileID: 0}
   combact: {fileID: 1788197762}
-  coffeeQuestSign: {fileID: 0}
   player: {fileID: 131299055}
   Dialogo_primo_combattimento: {fileID: 987438681667126822, guid: 771e244c77b694b41a97918d58eb85fd, type: 3}
   Dialogo_fine_primo_combattimento: {fileID: 987438681667126822, guid: 992d260d7543140f0b1bb415659ee82a, type: 3}
@@ -35481,7 +35490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 50.141, y: 6.352, z: 48.231}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -258.24994, y: 154.5}
+  m_AnchoredPosition: {x: -258.24994, y: 154.50002}
   m_SizeDelta: {x: 343.64, y: 234.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932543688
