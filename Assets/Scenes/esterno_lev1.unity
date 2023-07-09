@@ -15143,6 +15143,79 @@ PolygonCollider2D:
       - {x: -0.19683325, y: -0.42043638}
       - {x: -0.032323956, y: -0.31914765}
       - {x: 0.031282425, y: -0.20369476}
+--- !u!1001 &795672635
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1788197761}
+    m_Modifications:
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002957937960453470, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_Name
+      value: first battle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002957937960453470, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058709678066194417, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 389349187}
+    - target: {fileID: 8058709678066194417, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058709678066194417, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -865282969
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e1422d29c68547a4084b615ed676083c, type: 3}
 --- !u!1 &804776116
 GameObject:
   m_ObjectHideFlags: 0
@@ -34522,6 +34595,7 @@ Transform:
   - {fileID: 1372411530}
   - {fileID: 718611523}
   - {fileID: 568118606}
+  - {fileID: 2079548058}
   m_Father: {fileID: 217839964}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34545,8 +34619,8 @@ MonoBehaviour:
   combattimento: {fileID: 1788197760}
   combact: {fileID: 1788197762}
   player: {fileID: 131299055}
-  Dialogo_primo_combattimento: {fileID: 987438681667126822, guid: 771e244c77b694b41a97918d58eb85fd, type: 3}
-  Dialogo_fine_primo_combattimento: {fileID: 987438681667126822, guid: 992d260d7543140f0b1bb415659ee82a, type: 3}
+  Dialogo_primo_combattimento: {fileID: 0}
+  first_battle: {fileID: 2079548057}
   Combattimento1: {fileID: 1788197760}
 --- !u!60 &1788197763
 PolygonCollider2D:
@@ -46602,6 +46676,16 @@ PolygonCollider2D:
       - {x: -0.19683325, y: -0.42043638}
       - {x: -0.032323956, y: -0.31914765}
       - {x: 0.031282425, y: -0.20369476}
+--- !u!1 &2079548057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3002957937960453470, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+  m_PrefabInstance: {fileID: 795672635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2079548058 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2969316127311442445, guid: e1422d29c68547a4084b615ed676083c, type: 3}
+  m_PrefabInstance: {fileID: 795672635}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2082391281
 GameObject:
   m_ObjectHideFlags: 0
@@ -46901,7 +46985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 11.079956, y: -5.100006}
+  m_AnchoredPosition: {x: 11.079956, y: -5.1000366}
   m_SizeDelta: {x: -716.83, y: -351.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2090682777

@@ -6,8 +6,9 @@ public class Combact_1 : Combact{
     public GameObject player;
     private Animator anim;
     private GameObject dialogueBoxClone;
+    private GameObject dialogueBoxClone2;
     public GameObject Dialogo_primo_combattimento;
-    public GameObject Dialogo_fine_primo_combattimento;
+    public GameObject first_battle;
     public GameObject Combattimento1;
     private bool dialogo_iniziale = false;
     private bool fine_dialogo_inizio_combattimento = false;
@@ -15,6 +16,7 @@ public class Combact_1 : Combact{
     private bool dead_1 = false;
     private bool dead_2 = false;
     private bool dead_3 = false;
+    private bool start_battle = false;
 
     private void Start() {
         anim = player.GetComponent<Animator>();
@@ -32,8 +34,14 @@ public class Combact_1 : Combact{
         }
     }
     private void Update() {
+
+        
         if(combact._inTrigger){
+
             CombactManager.combactManager.CombactRequest(this);
+
+            first_battle.SetActive(true);
+        
             //player.GetComponent<PlayerMovement>().enabled = false;
             //anim.SetBool("isWalking", false); //??
             /*if(dialogo_iniziale == false)
@@ -68,13 +76,11 @@ public class Combact_1 : Combact{
             }
 
            if(CombactManager.combactManager.currentCombact.CombactObjectiveCount == CombactManager.combactManager.currentCombact.CombactObjectiveRequirement){
-                CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.COMPLETE;
+                CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
+                first_battle.SetActive(false);
            }
 
-           if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.COMPLETE){
-                //dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_fine_primo_combattimento, transform.position, Quaternion.identity);
-                CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE; //dopo il dialogo
-           }
+           
 
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){
                 CombactManager.combactManager.FirstCombactDone = true; // ho fatto il primo combattimento quindi ora posso fare gli altri 
