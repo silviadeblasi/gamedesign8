@@ -675,7 +675,7 @@ AudioSource:
   m_GameObject: {fileID: 8140712728902351452}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1129345424946631625, guid: cd00f80ccaa3b6c42b1eac5731820d68, type: 2}
   m_audioClip: {fileID: 8300000, guid: 45dd3649c9f084045b0ea9aecc3e93b1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
@@ -771,7 +771,7 @@ AudioSource:
   m_GameObject: {fileID: 8140712728902351452}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1129345424946631625, guid: cd00f80ccaa3b6c42b1eac5731820d68, type: 2}
   m_audioClip: {fileID: 8300000, guid: 962ecb626c495459b88a087e0955cece, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
@@ -901,6 +901,7 @@ MonoBehaviour:
   Canvas_per_chiusura: {fileID: 0}
   soundManager: {fileID: 0}
   pendant_trovato: 0
+  tomba_madre: 0
   lettera_sfratto_trovata: 0
   mappa_trovata: 0
 --- !u!114 &3747286361303236666

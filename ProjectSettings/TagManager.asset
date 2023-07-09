@@ -59,6 +59,9 @@ TagManager:
   - name: player
     uniqueID: 1707300359
     locked: 0
+  - name: pointer
+    uniqueID: 2928310179
+    locked: 0
   - name: dialogue
     uniqueID: 3952058405
     locked: 0
