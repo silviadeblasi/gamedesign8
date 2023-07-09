@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Syringe
   itemDescription: It cures you, giving you back a whole heart
   itemImage: {fileID: 1253124589, guid: 7adc871fbc0cc5148ac9cc7a1e344319, type: 3}
-  numberHeld: 0
+  numberHeld: 1
   usable: 1
   unique: 0
   thisEvent:

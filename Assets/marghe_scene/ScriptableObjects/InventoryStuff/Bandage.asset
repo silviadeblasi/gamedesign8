@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Bandage
   itemDescription: This item gives you back a half heart
   itemImage: {fileID: -1855760466, guid: 2e8dc374d6857b04282497bcc4f1cf22, type: 3}
-  numberHeld: 0
+  numberHeld: 1
   usable: 1
   unique: 0
   thisEvent:
