@@ -8,6 +8,7 @@ public class Combact : MonoBehaviour
     public GameObject trigger_startcombact;
     public List<int> availableCombactIDs = new List<int> ();
     public int receivableCombactID;
+    public GameObject combattimento;
     //public GameObject _combactAvailable;
     //public GameObject _combactCompleted;
     public Combact combact;
@@ -18,12 +19,13 @@ public class Combact : MonoBehaviour
 
         SetCombact();
         combact = GetComponent<Combact>();
-    } 
-
+    }
+    //questo magari protrebbe servirmi a far comparire i nemici morti 
     public void SetCombact()
     {
         if (CombactManager.combactManager.CheckCompleteCombact(this))
         {
+            combattimento.SetActive(false);
             //_combactCompleted.SetActive(true);
             //coffeeQuestSign.SetActive(false);
         }
@@ -42,6 +44,7 @@ public class Combact : MonoBehaviour
                 {
                     //_combactAvailable.SetActive(false);
                     if(!CombactManager.combactManager.CheckCompleteCombact(this)){
+                        combattimento.SetActive(true);
 
                     }
                         //coffeeQuestSign.SetActive(true);
@@ -50,6 +53,7 @@ public class Combact : MonoBehaviour
                 //_questAvailable.SetActive(true);
         } else
         {
+            combattimento.SetActive(true);
            // _combactAvailable.SetActive(false);
             //_combactCompleted.SetActive(false);
         }

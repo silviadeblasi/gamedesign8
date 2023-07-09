@@ -155,7 +155,7 @@ public class CombactManager : MonoBehaviour
     {
         for (int i = 0; i < combactList.Count; i++)
         {
-            if (combactList[i].id == combact.receivableCombactID && combactList[i].progress == GeneralCombact.CombactProgress.COMPLETE)
+            if (combactList[i].id == combact.receivableCombactID && combactList[i].progress == GeneralCombact.CombactProgress.DONE)
             {
                 return true;
             }
