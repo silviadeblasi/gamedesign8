@@ -8,6 +8,7 @@ public class Combact : MonoBehaviour
     public GameObject trigger_startcombact;
     public List<int> availableCombactIDs = new List<int> ();
     public int receivableCombactID;
+    public GameObject combattimento1;
     public GameObject combattimento;
     //public GameObject _combactAvailable;
     //public GameObject _combactCompleted;
@@ -25,7 +26,7 @@ public class Combact : MonoBehaviour
     {
         if (CombactManager.combactManager.CheckCompleteCombact(this))
         {
-            combattimento.SetActive(false);
+            //combattimento.SetActive(false);
             //_combactCompleted.SetActive(true);
             //coffeeQuestSign.SetActive(false);
         }
@@ -39,12 +40,13 @@ public class Combact : MonoBehaviour
             {
                 if (CombactManager.combactManager.FirstCombactDone)
                 {
+                    //combattimento1.SetActive(false);
                     //_combactAvailable.SetActive(true);
                 } else
                 {
                     //_combactAvailable.SetActive(false);
                     if(!CombactManager.combactManager.CheckCompleteCombact(this)){
-                        combattimento.SetActive(true);
+                        //combattimento.SetActive(true);
 
                     }
                         //coffeeQuestSign.SetActive(true);
@@ -53,7 +55,7 @@ public class Combact : MonoBehaviour
                 //_questAvailable.SetActive(true);
         } else
         {
-            combattimento.SetActive(true);
+            //combattimento.SetActive(true);
            // _combactAvailable.SetActive(false);
             //_combactCompleted.SetActive(false);
         }

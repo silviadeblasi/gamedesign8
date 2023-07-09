@@ -22,7 +22,6 @@ public class CombactManager : MonoBehaviour
 
     public void CombactRequest(Combact combact)
     {
-        Debug.Log("Quest Request");
         //available quests
         if(combact.availableCombactIDs.Count > 0)
         {
@@ -39,12 +38,18 @@ public class CombactManager : MonoBehaviour
                 }
             } 
         }
-
+       
         //active quest
-        if(currentCombact.id ==combact.receivableCombactID && currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED || currentCombact.progress == GeneralCombact.CombactProgress.COMPLETE)
+        /*if(currentCombact.id == combact.receivableCombactID && currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED || currentCombact.progress == GeneralCombact.CombactProgress.DONE)
         {
-            Debug.Log("Quest ID: " + combact.receivableCombactID + " is " + currentCombact.progress);
+           
+            Debug.Log("combact ID: " + combact.receivableCombactID + " is " + currentCombact.progress);
             CompleteCombact(combact.receivableCombactID);
+        }*/
+
+        if(currentCombact.id == combact.receivableCombactID && currentCombact.progress == GeneralCombact.CombactProgress.DONE)
+        {
+            currentCombact.id = -1;
         }
 
     }
@@ -71,11 +76,10 @@ public class CombactManager : MonoBehaviour
 
     //COMPLETE QUEST
 
-    public void CompleteCombact(int questID)
+    public void CompleteCombact(int combactID)
     {
-        if(currentCombact.id == questID && currentCombact.progress == GeneralCombact.CombactProgress.COMPLETE)
+        if(currentCombact.id == combactID && currentCombact.progress == GeneralCombact.CombactProgress.DONE)
         {
-            currentCombact.progress = GeneralCombact.CombactProgress.DONE;
             currentCombact.id = -1;
         }
     }

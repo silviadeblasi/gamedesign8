@@ -763,6 +763,47 @@ PolygonCollider2D:
       - {x: 0.1869303, y: -0.33108562}
       - {x: 0.29880226, y: -0.27455366}
       - {x: 0.43212986, y: -0.1508699}
+--- !u!1 &41825213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1553234212947570961, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+  m_PrefabInstance: {fileID: 1318742629}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &41825218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41825213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d0db4d48c324f3a8850cbd292059d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combactList:
+  - title: Combact_1
+    id: 0
+    progress: 0
+    description: primo combattimento fuori casa sue
+    questObjective: se non finisco il primo non ne posso fare altri
+    CombactObjectiveCount: 0
+    CombactObjectiveRequirement: 3
+  - title: Combact_2
+    id: 1
+    progress: 0
+    description: 'secondo combattimento '
+    questObjective: 
+    CombactObjectiveCount: 0
+    CombactObjectiveRequirement: 5
+  currentCombact:
+    title: 
+    id: 0
+    progress: 0
+    description: 
+    questObjective: 
+    CombactObjectiveCount: 0
+    CombactObjectiveRequirement: 0
+  FirstCombactDone: 0
 --- !u!1 &43839202
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,6 +3222,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 229068863}
+  - component: {fileID: 229068864}
+  - component: {fileID: 229068865}
   m_Layer: 0
   m_Name: Combattimento (2)
   m_TagString: Untagged
@@ -3208,6 +3251,59 @@ Transform:
   m_Father: {fileID: 217839964}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &229068864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229068862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e73cca4016a348a990ecc05f42871db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inTrigger: 0
+  trigger_startcombact: {fileID: 229068862}
+  availableCombactIDs: 01000000
+  receivableCombactID: 1
+  combattimento1: {fileID: 0}
+  combattimento: {fileID: 229068862}
+  combact: {fileID: 229068864}
+  player: {fileID: 131299055}
+  Dialogo_primo_combattimento: {fileID: 0}
+  Dialogo_fine_primo_combattimento: {fileID: 0}
+  Combattimento2: {fileID: 229068862}
+--- !u!60 &229068865
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229068862}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.6782343, y: 7.3175783}
+      - {x: -3.9834938, y: 2.5271888}
+      - {x: 3.986634, y: -1.9859514}
+      - {x: 9.631257, y: -0.21937633}
+      - {x: 11.524809, y: 3.2876287}
 --- !u!1 &240989785
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,7 +3339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.68200004, y: 0.03931397}
   m_AnchorMax: {x: 1, y: 0.29234305}
-  m_AnchoredPosition: {x: 6, y: -0.19998169}
+  m_AnchoredPosition: {x: 6, y: -0.2000122}
   m_SizeDelta: {x: 664, y: 329}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &240989787
@@ -11153,6 +11249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451274523}
+  - component: {fileID: 451274524}
   m_Layer: 0
   m_Name: 'Combattimento (4): ruba ciondolo'
   m_TagString: Untagged
@@ -11180,6 +11277,29 @@ Transform:
   m_Father: {fileID: 217839964}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &451274524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451274522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4567d794cb94e4e963ad1a5f1c7159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inTrigger: 0
+  trigger_startcombact: {fileID: 0}
+  availableCombactIDs: 
+  receivableCombactID: 0
+  combattimento1: {fileID: 0}
+  combattimento: {fileID: 0}
+  combact: {fileID: 0}
+  player: {fileID: 0}
+  Dialogo_primo_combattimento: {fileID: 0}
+  Dialogo_fine_primo_combattimento: {fileID: 0}
+  Combattimento2: {fileID: 0}
 --- !u!1 &457894731
 GameObject:
   m_ObjectHideFlags: 0
@@ -12121,7 +12241,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 606528799227829544, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.399971
+      value: -3.3999634
       objectReference: {fileID: 0}
     - target: {fileID: 759948026108466633, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -12138,6 +12258,14 @@ PrefabInstance:
     - target: {fileID: 3135027458503820639, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.33999634
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135027459408485536, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135027459408485536, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.5499878
       objectReference: {fileID: 0}
     - target: {fileID: 3135027459754899096, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_Pivot.x
@@ -12239,9 +12367,13 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SfxSlider
       objectReference: {fileID: 0}
+    - target: {fileID: 6385400173173078793, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.7315674
+      objectReference: {fileID: 0}
     - target: {fileID: 7156001078238458702, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.3999863
+      value: 3.399994
       objectReference: {fileID: 0}
     - target: {fileID: 7328442129837905130, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -12249,11 +12381,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8263847304512576736, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.40001
+      value: -19.400024
       objectReference: {fileID: 0}
     - target: {fileID: 8263847304512576736, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12.099991
+      value: -12.100037
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c02d77e6b96324d4c8b243fe85b0d8e5, type: 3}
@@ -23854,7 +23986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.46800002, y: 0.5417974}
   m_AnchorMax: {x: 0.46800002, y: 0.5417974}
-  m_AnchoredPosition: {x: -0.9, y: 12.9}
+  m_AnchoredPosition: {x: -0.9000015, y: 12.900002}
   m_SizeDelta: {x: 22.059998, y: 31.200012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &949904520
@@ -29232,6 +29364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1385663319}
+  - component: {fileID: 1385663320}
   m_Layer: 0
   m_Name: Combattimento (5)
   m_TagString: Untagged
@@ -29259,6 +29392,29 @@ Transform:
   m_Father: {fileID: 217839964}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1385663320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385663318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98dc3f39c8934c78892aa79666f3c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inTrigger: 0
+  trigger_startcombact: {fileID: 0}
+  availableCombactIDs: 
+  receivableCombactID: 0
+  combattimento1: {fileID: 0}
+  combattimento: {fileID: 0}
+  combact: {fileID: 0}
+  player: {fileID: 0}
+  Dialogo_primo_combattimento: {fileID: 0}
+  Dialogo_fine_primo_combattimento: {fileID: 0}
+  Combattimento2: {fileID: 0}
 --- !u!1 &1405081763
 GameObject:
   m_ObjectHideFlags: 0
@@ -29405,6 +29561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1405141245}
+  - component: {fileID: 1405141246}
   m_Layer: 0
   m_Name: Combattimento (3)
   m_TagString: Untagged
@@ -29432,6 +29589,29 @@ Transform:
   m_Father: {fileID: 217839964}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1405141246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405141244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8cfa8e7caae44bc0b33401362f7dfe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inTrigger: 0
+  trigger_startcombact: {fileID: 0}
+  availableCombactIDs: 
+  receivableCombactID: 0
+  combattimento1: {fileID: 0}
+  combattimento: {fileID: 0}
+  combact: {fileID: 0}
+  player: {fileID: 0}
+  Dialogo_primo_combattimento: {fileID: 0}
+  Dialogo_fine_primo_combattimento: {fileID: 0}
+  Combattimento3: {fileID: 0}
 --- !u!1 &1410912764
 GameObject:
   m_ObjectHideFlags: 0
@@ -33195,7 +33375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.72789824, y: 0.025}
   m_AnchorMax: {x: 0.99110186, y: 0.25547045}
-  m_AnchoredPosition: {x: 1.7000122, y: -4.0000305}
+  m_AnchoredPosition: {x: 1.6999512, y: -4}
   m_SizeDelta: {x: 648.83, y: 322.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677169839
@@ -33942,6 +34122,7 @@ MonoBehaviour:
   trigger_startcombact: {fileID: 1788197760}
   availableCombactIDs: 00000000
   receivableCombactID: 0
+  combattimento1: {fileID: 0}
   combattimento: {fileID: 1788197760}
   combact: {fileID: 1788197762}
   player: {fileID: 131299055}
