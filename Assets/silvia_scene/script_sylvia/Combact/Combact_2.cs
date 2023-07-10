@@ -10,6 +10,8 @@ public class Combact_2: Combact{
     public GameObject Dialogo_fine_primo_combattimento;
     public GameObject Combattimento2;
     public GameObject second_battle;
+    public GameObject Muretto_final;
+    public DialoghiUIManager dialoghiManager;
     private bool dialogo_iniziale = false;
     private bool fine_dialogo_inizio_combattimento = false;
     private bool dead_1 = false;
@@ -17,6 +19,7 @@ public class Combact_2: Combact{
     private bool dead_3 = false;
     private bool dead_4 = false;
     private bool dead_5 = false;
+    private bool fatto_tutti_comb = false;
 
     private void Start() {
         anim = player.GetComponent<Animator>();
@@ -86,6 +89,12 @@ public class Combact_2: Combact{
 
                 }else{
                     second_battle.SetActive(false);
+
+                    if(CombactManager.combactManager.CheckEverythingDone() && fatto_tutti_comb == false){
+                        dialoghiManager.StartDialoghi("Dialogo_fine_primo_combattimento");
+                        Muretto_final.SetActive(false);
+                        fatto_tutti_comb = true;
+                    }
                 }
 
                 //player.GetComponent<PlayerMovement>().enabled = false;
@@ -99,19 +108,12 @@ public class Combact_2: Combact{
                     player.GetComponent<PlayerMovement>().enabled = true;
                     //inizia il combattimento
                 }*/
-                //CombactManager.combactManager.CombactRequest(this);//assegna come corrente il combattimento 1
+                //CombactManager.combactManager.CombactRequest(this);//assegna come corrente il combattiment
 
-
-
-           /*if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.COMPLETE){
-                //dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_fine_primo_combattimento, transform.position, Quaternion.identity);
-                CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE; //dopo il dialogo
-           }*/
-
-
-        }
+            }
 
         } // devo fare un else if che se non ha fatto il primo combattimento non posso fare gli altri 
+
         SetCombact(); //setto il combattimento come fatto!!
 
     }

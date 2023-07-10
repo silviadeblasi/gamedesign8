@@ -5,11 +5,13 @@ using UnityEngine;
 public class Combact_5: Combact{
     public GameObject player;
     private Animator anim;
+    public DialoghiUIManager dialoghiManager;
     private GameObject dialogueBoxClone;
     public GameObject Dialogo_primo_combattimento;
     public GameObject Dialogo_fine_primo_combattimento;
     public GameObject Combattimento2;
     public GameObject fifth_battle;
+    public GameObject Muretto_final;
     private bool dialogo_iniziale = false;
     private bool fine_dialogo_inizio_combattimento = false;
     private bool dead_1 = false;
@@ -17,7 +19,7 @@ public class Combact_5: Combact{
     private bool dead_3 = false;
     private bool dead_4 = false;
     private bool dead_5 = false;
-
+    private bool fatto_tutti_comb = false;
     private void Start() {
         anim = player.GetComponent<Animator>();
     }
@@ -41,23 +43,9 @@ public class Combact_5: Combact{
 
             if(combact._inTrigger){
             CombactManager.combactManager.CombactRequest(this);
+            if(CombactManager.combactManager.currentCombact.id == 4){
+            fifth_battle.SetActive(true);
 
-
-                fifth_battle.SetActive(true);
-
-
-                //player.GetComponent<PlayerMovement>().enabled = false;
-                //anim.SetBool("isWalking", false); //??
-                /*if(dialogo_iniziale == false)
-                    dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_primo_combattimento, transform.position, Quaternion.identity);
-                    dialogo_iniziale = true;
-                if(fine_dialogo_inizio_combattimento == false && (((dialogueBoxClone.transform.Find("Canvas_dialogue")?.gameObject).transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>()).fine_dialogo == true){
-                    fine_dialogo_inizio_combattimento = true;
-                    Debug.Log("combact 1");
-                    player.GetComponent<PlayerMovement>().enabled = true;
-                    //inizia il combattimento
-                }*/
-                //CombactManager.combactManager.CombactRequest(this);//assegna come corrente il combattimento 1
                 if (CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
             //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
                 Combattimento2.transform.Find("enemies (5.1)").gameObject.GetComponent<EnemyController1>().enabled = true;
@@ -96,15 +84,35 @@ public class Combact_5: Combact{
                 fifth_battle.SetActive(false);
             }
 
-           /*if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.COMPLETE){
-                //dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_fine_primo_combattimento, transform.position, Quaternion.identity);
-                CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE; //dopo il dialogo
-           }*/
-
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){
                 CombactManager.combactManager.FirstCombactDone = true; // ho fatto il primo combattimento quindi ora posso fare gli altri 
                 
             }
+
+            }else{
+                fifth_battle.SetActive(false);
+
+                if(CombactManager.combactManager.CheckEverythingDone() && fatto_tutti_comb == false){
+                        dialoghiManager.StartDialoghi("Dialogo_fine_primo_combattimento");
+                        Muretto_final.SetActive(false);
+                        fatto_tutti_comb = true;
+                    }
+            }
+
+
+                //player.GetComponent<PlayerMovement>().enabled = false;
+                //anim.SetBool("isWalking", false); //??
+                /*if(dialogo_iniziale == false)
+                    dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_primo_combattimento, transform.position, Quaternion.identity);
+                    dialogo_iniziale = true;
+                if(fine_dialogo_inizio_combattimento == false && (((dialogueBoxClone.transform.Find("Canvas_dialogue")?.gameObject).transform.Find("dialogueBox")?.gameObject).GetComponent<dialogue_script>()).fine_dialogo == true){
+                    fine_dialogo_inizio_combattimento = true;
+                    Debug.Log("combact 1");
+                    player.GetComponent<PlayerMovement>().enabled = true;
+                    //inizia il combattimento
+                }*/
+                //CombactManager.combactManager.CombactRequest(this);//assegna come corrente il combattimento 1
+
 
         }
 

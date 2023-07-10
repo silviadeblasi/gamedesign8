@@ -170,14 +170,17 @@ public class CombactManager : MonoBehaviour
     //check if everything is done
     public bool CheckEverythingDone()
     {
+        Debug.Log("CheckEverythingDone");
         int contatoreDone = 0;
         for(int i=0; i<combactList.Count; i++)
         {
             if (combactList[i].progress == GeneralCombact.CombactProgress.DONE)
                 contatoreDone++;
+                Debug.Log("contatoreDone: " + contatoreDone);
         }
         if(contatoreDone == combactList.Count)
         {
+            Debug.Log("Ti prego gesu");
             return true;
         }
         return false;
