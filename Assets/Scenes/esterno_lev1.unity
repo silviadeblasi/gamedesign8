@@ -29097,7 +29097,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.015339673, y: -0.02920127}
+  m_Offset: {x: 0.032883883, y: -0.10957408}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -29108,7 +29108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3043321, y: 1.2039647}
+  m_Size: {x: 2.0437603, y: 1.7504983}
   m_EdgeRadius: 0
 --- !u!1 &1032316109
 GameObject:
@@ -34030,7 +34030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: dialoghi.Array.size
-      value: 14
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: dialoghi.Array.data[2]
@@ -34083,15 +34083,55 @@ PrefabInstance:
     - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: dialoghi.Array.data[14]
       value: 
-      objectReference: {fileID: 279528182836724905, guid: c861758ae6cd78345818a31cf4d4d15a, type: 3}
+      objectReference: {fileID: 279528182836724905, guid: bdbbc19c504f813439a598a4ff2de393, type: 3}
     - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: dialoghi.Array.data[15]
       value: 
-      objectReference: {fileID: 279528182836724905, guid: c861758ae6cd78345818a31cf4d4d15a, type: 3}
+      objectReference: {fileID: 279528182836724905, guid: d4c80d91a92914745852896ec80ab1fe, type: 3}
     - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: dialoghi.Array.data[16]
       value: 
-      objectReference: {fileID: 279528182836724905, guid: c861758ae6cd78345818a31cf4d4d15a, type: 3}
+      objectReference: {fileID: 279528182836724905, guid: 26db5930095db51498c2d05e73c61356, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[17]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 8b86bdcd495256d48a5ee80d4d58f63f, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[18]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 1f16503bd7fde0b488638bfe498cd3d2, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[19]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: de318b4cdd759ff44b5fb47b82567314, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[20]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: ee96509788528c1459c1f25020ffa02f, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[21]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 6d09d14debc12304680ce8205ddc5851, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[22]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 3d6a3da99ec280544981fcfba37340c5, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[23]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 663dcca4828c2c74cbd957fdbba03e48, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[24]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 94e49ccdf721ca244adf896d25bbba3e, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[25]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: e707fb351c3bfc34994a19acbdaa4b41, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[26]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: e707fb351c3bfc34994a19acbdaa4b41, type: 3}
     - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: backgroundMixerGroup
       value: 
