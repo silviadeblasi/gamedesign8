@@ -68,7 +68,7 @@ public class Combact_1 : Combact{
                 first_battle.SetActive(false);
                 Fire_intorno.SetActive(false);
 
-                if(fine_combattimento == false && CombactManager.combactManager.currentCombact.CombactObjectiveCount != 0){
+            if(fine_combattimento == false && CombactManager.combactManager.currentCombact.CombactObjectiveCount != 0 ){
                     dialoghiManager.StartDialoghi("dg_sue_fine_combattimento1"); 
                     fine_combattimento = true;
                 }

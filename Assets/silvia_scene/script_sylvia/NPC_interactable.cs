@@ -33,9 +33,11 @@ public class NPC_interactable : MonoBehaviour
     private bool fine9 = false;
     private bool fine10 = false;
     private bool fine11 = false;
+    private bool solve_problem = false;
 
 
     private void Start() {
+
 
         anim = GetComponent<Animator>();
         anim_veggente = veggente.GetComponent<Animator>();
@@ -52,6 +54,7 @@ public class NPC_interactable : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other) {
         
+        
         if(other.gameObject.layer == 19){ // veggente
             Vector3 dir = veggente.GetComponent<BoundedNPC>().directionVector;
             anim_veggente.SetBool("interact", true);
@@ -61,17 +64,7 @@ public class NPC_interactable : MonoBehaviour
             veggente.GetComponent<BoundedNPC>().enabled = false;
 
             if(Input.GetKeyDown(KeyCode.X)){
-                fine1 = false;
-                fine2 = false;
-                fine3 = false;
-                fine4 = false;
-                fine5 = false;
-                fine6 = false;
-                fine7 = false;
-                fine8 = false;
-                fine9 = false;
-                fine10 = false;
-                fine11 = false;
+                
 
                 rb_player.constraints = RigidbodyConstraints2D.FreezeAll;
                 player.GetComponent<PlayerMovement>().enabled = false;
@@ -135,56 +128,57 @@ public class NPC_interactable : MonoBehaviour
                 fine9 = false;
                 fine10 = false;
                 fine11 = false;
-
+                solve_problem = true;
                 rb_player.constraints = RigidbodyConstraints2D.FreezeAll;
                 player.GetComponent<PlayerMovement>().enabled = false;
                 dialoghiUIManager.StartDialoghi("dg_dk_1"); 
             }
 
-            if(dialoghiUIManager.FineDialogo("dg_dk_1") == true && fine1 == false){
+            if(dialoghiUIManager.FineDialogo("dg_dk_1") == true && fine1 == false && solve_problem == true){
                 dialoghiUIManager.StartDialoghi("dg_dk_sue_1"); 
                 fine1 = true;
             }
-            if(dialoghiUIManager.FineDialogo("dg_sk_sue_1") == true && fine2 == false){
+            if(dialoghiUIManager.FineDialogo("dg_sk_sue_1") == true && fine2 == false && solve_problem == true){
                 fine2 = true;
                 dialoghiUIManager.StartDialoghi("dg_dk_2"); 
             }
-            if(dialoghiUIManager.FineDialogo("dg_dk_2") == true && fine3 == false){
+            if(dialoghiUIManager.FineDialogo("dg_dk_2") == true && fine3 == false && solve_problem == true){
                 fine3 = true;
                 dialoghiUIManager.StartDialoghi("dg_dk_sue_2"); 
             }
-            if(dialoghiUIManager.FineDialogo("dg_dk_sue_2") == true && fine4 == false){
+            if(dialoghiUIManager.FineDialogo("dg_dk_sue_2") == true && fine4 == false && solve_problem == true){
                 fine4 = true;
                 dialoghiUIManager.StartDialoghi("dg_dk_3"); 
             }
-            if(dialoghiUIManager.FineDialogo("dg_dk_3") == true && fine5 == false){
+            if(dialoghiUIManager.FineDialogo("dg_dk_3") == true && fine5 == false && solve_problem == true){
                 fine5 = true;
                 dialoghiUIManager.StartDialoghi("dg_dk_sue_3");
             }
-            if(dialoghiUIManager.FineDialogo("dg_dk_sue_3") == true && fine6 == false){
+            if(dialoghiUIManager.FineDialogo("dg_dk_sue_3") == true && fine6 == false && solve_problem == true){
                 fine6 = true;
                 dialoghiUIManager.StartDialoghi("dg_dk_4"); 
             }
-            if(dialoghiUIManager.FineDialogo("dg_dk_4") == true && fine7 == false){
+            if(dialoghiUIManager.FineDialogo("dg_dk_4") == true && fine7 == false && solve_problem == true){
                 fine7 = true;
                 dialoghiUIManager.StartDialoghi("dg_dk_sue_4");
             }
-            if(dialoghiUIManager.FineDialogo("dg_dk_sue_4") == true && fine8 == false){
+            if(dialoghiUIManager.FineDialogo("dg_dk_sue_4") == true && fine8 == false && solve_problem == true){
                 fine8 = true;
                 dialoghiUIManager.StartDialoghi("dg_dk_5"); 
             }
-            if(dialoghiUIManager.FineDialogo("dg_dk_5") == true && fine9 == false){
+            if(dialoghiUIManager.FineDialogo("dg_dk_5") == true && fine9 == false && solve_problem == true){
                 fine9 = true;
                 dialoghiUIManager.StartDialoghi("dg_dk_sue_5");
             }
-            if(dialoghiUIManager.FineDialogo("dg_dk_sue_5") == true && fine10 == false){
+            if(dialoghiUIManager.FineDialogo("dg_dk_sue_5") == true && fine10 == false && solve_problem == true){
                 fine10 = true;
                 dialoghiUIManager.StartDialoghi("dg_dk_6");
             }
-            if(dialoghiUIManager.FineDialogo("dg_dk_6") == true && fine11 == false){
+            if(dialoghiUIManager.FineDialogo("dg_dk_6") == true && fine11 == false && solve_problem == true){
                 player.GetComponent<PlayerMovement>().enabled = true;
                 rb_player.constraints = RigidbodyConstraints2D.None;
                 rb_player.constraints = RigidbodyConstraints2D.FreezeRotation;
+                solve_problem = false;
             }
 
         }
