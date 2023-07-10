@@ -90,10 +90,7 @@ public class Combact_4: Combact{
                 fourth_battle.SetActive(false);
                 Fire_intorno.SetActive(false);
                 canvas_pendant_rubato.SetActive(true);
-                if(Input.GetKeyDown(KeyCode.Z)){
-                    canvas_pendant_rubato.SetActive(false);
-                    dialoghiManager.StartDialoghi("pendant_rubato");
-                }
+                
                 
                 
                 }
@@ -109,7 +106,12 @@ public class Combact_4: Combact{
                         dialoghiManager.StartDialoghi("Dialogo_allcombact_done");
                         Muretto_final.SetActive(false);
                         fatto_tutti_comb = true;
-                    }
+                }
+
+                if(Input.GetKeyDown(KeyCode.Z)){
+                    canvas_pendant_rubato.SetActive(false);
+                    dialoghiManager.StartDialoghi("pendant_rubato");
+                }
             }
 
                 
