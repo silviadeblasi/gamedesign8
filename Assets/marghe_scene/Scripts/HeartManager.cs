@@ -19,6 +19,7 @@ public class HeartManager : MonoBehaviour
 
     public void InitHearts()
     {
+        Debug.Log("heartContainers.initialValue: "+ heartContainers.initialValue);
         for(int i = 0; i < heartContainers.initialValue; i++)
         {
             hearts[i].gameObject.SetActive(true);

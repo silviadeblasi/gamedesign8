@@ -13,6 +13,9 @@ public class InventoryItem : ScriptableObject
     public bool usable;
     public bool unique;
     public UnityEvent thisEvent;
+    //[SerializeField] 
+    private HeartManager heartManager;
+    //[SerializeField] private PlayerHealth playerHealth;
 
     public void Use()
     {
@@ -20,13 +23,28 @@ public class InventoryItem : ScriptableObject
         thisEvent.Invoke();
     }
 
-    public void DecreaseAmount(int amountToDecrease)
+    // public void DecreaseAmount(int amountToDecrease)
+    // {
+    //     numberHeld -= amountToDecrease;
+
+    //     if(numberHeld < 0)
+    //     {
+    //         numberHeld = 0;
+    //     }
+    // }
+
+    public void DecreaseAmount()
     {
-        numberHeld -= amountToDecrease;
+        numberHeld--;
 
         if(numberHeld < 0)
         {
             numberHeld = 0;
         }
     }
+
+    // public void UpdateHeartContainer()
+    // {
+    //     heartManager.UpdateHearts();
+    // }
 }

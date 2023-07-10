@@ -13,10 +13,10 @@ public class PlayerHealth : GenericHealth
         healthSignal.Raise();
     }
 
-    // public override void Heal(float amountToHeal)
-    // {
-    //     base.Heal(amountToHeal);
-    //     maxHealth.RuntimeValue = currentHealth;
-    //     healthSignal.Raise();
-    // }
+    public override void Heal(float amountToHeal)
+    {
+        base.Heal(amountToHeal);
+        maxHealth.RuntimeValue = currentHealth;
+        healthSignal.Raise();
+    }
 }
