@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 279528183779018270}
   lines:
-  - I saw you kill the crimson bands. Good shot!!!
+  - You killed the crimson bands,  good shot!!!
   - You know in my day there wasn't so much terror.
   - 'Now everything is falling apart because of them. '
   textSpeed: 0.08
