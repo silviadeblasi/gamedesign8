@@ -6,14 +6,20 @@ public class PhysicalInventoryItem : MonoBehaviour
 {
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
+    [SerializeField] private GameObject canvaInventory;
+
+    private void Awake()
+    {
+        canvaInventory.gameObject.SetActive(false);
+    }
 
     private void OnTriggerEnter2D(Collider2D other) 
     {    
         if(other.gameObject.CompareTag("Player") && !other.isTrigger)
         {
             AddItemToInventory();
-            //this.gameObject.SetActive(false);
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
+            //Destroy(this.gameObject);
         }
     }
 
@@ -32,4 +38,11 @@ public class PhysicalInventoryItem : MonoBehaviour
             }
         }
     }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(5);
+        canvaInventory.gameObject.SetActive(false);
+    }
+
 }
