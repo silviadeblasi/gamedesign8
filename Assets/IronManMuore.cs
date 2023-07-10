@@ -10,8 +10,8 @@ public class IronManMuore : MonoBehaviour {
     }
 
         public IEnumerator StopGame() { 
-        yield return new WaitForSecondsRealtime(18f);
+        yield return new WaitForSecondsRealtime(20f);
         PlayableDirector.Stop();
-        Application.Quit();
-    }
+        Scene_Loader.Load(Scene_Loader.Scene.start_menu);
+        }
 }
