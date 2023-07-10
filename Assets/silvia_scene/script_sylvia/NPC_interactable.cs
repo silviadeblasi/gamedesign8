@@ -64,46 +64,58 @@ public class NPC_interactable : MonoBehaviour
             veggente.GetComponent<BoundedNPC>().enabled = false;
 
             if(Input.GetKeyDown(KeyCode.X)){
-                
+                fine1 = false;
+                fine2 = false;
+                fine3 = false;
+                fine4 = false;
+                fine5 = false;
+                fine6 = false;
+                fine7 = false;
+                fine8 = false;
+                fine9 = false;
+                fine10 = false;
+                fine11 = false;
+                solve_problem = true;
 
                 rb_player.constraints = RigidbodyConstraints2D.FreezeAll;
                 player.GetComponent<PlayerMovement>().enabled = false;
                 dialoghiUIManager.StartDialoghi("dg_sh_1"); //i bet you are looking for...
             }
 
-            if(dialoghiUIManager.FineDialogo("dg_sh_1") == true && fine1 == false){
+            if(dialoghiUIManager.FineDialogo("dg_sh_1") == true && fine1 == false && solve_problem == true){
                 dialoghiUIManager.StartDialoghi("dg_sh_sue_1"); //and how do you know
                 fine1 = true;
             }
             
-            if(dialoghiUIManager.FineDialogo("dg_sh_sue_1") == true && fine2 == false){
+            if(dialoghiUIManager.FineDialogo("dg_sh_sue_1") == true && fine2 == false && solve_problem == true){
                 fine2 = true;
                 dialoghiUIManager.StartDialoghi("dg_sh_2"); //so qualcosa sul tuo futuro vuoi sapere?
             }
-                if(dialoghiUIManager.FineDialogo("dg_sh_2") == true && fine3 == false){
+                if(dialoghiUIManager.FineDialogo("dg_sh_2") == true && fine3 == false && solve_problem == true){
                 fine3 = true;
                 dialoghiUIManager.StartDialoghi("dg_sh_sue_2"); //sto ascoltando
             }
-            if(dialoghiUIManager.FineDialogo("dg_sh_sue_2") == true && fine4 == false){
+            if(dialoghiUIManager.FineDialogo("dg_sh_sue_2") == true && fine4 == false && solve_problem == true){
                 fine4 = true;
                 dialoghiUIManager.StartDialoghi("dg_sh_3"); //dice qualcosa sul tuo futuro
             }
-            if(dialoghiUIManager.FineDialogo("dg_sh_3") == true && fine5 == false){
+            if(dialoghiUIManager.FineDialogo("dg_sh_3") == true && fine5 == false && solve_problem == true){
                 fine5 = true;
                 dialoghiUIManager.StartDialoghi("dg_sh_sue_3");
             }
-            if(dialoghiUIManager.FineDialogo("dg_sh_sue_3") == true && fine6 == false){
+            if(dialoghiUIManager.FineDialogo("dg_sh_sue_3") == true && fine6 == false && solve_problem == true){
                 fine6 = true;
                 dialoghiUIManager.StartDialoghi("dg_sh_4"); 
             }
-            if(dialoghiUIManager.FineDialogo("dg_sh_4") == true && fine7 == false){
+            if(dialoghiUIManager.FineDialogo("dg_sh_4") == true && fine7 == false && solve_problem == true){
                 fine7 = true;
                 dialoghiUIManager.StartDialoghi("dg_sh_sue_4");
             }
-            if(dialoghiUIManager.FineDialogo("dg_sh_sue_4") == true && fine8 == false){
+            if(dialoghiUIManager.FineDialogo("dg_sh_sue_4") == true && fine8 == false && solve_problem == true){
                 player.GetComponent<PlayerMovement>().enabled = true;
                 rb_player.constraints = RigidbodyConstraints2D.None;
                 rb_player.constraints = RigidbodyConstraints2D.FreezeRotation;
+                solve_problem = false;
             }
             
         }
