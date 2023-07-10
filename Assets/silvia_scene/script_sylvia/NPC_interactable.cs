@@ -40,50 +40,63 @@ public class NPC_interactable : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other) {
         
         if(other.gameObject.layer == 19){ // veggente
-        
+            Vector3 dir = veggente.GetComponent<BoundedNPC>().directionVector;
+            anim_veggente.SetBool("interact", true);
+            anim_veggente.SetFloat("moveX", dir.x);
+            anim_veggente.SetFloat("moveY", dir.y);
+            rb_veggente.constraints = RigidbodyConstraints2D.FreezeAll;
+            veggente.GetComponent<BoundedNPC>().enabled = false;
+
+
             if(Input.GetKeyDown(KeyCode.X)){
                 fine1 = false;
                 fine2 = false;
                 fine3 = false;
                 fine4 = false;
                 fine5 = false;
-                Vector3 dir = veggente.GetComponent<BoundedNPC>().directionVector;
-                anim_veggente.SetBool("interact", true);
-                anim_veggente.SetFloat("moveX", dir.x);
-                anim_veggente.SetFloat("moveY", dir.y);
-                rb_veggente.constraints = RigidbodyConstraints2D.FreezeAll;
-                veggente.GetComponent<BoundedNPC>().enabled = false;
+                fine6 = false;
+                fine7 = false;
+                fine8 = false;
                 rb_player.constraints = RigidbodyConstraints2D.FreezeAll;
                 player.GetComponent<PlayerMovement>().enabled = false;
-                dialoghiUIManager.StartDialoghi("dialogue_veggente_1"); //i bet you are looking for...
+                dialoghiUIManager.StartDialoghi("dg_sh_1"); //i bet you are looking for...
             }
-            if(dialoghiUIManager.FineDialogo("dialogue_veggente_1") == true && fine1 == false){
-                dialoghiUIManager.StartDialoghi("dialogo_sueveggente_1"); //and how do you know
-                fine1 = true;
-            }
-            if(dialoghiUIManager.FineDialogo("dialogo_sueveggente_1") == true && fine2 == false){
-                fine2 = true;
-                dialoghiUIManager.StartDialoghi("dialogue_veggente_2"); //so qualcosa sul tuo futuro vuoi sapere?
-            }
-            if(dialoghiUIManager.FineDialogo("dialogue_veggente_2") == true && fine3 == false){
-                fine3 = true;
-                dialoghiUIManager.StartDialoghi("dialogo_sueveggente_2"); //sto ascoltando
-            }
-            if(dialoghiUIManager.FineDialogo("dialogo_sueveggente_2") == true && fine4 == false){
-                fine4 = true;
-                dialoghiUIManager.StartDialoghi("dialogue_veggente_3"); //dice qualcosa sul tuo futuro
-            }
-            if(dialoghiUIManager.FineDialogo("dialogue_veggente_3") == true && fine5 == false){
-                fine5 = true;
-                dialoghiUIManager.StartDialoghi("dialogo_sueveggente_3"); //CHE VUOL DIREE
-                player.GetComponent<PlayerMovement>().enabled = true;
-                rb_player.constraints = RigidbodyConstraints2D.None;
-                rb_player.constraints = RigidbodyConstraints2D.FreezeRotation;
-                rb_veggente.constraints = RigidbodyConstraints2D.None;
-                rb_veggente.constraints = RigidbodyConstraints2D.FreezeRotation;
-                anim_veggente.SetBool("interact", false);
-                veggente.GetComponent<BoundedNPC>().enabled = true;
-            }
+            
+                if(dialoghiUIManager.FineDialogo("dg_sh_1") == true && fine1 == false){
+                    dialoghiUIManager.StartDialoghi("dg_sh_sue_1"); //and how do you know
+                    fine1 = true;
+                }
+            
+                if(dialoghiUIManager.FineDialogo("dg_sh_sue_1") == true && fine2 == false){
+                    fine2 = true;
+                    dialoghiUIManager.StartDialoghi("dg_sh_2"); //so qualcosa sul tuo futuro vuoi sapere?
+                }
+                if(dialoghiUIManager.FineDialogo("dg_sh_2") == true && fine3 == false){
+                    fine3 = true;
+                    dialoghiUIManager.StartDialoghi("dg_sh_sue_2"); //sto ascoltando
+                }
+                if(dialoghiUIManager.FineDialogo("dg_sh_sue_2") == true && fine4 == false){
+                    fine4 = true;
+                    dialoghiUIManager.StartDialoghi("dg_sh_3"); //dice qualcosa sul tuo futuro
+                }
+                if(dialoghiUIManager.FineDialogo("dg_sh_3") == true && fine5 == false){
+                    fine5 = true;
+                    dialoghiUIManager.StartDialoghi("dg_sh_sue_3");
+                }
+                if(dialoghiUIManager.FineDialogo("dg_sh_sue_3") == true && fine6 == false){
+                    fine6 = true;
+                    dialoghiUIManager.StartDialoghi("dg_sh_4"); 
+                }
+                if(dialoghiUIManager.FineDialogo("dg_sh_4") == true && fine7 == false){
+                    fine7 = true;
+                    dialoghiUIManager.StartDialoghi("dg_sh_sue_4");
+                }
+                if(dialoghiUIManager.FineDialogo("dg_sh_sue_4") == true && fine8 == false){
+                    player.GetComponent<PlayerMovement>().enabled = true;
+                    rb_player.constraints = RigidbodyConstraints2D.None;
+                    rb_player.constraints = RigidbodyConstraints2D.FreezeRotation;
+                }
+            
 
         }
 
@@ -211,6 +224,15 @@ public class NPC_interactable : MonoBehaviour
         }*/
 
 
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        if(other.gameObject.layer == 19){ // veggente
+            anim_veggente.SetBool("interact", false);
+            rb_veggente.constraints = RigidbodyConstraints2D.None;
+            rb_veggente.constraints = RigidbodyConstraints2D.FreezeRotation;
+            veggente.GetComponent<BoundedNPC>().enabled = true;
+        }
     }
    
 }

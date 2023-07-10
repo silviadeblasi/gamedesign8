@@ -34030,7 +34030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: dialoghi.Array.size
-      value: 4
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: dialoghi.Array.data[2]
@@ -34040,6 +34040,58 @@ PrefabInstance:
       propertyPath: dialoghi.Array.data[3]
       value: 
       objectReference: {fileID: 279528182836724905, guid: 8a07037c8d705462eb2564e84c3e88f7, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[4]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: f8643cd17fcac48b7aeeeb6b577e5bc9, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[5]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: c861758ae6cd78345818a31cf4d4d15a, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[6]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: ea5c61f6411fcb54f87b75faf0ca4fe3, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[7]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 6cff7ca6850996c458514973601e9225, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[8]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: df9426b7b66e9ae44b89b609a06d3846, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[9]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 707217181b92c3841ab025433edd52d9, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[10]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 9cf32cf91167afd4e90335b77dafce3a, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[11]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: a4c9842b06b38f8439f564984a19d7a0, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[12]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 039c3b6f6e81a9440a3933d8b9348d64, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[13]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: e707fb351c3bfc34994a19acbdaa4b41, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[14]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: c861758ae6cd78345818a31cf4d4d15a, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[15]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: c861758ae6cd78345818a31cf4d4d15a, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[16]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: c861758ae6cd78345818a31cf4d4d15a, type: 3}
     - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: backgroundMixerGroup
       value: 
@@ -37920,7 +37972,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.31203508, y: 0.016830444}
+  m_Offset: {x: 0.30086613, y: -0.19892788}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0.5}
@@ -37931,7 +37983,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1451273, y: 0.99892807}
+  m_Size: {x: 1.8077793, y: 1.653162}
   m_EdgeRadius: 0
 --- !u!4 &1562058782 stripped
 Transform:
@@ -40872,6 +40924,7 @@ MonoBehaviour:
   combattimento: {fileID: 1788197760}
   combact: {fileID: 1788197762}
   player: {fileID: 131299055}
+  dialoghiManager: {fileID: 41825219}
   Dialogo_primo_combattimento: {fileID: 987438681667126822, guid: 992d260d7543140f0b1bb415659ee82a, type: 3}
   first_battle: {fileID: 2079548057}
   Fire_intorno: {fileID: 1462949221}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Combact_1 : Combact{
     public GameObject player;
     private Animator anim;
+    public DialoghiUIManager dialoghiManager;
     private GameObject dialogueBoxClone;
     public GameObject Dialogo_primo_combattimento;
     public GameObject first_battle;
@@ -15,6 +16,7 @@ public class Combact_1 : Combact{
     private bool dead_1 = false;
     private bool dead_2 = false;
     private bool dead_3 = false;
+    private bool fine_combattimento =false ;
     private void Start() {
         anim = player.GetComponent<Animator>();
     }
@@ -65,12 +67,22 @@ public class Combact_1 : Combact{
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
                 first_battle.SetActive(false);
                 Fire_intorno.SetActive(false);
+
+                if(fine_combattimento == false && CombactManager.combactManager.currentCombact.CombactObjectiveCount != 0){
+                    dialoghiManager.StartDialoghi("dg_sue_fine_combattimento1"); 
+                    fine_combattimento = true;
+                }
                 
+                  
            }
+           
+            
+        
 
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){
                 Debug.Log("fatto");
                 CombactManager.combactManager.FirstCombactDone = true; // ho fatto il primo combattimento quindi ora posso fare gli altri 
+                
 
             }
 
