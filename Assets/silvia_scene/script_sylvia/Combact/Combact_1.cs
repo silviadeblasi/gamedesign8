@@ -15,8 +15,6 @@ public class Combact_1 : Combact{
     private bool dead_1 = false;
     private bool dead_2 = false;
     private bool dead_3 = false;
-    public SoundManager soundManager;
-
     private void Start() {
         anim = player.GetComponent<Animator>();
     }
@@ -67,17 +65,13 @@ public class Combact_1 : Combact{
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
                 first_battle.SetActive(false);
                 Fire_intorno.SetActive(false);
-                soundManager.StopBackgroundMusic("Fight1_V2");
-                soundManager.PlayBackgroundMusic("Temaprincipale2", 0.7f);
+                
            }
 
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){
+                Debug.Log("fatto");
                 CombactManager.combactManager.FirstCombactDone = true; // ho fatto il primo combattimento quindi ora posso fare gli altri 
-                player.GetComponent<PlayerMovement>().enabled = false;
-                if(dialogo_iniziale == false){
-                    dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_primo_combattimento, transform.position, Quaternion.identity);
-                    dialogo_iniziale = true;
-                }
+
             }
 
             }else{
