@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class reload_player : MonoBehaviour
 {
-    public static reload_player Instance; 
     //public vector_value last_position; //forse basta solo sapere la poszione dei checkpoint
     public PlayerHealth currentHealth_player;
     public HeartManager playerHealth;
@@ -15,16 +14,13 @@ public class reload_player : MonoBehaviour
     public vector_value_scene checkpoint_position;
     public GameObject player;
     public bool isDead = false;
+    public static reload_player Instance; //Aggiunto da CM per Inventario
 
+    //Aggiunto da CM per Inventario
     private void Awake() {
         if(Instance == null)
         {
             Instance = this;
-            //DontDestroyOnLoad(Instance);
-        }
-        else
-        {
-            //Destroy(gameObject);
         }
     }
     void Start()

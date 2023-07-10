@@ -91,31 +91,4 @@ public class InventoryManager : MonoBehaviour
             }
         }
     }
-
-    //     void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.I))
-    //     {
-    //         if (InventoryActive)
-    //         {
-    //             Resume();
-    //         }
-    //         else
-    //         {
-    //             Pause();
-    //         }
-    //     }
-    // }
-    // public void Resume()
-    // {
-    //     Inventory.SetActive(false);
-    //     Time.timeScale = 1f;
-    //     InventoryActive = false;
-    // }
-    // void Pause()
-    // {
-    //     Inventory.SetActive(true);
-    //     Time.timeScale = 0f;
-    //     InventoryActive = true;
-    // }
 }
