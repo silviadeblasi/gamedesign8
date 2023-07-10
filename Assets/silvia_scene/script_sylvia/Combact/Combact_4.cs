@@ -13,6 +13,7 @@ public class Combact_4: Combact{
     public GameObject fourth_battle;
     public GameObject Muretto_final;
     public GameObject Fire_intorno;
+    public GameObject canvas_pendant_rubato;
     private bool dialogo_iniziale = false;
     private bool fine_dialogo_inizio_combattimento = false;
     private bool dead_1 = false;
@@ -88,6 +89,13 @@ public class Combact_4: Combact{
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
                 fourth_battle.SetActive(false);
                 Fire_intorno.SetActive(false);
+                canvas_pendant_rubato.SetActive(true);
+                if(Input.GetKeyDown(KeyCode.Z)){
+                    canvas_pendant_rubato.SetActive(false);
+                    dialoghiManager.StartDialoghi("pendant_rubato");
+                }
+                
+                
                 }
 
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){
@@ -98,7 +106,7 @@ public class Combact_4: Combact{
             }else{
                 fourth_battle.SetActive(false);
                 if(CombactManager.combactManager.CheckEverythingDone() && fatto_tutti_comb == false){
-                        dialoghiManager.StartDialoghi("Dialogo_fine_primo_combattimento");
+                        dialoghiManager.StartDialoghi("Dialogo_allcombact_done");
                         Muretto_final.SetActive(false);
                         fatto_tutti_comb = true;
                     }

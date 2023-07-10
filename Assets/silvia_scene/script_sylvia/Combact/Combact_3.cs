@@ -98,7 +98,7 @@ public class Combact_3: Combact{
                } else {
                     third_battle.SetActive(false);
                     if(CombactManager.combactManager.CheckEverythingDone() && fatto_tutti_comb == false){
-                        dialoghiManager.StartDialoghi("Dialogo_fine_primo_combattimento");
+                        dialoghiManager.StartDialoghi("Dialogo_allcobact_done");
                         Muretto_final.SetActive(false);
                         fatto_tutti_comb = true;
                     }
