@@ -193,8 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 279528183779018270}
   lines:
-  - Now i can get my revenge.
-  - I'm coming, boss...
+  - I know a lot about your future, Sue.
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0

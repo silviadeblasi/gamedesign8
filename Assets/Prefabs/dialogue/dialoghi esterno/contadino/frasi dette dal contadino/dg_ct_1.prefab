@@ -193,8 +193,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 279528183779018270}
   lines:
-  - Now i can get my revenge.
-  - I'm coming, boss...
+  - I saw you kill the crimson bands. Good shot!!!
+  - You know in my day there wasn't so much terror.
+  - 'Now everything is falling apart because of them. '
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0

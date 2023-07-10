@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 279528182836724903}
   - component: {fileID: 279528182836724904}
   m_Layer: 5
-  m_Name: dg_ct_2
+  m_Name: dg_ct_sue_2_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b298a08e41fa32b40a02eabf198bb39d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 341e27c0e03e346eea092c5c389d17f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -193,8 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 279528183779018270}
   lines:
-  - Now i can get my revenge.
-  - I'm coming, boss...
+  - It will be done, sir.
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0

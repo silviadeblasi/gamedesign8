@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 279528182836724903}
   - component: {fileID: 279528182836724904}
   m_Layer: 5
-  m_Name: dg_ct_4
+  m_Name: dg_ct_2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -193,8 +193,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 279528183779018270}
   lines:
-  - Now i can get my revenge.
-  - I'm coming, boss...
+  - Hey boy , you know you remind me so much of my son.
+  - 'He also wanted to kill the crimson bands but he passed away. Be careful ! '
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0

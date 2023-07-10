@@ -193,8 +193,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 279528183779018270}
   lines:
-  - Now i can get my revenge.
-  - I'm coming, boss...
+  - And now what do these assholes want?
+  - 'I have to hurry! '
+  - 'But first I must replenish my supplies '
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0
