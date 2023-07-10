@@ -27,13 +27,13 @@ public class GameManager : MonoBehaviour
             if(firstTime_StanzaSue){
                 soundManager.PlayBackgroundMusic("Casa2", 0.7f);
                 player.GetComponent<PlayerMovement>().enabled = false;
-                dialoghiManager.StartDialoghi("scena_postprologo");
+                dialoghiManager.StartDialoghi("dg_st_2");
                 Debug.Log("Stanza_sue");
                 firstTime_StanzaSue = false;
                 //dialoghiManager.StartUI("wasd"); 
             }
             
-            if(dialoghiManager.FineDialogo("scena_postprologo") == true){
+            if(dialoghiManager.FineDialogo("dg_st_2") == true){
                 
                 player.GetComponent<PlayerMovement>().enabled = true;
                
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-            if(dialoghiManager.FineDialogo("scena 1") == true){
+            if(dialoghiManager.FineDialogo("dg_st_1") == true){
                 player.GetComponent<PlayerMovement>().enabled = true;
             }
         }
@@ -59,10 +59,10 @@ public class GameManager : MonoBehaviour
             soundManager.PlayBackgroundMusic("Casa2", 0.7f);
 
             if (canvas_trama.pendant_trovato == true && amuleto == false){
-                dialoghiManager.StartDialoghi("pendant_dialogue");
+                dialoghiManager.StartDialoghi("dg_cs_1");
                 amuleto = true;
             }
-            dialoghiManager.FineDialogo("pendant_dialogue");
+            dialoghiManager.FineDialogo("dg_cs_1");
         }
 
         if(current_scene.ToString() == "Esterno_lev1"){
@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
     IEnumerator FirstSceneCoroutine() {
         yield return new WaitForSeconds(4f);
         player.GetComponent<PlayerMovement>().enabled = false;
-        dialoghiManager.StartDialoghi("scena 1");
+        dialoghiManager.StartDialoghi("dg_st_1");
     }
 
     

@@ -3071,6 +3071,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[0]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 831576e73e724c2489fa7a6ab204232e, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[1]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: 81f35a601e39df24b913c3895cd53d5b, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[2]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: d25c3307d907dd84086eb7f991e26c10, type: 3}
     - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: backgroundMixerGroup
       value: 
