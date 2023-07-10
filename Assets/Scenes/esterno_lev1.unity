@@ -11955,7 +11955,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.75, y: 2}
+  m_Size: {x: 4.97, y: 5.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -11993,8 +11993,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.82, y: 5.24}
-    newSize: {x: 1.75, y: 2}
+    oldSize: {x: 4.97, y: 5.24}
+    newSize: {x: 4.97, y: 5.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -16265,7 +16265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7898025480533000071, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.0999146
+      value: -3.0998535
       objectReference: {fileID: 0}
     - target: {fileID: 7898025480854870681, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -33855,6 +33855,7 @@ GameObject:
   - component: {fileID: 1265416548}
   - component: {fileID: 1265416550}
   - component: {fileID: 1265416549}
+  - component: {fileID: 1265416551}
   m_Layer: 6
   m_Name: Inventario
   m_TagString: Untagged
@@ -33920,6 +33921,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265416547}
   m_CullTransparentMesh: 1
+--- !u!114 &1265416551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265416547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1266738851
 GameObject:
   m_ObjectHideFlags: 0

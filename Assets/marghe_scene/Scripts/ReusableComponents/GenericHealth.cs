@@ -23,6 +23,10 @@ public class GenericHealth : MonoBehaviour
         {
             //myAnim.SetTrigger("death");
         }
+        else if (currentHealth > 8)
+        {
+            currentHealth = 8;
+        }
     }
 
     //This method let us heal the player by adding the amount of health we want to heal to the current health

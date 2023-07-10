@@ -18,6 +18,7 @@ public class PhysicalInventoryItem : MonoBehaviour
         if(other.gameObject.CompareTag("Player") && !other.isTrigger)
         {
             AddItemToInventory();
+            canvaInventory.gameObject.SetActive(true);
             this.gameObject.SetActive(false);
             //Destroy(this.gameObject);
         }

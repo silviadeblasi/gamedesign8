@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Bottiglia
   m_EditorClassIdentifier: 
   itemName: Wine Bottle
-  itemDescription: This wine bottle gives you back two hearts
+  itemDescription: I received this concoction from the village drunk as a gift. I
+    wonder what it is, and what its effect is. Surely he can't hurt me.
   itemImage: {fileID: 21300000, guid: 779d0cdbe4d98824da5e38eeba186be0, type: 3}
   numberHeld: 0
   usable: 1
