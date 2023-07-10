@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class interactable_object : MonoBehaviour
 {
-    [SerializeField] private GameObject Canvas_tomba;
-    [SerializeField] private GameObject Canvas_perchiusura; //per ricordare all'utente che premendo Z chiude il canvas
+    [SerializeField] private GameObject Canvas_tomba; //per ricordare all'utente che premendo Z chiude il canvas
 
     //private GameObject dialogueBoxClone;
     //private GameObject dialogueBoxClone2; //per ricordare all'utente che premendo Z chiude il canvas
     public GameObject player; 
     public GameObject[] canvas_trama;
-    public GameObject Canvas_per_chiusura;
     public SoundManager soundManager;
     private Animator animator;
     public bool pendant_trovato = false;
@@ -33,13 +31,11 @@ public class interactable_object : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.X)){
                 canvas_tomba.SetActive(true);
-                Canvas_per_chiusura.SetActive(true);
                 player.GetComponent<PlayerMovement>().enabled = false;
                 animator.SetBool("moving", false);
             }
             if(Input.GetKeyDown(KeyCode.Z)){
                 canvas_tomba.SetActive(false);
-                Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
                 animator.SetBool("moving", true);
                 tomba_madre = true;
@@ -52,7 +48,6 @@ public class interactable_object : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.X)){
                 soundManager.PlaySoundEffect("Amuleto", 0.6f);
                 canvas.SetActive(true);
-                Canvas_per_chiusura.SetActive(true);
                 player.GetComponent<PlayerMovement>().enabled = false;
                 animator.SetBool("moving", false);
             }
@@ -60,10 +55,10 @@ public class interactable_object : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Z)){
                 soundManager.PlaySoundEffect("Amuleto", 0.6f);
                 canvas.SetActive(false);
-                Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
                 animator.SetBool("moving", true);
                 pendant_trovato = true;
+                Debug.Log("Trovato");
             }
         }
 
@@ -74,7 +69,6 @@ public class interactable_object : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.X)){
                 soundManager.PlaySoundEffect("CartaOggetto", 0.6f);
                 canvas.SetActive(true);
-                Canvas_per_chiusura.SetActive(true);
                 player.GetComponent<PlayerMovement>().enabled = false;
                 animator.SetBool("moving", false);
             }
@@ -82,7 +76,6 @@ public class interactable_object : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Z)){
                 soundManager.PlaySoundEffect("CartaOggetto", 0.6f);
                 canvas.SetActive(false);
-                Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
                 animator.SetBool("moving", true);
                 lettera_sfratto_trovata = true;
@@ -96,14 +89,12 @@ public class interactable_object : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.X)){
                 soundManager.PlaySoundEffect("AperturaMappa", 0.6f);
                 canvas.SetActive(true);
-                Canvas_per_chiusura.SetActive(true);
                 player.GetComponent<PlayerMovement>().enabled = false;
                 animator.SetBool("moving", false);
             }
             if(Input.GetKeyDown(KeyCode.Z)){
                 soundManager.PlaySoundEffect("AperturaMappa", 0.6f);
                 canvas.SetActive(false);
-                Canvas_per_chiusura.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
                 animator.SetBool("moving", true);
                 mappa_trovata = true;

@@ -1347,7 +1347,7 @@ PrefabInstance:
     - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: dialoghi.Array.data[0]
       value: 
-      objectReference: {fileID: 1410485885791302095, guid: cceaceb0015d045a8966c29e682cae53, type: 3}
+      objectReference: {fileID: 279528182836724905, guid: d25c3307d907dd84086eb7f991e26c10, type: 3}
     - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: soundEffects.Array.size
       value: 6
@@ -1743,7 +1743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7499729074511687090, guid: f4c05899796a6428880636323d729a3a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7499729075235527988, guid: f4c05899796a6428880636323d729a3a, type: 3}
       propertyPath: m_Layer
@@ -4043,6 +4043,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1753443281}
     m_Modifications:
+    - target: {fileID: 512286544926059547, guid: f4c05899796a6428880636323d729a3a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -395
+      objectReference: {fileID: 0}
     - target: {fileID: 7499729074511687086, guid: f4c05899796a6428880636323d729a3a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4147,5 +4151,9 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 7499729075235527990, guid: f4c05899796a6428880636323d729a3a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 18d206410aa53a544a93c366feb2e222, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4c05899796a6428880636323d729a3a, type: 3}

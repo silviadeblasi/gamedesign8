@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
 
             if (canvas_trama.pendant_trovato == true && amuleto == false){
                 dialoghiManager.StartDialoghi("dg_cs_1");
+                Debug.Log("dg_cs_1");
                 amuleto = true;
             }
             dialoghiManager.FineDialogo("dg_cs_1");
