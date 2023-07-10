@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 10348804}
   - component: {fileID: 10348806}
   - component: {fileID: 10348805}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: downHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -835,7 +835,7 @@ GameObject:
   - component: {fileID: 25431194}
   - component: {fileID: 25431196}
   - component: {fileID: 25431195}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: rightHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2862,7 +2862,7 @@ GameObject:
   - component: {fileID: 121422410}
   - component: {fileID: 121422412}
   - component: {fileID: 121422411}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: upHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5115,7 +5115,7 @@ GameObject:
   - component: {fileID: 261865886}
   - component: {fileID: 261865888}
   - component: {fileID: 261865887}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: leftHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12663,7 +12663,7 @@ GameObject:
   - component: {fileID: 405079591}
   - component: {fileID: 405079593}
   - component: {fileID: 405079592}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: rightHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15064,7 +15064,7 @@ GameObject:
   - component: {fileID: 568118609}
   - component: {fileID: 568118608}
   - component: {fileID: 568118607}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: enemies (1.3)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -16245,7 +16245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.400024
+      value: -19.399963
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16269,7 +16269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7898025480854870681, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -6.499939
+      value: -6.499878
       objectReference: {fileID: 0}
     - target: {fileID: 7898025481182202944, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_Pivot.x
@@ -17429,7 +17429,7 @@ GameObject:
   - component: {fileID: 718611526}
   - component: {fileID: 718611525}
   - component: {fileID: 718611524}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: enemies (1.2)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -18346,7 +18346,7 @@ GameObject:
   - component: {fileID: 804776117}
   - component: {fileID: 804776119}
   - component: {fileID: 804776118}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: rightHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28481,7 +28481,7 @@ GameObject:
   - component: {fileID: 980933105}
   - component: {fileID: 980933107}
   - component: {fileID: 980933106}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: downHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30263,7 +30263,7 @@ GameObject:
   - component: {fileID: 1087232441}
   - component: {fileID: 1087232443}
   - component: {fileID: 1087232442}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: leftHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30948,7 +30948,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1121973556}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: homePosition (1.2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35103,7 +35103,7 @@ GameObject:
   - component: {fileID: 1372411533}
   - component: {fileID: 1372411532}
   - component: {fileID: 1372411531}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: enemies (1.1)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -37474,7 +37474,7 @@ GameObject:
   - component: {fileID: 1496886975}
   - component: {fileID: 1496886977}
   - component: {fileID: 1496886976}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: upHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38261,7 +38261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1559726447}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: homePosition (1.3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39352,7 +39352,7 @@ GameObject:
   - component: {fileID: 1614913693}
   - component: {fileID: 1614913695}
   - component: {fileID: 1614913694}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: upHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39894,7 +39894,7 @@ GameObject:
   - component: {fileID: 1642686629}
   - component: {fileID: 1642686631}
   - component: {fileID: 1642686630}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: downHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40247,7 +40247,7 @@ GameObject:
   - component: {fileID: 1665139722}
   - component: {fileID: 1665139724}
   - component: {fileID: 1665139723}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: leftHitboxEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41266,7 +41266,7 @@ GameObject:
   - component: {fileID: 1788197761}
   - component: {fileID: 1788197762}
   - component: {fileID: 1788197763}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: Combattimento (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42647,7 +42647,7 @@ GameObject:
   - component: {fileID: 1904024221}
   m_Layer: 0
   m_Name: boss
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42698,7 +42698,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.37, y: 0.36}
+  m_Size: {x: 0.90909094, y: 1.0909091}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -42777,8 +42777,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8636364, y: 1.2272727}
-    newSize: {x: 0.37, y: 0.36}
+    oldSize: {x: 0.95454544, y: 1.5909091}
+    newSize: {x: 0.90909094, y: 1.0909091}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -42798,14 +42798,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95de5dc4023036419bb0f6fb68586e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 1
+  enragedDamage: 2
   attackOffset: {x: 0, y: 0, z: 0}
-  upAttackOffset: {x: 0, y: 0, z: 0}
-  downAttackOffset: {x: 0, y: 0, z: 0}
-  attackRange: 1
+  attackRange: 20
   attackMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &1904024221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43624,7 +43623,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1930001418}
-  m_Layer: 23
+  m_Layer: 0
   m_Name: homePosition (1.1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

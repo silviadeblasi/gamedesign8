@@ -24,13 +24,14 @@ public class BossHealth : MonoBehaviour
 
         if(bossHealth <= 0)
         {
-            Die();
+            Died();
         }
     }
 
-    void Die()
+    void Died()
     {
-        Instantiate(deathEffect, transform.position, Quaternion.identity);
-        gameObject.SetActive(false);
+        // Instantiate(deathEffect, transform.position, Quaternion.identity);
+        // gameObject.SetActive(false);
+        GetComponent<Animator>().SetBool("died", true);
     }
 }

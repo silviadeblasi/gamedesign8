@@ -15,6 +15,7 @@ public class Boss_walk : StateMachineBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();
+        animator.SetBool("idle", true);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -31,6 +32,14 @@ public class Boss_walk : StateMachineBehaviour
         else if(Vector3.Distance(player.position, rb.position) <= attackRange)
         {
             animator.SetTrigger("attack");
+        }
+        else if(Vector3.Distance(player.position, rb.position) > followRange)
+        {
+            animator.SetBool("idle", true);
+        }
+        else
+        {
+            animator.SetBool("idle", true);
         }
     }
 
