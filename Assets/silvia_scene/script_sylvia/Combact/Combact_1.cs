@@ -66,19 +66,25 @@ public class Combact_1 : Combact{
            if(CombactManager.combactManager.currentCombact.CombactObjectiveCount == CombactManager.combactManager.currentCombact.CombactObjectiveRequirement){
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
                 first_battle.SetActive(false);
+                Fire_intorno.SetActive(false);
                 soundManager.StopBackgroundMusic("Fight1_V2");
                 soundManager.PlayBackgroundMusic("Temaprincipale2", 0.7f);
            }
 
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){
                 CombactManager.combactManager.FirstCombactDone = true; // ho fatto il primo combattimento quindi ora posso fare gli altri 
+                player.GetComponent<PlayerMovement>().enabled = false;
+                if(dialogo_iniziale == false){
+                    dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_primo_combattimento, transform.position, Quaternion.identity);
+                    dialogo_iniziale = true;
+                }
             }
 
             }else{
                 first_battle.SetActive(false);
             }
         
-            //player.GetComponent<PlayerMovement>().enabled = false;
+            //
             //anim.SetBool("isWalking", false); //??
             /*if(dialogo_iniziale == false)
                 dialogueBoxClone = (GameObject) GameObject.Instantiate(Dialogo_primo_combattimento, transform.position, Quaternion.identity);
