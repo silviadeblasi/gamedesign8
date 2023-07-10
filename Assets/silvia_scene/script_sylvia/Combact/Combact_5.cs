@@ -12,6 +12,7 @@ public class Combact_5: Combact{
     public GameObject Combattimento2;
     public GameObject fifth_battle;
     public GameObject Muretto_final;
+    public GameObject Fire_intorno;
     private bool dialogo_iniziale = false;
     private bool fine_dialogo_inizio_combattimento = false;
     private bool dead_1 = false;

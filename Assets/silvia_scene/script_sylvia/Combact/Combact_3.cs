@@ -12,6 +12,7 @@ public class Combact_3: Combact{
     public GameObject Combattimento3;
     public GameObject third_battle;
     public GameObject Muretto_final;
+    public GameObject Fire_intorno;
     private bool dialogo_iniziale = false;
     private bool fine_dialogo_inizio_combattimento = false;
     private bool dead_1 = false;
@@ -47,6 +48,7 @@ public class Combact_3: Combact{
             CombactManager.combactManager.CombactRequest(this);
                if(CombactManager.combactManager.currentCombact.id == 2){
                 third_battle.SetActive(true);
+                Fire_intorno.SetActive(true);
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
             //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
                 Combattimento3.transform.Find("enemies (3.1)").gameObject.GetComponent<EnemyController1>().enabled = true;
@@ -84,6 +86,7 @@ public class Combact_3: Combact{
            if(CombactManager.combactManager.currentCombact.CombactObjectiveCount == CombactManager.combactManager.currentCombact.CombactObjectiveRequirement){
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
                 third_battle.SetActive(false);
+                Fire_intorno.SetActive(false);
                 }
 
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){
