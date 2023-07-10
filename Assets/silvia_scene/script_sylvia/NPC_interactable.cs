@@ -7,19 +7,16 @@ public class NPC_interactable : MonoBehaviour
     private Animator anim;
     private Animator anim_veggente;
     private Animator anim_ubriacone;
-    private Animator anim_villager_1;
-    private Animator anim_villager_2;
+    private Animator anim_village_1;
     public DialoghiUIManager dialoghiUIManager; //cerco i dialoghi e li faccio comparire
     public GameObject player;
     public Rigidbody2D rb_player;
     public GameObject veggente;
     public GameObject ubriacone;
     public GameObject villager_1;
-    public GameObject villager_2;
     private Rigidbody2D rb_veggente;
     private Rigidbody2D rb_ubriacone;
     private Rigidbody2D rb_villager_1;
-    private Rigidbody2D rb_villager_2;
 
     
     private bool fine1 = false;
@@ -40,13 +37,11 @@ public class NPC_interactable : MonoBehaviour
         anim = GetComponent<Animator>();
         anim_veggente = veggente.GetComponent<Animator>();
         anim_ubriacone = ubriacone.GetComponent<Animator>();
-        anim_villager_1 = villager_1.GetComponent<Animator>();
-        anim_villager_2 = villager_2.GetComponent<Animator>();
+        anim_village_1 = villager_1.GetComponent<Animator>();
         rb_player = GetComponent<Rigidbody2D>();
         rb_veggente = veggente.GetComponent<Rigidbody2D>();
         rb_ubriacone = ubriacone.GetComponent<Rigidbody2D>();
         rb_villager_1 = villager_1.GetComponent<Rigidbody2D>();
-        rb_villager_2 = villager_2.GetComponent<Rigidbody2D>();
 
     }
 
@@ -191,9 +186,9 @@ public class NPC_interactable : MonoBehaviour
 
         if(other.gameObject.layer == 22){ //villager_1
                 Vector3 dir = villager_1.GetComponent<BoundedNPC>().directionVector;
-                anim_villager_1.SetBool("interact", true);
-                anim_villager_1.SetFloat("moveX", dir.x);
-                anim_villager_1.SetFloat("moveY", dir.y);
+                anim_village_1.SetBool("interact", true);
+                anim_village_1.SetFloat("moveX", dir.x);
+                anim_village_1.SetFloat("moveY", dir.y);
                 rb_villager_1.constraints = RigidbodyConstraints2D.FreezeAll;
                 villager_1.GetComponent<BoundedNPC>().enabled = false;
         
@@ -224,52 +219,6 @@ public class NPC_interactable : MonoBehaviour
 
         }
 
-            if(other.gameObject.layer == 23){ //villager_2
-                Vector3 dir = villager_1.GetComponent<BoundedNPC>().directionVector;
-                anim_villager_2.SetBool("interact", true);
-                anim_villager_2.SetFloat("moveX", dir.x);
-                anim_villager_2.SetFloat("moveY", dir.y);
-                rb_villager_2.constraints = RigidbodyConstraints2D.FreezeAll;
-                villager_2.GetComponent<BoundedNPC>().enabled = false;
-        
-            if(Input.GetKeyDown(KeyCode.X)){
-                fine1 = false;
-                fine2 = false;
-                fine3 = false;
-                fine4 = false;
-                fine5 = false;
-                fine6 = false;
-                fine7 = false;
-                fine8 = false;
-                fine9 = false;
-                fine10 = false;
-                fine11 = false;
-
-                
-                rb_player.constraints = RigidbodyConstraints2D.FreezeAll;
-                player.GetComponent<PlayerMovement>().enabled = false;
-                dialoghiUIManager.StartDialoghi("dg_ct_2_1"); 
-            }
-
-            if(dialoghiUIManager.FineDialogo("dg_ct_2_1") == true && fine1 == false){ 
-                fine1 = true;
-                dialoghiUIManager.StartDialoghi("dg_ct_sue_2");
-            }
-            if(dialoghiUIManager.FineDialogo("dg_ct_sue_2") == true && fine2 == false){
-                fine2 = true;
-                dialoghiUIManager.StartDialoghi("dg_ct_2_2");
-            }
-            if(dialoghiUIManager.FineDialogo("dg_ct_2_2") == true && fine3 == false){
-                fine3 = true;
-                player.GetComponent<PlayerMovement>().enabled = true;
-                rb_player.constraints = RigidbodyConstraints2D.None;
-                rb_player.constraints = RigidbodyConstraints2D.FreezeRotation;
-
-            }
-               
-        }
-
-
 
     }
 
@@ -289,17 +238,10 @@ public class NPC_interactable : MonoBehaviour
         }
 
         if(other.gameObject.layer == 22){ // villager_1
-            anim_villager_1.SetBool("interact", false);
+            anim_village_1.SetBool("interact", false);
             rb_villager_1.constraints = RigidbodyConstraints2D.None;
             rb_villager_1.constraints = RigidbodyConstraints2D.FreezeRotation;
             villager_1.GetComponent<BoundedNPC>().enabled = true;
-        }
-
-        if(other.gameObject.layer == 23){ // villager_2
-            anim_villager_2.SetBool("interact", false);
-            rb_villager_2.constraints = RigidbodyConstraints2D.None;
-            rb_villager_2.constraints = RigidbodyConstraints2D.FreezeRotation;
-            villager_2.GetComponent<BoundedNPC>().enabled = true;
         }
     }
 
