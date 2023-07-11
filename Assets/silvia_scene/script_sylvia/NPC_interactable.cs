@@ -25,6 +25,7 @@ public class NPC_interactable : MonoBehaviour
     private Rigidbody2D rb_villager_3;
     private Animator anim_villager_3;
     public GameObject canvas_pistola;
+    public GameObject pistola;
 
     //combattimento 5 , pistola con villager
     public Combact_5 comb_5;
@@ -316,6 +317,7 @@ public class NPC_interactable : MonoBehaviour
                     if(dialoghiUIManager.FineDialogo("dg_ct_comb_5_fatto") == true){
                         canvas_pistola.SetActive(true);
                         StartCoroutine(fine_pistola());
+                        pistola.SetActive(true);
                     }
                 }
                 else{
