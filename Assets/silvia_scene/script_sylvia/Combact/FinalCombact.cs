@@ -13,6 +13,11 @@ public class FinalCombact : MonoBehaviour {
     private bool starting = true;
     public bool end = false;
     public GameObject tirgger_final_scene;
+    [SerializeField] private Combact_2 comb_2;
+    [SerializeField] private Combact_3 comb_3;
+    [SerializeField] private Combact_4 comb_4;
+    [SerializeField] private Combact_5 comb_5;
+
 
     private void Start() {
         anim_player = player.GetComponent<Animator>();
@@ -30,10 +35,13 @@ public class FinalCombact : MonoBehaviour {
     }*/
     private void OnTriggerStay2D(Collider2D other) {
         if(other.gameObject.tag == "Player" ){
-            if(starting == true){
-                dialoghiManager.StartDialoghi("dg_boss_final");
-                fire_battle.SetActive(true);
-                starting = false;
+            if(comb_2.fatto_tutti_comb_2 == true || comb_3.fatto_tutti_comb_3 == true || comb_4.fatto_tutti_comb_4 == true || comb_5.fatto_tutti_comb_5 == true){
+            
+                if(starting == true){
+                    dialoghiManager.StartDialoghi("dg_boss_final");
+                    fire_battle.SetActive(true);
+                    starting = false;
+                }
             }
         }
     }
