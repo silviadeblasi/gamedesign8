@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class CanvaTrigger : MonoBehaviour
 {
-    void Start()
+    public GameObject canvaInventory;
+
+    void Awake()
     {
-        Debug.Log("Active");
-        gameObject.SetActive(true);
-        StartCoroutine(Wait());
-        gameObject.SetActive(false);  
+        canvaInventory.gameObject.SetActive(false);
+    }
+
+    public void Update()
+    {
+        if(canvaInventory.gameObject.activeSelf == true)
+        {
+            StartCoroutine(Wait());
+        }
     }
 
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(5);
-        gameObject.SetActive(false);
+        canvaInventory.gameObject.SetActive(false);
     }
 }

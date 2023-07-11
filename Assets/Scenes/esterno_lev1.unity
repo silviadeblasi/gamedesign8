@@ -13121,6 +13121,7 @@ MonoBehaviour:
   boss: {fileID: 1904024214}
   fire_battle: {fileID: 235436968}
   fire_ending: {fileID: 479407376}
+  end: 0
   tirgger_final_scene: {fileID: 1042106112}
 --- !u!60 &405455085
 PolygonCollider2D:
@@ -14506,6 +14507,7 @@ GameObject:
   - component: {fileID: 481655802}
   - component: {fileID: 481655803}
   - component: {fileID: 481655804}
+  - component: {fileID: 481655805}
   m_Layer: 0
   m_Name: Siringa (2)
   m_TagString: Untagged
@@ -14669,6 +14671,19 @@ PolygonCollider2D:
       - {x: -0.97999996, y: -1.64}
       - {x: -1.0799999, y: -1.48}
       - {x: -0.96, y: -1.28}
+--- !u!114 &481655805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481655800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaInventory: {fileID: 1265416547}
 --- !u!1 &517567651
 GameObject:
   m_ObjectHideFlags: 0
@@ -16950,7 +16965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3402343849622885271, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.2963562
+      value: -3.2963943
       objectReference: {fileID: 0}
     - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -16975,6 +16990,10 @@ PrefabInstance:
     - target: {fileID: 7898025480533000071, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -3.0998535
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898025480854870681, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -6.4998474
       objectReference: {fileID: 0}
     - target: {fileID: 7898025481182202944, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_Pivot.x
@@ -17074,7 +17093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8873142883170209327, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -29.987106
+      value: -29.987122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
@@ -17335,6 +17354,7 @@ GameObject:
   - component: {fileID: 653837375}
   - component: {fileID: 653837377}
   - component: {fileID: 653837378}
+  - component: {fileID: 653837379}
   m_Layer: 0
   m_Name: Siringa (3)
   m_TagString: Untagged
@@ -17498,6 +17518,19 @@ PolygonCollider2D:
       - {x: -0.97999996, y: -1.64}
       - {x: -1.0799999, y: -1.48}
       - {x: -0.96, y: -1.28}
+--- !u!114 &653837379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653837374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaInventory: {fileID: 1265416547}
 --- !u!1 &654331751
 GameObject:
   m_ObjectHideFlags: 0
@@ -17925,6 +17958,7 @@ GameObject:
   - component: {fileID: 693470490}
   - component: {fileID: 693470492}
   - component: {fileID: 693470493}
+  - component: {fileID: 693470494}
   m_Layer: 0
   m_Name: Bende (3)
   m_TagString: Untagged
@@ -18122,6 +18156,19 @@ PolygonCollider2D:
       - {x: -1.91, y: -4.29}
       - {x: -1.87, y: -4.0299997}
       - {x: -1.5699999, y: -4.0099998}
+--- !u!114 &693470494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693470489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaInventory: {fileID: 1265416547}
 --- !u!1 &693820079
 GameObject:
   m_ObjectHideFlags: 0
@@ -24822,6 +24869,7 @@ GameObject:
   - component: {fileID: 833284032}
   - component: {fileID: 833284034}
   - component: {fileID: 833284035}
+  - component: {fileID: 833284036}
   m_Layer: 0
   m_Name: Bende (4)
   m_TagString: Untagged
@@ -25019,6 +25067,19 @@ PolygonCollider2D:
       - {x: -1.91, y: -4.29}
       - {x: -1.87, y: -4.0299997}
       - {x: -1.5699999, y: -4.0099998}
+--- !u!114 &833284036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833284031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaInventory: {fileID: 1265416547}
 --- !u!1 &842817179
 GameObject:
   m_ObjectHideFlags: 0
@@ -25200,7 +25261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &849374906
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25216,8 +25277,9 @@ RectTransform:
   - {fileID: 1467053656}
   - {fileID: 1154164555}
   - {fileID: 1488217022}
+  - {fileID: 1499896916}
   m_Father: {fileID: 2098658939}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -29883,7 +29945,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 140}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &982160206
 MonoBehaviour:
@@ -35640,7 +35702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1265416548
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35654,7 +35716,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2098658939}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -35711,6 +35773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvaInventory: {fileID: 0}
 --- !u!1 &1266738851
 GameObject:
   m_ObjectHideFlags: 0
@@ -36131,7 +36194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: dialoghi.Array.size
-      value: 29
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: dialoghi.Array.data[2]
@@ -36241,6 +36304,14 @@ PrefabInstance:
       propertyPath: dialoghi.Array.data[28]
       value: 
       objectReference: {fileID: 279528182836724905, guid: ef72d780518764e4e82797794b2417b0, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[29]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: b04091f984fbf4b8e84b1dffe6f88b49, type: 3}
+    - target: {fileID: 2223010519362696031, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: dialoghi.Array.data[30]
+      value: 
+      objectReference: {fileID: 279528182836724905, guid: cc06f91b3a1c5479f9dc918f1ab4e9d7, type: 3}
     - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: _bgSlider
       value: 
@@ -39589,6 +39660,82 @@ PolygonCollider2D:
       - {x: 0.077968895, y: -0.22165716}
       - {x: 0.1474194, y: -0.018658012}
       - {x: 0.16877347, y: 0.1899356}
+--- !u!1 &1499896915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499896916}
+  - component: {fileID: 1499896918}
+  - component: {fileID: 1499896917}
+  m_Layer: 5
+  m_Name: UseButtonCanva
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1499896916
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499896915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 849374906}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 360, y: 150}
+  m_SizeDelta: {x: 252.31, y: 146.73}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1499896917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499896915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d8a615293d0ce747a25295de2965162, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1499896918
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499896915}
+  m_CullTransparentMesh: 1
 --- !u!1 &1524520913
 GameObject:
   m_ObjectHideFlags: 0
@@ -41773,6 +41920,7 @@ GameObject:
   - component: {fileID: 1633247389}
   - component: {fileID: 1633247391}
   - component: {fileID: 1633247392}
+  - component: {fileID: 1633247393}
   m_Layer: 0
   m_Name: Bende (1)
   m_TagString: Untagged
@@ -41970,6 +42118,19 @@ PolygonCollider2D:
       - {x: -1.91, y: -4.29}
       - {x: -1.87, y: -4.0299997}
       - {x: -1.5699999, y: -4.0099998}
+--- !u!114 &1633247393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633247388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaInventory: {fileID: 1265416547}
 --- !u!1 &1636560053
 GameObject:
   m_ObjectHideFlags: 0
@@ -42732,6 +42893,7 @@ GameObject:
   - component: {fileID: 1695721237}
   - component: {fileID: 1695721238}
   - component: {fileID: 1695721239}
+  - component: {fileID: 1695721240}
   m_Layer: 0
   m_Name: Siringa (1)
   m_TagString: Untagged
@@ -42895,6 +43057,19 @@ PolygonCollider2D:
       - {x: -0.97999996, y: -1.64}
       - {x: -1.0799999, y: -1.48}
       - {x: -0.96, y: -1.28}
+--- !u!114 &1695721240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695721235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaInventory: {fileID: 1265416547}
 --- !u!1 &1700614960
 GameObject:
   m_ObjectHideFlags: 0
@@ -46430,6 +46605,7 @@ GameObject:
   - component: {fileID: 2013164891}
   - component: {fileID: 2013164893}
   - component: {fileID: 2013164894}
+  - component: {fileID: 2013164895}
   m_Layer: 0
   m_Name: Bende (2)
   m_TagString: Untagged
@@ -46627,6 +46803,19 @@ PolygonCollider2D:
       - {x: -1.91, y: -4.29}
       - {x: -1.87, y: -4.0299997}
       - {x: -1.5699999, y: -4.0099998}
+--- !u!114 &2013164895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013164890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaInventory: {fileID: 1265416547}
 --- !u!1 &2017865820
 GameObject:
   m_ObjectHideFlags: 0
@@ -56936,8 +57125,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 517567655}
-  - {fileID: 849374906}
   - {fileID: 1265416548}
+  - {fileID: 849374906}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -57829,7 +58018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5515725868613724402, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5515725868613724402, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
       propertyPath: m_AnchorMin.x
@@ -57837,15 +58026,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5515725868613724402, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5515725868613724402, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5515725868613724402, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5515725868613724402, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57877,11 +58066,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5515725868613724402, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 410
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5515725868613724402, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5515725868613724402, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
