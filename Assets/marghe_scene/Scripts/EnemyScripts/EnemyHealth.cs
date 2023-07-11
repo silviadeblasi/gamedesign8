@@ -23,6 +23,7 @@ public class EnemyHealth : MonoBehaviour
         if(currentHelath <= 0)
         {
             gameObject.SetActive(false); //non posso distruggerlo
+            
         }
     }
 }

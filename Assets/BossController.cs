@@ -45,8 +45,8 @@ public class BossController : MonoBehaviour
 
     public void FollowPlayer()
     {
-        myAnim.SetBool("walk", true);
-        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
+        myAnim.SetBool("walking", true);
+        myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
@@ -54,27 +54,26 @@ public class BossController : MonoBehaviour
     public void AttackPlayer()
     {
         //Debug.Log("Attacking");
-        //myAnim.SetBool("walk", false);
-        myAnim.SetBool("attack", true);
-        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
+        //myAnim.SetBool("walking", false);
+        myAnim.SetBool("attacking", true);
+        myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
     public void ReturnHomePosition()
     {
-        myAnim.SetBool("walk", true);
-        myAnim.SetBool("attack", false);
-        myAnim.SetFloat("moveX", (homePosition.position.x - transform.position.x
-        ));
+        myAnim.SetBool("walking", true);
+        myAnim.SetBool("attacking", false);
+        myAnim.SetFloat("moveX", (transform.position.x - homePosition.position.x));
         myAnim.SetFloat("moveY", (homePosition.position.y - transform.position.y));
         transform.position = Vector3.MoveTowards(transform.position, homePosition.position, speed * Time.deltaTime);
 
         if(transform.position == homePosition.position)
         {
-            myAnim.SetBool("walk", false);
-            myAnim.SetBool("attack", false);
-            myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
+            myAnim.SetBool("walking", false);
+            myAnim.SetBool("attacking", false);
+            myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
             myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         }
     }
