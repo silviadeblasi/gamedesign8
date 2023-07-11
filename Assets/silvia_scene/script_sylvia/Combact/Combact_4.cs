@@ -52,11 +52,11 @@ public class Combact_4: Combact{
 
                 if (CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
             //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
-                Combattimento2.transform.Find("enemies (4.1)").gameObject.GetComponent<EnemyController>().enabled = true;
-                Combattimento2.transform.Find("enemies (4.2)").gameObject.GetComponent<EnemyController>().enabled = true;
-                Combattimento2.transform.Find("enemies (4.3)").gameObject.GetComponent<EnemyController>().enabled = true;
-                Combattimento2.transform.Find("enemies (4.4)").gameObject.GetComponent<EnemyController>().enabled = true;
-                Combattimento2.transform.Find("enemies (4.5)").gameObject.GetComponent<EnemyController>().enabled = true;
+                Combattimento2.transform.Find("enemies (4.1)").gameObject.GetComponent<EnemyController1>().enabled = true;
+                Combattimento2.transform.Find("enemies (4.2)").gameObject.GetComponent<EnemyController1>().enabled = true;
+                Combattimento2.transform.Find("enemies (4.3)").gameObject.GetComponent<EnemyController1>().enabled = true;
+                Combattimento2.transform.Find("enemies (4.4)").gameObject.GetComponent<EnemyController1>().enabled = true;
+                Combattimento2.transform.Find("enemies (4.5)").gameObject.GetComponent<EnemyController1>().enabled = true;
 
             }
 

@@ -6,14 +6,14 @@ public class BossHealth : MonoBehaviour
 {
     public float currentHealth;
     public int maxHealth;
-    public BossController bossController;
+    [SerializeField] private Animator animator;
     
-    public void Damage(float damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
-            bossController.Die();
+            animator.SetBool("died", true);
             gameObject.SetActive(false);
         }
         

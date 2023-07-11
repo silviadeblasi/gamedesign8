@@ -1759,7 +1759,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 66363662}
 --- !u!114 &66363662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1777,6 +1776,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 292069995}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &66363663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2213,9 +2213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e25faca0990ef0941ba7f5168c56de6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHelath: 4
+  currentHelath: 2
   maxHealth: 4
-  enemyController: {fileID: 84383901}
 --- !u!114 &84383901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2233,6 +2232,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 2128194800}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &84383902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3108,7 +3108,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 135027627}
 --- !u!114 &135027627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3126,6 +3125,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1945628052}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &135027628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4166,7 +4166,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 213620692}
 --- !u!114 &213620692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4184,6 +4183,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1963021764}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &213620693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11544,6 +11544,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1708836327}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &312846149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11558,7 +11559,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 4
   maxHealth: 4
-  enemyController: {fileID: 312846148}
 --- !u!1 &314028094
 GameObject:
   m_ObjectHideFlags: 0
@@ -11735,14 +11735,6 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: e01f01942b24fe040b3021c0ad4ff08f, type: 3}
-    - target: {fileID: 8140712727784541968, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8140712727784541970, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351443, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: Map_prefab
       value: 
@@ -11761,11 +11753,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.192
+      value: -4.98
       objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.431
+      value: 21.67
       objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351450, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13211,7 +13203,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 436144860}
 --- !u!114 &436144860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13229,6 +13220,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1676349473}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &436144861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13966,6 +13958,11 @@ PolygonCollider2D:
       - {x: -0.19683325, y: -0.42043638}
       - {x: -0.032323956, y: -0.31914765}
       - {x: 0.031282425, y: -0.20369476}
+--- !u!1 &460115591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7811454072795011154, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+  m_PrefabInstance: {fileID: 348793673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &474180890
 GameObject:
   m_ObjectHideFlags: 0
@@ -15143,7 +15140,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 568118608}
 --- !u!114 &568118608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15161,6 +15157,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1559726447}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &568118609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16027,7 +16024,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 603804444}
 --- !u!114 &603804444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16045,6 +16041,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 375657547}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &603804445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16273,7 +16270,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< Updated upstream
     - target: {fileID: 5281012995615496907, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -16282,52 +16278,6 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 41825220}
-=======
-    - target: {fileID: 2199948123032420817, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.7315674
-      objectReference: {fileID: 0}
-    - target: {fileID: 2690214236422359446, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 3.399994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3402343849622885271, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.20361328
-      objectReference: {fileID: 0}
-    - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -10.9999695
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -19.400024
-      objectReference: {fileID: 0}
-    - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -12.100044
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652127704889468912, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -3.399994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7898025479762028152, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 7898025479762028152, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.5499878
-      objectReference: {fileID: 0}
-    - target: {fileID: 7898025480533000071, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -3.0998535
-      objectReference: {fileID: 0}
-    - target: {fileID: 7898025480854870681, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -6.499878
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7898025481182202944, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -16853,7 +16803,7 @@ GameObject:
   - component: {fileID: 654331752}
   - component: {fileID: 654331753}
   - component: {fileID: 654331754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: downHitboxBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17604,7 +17554,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 718611525}
 --- !u!114 &718611525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17622,6 +17571,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1121973556}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &718611526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18834,9 +18784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e25faca0990ef0941ba7f5168c56de6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHelath: 4
+  currentHelath: 2
   maxHealth: 4
-  enemyController: {fileID: 822979443}
 --- !u!114 &822979443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18854,6 +18803,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1328533289}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &822979444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24988,7 +24938,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 913441032}
 --- !u!114 &913441032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25006,6 +24955,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1203110056}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &913441033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29217,7 +29167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 1003020416}
 --- !u!114 &1003020416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29235,6 +29184,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1784780142}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1003020417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29796,7 +29746,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 1047156670}
 --- !u!114 &1047156670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29814,6 +29763,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 2145478025}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1047156671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30003,9 +29953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e25faca0990ef0941ba7f5168c56de6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHelath: 4
+  currentHelath: 2
   maxHealth: 4
-  enemyController: {fileID: 1053809785}
 --- !u!114 &1053809785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30023,6 +29972,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1495858176}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1053809786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31483,7 +31433,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 1139547014}
 --- !u!114 &1139547014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31501,6 +31450,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 445407077}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1139547015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32041,7 +31991,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 1168474610}
 --- !u!114 &1168474610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32059,6 +32008,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1916203919}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1168474611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32321,7 +32271,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 1174883981}
 --- !u!114 &1174883981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32339,6 +32288,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 2110442858}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1174883982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33574,7 +33524,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 1255943078}
 --- !u!114 &1255943078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33592,6 +33541,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1918979738}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1255943079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34884,7 +34834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1352191988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: homePositionBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35339,7 +35289,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 1372411532}
 --- !u!114 &1372411532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35357,6 +35306,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1930001418}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1372411533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36028,7 +35978,7 @@ GameObject:
   - component: {fileID: 1396972811}
   - component: {fileID: 1396972812}
   - component: {fileID: 1396972813}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: rightHitboxBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36459,7 +36409,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 1431422968}
 --- !u!114 &1431422968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36477,6 +36426,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1211429075}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1431422969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38789,7 +38739,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 1565106846}
 --- !u!114 &1565106846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38807,6 +38756,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 954959776}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1565106847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39241,7 +39191,7 @@ GameObject:
   - component: {fileID: 1596823826}
   - component: {fileID: 1596823827}
   - component: {fileID: 1596823828}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upHitboxBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40516,7 +40466,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4613773642290738341, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
   m_PrefabInstance: {fileID: 348793673}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 460115591}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2bfae479a574c341b87c5ccc5bf2f48, type: 3}
@@ -41422,9 +41372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e25faca0990ef0941ba7f5168c56de6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHelath: 4
+  currentHelath: 2
   maxHealth: 4
-  enemyController: {fileID: 1744618595}
 --- !u!114 &1744618595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41442,6 +41391,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 927985544}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1744618596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42994,11 +42944,10 @@ GameObject:
   - component: {fileID: 1904024215}
   - component: {fileID: 1904024217}
   - component: {fileID: 1904024218}
-  - component: {fileID: 1904024222}
-  - component: {fileID: 1904024223}
+  - component: {fileID: 1904024219}
   - component: {fileID: 1904024220}
   - component: {fileID: 1904024221}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: boss
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -43118,6 +43067,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1904024219
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904024214}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0004825592, y: 0.04209709}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8636364, y: 1.2272727}
+    newSize: {x: 0.90909094, y: 1.0909091}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.56871796, y: 0.8875923}
+  m_EdgeRadius: 0
 --- !u!114 &1904024220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43135,6 +43110,7 @@ MonoBehaviour:
   walkRange: 3
   attackRange: 1
   homePosition: {fileID: 1352191988}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1904024221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43149,63 +43125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 20
   maxHealth: 20
-  bossController: {fileID: 1904024220}
---- !u!60 &1904024222
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904024214}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8636364, y: 1.2272727}
-    newSize: {x: 0.90909094, y: 1.0909091}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.121673584, y: 0.5645542}
-      - {x: -0.20621404, y: 0.50980985}
-      - {x: -0.26325607, y: 0.35556412}
-      - {x: -0.28354454, y: 0.2980442}
-      - {x: -0.24941844, y: 0.14839572}
-      - {x: -0.21489906, y: 0.09324837}
-      - {x: -0.40375727, y: -0.30776632}
-      - {x: -0.37410387, y: -0.445269}
-      - {x: 0.31676692, y: -0.45593625}
-      - {x: 0.4120369, y: -0.34085274}
-      - {x: 0.2937336, y: 0.027080536}
-      - {x: 0.20902634, y: 0.10888672}
-      - {x: 0.28466034, y: 0.30059433}
-      - {x: 0.22562027, y: 0.44733047}
-      - {x: 0.15045166, y: 0.53808403}
-      - {x: -0.003133595, y: 0.56312597}
---- !u!114 &1904024223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904024214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
+  animator: {fileID: 1904024217}
 --- !u!1 &1909146801
 GameObject:
   m_ObjectHideFlags: 0
@@ -43217,7 +43137,7 @@ GameObject:
   - component: {fileID: 1909146802}
   - component: {fileID: 1909146803}
   - component: {fileID: 1909146804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: leftHitboxBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43423,7 +43343,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
-  enemyController: {fileID: 1912514595}
 --- !u!114 &1912514595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43441,6 +43360,7 @@ MonoBehaviour:
   walkRange: 2
   attackRange: 1
   homePosition: {fileID: 1644348837}
+  playerHealth: {fileID: 460115591}
 --- !u!114 &1912514596
 MonoBehaviour:
   m_ObjectHideFlags: 0
