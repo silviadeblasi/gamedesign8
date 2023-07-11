@@ -9,12 +9,49 @@ public class FinalCombact : Combact {
     public GameObject boss;
     public GameObject fire_battle;
     public GameObject fire_ending;
+    private bool starting = true;
 
     private void Start() {
         anim_player = player.GetComponent<Animator>();
     }
+    /*private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.tag == "Player" ){
+            combact._inTrigger = true;
+        }
+    }
 
+    private void OnTriggerExit2D(Collider2D other) {
+        if(other.gameObject.tag == "Player"){
+            combact._inTrigger = false;
+        }
+    }*/
+    private void OnTriggerStay2D(Collider2D other) {
+        
+    }
 
+    private void Update(){
+    
+        if(combact._inTrigger){
+            Debug.Log("dentro");
+                if(starting == true){
+                    dialoghiManager.StartDialoghi("dialogo_boss_finale");
+                    fire_battle.SetActive(true);
+                    starting = false;
+                }
+
+            if(boss.GetComponent<BossHealth>().currentHealth <= 0){
+                fire_battle.SetActive(false);
+                fire_ending.SetActive(true);
+                player.GetComponent<PlayerMovement>().enabled = false;
+                anim_player.SetBool("moving",false);
+                dialoghiManager.StartDialoghi("dialogo_vittoria");
+                if(dialoghiManager.FineDialogo("dialogo_vittoria")){
+                    player.GetComponent<PlayerMovement>().enabled = true;
+                    anim_player.SetBool("moving",true);
+                }
+            }
+        }
+    }
     /*private void OnTriggerEnter2D(Collider2D other) {
         Debug.Log()
         if(other.CompareTag("Player") && !other.isTrigger){
@@ -25,31 +62,6 @@ public class FinalCombact : Combact {
         }
     }*/
 
-    private void Update() {
-        /*if(dialoghiManager.FineDialogo("dialogo_boss_finale"))
-        { 
-            //dialogo iniziale finito puo iniziare ultimo combattimento 
-            player.GetComponent<PlayerMovement>().enabled = true;
-            anim_player.SetBool("moving",true);
-            gameObject.SetActive(false);
-
-        }
-        else if(boss.GetComponent<BossHealth>().currentHealth <= 0)
-        {
-            fire_battle.SetActive(false);
-            fire_ending.SetActive(true);
-            player.GetComponent<PlayerMovement>().enabled = false;
-            anim_player.SetBool("moving",false);
-            dialoghiManager.StartDialoghi("dialogo_vittoria");
-
-            if(dialoghiManager.FineDialogo("dialogo_vittoria"))
-            {
-                player.GetComponent<PlayerMovement>().enabled = true;
-                anim_player.SetBool("moving",true);
-            }
-            
-        }*/
-    }
 }
     
 

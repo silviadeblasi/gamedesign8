@@ -13113,7 +13113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inTrigger: 0
-  trigger_startcombact: {fileID: 0}
+  trigger_startcombact: {fileID: 405455082}
   availableCombactIDs: 
   receivableCombactID: 0
   combattimento1: {fileID: 0}
@@ -31227,7 +31227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player_position: {x: 0, y: 0}
   player_storage: {fileID: 0}
-  trigger: {fileID: 0}
+  trigger: {fileID: 1042106112}
   interazione_non_completa: {fileID: 0}
   opened: {fileID: 0}
   interactable: {fileID: 0}
@@ -44909,7 +44909,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904024214}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e955c84928fc55547b9ea1eb82812618, type: 3}
   m_Name: 
@@ -56683,7 +56683,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 19, y: -34.999985}
+  m_AnchoredPosition: {x: 19, y: -34.99997}
   m_SizeDelta: {x: -713, y: -336.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2090682777
