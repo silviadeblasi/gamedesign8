@@ -308,9 +308,6 @@ public class NPC_interactable : MonoBehaviour
                 fine10 = false;
                 fine11 = false;
 
-                rb_player.constraints = RigidbodyConstraints2D.FreezeAll;
-                player.GetComponent<PlayerMovement>().enabled = false;
-
                 if(comb_5.fatto_comb_5 == true){
                     dialoghiUIManager.StartDialoghi("dg_ct_comb_5_fatto"); 
 
@@ -323,11 +320,6 @@ public class NPC_interactable : MonoBehaviour
                 else{
                     dialoghiUIManager.StartDialoghi("dg_ct_3_1");
 
-                    if(dialoghiUIManager.FineDialogo("dg_ct_3_1") == true){
-                    player.GetComponent<PlayerMovement>().enabled = true;
-                    rb_player.constraints = RigidbodyConstraints2D.None;
-                    rb_player.constraints = RigidbodyConstraints2D.FreezeRotation; 
-                    }
                 }
             
                
