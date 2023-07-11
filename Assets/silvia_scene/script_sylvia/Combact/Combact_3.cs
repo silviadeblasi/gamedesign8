@@ -10,6 +10,10 @@ public class Combact_3: Combact{
     public GameObject Dialogo_primo_combattimento;
     public GameObject Dialogo_fine_primo_combattimento;
     public GameObject Combattimento3;
+    public GameObject comb_1;
+    public GameObject comb_2;
+    public GameObject comb_4;
+    public GameObject comb_5;
     public GameObject third_battle;
     public GameObject Muretto_final;
     public GameObject Fire_intorno;
@@ -41,12 +45,16 @@ public class Combact_3: Combact{
 
         if(CombactManager.combactManager.FirstCombactDone == true){
             
-            
+           
 
             if(combact._inTrigger){
 
             CombactManager.combactManager.CombactRequest(this);
                if(CombactManager.combactManager.currentCombact.id == 2){
+                comb_1.SetActive(false);
+                comb_2.SetActive(false);
+                comb_4.SetActive(false);
+                comb_5.SetActive(false);
                 third_battle.SetActive(true);
                 Fire_intorno.SetActive(true);
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
@@ -87,6 +95,10 @@ public class Combact_3: Combact{
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
                 third_battle.SetActive(false);
                 Fire_intorno.SetActive(false);
+                comb_1.SetActive(true);
+                comb_2.SetActive(true);
+                comb_4.SetActive(true);
+                comb_5.SetActive(true);
                 }
 
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){

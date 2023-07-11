@@ -11,6 +11,10 @@ public class Combact_1 : Combact{
     public GameObject first_battle;
     public GameObject Fire_intorno;
     public GameObject Combattimento1;
+    public GameObject comb_3;
+    public GameObject comb_2;
+    public GameObject comb_4;
+    public GameObject comb_5;
     private bool dialogo_iniziale = false;
     private bool fine_dialogo_inizio_combattimento = false;
     private bool dead_1 = false;
@@ -41,7 +45,10 @@ public class Combact_1 : Combact{
             if(CombactManager.combactManager.currentCombact.id == 0){
                 Fire_intorno.SetActive(true);
                 first_battle.SetActive(true);
-                
+                comb_2.SetActive(false);
+                comb_3.SetActive(false);
+                comb_4.SetActive(false);
+                comb_5.SetActive(false);
                 
                 if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
                 //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
@@ -74,9 +81,7 @@ public class Combact_1 : Combact{
             if(fine_combattimento == false && CombactManager.combactManager.currentCombact.CombactObjectiveCount != 0 ){
                     dialoghiManager.StartDialoghi("dg_sue_fine_combattimento1"); 
                     fine_combattimento = true;
-            }
-               
-                  
+                }
            }
            
             
@@ -85,7 +90,10 @@ public class Combact_1 : Combact{
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){
                 Debug.Log("fatto");
                 CombactManager.combactManager.FirstCombactDone = true; // ho fatto il primo combattimento quindi ora posso fare gli altri 
-                
+                comb_2.SetActive(true);
+                comb_3.SetActive(true);
+                comb_4.SetActive(true);
+                comb_5.SetActive(true);
 
             }
 

@@ -10,6 +10,10 @@ public class Combact_4: Combact{
     public GameObject Dialogo_primo_combattimento;
     public GameObject Dialogo_fine_primo_combattimento;
     public GameObject Combattimento2;
+    public GameObject comb_1;
+    public GameObject comb_2;
+    public GameObject comb_3;
+    public GameObject comb_5;
     public GameObject fourth_battle;
     public GameObject Muretto_final;
     public GameObject Fire_intorno;
@@ -49,7 +53,10 @@ public class Combact_4: Combact{
             if(CombactManager.combactManager.currentCombact.id == 3){
                 fourth_battle.SetActive(true);
                 Fire_intorno.SetActive(true);
-
+                comb_1.SetActive(false);
+                comb_2.SetActive(false);
+                comb_3.SetActive(false);
+                comb_5.SetActive(false);
                 if (CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
             //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
                 Combattimento2.transform.Find("enemies (4.1)").gameObject.GetComponent<EnemyController1>().enabled = true;
@@ -90,8 +97,10 @@ public class Combact_4: Combact{
                 fourth_battle.SetActive(false);
                 Fire_intorno.SetActive(false);
                 canvas_pendant_rubato.SetActive(true);
-                
-                
+                comb_1.SetActive(true);
+                comb_2.SetActive(true);
+                comb_3.SetActive(true);
+                comb_5.SetActive(true);
                 
                 }
 

@@ -10,6 +10,10 @@ public class Combact_5: Combact{
     public GameObject Dialogo_primo_combattimento;
     public GameObject Dialogo_fine_primo_combattimento;
     public GameObject Combattimento2;
+    public GameObject comb_1;
+    public GameObject comb_2;
+    public GameObject comb_3;
+    public GameObject comb_4;
     public GameObject fifth_battle;
     public GameObject Muretto_final;
     public GameObject Fire_intorno;
@@ -47,6 +51,10 @@ public class Combact_5: Combact{
             if(CombactManager.combactManager.currentCombact.id == 4){
             fifth_battle.SetActive(true);
             Fire_intorno.SetActive(true);
+            comb_1.SetActive(false);
+            comb_2.SetActive(false);
+            comb_3.SetActive(false);
+            comb_4.SetActive(false);
 
                 if (CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
             //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
@@ -85,6 +93,10 @@ public class Combact_5: Combact{
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
                 fifth_battle.SetActive(false);
                 Fire_intorno.SetActive(false);
+                comb_1.SetActive(true);
+                comb_2.SetActive(true);
+                comb_3.SetActive(true);
+                comb_4.SetActive(true);
             }
 
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){
@@ -94,6 +106,7 @@ public class Combact_5: Combact{
 
             }else{
                 fifth_battle.SetActive(false);
+                
 
                 if(CombactManager.combactManager.CheckEverythingDone() && fatto_tutti_comb == false){
                         dialoghiManager.StartDialoghi("Dialogo_allcombact_done");
