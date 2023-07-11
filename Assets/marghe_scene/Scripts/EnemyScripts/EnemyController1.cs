@@ -13,7 +13,6 @@ public class EnemyController1 : MonoBehaviour
     private Transform target;
     [SerializeField] private float speed = 1f;
     [SerializeField] private float walkRange = 2f;
-    //[SerializeField] private float minRange = 0.5f;
     [SerializeField] private float attackRange = 1f;
     public Transform homePosition;
     public GameObject playerHealth;
@@ -76,5 +75,13 @@ public class EnemyController1 : MonoBehaviour
             myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
             myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         }
+    }
+
+    public void Die()
+    {
+        myAnim.SetBool("died", true);
+        myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
+        myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
+        Destroy(gameObject, 0.5f);
     }
 }

@@ -6,24 +6,15 @@ public class EnemyHealth : MonoBehaviour
 {
     public float currentHelath;
     public int maxHealth;
-
-    void Start()
-    {
-
-    }
-
-    void Update() 
-    {
-        
-    }
+    public EnemyController1 enemyController1;
 
     public void Damage(float damage)
     {
         currentHelath -= damage;
         if(currentHelath <= 0)
         {
+            enemyController1.Die();
             gameObject.SetActive(false); //non posso distruggerlo
-            
         }
     }
 }

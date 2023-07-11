@@ -1759,6 +1759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 66363662}
 --- !u!114 &66363662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,6 +2216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 4
+  enemyController1: {fileID: 84383901}
 --- !u!114 &84383901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3108,6 +3110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 135027627}
 --- !u!114 &135027627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4166,6 +4169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 213620692}
 --- !u!114 &213620692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4667,7 +4671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &229068863
 Transform:
   m_ObjectHideFlags: 0
@@ -11559,6 +11563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 4
   maxHealth: 4
+  enemyController1: {fileID: 312846148}
 --- !u!1 &314028094
 GameObject:
   m_ObjectHideFlags: 0
@@ -12790,17 +12795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf0ec21a586f464d8f81845948657e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inTrigger: 0
-  trigger_startcombact: {fileID: 0}
-  availableCombactIDs: 
-  receivableCombactID: 0
-  combattimento1: {fileID: 0}
-  combattimento: {fileID: 0}
-  combact: {fileID: 0}
+  dialoghiManager: {fileID: 0}
   player: {fileID: 0}
-  Dialogo_primo_combattimento: {fileID: 0}
-  Dialogo_fine_primo_combattimento: {fileID: 0}
-  Combattimento2: {fileID: 0}
 --- !u!1 &406823758
 GameObject:
   m_ObjectHideFlags: 0
@@ -13203,6 +13199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 436144860}
 --- !u!114 &436144860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13759,7 +13756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &451274523
 Transform:
   m_ObjectHideFlags: 0
@@ -15140,6 +15137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 568118608}
 --- !u!114 &568118608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16024,6 +16022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 603804444}
 --- !u!114 &603804444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16270,6 +16269,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -11
+      objectReference: {fileID: 0}
     - target: {fileID: 5281012995615496907, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -17554,6 +17557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 718611525}
 --- !u!114 &718611525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18786,6 +18790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 4
+  enemyController1: {fileID: 822979443}
 --- !u!114 &822979443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24938,6 +24943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 913441032}
 --- !u!114 &913441032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29167,6 +29173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 1003020416}
 --- !u!114 &1003020416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29746,6 +29753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 1047156670}
 --- !u!114 &1047156670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29955,6 +29963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 4
+  enemyController1: {fileID: 1053809785}
 --- !u!114 &1053809785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31433,6 +31442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 1139547014}
 --- !u!114 &1139547014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31991,6 +32001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 1168474610}
 --- !u!114 &1168474610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32271,6 +32282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 1174883981}
 --- !u!114 &1174883981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33524,6 +33536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 1255943078}
 --- !u!114 &1255943078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35289,6 +35302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 1372411532}
 --- !u!114 &1372411532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35803,7 +35817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1385663319
 Transform:
   m_ObjectHideFlags: 0
@@ -36205,7 +36219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1405141245
 Transform:
   m_ObjectHideFlags: 0
@@ -36409,6 +36423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 1431422968}
 --- !u!114 &1431422968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38739,6 +38754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 1565106846}
 --- !u!114 &1565106846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41374,6 +41390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 4
+  enemyController1: {fileID: 1744618595}
 --- !u!114 &1744618595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41574,7 +41591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1788197761
 Transform:
   m_ObjectHideFlags: 0
@@ -43100,7 +43117,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904024214}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e955c84928fc55547b9ea1eb82812618, type: 3}
   m_Name: 
@@ -43110,7 +43127,6 @@ MonoBehaviour:
   walkRange: 3
   attackRange: 1
   homePosition: {fileID: 1352191988}
-  playerHealth: {fileID: 460115591}
 --- !u!114 &1904024221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43125,7 +43141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 20
   maxHealth: 20
-  animator: {fileID: 1904024217}
+  bossController: {fileID: 1904024220}
 --- !u!1 &1909146801
 GameObject:
   m_ObjectHideFlags: 0
@@ -43343,6 +43359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHelath: 2
   maxHealth: 2
+  enemyController1: {fileID: 1912514595}
 --- !u!114 &1912514595
 MonoBehaviour:
   m_ObjectHideFlags: 0
