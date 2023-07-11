@@ -11,6 +11,7 @@ public class FinalCombact : MonoBehaviour {
     public GameObject fire_battle;
     public GameObject fire_ending;
     private bool starting = true;
+    public bool end = false;
     public GameObject tirgger_final_scene;
 
     private void Start() {
@@ -30,7 +31,7 @@ public class FinalCombact : MonoBehaviour {
     private void OnTriggerStay2D(Collider2D other) {
         if(other.gameObject.tag == "Player" ){
             if(starting == true){
-                dialoghiManager.StartDialoghi("dialogo_boss_finale");
+                dialoghiManager.StartDialoghi("dg_boss_final");
                 fire_battle.SetActive(true);
                 starting = false;
             }
@@ -44,8 +45,12 @@ public class FinalCombact : MonoBehaviour {
             fire_ending.SetActive(true);
             player.GetComponent<PlayerMovement>().enabled = false;
             anim_player.SetBool("moving",false);
-            dialoghiManager.StartDialoghi("dialogo_vittoria");
-            if(dialoghiManager.FineDialogo("dialogo_vittoria")){
+            if(end == false){
+                dialoghiManager.StartDialoghi("dg_sue_final");
+                end = true;
+            }
+            
+            if(dialoghiManager.FineDialogo("dg_sue_final")){
                 player.GetComponent<PlayerMovement>().enabled = true;
                 anim_player.SetBool("moving",true);
                 tirgger_final_scene.SetActive(true);
