@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 571640a70907d1e408bf31ff75f316c2, type: 3}
-  m_Name: Bow
+  m_Name: Gun
   m_EditorClassIdentifier: 
-  itemName: Bow
-  itemDescription: This is the bow you found after killing Larry
-  itemImage: {fileID: 21300000, guid: ce142df99ed32274e81eb6bd3a91299f, type: 3}
-  numberHeld: 1
+  itemName: Gun
+  itemDescription: The villager gave you this weapon. Normally, it's a usefull item,
+    but not in this part of the city
+  itemImage: {fileID: 21300000, guid: d6565a098bac0e34ab8e7ee3951e1a18, type: 3}
+  numberHeld: 0
   usable: 0
   unique: 1
   thisEvent:
