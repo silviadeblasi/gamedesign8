@@ -53,14 +53,17 @@ public class Combact_1 : Combact{
            if(Combattimento1.transform.Find("enemies (1.1)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_1 == false){
                CombactManager.combactManager.currentCombact.CombactObjectiveCount ++; //ho ucciso un nemico e sommo 1 al contatore;
                 dead_1 = true;
+                Debug.Log("morto 1");
            }
            if(Combattimento1.transform.Find("enemies (1.2)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_2 == false){
                 CombactManager.combactManager.currentCombact.CombactObjectiveCount ++; //ho ucciso un nemico e sommo 1 al contatore;
                 dead_2 = true;
+                Debug.Log("morto 2");
             }
             if(Combattimento1.transform.Find("enemies (1.3)").gameObject.GetComponent<EnemyHealth>().currentHelath <= 0 && dead_3 == false){
                 CombactManager.combactManager.currentCombact.CombactObjectiveCount ++; //ho ucciso un nemico e sommo 1 al contatore;
                 dead_3 = true;
+                Debug.Log("morto 3");
             }
 
            if(CombactManager.combactManager.currentCombact.CombactObjectiveCount == CombactManager.combactManager.currentCombact.CombactObjectiveRequirement){
@@ -71,8 +74,8 @@ public class Combact_1 : Combact{
             if(fine_combattimento == false && CombactManager.combactManager.currentCombact.CombactObjectiveCount != 0 ){
                     dialoghiManager.StartDialoghi("dg_sue_fine_combattimento1"); 
                     fine_combattimento = true;
-                }
-                
+            }
+               
                   
            }
            

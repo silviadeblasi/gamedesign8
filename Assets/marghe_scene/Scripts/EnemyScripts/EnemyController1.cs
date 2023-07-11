@@ -82,6 +82,6 @@ public class EnemyController1 : MonoBehaviour
         myAnim.SetBool("died", true);
         myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
-        Destroy(gameObject, 0.5f);
+        gameObject.SetActive(false);
     }
 }
