@@ -13,7 +13,7 @@ public class FinalCombact : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Player") && !other.isTrigger){
             player.GetComponent<PlayerMovement>().enabled = false;
-            anim_player.SetBool("moving",fasle);
+            anim_player.SetBool("moving",false);
             dialoghiManager.StartDialoghi("dialogo_boss_finale");
         }
     }
