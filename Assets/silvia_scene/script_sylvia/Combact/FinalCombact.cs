@@ -35,14 +35,14 @@ public class FinalCombact : MonoBehaviour {
     }*/
     private void OnTriggerStay2D(Collider2D other) {
         if(other.gameObject.tag == "Player" ){
-            if(comb_2.fatto_tutti_comb_2 == true || comb_3.fatto_tutti_comb_3 == true || comb_4.fatto_tutti_comb_4 == true || comb_5.fatto_tutti_comb_5 == true){
+            //if(comb_2.fatto_tutti_comb_2 == true || comb_3.fatto_tutti_comb_3 == true || comb_4.fatto_tutti_comb_4 == true || comb_5.fatto_tutti_comb_5 == true){
             
                 if(starting == true){
                     dialoghiManager.StartDialoghi("dg_boss_final");
                     fire_battle.SetActive(true);
                     starting = false;
                 }
-            }
+            //}
         }
     }
 
