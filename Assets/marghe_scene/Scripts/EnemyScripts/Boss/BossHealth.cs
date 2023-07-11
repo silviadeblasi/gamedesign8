@@ -4,34 +4,17 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-    public int bossHealth = 20;
-    public GameObject deathEffect;
-    public bool isInvulnerable = false;
+    [SerializeField] private int health = 20;
+    [SerializeField] private Animator animator;
     
     public void TakeDamage(int damage)
     {
-        if(isInvulnerable)
+        health -= damage;
+        if (health <= 0)
         {
-            return;
+            animator.SetBool("died", true);
+            gameObject.SetActive(false);
         }
-
-        bossHealth -= damage;
-
-        if(bossHealth <= 10)
-        {
-            GetComponent<Animator>().SetBool("isEnraged", true);
-        }
-
-        if(bossHealth <= 0)
-        {
-            Died();
-        }
-    }
-
-    void Died()
-    {
-        // Instantiate(deathEffect, transform.position, Quaternion.identity);
-        // gameObject.SetActive(false);
-        GetComponent<Animator>().SetBool("died", true);
+        
     }
 }

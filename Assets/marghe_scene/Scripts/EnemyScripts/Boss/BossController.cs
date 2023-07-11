@@ -4,28 +4,27 @@ using UnityEngine;
 
 public class BossController : MonoBehaviour
 {
-    [Header("Enemy Stats")]
+    [Header("Boss Stats")]
     public string enemyName;
 
 
-    [Header("Enemy Movement")]
+    [Header("Boss Movement")]
     private Animator myAnim;
     private Transform target;
     [SerializeField] private float speed = 1f;
-    [SerializeField] private float walkRange = 2f;
-    //[SerializeField] private float minRange = 0.5f;
+    [SerializeField] private float walkRange = 3f;
     [SerializeField] private float attackRange = 1f;
     public Transform homePosition;
     public GameObject playerHealth;
-    
-
-    void Start() 
+    // Start is called before the first frame update
+    void Start()
     {
         myAnim = GetComponent<Animator>();
         target = FindObjectOfType<PlayerMovement>().transform;
     }
 
-    void Update() 
+    // Update is called once per frame
+    void Update()
     {
         if(Vector3.Distance(transform.position, target.position) <= walkRange && Vector3.Distance(transform.position, target.position) > attackRange)
         {
@@ -45,35 +44,31 @@ public class BossController : MonoBehaviour
 
     public void FollowPlayer()
     {
-        myAnim.SetBool("walking", true);
-        myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
+        myAnim.SetBool("walk", true);
+        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
     public void AttackPlayer()
     {
-        //Debug.Log("Attacking");
-        //myAnim.SetBool("walking", false);
-        myAnim.SetBool("attacking", true);
-        myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
+        myAnim.SetBool("attack", true);
+        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
     public void ReturnHomePosition()
     {
-        myAnim.SetBool("walking", true);
-        myAnim.SetBool("attacking", false);
-        myAnim.SetFloat("moveX", (transform.position.x - homePosition.position.x));
+        myAnim.SetBool("walk", true);
+        myAnim.SetFloat("moveX", (homePosition.position.x - transform.position.x));
         myAnim.SetFloat("moveY", (homePosition.position.y - transform.position.y));
-        transform.position = Vector3.MoveTowards(transform.position, homePosition.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
 
-        if(transform.position == homePosition.position)
+        if(Vector3.Distance(transform.position, homePosition.position) <= 0.1f)
         {
-            myAnim.SetBool("walking", false);
-            myAnim.SetBool("attacking", false);
-            myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
+            myAnim.SetBool("walk", false);
+            myAnim.SetBool("attack", false);
+            myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
             myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         }
     }
