@@ -11,6 +11,7 @@ public class FinalCombact : MonoBehaviour {
     public GameObject fire_battle;
     public GameObject fire_ending;
     private bool starting = true;
+    public GameObject tirgger_final_scene;
 
     private void Start() {
         anim_player = player.GetComponent<Animator>();
@@ -47,6 +48,7 @@ public class FinalCombact : MonoBehaviour {
             if(dialoghiManager.FineDialogo("dialogo_vittoria")){
                 player.GetComponent<PlayerMovement>().enabled = true;
                 anim_player.SetBool("moving",true);
+                tirgger_final_scene.SetActive(true);
             }
         }
         

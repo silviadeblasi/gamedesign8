@@ -13121,6 +13121,7 @@ MonoBehaviour:
   boss: {fileID: 1904024214}
   fire_battle: {fileID: 235436968}
   fire_ending: {fileID: 479407376}
+  tirgger_final_scene: {fileID: 1042106112}
 --- !u!60 &405455085
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31165,7 +31166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1042106113
 Transform:
   m_ObjectHideFlags: 0
