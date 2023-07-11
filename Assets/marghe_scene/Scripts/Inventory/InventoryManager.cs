@@ -19,6 +19,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Awake() 
     {
+        ClearInventorySlots();
         playerInventoryList.myInventory.Add(machete);
     }
 
