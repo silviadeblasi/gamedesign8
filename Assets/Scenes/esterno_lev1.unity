@@ -17173,6 +17173,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -3.0998535
       objectReference: {fileID: 0}
+    - target: {fileID: 7898025480533000071, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.3400116
+      objectReference: {fileID: 0}
     - target: {fileID: 7898025480854870681, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -6.499756
@@ -25537,6 +25541,7 @@ MonoBehaviour:
   useButton: {fileID: 285175426}
   player: {fileID: 131299055}
   currentItem: {fileID: 0}
+  machete: {fileID: 11400000, guid: b6fbd0d8175849f45b6c92237efc8ee2, type: 2}
 --- !u!1 &855939626
 GameObject:
   m_ObjectHideFlags: 0
