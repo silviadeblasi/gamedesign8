@@ -75,6 +75,13 @@ public class GameManager : MonoBehaviour
                 flag_tomba = true;
             }
         }
+
+        if(current_scene.ToString() == "cutsceneFinale"){
+            if(just_once){
+                just_once = false;
+                StartCoroutine(FirstScene(Camera.GetComponent<Camera>()));
+            }
+        }
     }
     
     IEnumerator FirstScene(Camera main){

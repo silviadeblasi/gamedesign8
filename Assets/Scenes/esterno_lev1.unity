@@ -12795,8 +12795,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf0ec21a586f464d8f81845948657e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoghiManager: {fileID: 0}
-  player: {fileID: 0}
+  dialoghiManager: {fileID: 41825219}
+  player: {fileID: 131299055}
+  bossController: {fileID: 0}
+  boss: {fileID: 0}
 --- !u!1 &406823758
 GameObject:
   m_ObjectHideFlags: 0
@@ -16271,7 +16273,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -11
+      value: -11.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12.100029
       objectReference: {fileID: 0}
     - target: {fileID: 5281012995615496907, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
