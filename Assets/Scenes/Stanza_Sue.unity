@@ -2364,6 +2364,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1007607754}
+    - target: {fileID: 4302788510394407189, guid: 810e2550aa4684adbab6c912ad64c5ab, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4302788510394407191, guid: 810e2550aa4684adbab6c912ad64c5ab, type: 3}
       propertyPath: m_Name
       value: machete
@@ -3251,6 +3255,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2690214236422359446, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.4000092
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402343849622885271, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.2963943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.9999695
+      objectReference: {fileID: 0}
     - target: {fileID: 5281012995615496907, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
