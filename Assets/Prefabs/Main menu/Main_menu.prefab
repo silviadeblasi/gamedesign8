@@ -308,7 +308,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.52}
   m_AnchorMin: {x: 0.12966526, y: 0.27079737}
   m_AnchorMax: {x: 0.30766952, y: 0.37159476}
-  m_AnchoredPosition: {x: -19.400024, y: -12.100006}
+  m_AnchoredPosition: {x: -19.400024, y: -12.100037}
   m_SizeDelta: {x: 70.7641, y: 118.42239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2216320974510318944
@@ -491,7 +491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.88100004, y: 0.119}
   m_AnchorMax: {x: 0.88100004, y: 0.119}
-  m_AnchoredPosition: {x: -16, y: -11}
+  m_AnchoredPosition: {x: -16, y: -10.9999695}
   m_SizeDelta: {x: 423.8769, y: 240.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6313427766315089064
@@ -2056,7 +2056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.37}
   m_AnchorMin: {x: 0.11000001, y: 0.6107842}
   m_AnchorMax: {x: 0.41300002, y: 0.822}
-  m_AnchoredPosition: {x: -0.74993896, y: 2.550003}
+  m_AnchoredPosition: {x: -0.75, y: 2.5499878}
   m_SizeDelta: {x: -0.7999878, y: -7.4300003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7898025479762028157
@@ -2382,7 +2382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.37}
   m_AnchorMin: {x: 0.13683566, y: 0.2265815}
   m_AnchorMax: {x: 0.42900002, y: 0.4604581}
-  m_AnchoredPosition: {x: -3.0999756, y: -0.33999634}
+  m_AnchoredPosition: {x: -3.0999146, y: -0.33999634}
   m_SizeDelta: {x: 7.1900024, y: -9.790001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7898025480533000072
@@ -2516,7 +2516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.37}
   m_AnchorMin: {x: 0.158, y: 0.42741847}
   m_AnchorMax: {x: 0.407, y: 0.6504053}
-  m_AnchoredPosition: {x: -6.499939, y: -8.5}
+  m_AnchoredPosition: {x: -6.499878, y: -8.5}
   m_SizeDelta: {x: 11.809998, y: 14.669998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7898025480854870682
@@ -3107,10 +3107,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5051550632339483107}
-        m_TargetAssemblyTypeName: SoundOptionManager, Assembly-CSharp
-        m_MethodName: BackgroundMusicSlider
-        m_Mode: 0
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: ChangeVolumeBG
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3158,7 +3158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 725.149}
   m_AnchorMin: {x: 0.27832624, y: 0.44839212}
   m_AnchorMax: {x: 0.44633478, y: 0.5484053}
-  m_AnchoredPosition: {x: 0.7315979, y: 1.5}
+  m_AnchoredPosition: {x: 0.7315674, y: 1.5}
   m_SizeDelta: {x: -5.0699997, y: -17.2356}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7556411259463964054
@@ -3212,10 +3212,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5051550632339483107}
-        m_TargetAssemblyTypeName: SoundOptionManager, Assembly-CSharp
-        m_MethodName: SfxSlider
-        m_Mode: 0
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: ChangeVolumeSFX
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

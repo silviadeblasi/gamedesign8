@@ -1255,6 +1255,17 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!114 &975640074 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7556411259463964054, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+  m_PrefabInstance: {fileID: 5051550632270392174}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1007607752 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7058340390840657619, guid: 0763ee0ccd44442858642c4d87563794, type: 3}
@@ -2363,6 +2374,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 810e2550aa4684adbab6c912ad64c5ab, type: 3}
+--- !u!114 &1633939814 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5281012995615496907, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+  m_PrefabInstance: {fileID: 5051550632270392174}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1705235487 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4613773642290738341, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
@@ -3088,6 +3110,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 279528182836724905, guid: d25c3307d907dd84086eb7f991e26c10, type: 3}
     - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: _bgSlider
+      value: 
+      objectReference: {fileID: 1633939814}
+    - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: _sfxSlider
+      value: 
+      objectReference: {fileID: 975640074}
+    - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: backgroundMixerGroup
       value: 
       objectReference: {fileID: -2656644310174815327, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
@@ -3221,6 +3251,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5281012995615496907, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6273590328741322016}
+    - target: {fileID: 5281012995615496907, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeVolumeBG
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556411259463964054, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6273590328741322016}
+    - target: {fileID: 7556411259463964054, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeVolumeSFX
+      objectReference: {fileID: 0}
     - target: {fileID: 7898025481182202944, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0

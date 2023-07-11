@@ -1,16 +1,21 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] private AudioMixerGroup backgroundMixerGroup;
-    [SerializeField] private AudioMixerGroup soundEffectsMixerGroup;
 
     public AudioClip[] soundEffects; // Array di clip audio degli effetti sonori
     public AudioClip[] backgroundMusic; // Array di clip audio della musica di sottofondo
 
     private AudioSource soundEffectSource; // Sorgente audio per gli effetti sonori
     private AudioSource backgroundMusicSource; // Sorgente audio per la musica di sottofondo
+
+    [SerializeField] private Slider _bgSlider;
+    [SerializeField] private Slider _sfxSlider;
 
     public static SoundManager Instance;
 
@@ -23,7 +28,7 @@ public class SoundManager : MonoBehaviour
         soundEffectSource.loop = true;
 
         //aggiungo l audio source all audio mixer per poter controllare il volume 
-        soundEffectSource.outputAudioMixerGroup = soundEffectsMixerGroup;
+        //oundEffectSource.outputAudioMixerGroup = soundEffectsMixerGroup;
 
         // Crea e inizializza la sorgente audio per la musica di sottofondo
         backgroundMusicSource = gameObject.AddComponent<AudioSource>();
@@ -31,7 +36,7 @@ public class SoundManager : MonoBehaviour
         backgroundMusicSource.playOnAwake = false;
 
         //aggiungo l audio source all audio mixer per poter controllare il volume 
-        backgroundMusicSource.outputAudioMixerGroup = backgroundMixerGroup;
+        //backgroundMusicSource.outputAudioMixerGroup = backgroundMixerGroup;
     }
 
     public void PlaySoundEffect(string soundName, float volume)
@@ -87,13 +92,22 @@ public class SoundManager : MonoBehaviour
         return null; // Ritorna null se il clip non viene trovato
     }
 
-
-    public void UpdateMixerValue()
+    public void ChangeVolumeBG()
     {
-        backgroundMixerGroup.audioMixer.SetFloat("BgVolume", Mathf.Log10( SoundOptionManager.BgVolume) *20);
-        soundEffectsMixerGroup.audioMixer.SetFloat("SfxVolume", Mathf.Log10(SoundOptionManager.SfxVolume) *20);
+        //AudioListener.volume = _bgSlider.value;
+        //Debug.Log("volume :" + _bgSlider.value);
+
+        backgroundMusicSource.volume = _bgSlider.value;
     }
-    
-    
+
+    public void ChangeVolumeSFX()
+    {
+        //AudioListener.volume = _sfxSlider.value;
+        //Debug.Log("volume :" + _sfxSlider.value);
+
+        soundEffectSource.volume = _sfxSlider.value;
+    }
 
 }
+
+
