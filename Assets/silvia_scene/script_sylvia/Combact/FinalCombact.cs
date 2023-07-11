@@ -43,16 +43,11 @@ public class FinalCombact : MonoBehaviour {
         if(boss.GetComponent<BossHealth>().currentHealth <= 0){
             fire_battle.SetActive(false);
             fire_ending.SetActive(true);
-            player.GetComponent<PlayerMovement>().enabled = false;
-            anim_player.SetBool("moving",false);
             if(end == false){
                 dialoghiManager.StartDialoghi("dg_sue_final");
                 end = true;
             }
-            
             if(dialoghiManager.FineDialogo("dg_sue_final")){
-                player.GetComponent<PlayerMovement>().enabled = true;
-                anim_player.SetBool("moving",true);
                 tirgger_final_scene.SetActive(true);
             }
         }

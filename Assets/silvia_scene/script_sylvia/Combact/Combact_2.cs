@@ -96,6 +96,10 @@ public class Combact_2: Combact{
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
                 second_battle.SetActive(false);
                 Fire_intorno.SetActive(false);
+                comb_1.SetActive(true);
+                comb_3.SetActive(true);
+                comb_4.SetActive(true);
+                comb_5.SetActive(true);
               }
 
                 }else{
