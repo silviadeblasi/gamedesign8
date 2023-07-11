@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController1 : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     [Header("Enemy Stats")]
     public string enemyName;
@@ -16,7 +16,6 @@ public class EnemyController1 : MonoBehaviour
     //[SerializeField] private float minRange = 0.5f;
     [SerializeField] private float attackRange = 1f;
     public Transform homePosition;
-    public GameObject playerHealth;
     
 
     void Start() 
@@ -76,5 +75,13 @@ public class EnemyController1 : MonoBehaviour
             myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
             myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         }
+    }
+
+    public void Die()
+    {
+        myAnim.SetBool("died", true);
+        myAnim.SetFloat("moveX", (transform.position.x - target.position.x));
+        myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
+        gameObject.SetActive(false);
     }
 }

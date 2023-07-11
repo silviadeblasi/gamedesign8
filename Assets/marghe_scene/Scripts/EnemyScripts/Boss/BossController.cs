@@ -15,7 +15,7 @@ public class BossController : MonoBehaviour
     [SerializeField] private float walkRange = 3f;
     [SerializeField] private float attackRange = 1f;
     public Transform homePosition;
-    public GameObject playerHealth;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,5 +71,13 @@ public class BossController : MonoBehaviour
             myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
             myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
         }
+    }
+
+    public void Die() 
+    {
+        myAnim.SetBool("died", true);
+        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
+        myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
+        gameObject.SetActive(false);
     }
 }
