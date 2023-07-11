@@ -12,9 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be415eb300193a45beea7ad350aed7b, type: 3}
   m_Name: GeneralPlayerInventory
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   myInventory:
   - {fileID: 11400000, guid: b6fbd0d8175849f45b6c92237efc8ee2, type: 2}
-=======
-  myInventory: []
->>>>>>> Stashed changes

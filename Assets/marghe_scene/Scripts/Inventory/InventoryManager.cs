@@ -13,16 +13,9 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject useButton;
     [SerializeField] private GameObject player;
     public InventoryItem currentItem;
-    [SerializeField] private InventoryItem machete;
-    
-
     // public static bool InventoryActive = false;
     // public GameObject Inventory;
 
-    private void Awake() 
-    {
-        playerInventoryList.myInventory.Add(machete);
-    }
 
     public void SetTextAndButton(string description, bool buttonActive)
     {
