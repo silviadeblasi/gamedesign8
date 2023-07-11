@@ -29,7 +29,7 @@ public class SoundManager : MonoBehaviour
         soundEffectSource.loop = true;
 
         //aggiungo l audio source all audio mixer per poter controllare il volume 
-        soundEffectSource.outputAudioMixerGroup = soundEffectsMixerGroup;
+        //soundEffectSource.outputAudioMixerGroup = soundEffectsMixerGroup;
 
         // Crea e inizializza la sorgente audio per la musica di sottofondo
         backgroundMusicSource = gameObject.AddComponent<AudioSource>();
@@ -37,7 +37,7 @@ public class SoundManager : MonoBehaviour
         backgroundMusicSource.playOnAwake = false;
 
         //aggiungo l audio source all audio mixer per poter controllare il volume 
-        backgroundMusicSource.outputAudioMixerGroup = backgroundMixerGroup;
+        //backgroundMusicSource.outputAudioMixerGroup = backgroundMixerGroup;
     }
 
     public void PlaySoundEffect(string soundName, float volume)
@@ -108,12 +108,12 @@ public class SoundManager : MonoBehaviour
 
         soundEffectSource.volume = _sfxSlider.value;
     }
-
+    /*
     public void  UpdateMixerValue()
     {
         backgroundMixerGroup.audioMixer.SetFloat("BgVolume", Mathf.Log10(SoundOptionManager.BgVolume) * 20);
         soundEffectsMixerGroup.audioMixer.SetFloat("SfxVolume", Mathf.Log10(SoundOptionManager.SfxVolume) * 20);
-    }
+    }*/
 
 }
 

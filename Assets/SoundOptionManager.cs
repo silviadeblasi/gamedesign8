@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SoundOptionManager : MonoBehaviour
-{
+/*public class SoundOptionManager : MonoBehaviour
+
     public static float BgVolume { get; private set; }
     public static float SfxVolume { get; private set; }
 
@@ -27,5 +27,5 @@ public class SoundOptionManager : MonoBehaviour
         // sfxSliderText.text = value.ToString();
         SoundManager.Instance.UpdateMixerValue();
     } 
-}
+}*/
 

@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
             
             soundManager.PlayBackgroundMusic("TemaPrincipale2", 0.7f);
 
-            if(canvas_trama.tomba_madre == true && flag_tomba == false){
+            if (canvas_trama.tomba_madre == true && flag_tomba == false){
                 dialoghiManager.StartDialoghi("dg_sue_tomba");
                 flag_tomba = true;
             }
