@@ -9,6 +9,10 @@ public class Combact_2: Combact{
     public GameObject Dialogo_primo_combattimento;
     public GameObject Dialogo_fine_primo_combattimento;
     public GameObject Combattimento2;
+    public GameObject comb_1;
+    public GameObject comb_3;
+    public GameObject comb_4;
+    public GameObject comb_5;
     public GameObject second_battle;
     public GameObject Muretto_final;
     public GameObject Fire_intorno;
@@ -49,6 +53,10 @@ public class Combact_2: Combact{
             if(CombactManager.combactManager.currentCombact.id == 1){   
                 second_battle.SetActive(true);
                 Fire_intorno.SetActive(true);
+                comb_1.SetActive(false);
+                comb_3.SetActive(false);
+                comb_4.SetActive(false);
+                comb_5.SetActive(false);
 
             if (CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.ACCEPTED){
             //se la current quest è il primo combattimento abilita script dei nemici del primo blocco 
