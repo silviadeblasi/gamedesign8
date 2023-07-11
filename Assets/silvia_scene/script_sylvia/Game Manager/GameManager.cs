@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     private bool flag_tomba = false;
     private bool just_once = true;
     public interactable_object canvas_trama;
-    public GameObject Combattimento;
 
     private void Update() {
 
@@ -75,13 +74,7 @@ public class GameManager : MonoBehaviour
                 flag_tomba = true;
             }
         }
-
-        if(current_scene.ToString() == "cutsceneFinale"){
-            if(just_once){
-                just_once = false;
-                StartCoroutine(FirstScene(Camera.GetComponent<Camera>()));
-            }
-        }
+        
     }
     
     IEnumerator FirstScene(Camera main){

@@ -13,17 +13,20 @@ public class FinalCombact : Combact {
     private void Start() {
         anim_player = player.GetComponent<Animator>();
     }
-    private void OnTriggerEnter2D(Collider2D other) {
+
+
+    /*private void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log()
         if(other.CompareTag("Player") && !other.isTrigger){
             player.GetComponent<PlayerMovement>().enabled = false;
             anim_player.SetBool("moving",false);
             fire_battle.SetActive(true);
-            dialoghiManager.StartDialoghi("dialogo_boss_finale");
+            //dialoghiManager.StartDialoghi("dialogo_boss_finale");
         }
-    }
+    }*/
 
     private void Update() {
-        if(dialoghiManager.FineDialogo("dialogo_boss_finale"))
+        /*if(dialoghiManager.FineDialogo("dialogo_boss_finale"))
         { 
             //dialogo iniziale finito puo iniziare ultimo combattimento 
             player.GetComponent<PlayerMovement>().enabled = true;
@@ -45,7 +48,7 @@ public class FinalCombact : Combact {
                 anim_player.SetBool("moving",true);
             }
             
-        }
+        }*/
     }
 }
     
