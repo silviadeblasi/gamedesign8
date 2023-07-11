@@ -7,7 +7,7 @@ using UnityEngine.Video;
 public class PressToSkip : MonoBehaviour {
     public VideoPlayer prologo;
     private void Start() {
-        //prologo.loopPointReached += AllVideo;
+        prologo.loopPointReached += AllVideo;
     }
     void Update(){
         if(Input.GetKeyDown(KeyCode.Space)){
