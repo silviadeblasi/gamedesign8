@@ -25,6 +25,7 @@ public class Combact_5: Combact{
     private bool dead_4 = false;
     private bool dead_5 = false;
     public bool fatto_tutti_comb_5 = false;
+    public bool fatto_comb_5 = false;
     private void Start() {
         anim = player.GetComponent<Animator>();
     }
@@ -97,6 +98,7 @@ public class Combact_5: Combact{
                 comb_2.SetActive(true);
                 comb_3.SetActive(true);
                 comb_4.SetActive(true);
+                fatto_comb_5 = true;
             }
 
             if(CombactManager.combactManager.currentCombact.progress == GeneralCombact.CombactProgress.DONE){

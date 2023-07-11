@@ -21,8 +21,15 @@ public class NPC_interactable : MonoBehaviour
     private Rigidbody2D rb_ubriacone;
     private Rigidbody2D rb_villager_1;
     private Rigidbody2D rb_villager_2;
+    public GameObject villager_3;
+    private Rigidbody2D rb_villager_3;
+    private Animator anim_villager_3;
+    public GameObject canvas_pistola;
 
-    
+    //combattimento 5 , pistola con villager
+    public Combact_5 comb_5;
+
+    // bool per i dialoghi
     private bool fine1 = false;
     private bool fine2 = false;
     private bool fine3 = false;
@@ -50,6 +57,8 @@ public class NPC_interactable : MonoBehaviour
         rb_ubriacone = ubriacone.GetComponent<Rigidbody2D>();
         rb_villager_1 = villager_1.GetComponent<Rigidbody2D>();
         rb_villager_2 = villager_2.GetComponent<Rigidbody2D>();
+        anim_villager_3 = villager_3.GetComponent<Animator>();
+        rb_villager_3 = villager_3.GetComponent<Rigidbody2D>();
 
     }
 
@@ -277,6 +286,51 @@ public class NPC_interactable : MonoBehaviour
                
         }
 
+        if(other.gameObject.layer == 25){ //villager_3 pistola 
+                Vector3 dir = villager_1.GetComponent<BoundedNPC>().directionVector;
+                anim_villager_3.SetBool("interact", true);
+                anim_villager_3.SetFloat("moveX", dir.x);
+                anim_villager_3.SetFloat("moveY", dir.y);
+                rb_villager_3.constraints = RigidbodyConstraints2D.FreezeAll;
+                villager_3.GetComponent<BoundedNPC>().enabled = false;
+        
+            if(Input.GetKeyDown(KeyCode.X)){
+                fine1 = false;
+                fine2 = false;
+                fine3 = false;
+                fine4 = false;
+                fine5 = false;
+                fine6 = false;
+                fine7 = false;
+                fine8 = false;
+                fine9 = false;
+                fine10 = false;
+                fine11 = false;
+
+                rb_player.constraints = RigidbodyConstraints2D.FreezeAll;
+                player.GetComponent<PlayerMovement>().enabled = false;
+
+                if(comb_5.fatto_comb_5 == true){
+                    dialoghiUIManager.StartDialoghi("dg_ct_comb_5_fatto"); 
+
+                    if(dialoghiUIManager.FineDialogo("dg_ct_comb_5_fatto") == true){
+                        canvas_pistola.SetActive(true);
+                        StartCoroutine(fine_pistola());
+                    }
+                }
+                else{
+                    dialoghiUIManager.StartDialoghi("dg_ct_3_1");
+
+                    if(dialoghiUIManager.FineDialogo("dg_ct_3_1") == true){
+                    player.GetComponent<PlayerMovement>().enabled = true;
+                    rb_player.constraints = RigidbodyConstraints2D.None;
+                    rb_player.constraints = RigidbodyConstraints2D.FreezeRotation; 
+                    }
+                }
+            
+               
+            }
+        }
 
 
     }
@@ -309,6 +363,18 @@ public class NPC_interactable : MonoBehaviour
             rb_villager_2.constraints = RigidbodyConstraints2D.FreezeRotation;
             villager_2.GetComponent<BoundedNPC>().enabled = true;
         }
+
+        if(other.gameObject.layer == 25){ // villager_3 pistola
+            anim_villager_3.SetBool("interact", false);
+            rb_villager_3.constraints = RigidbodyConstraints2D.None;
+            rb_villager_3.constraints = RigidbodyConstraints2D.FreezeRotation;
+            villager_3.GetComponent<BoundedNPC>().enabled = true;
+        }
+    }
+
+    IEnumerator fine_pistola(){
+        yield return new WaitForSeconds(3f);
+        canvas_pistola.SetActive(false);
     }
 
    
