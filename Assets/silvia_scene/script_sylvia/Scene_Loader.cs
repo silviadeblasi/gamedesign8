@@ -18,6 +18,7 @@ public enum Scene{
     Prologue,
     start_menu,
     casa_del_cairo,
+    Scena_finale
 }
 
     private static Action onLoaderCallBack;
