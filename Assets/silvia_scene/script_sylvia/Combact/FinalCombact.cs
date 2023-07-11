@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FinalCOmbact : Combact{
+public class FinalCombact : Combact{
     public GameObject player;
     private Animator anim;
     private GameObject dialogueBoxClone;

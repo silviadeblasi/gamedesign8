@@ -5,7 +5,6 @@ using UnityEngine;
 public class interactable_object : MonoBehaviour
 {
     [SerializeField] private GameObject Canvas_tomba; //per ricordare all'utente che premendo Z chiude il canvas
-
     //private GameObject dialogueBoxClone;
     //private GameObject dialogueBoxClone2; //per ricordare all'utente che premendo Z chiude il canvas
     public GameObject player; 
@@ -16,6 +15,7 @@ public class interactable_object : MonoBehaviour
     public bool tomba_madre = false;
     public bool lettera_sfratto_trovata = false;
     public bool mappa_trovata = false; 
+    public GameObject comand_m;
 
     //private bool canvas_already_spawned = false;
     //attenzione è ontrigger se voglio chiudere il cavas devo usare ontriggerexit/stay e non oncollisionexit/stay
@@ -98,6 +98,8 @@ public class interactable_object : MonoBehaviour
                 player.GetComponent<PlayerMovement>().enabled = true;
                 animator.SetBool("moving", true);
                 mappa_trovata = true;
+                comand_m.SetActive(true);
+                StartCoroutine(command_M());
             }
         }
     
@@ -111,6 +113,11 @@ public class interactable_object : MonoBehaviour
             }
         }
         return null;
+    }
+
+    IEnumerator command_M (){
+        yield return new WaitForSeconds(2f);
+        comand_m.SetActive(false);
     }
 
 }

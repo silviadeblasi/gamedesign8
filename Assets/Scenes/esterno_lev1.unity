@@ -4667,7 +4667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &229068863
 Transform:
   m_ObjectHideFlags: 0
@@ -12753,6 +12753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 405455083}
+  - component: {fileID: 405455084}
   m_Layer: 0
   m_Name: Combattimento Finale
   m_TagString: Untagged
@@ -12777,6 +12778,29 @@ Transform:
   m_Father: {fileID: 217839964}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &405455084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405455082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf0ec21a586f464d8f81845948657e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inTrigger: 0
+  trigger_startcombact: {fileID: 0}
+  availableCombactIDs: 
+  receivableCombactID: 0
+  combattimento1: {fileID: 0}
+  combattimento: {fileID: 0}
+  combact: {fileID: 0}
+  player: {fileID: 0}
+  Dialogo_primo_combattimento: {fileID: 0}
+  Dialogo_fine_primo_combattimento: {fileID: 0}
+  Combattimento2: {fileID: 0}
 --- !u!1 &406823758
 GameObject:
   m_ObjectHideFlags: 0
@@ -13735,7 +13759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &451274523
 Transform:
   m_ObjectHideFlags: 0
@@ -29505,7 +29529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1036706727
 Transform:
   m_ObjectHideFlags: 0
@@ -35779,7 +35803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1385663319
 Transform:
   m_ObjectHideFlags: 0
@@ -36181,7 +36205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1405141245
 Transform:
   m_ObjectHideFlags: 0
@@ -38047,7 +38071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1541726565
 Transform:
   m_ObjectHideFlags: 0
@@ -41550,7 +41574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1788197761
 Transform:
   m_ObjectHideFlags: 0
