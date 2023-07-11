@@ -17,8 +17,8 @@ public class PhysicalInventoryItem : MonoBehaviour
     {    
         if(other.gameObject.CompareTag("Player") && !other.isTrigger)
         {
-            AddItemToInventory();
             canvaInventory.gameObject.SetActive(true);
+            AddItemToInventory();
             this.gameObject.SetActive(false);
             //Destroy(this.gameObject);
         }
@@ -39,11 +39,4 @@ public class PhysicalInventoryItem : MonoBehaviour
             }
         }
     }
-
-    IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(5);
-        canvaInventory.gameObject.SetActive(false);
-    }
-
 }
