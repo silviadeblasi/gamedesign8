@@ -16241,7 +16241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2690214236422359446, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.3999977
+      value: 3.399994
       objectReference: {fileID: 0}
     - target: {fileID: 3402343849622885271, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -16253,7 +16253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.399994
+      value: -19.400024
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16808,7 +16808,7 @@ GameObject:
   - component: {fileID: 654331752}
   - component: {fileID: 654331753}
   - component: {fileID: 654331754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: downHitboxBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34809,7 +34809,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1352191988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: homePositionBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35953,7 +35953,7 @@ GameObject:
   - component: {fileID: 1396972811}
   - component: {fileID: 1396972812}
   - component: {fileID: 1396972813}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: rightHitboxBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39166,7 +39166,7 @@ GameObject:
   - component: {fileID: 1596823826}
   - component: {fileID: 1596823827}
   - component: {fileID: 1596823828}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upHitboxBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42922,7 +42922,7 @@ GameObject:
   - component: {fileID: 1904024219}
   - component: {fileID: 1904024220}
   - component: {fileID: 1904024221}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: boss
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -43055,18 +43055,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0004825592, y: -0.048303604}
+  m_Offset: {x: 0.0004825592, y: 0.04209709}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2272727, y: 1.1818181}
+    oldSize: {x: 0.8636364, y: 1.2272727}
     newSize: {x: 0.90909094, y: 1.0909091}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.56871796, y: 0.7067909}
+  m_Size: {x: 0.56871796, y: 0.8875923}
   m_EdgeRadius: 0
 --- !u!114 &1904024220
 MonoBehaviour:
@@ -43098,7 +43098,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4428e626234ec7a42b1bd827d272e733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
+  currentHealth: 20
+  maxHealth: 20
   animator: {fileID: 1904024217}
 --- !u!1 &1909146801
 GameObject:
@@ -43111,7 +43112,7 @@ GameObject:
   - component: {fileID: 1909146802}
   - component: {fileID: 1909146803}
   - component: {fileID: 1909146804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: leftHitboxBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
