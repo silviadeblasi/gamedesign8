@@ -14,6 +14,7 @@ public class NPC_interactable : MonoBehaviour
     public Rigidbody2D rb_player;
     public GameObject veggente;
     public GameObject ubriacone;
+    public GameObject bottiglia_ubriacone;
     public GameObject villager_1;
     public GameObject villager_2;
     private Rigidbody2D rb_veggente;
@@ -191,6 +192,7 @@ public class NPC_interactable : MonoBehaviour
                 rb_player.constraints = RigidbodyConstraints2D.None;
                 rb_player.constraints = RigidbodyConstraints2D.FreezeRotation;
                 solve_problem = false;
+                bottiglia_ubriacone.SetActive(true);
             }
 
         }

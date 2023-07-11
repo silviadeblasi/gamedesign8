@@ -11873,6 +11873,7 @@ MonoBehaviour:
   rb_player: {fileID: 348793701}
   veggente: {fileID: 1562058770}
   ubriacone: {fileID: 1010077751}
+  bottiglia_ubriacone: {fileID: 349951779}
   villager_1: {fileID: 1564168762}
   villager_2: {fileID: 1402744273}
 --- !u!114 &348793691 stripped
@@ -11918,12 +11919,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349951779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.41, y: 0.51, z: 0.070049115}
+  m_LocalPosition: {x: -0.421, y: -0.139, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1576135964}
-  m_RootOrder: 0
+  m_Father: {fileID: 7145356706418533999}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &349951781
 SpriteRenderer:
@@ -12799,6 +12800,7 @@ MonoBehaviour:
   player: {fileID: 131299055}
   bossController: {fileID: 0}
   boss: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &406823758
 GameObject:
   m_ObjectHideFlags: 0
@@ -14131,7 +14133,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576135964}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &481655802
 SpriteRenderer:
@@ -14861,7 +14863,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1576135964}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &559395145
 GameObject:
@@ -16271,9 +16273,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3402343849622885271, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.2963867
+      objectReference: {fileID: 0}
     - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -11.000015
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16378,6 +16384,10 @@ PrefabInstance:
     - target: {fileID: 7898025481182203004, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_Name
       value: Main_menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8873142883170209327, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -29.987099
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
@@ -16710,7 +16720,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1576135964}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &653837377
 MonoBehaviour:
@@ -17300,7 +17310,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1576135964}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &693470492
 MonoBehaviour:
@@ -19009,6 +19019,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundEffects: []
   backgroundMusic: []
+  backgroundMixerGroup: {fileID: 0}
+  soundEffectsMixerGroup: {fileID: 0}
   _bgSlider: {fileID: 0}
   _sfxSlider: {fileID: 0}
 --- !u!1 &833257725
@@ -23935,7 +23947,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576135964}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &833284034
 MonoBehaviour:
@@ -38469,7 +38481,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1576135964}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1551901445
 BoxCollider2D:
@@ -39107,7 +39119,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 349951780}
   - {fileID: 1695721236}
   - {fileID: 481655801}
   - {fileID: 653837376}
@@ -40049,7 +40060,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1576135964}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1633247391
 MonoBehaviour:
@@ -40956,7 +40967,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576135964}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1695721237
 SpriteRenderer:
@@ -44580,7 +44591,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1576135964}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2013164893
 MonoBehaviour:
@@ -55859,3 +55870,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a55fd21118ba4a169024136f83c7e27, type: 3}
+--- !u!4 &7145356706418533999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7145356706757523031, guid: 7a55fd21118ba4a169024136f83c7e27, type: 3}
+  m_PrefabInstance: {fileID: 7145356706418533998}
+  m_PrefabAsset: {fileID: 0}
