@@ -13,9 +13,10 @@ public class PressToSkip : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.Space)){
             Scene_Loader.Load(Scene_Loader.Scene.Stanza_sue);
         }
-        
+        Debug.Log(prologo.loopPointReached);
     }
     void AllVideo(VideoPlayer vp){
+        Debug.Log("Mortacci");
        Scene_Loader.Load(Scene_Loader.Scene.Stanza_sue); 
     }
 }

@@ -24,7 +24,7 @@ public class Combact_2: Combact{
     private bool dead_3 = false;
     private bool dead_4 = false;
     private bool dead_5 = false;
-    private bool fatto_tutti_comb = false;
+    public bool fatto_tutti_comb_2 = false;
 
     private void Start() {
         anim = player.GetComponent<Animator>();
@@ -96,15 +96,19 @@ public class Combact_2: Combact{
                 CombactManager.combactManager.currentCombact.progress = GeneralCombact.CombactProgress.DONE;
                 second_battle.SetActive(false);
                 Fire_intorno.SetActive(false);
+                comb_1.SetActive(true);
+                comb_3.SetActive(true);
+                comb_4.SetActive(true);
+                comb_5.SetActive(true);
               }
 
                 }else{
                     second_battle.SetActive(false);
 
-                    if(CombactManager.combactManager.CheckEverythingDone() && fatto_tutti_comb == false){
+                    if(CombactManager.combactManager.CheckEverythingDone() && fatto_tutti_comb_2 == false){
                         dialoghiManager.StartDialoghi("Dialogo_allcombact_done");
                         Muretto_final.SetActive(false);
-                        fatto_tutti_comb = true;
+                        fatto_tutti_comb_2 = true;
                     }
                 }
 

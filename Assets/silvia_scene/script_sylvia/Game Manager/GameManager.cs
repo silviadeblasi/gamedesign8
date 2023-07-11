@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     private bool just_once = true;
     public interactable_object canvas_trama;
 
+    //private PlayerInventory playerInventory;
+    //private InventoryItem machete;
+
     private void Update() {
 
         //primissima scena stanza di sue di sue 
@@ -66,7 +69,7 @@ public class GameManager : MonoBehaviour
         }
 
         if(current_scene.ToString() == "Esterno_lev1"){
-
+            
             soundManager.PlayBackgroundMusic("TemaPrincipale2", 0.7f);
 
             if(canvas_trama.tomba_madre == true && flag_tomba == false){
