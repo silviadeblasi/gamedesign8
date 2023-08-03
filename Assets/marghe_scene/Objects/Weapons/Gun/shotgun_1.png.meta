@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5be734c9f140eea48ad930ab70ecf9e7
+guid: e818cc77ef9fcb744b5aba19e736057b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,22 +105,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Free-Pixel-Magic-Sprite-Effects-Pack2_8
+      name: shotgun_1_0
       rect:
         serializedVersion: 2
-        x: 546
-        y: 363
-        width: 1096
-        height: 93
+        x: 127
+        y: 30
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 300e41338beb2034ba1ea126e9985935
-      internalID: -548442682
+      spriteID: 09f3c6794a0ac2d4ca8261fd39ed0d27
+      internalID: 1574481083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotgun_1_2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 30
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e99e242ac702e643b3236dfbcc90ef9
+      internalID: 2006005731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotgun_1_4
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 31
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39435da9b128b4c4790974b063d98c95
+      internalID: -1473980711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotgun_1_1
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 30
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7b153a7934ab94b9a5bd777af697e3
+      internalID: -1381854417
       vertices: []
       indices: 
       edges: []
@@ -136,18 +199,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Free-Pixel-Magic-Sprite-Effects-Pack2_3: -212870291
-      Free-Pixel-Magic-Sprite-Effects-Pack2_1: -733068357
-      Free-Pixel-Magic-Sprite-Effects-Pack2_8: -548442682
-      Free-Pixel-Magic-Sprite-Effects-Pack2_4: 657324580
-      Free-Pixel-Magic-Sprite-Effects-Pack2_11: 419855457
-      Free-Pixel-Magic-Sprite-Effects-Pack2_9: 1833801834
-      Free-Pixel-Magic-Sprite-Effects-Pack2_5: 674847361
-      Free-Pixel-Magic-Sprite-Effects-Pack2_6: -336306284
-      Free-Pixel-Magic-Sprite-Effects-Pack2_10: -2107759808
-      Free-Pixel-Magic-Sprite-Effects-Pack2_7: 1924498006
-      Free-Pixel-Magic-Sprite-Effects-Pack2_0: 1234175495
-      Free-Pixel-Magic-Sprite-Effects-Pack2_2: -982195946
+      shotgun_1_6: 1182285056
+      shotgun_1_1: -1381854417
+      shotgun_1_5: -433146500
+      shotgun_1_3: 2071808603
+      shotgun_1_4: -1473980711
+      shotgun_1_0: 1574481083
+      shotgun_1_2: 2006005731
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

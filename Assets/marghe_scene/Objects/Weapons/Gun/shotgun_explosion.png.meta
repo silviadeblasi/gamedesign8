@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c34ddb660ab1c21498e8a8ac85d61509
+guid: 2e79141efdc913a47b87e40522d1b3f0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -103,7 +103,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: shotgun_explosion_0
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 196
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58b5a623550c1c4b8e4fad68ee6ff6e
+      internalID: 694460093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotgun_explosion_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 30
+        width: 153
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d83b3b8f9a6734ba9bd6156c2579c0
+      internalID: 764013666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotgun_explosion_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 27
+        width: 159
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8309aea0ea5e621488565e2f5532d851
+      internalID: -343773781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +177,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shotgun_explosion_0: 694460093
+      shotgun_explosion_1: 764013666
+      shotgun_explosion_2: -343773781
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
