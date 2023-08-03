@@ -11989,6 +11989,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 849374905}
     - target: {fileID: 8140712728902351448, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7607102702731459426, guid: 2287fac6b47b4254989a890c3cad1b75, type: 3}
+    - target: {fileID: 8140712728902351448, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: starting_position
       value: 
       objectReference: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
@@ -17139,7 +17143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3402343849622885271, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.2963867
+      value: -3.2964172
       objectReference: {fileID: 0}
     - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -17147,11 +17151,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -11
+      value: -10.9999695
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.400085
+      value: -19.40007
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -17163,7 +17167,7 @@ PrefabInstance:
       objectReference: {fileID: 41825220}
     - target: {fileID: 5652127704889468912, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.399994
+      value: -3.3999977
       objectReference: {fileID: 0}
     - target: {fileID: 7556411259463964054, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -25537,6 +25541,7 @@ MonoBehaviour:
   useButton: {fileID: 285175426}
   player: {fileID: 131299055}
   currentItem: {fileID: 0}
+  machete: {fileID: 0}
 --- !u!1 &855939626
 GameObject:
   m_ObjectHideFlags: 0
@@ -46406,7 +46411,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.71, y: -6.29}
+  m_AnchoredPosition: {x: 1.767, y: -6.65}
   m_SizeDelta: {x: 136.6207, y: 86.2454}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1922563640
