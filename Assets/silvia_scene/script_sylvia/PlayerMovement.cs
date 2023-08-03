@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource machete1;
     public vector_value starting_position; //scriptable object per salvare la posizione del player
     public GameObject projectile;
+    public AudioSource shotgunSound;
 
 
     // Start is called before the first frame update
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("moveY", -1);
         footsteps.enabled = false;
         machete1.enabled = false;
+        shotgunSound.enabled = false;
         transform.position = starting_position.initialValue;
     }
 
@@ -80,9 +82,11 @@ public class PlayerMovement : MonoBehaviour
         private IEnumerator ShotgunCo() 
     {
         currentState = PlayerState.attack;
+        shotgunSound.enabled = true;
         yield return null;
         MakeShotgun();
         yield return new WaitForSeconds(.3f); 
+        shotgunSound.enabled = false;
         currentState = PlayerState.walk;
     }
 
