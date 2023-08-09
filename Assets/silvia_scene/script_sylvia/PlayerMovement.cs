@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     public vector_value starting_position; //scriptable object per salvare la posizione del player
     public GameObject projectile;
     public AudioSource shotgunSound;
+    public Signal reduceShots;
+    public ShotgunsBar CurrentShots;
 
 
     // Start is called before the first frame update
@@ -92,9 +94,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void MakeShotgun()
     {
-        Vector2 temp = new Vector2(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
-        Shotgun shotgun = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Shotgun>();
-        shotgun.Setup(temp, ShotgunDirection());
+        if(CurrentShots.currentShots > 0)
+        {
+            Vector2 temp = new Vector2(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+            Shotgun shotgun = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Shotgun>();
+            shotgun.Setup(temp, ShotgunDirection());
+            reduceShots.Raise();
+        }
     }
 
     Vector3 ShotgunDirection ()

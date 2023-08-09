@@ -12069,6 +12069,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7607102702731459426, guid: 2287fac6b47b4254989a890c3cad1b75, type: 3}
     - target: {fileID: 8140712728902351448, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: reduceShots
+      value: 
+      objectReference: {fileID: 11400000, guid: 646bdd385925ea64482ab5eeccdbcac8, type: 2}
+    - target: {fileID: 8140712728902351448, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: CurrentShots
+      value: 
+      objectReference: {fileID: 780606820}
+    - target: {fileID: 8140712728902351448, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: shotgunSound
       value: 
       objectReference: {fileID: 348793712}
@@ -19422,6 +19430,8 @@ GameObject:
   - component: {fileID: 780606822}
   - component: {fileID: 780606821}
   - component: {fileID: 780606820}
+  - component: {fileID: 780606823}
+  - component: {fileID: 780606824}
   m_Layer: 5
   m_Name: ShotgunBar
   m_TagString: Untagged
@@ -19466,6 +19476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxShots: 10
+  currentShots: 0
 --- !u!114 &780606821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19531,6 +19542,62 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &780606823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780606818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac17f89d02620bf4dab58caf604f528a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signal: {fileID: 11400000, guid: 769f704af303d6242932de571a0dfaa2, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 780606821}
+        m_TargetAssemblyTypeName: ShotgunsManager, Assembly-CSharp
+        m_MethodName: AddShots
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &780606824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780606818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac17f89d02620bf4dab58caf604f528a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signal: {fileID: 11400000, guid: 646bdd385925ea64482ab5eeccdbcac8, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 780606821}
+        m_TargetAssemblyTypeName: ShotgunsManager, Assembly-CSharp
+        m_MethodName: DecreaseShots
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &780709374
 GameObject:
   m_ObjectHideFlags: 0
@@ -33921,6 +33988,7 @@ GameObject:
   - component: {fileID: 1141953325}
   - component: {fileID: 1141953326}
   - component: {fileID: 1141953327}
+  - component: {fileID: 1141953328}
   m_Layer: 0
   m_Name: Munizioni_3
   m_TagString: bullets
@@ -34064,6 +34132,19 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
   thisItem: {fileID: 11400000, guid: 67dbf539bcfe14149a8fa8368bc205e4, type: 2}
   canvaInventory: {fileID: 1265416547}
+--- !u!114 &1141953328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141953322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b117efcbcb409bc4f9efdcf72c9cd951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpSignal: {fileID: 11400000, guid: 769f704af303d6242932de571a0dfaa2, type: 2}
 --- !u!1 &1153699694
 GameObject:
   m_ObjectHideFlags: 0
@@ -47139,6 +47220,7 @@ GameObject:
   - component: {fileID: 1923941199}
   - component: {fileID: 1923941202}
   - component: {fileID: 1923941201}
+  - component: {fileID: 1923941203}
   m_Layer: 0
   m_Name: Munizioni_1
   m_TagString: bullets
@@ -47282,6 +47364,19 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
   thisItem: {fileID: 11400000, guid: 18b63c62668d9a941bf61caf9e8b33be, type: 2}
   canvaInventory: {fileID: 1265416547}
+--- !u!114 &1923941203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923941197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b117efcbcb409bc4f9efdcf72c9cd951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpSignal: {fileID: 11400000, guid: 769f704af303d6242932de571a0dfaa2, type: 2}
 --- !u!1 &1924365679
 GameObject:
   m_ObjectHideFlags: 0
@@ -47520,6 +47615,7 @@ GameObject:
   - component: {fileID: 1952640496}
   - component: {fileID: 1952640495}
   - component: {fileID: 1952640497}
+  - component: {fileID: 1952640498}
   m_Layer: 0
   m_Name: Munizioni_2
   m_TagString: bullets
@@ -47671,6 +47767,19 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
   thisItem: {fileID: 11400000, guid: eb8f52014c0285749ada9d1c8c6a0f11, type: 2}
   canvaInventory: {fileID: 1265416547}
+--- !u!114 &1952640498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952640492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b117efcbcb409bc4f9efdcf72c9cd951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpSignal: {fileID: 11400000, guid: 769f704af303d6242932de571a0dfaa2, type: 2}
 --- !u!1001 &1958762279
 PrefabInstance:
   m_ObjectHideFlags: 0

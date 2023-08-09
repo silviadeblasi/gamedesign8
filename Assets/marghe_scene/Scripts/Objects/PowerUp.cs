@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShotgunPowerUp : MonoBehaviour
+public class PowerUp : MonoBehaviour
 {
     public Signal powerUpSignal;
     

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShotgunsBar : MonoBehaviour
 {
     public float maxShots = 10;
+    public float currentShots;
     // Start is called before the first frame update
     void Start()
     {

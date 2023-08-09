@@ -12,23 +12,30 @@ public class ShotgunsManager : MonoBehaviour
     {
         shotsSlider.maxValue = BarShots.maxShots;
         shotsSlider.value = BarShots.maxShots;
+        BarShots.currentShots = BarShots.maxShots;
     }
 
     public void AddShots()
     {
         shotsSlider.value += 1;
+        BarShots.currentShots += 1;
+
         if(shotsSlider.value > BarShots.maxShots)
         {
             shotsSlider.value = BarShots.maxShots;
+            BarShots.currentShots = BarShots.maxShots;
         }
     }
 
     public void DecreaseShots()
     {
         shotsSlider.value -= 1;
+        BarShots.currentShots -= 1;
+
         if(shotsSlider.value < 0)
         {
             shotsSlider.value = 0;
+            BarShots.currentShots = 0;
         }
     }
 }
