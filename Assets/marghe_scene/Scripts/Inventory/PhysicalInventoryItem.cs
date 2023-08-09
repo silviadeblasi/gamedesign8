@@ -7,7 +7,6 @@ public class PhysicalInventoryItem : MonoBehaviour
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private InventoryItem thisItem;
     [SerializeField] private GameObject canvaInventory;
-    //[SerializeField] private PowerUp powerUpSignal;
 
     private void Awake()
     {
@@ -18,14 +17,9 @@ public class PhysicalInventoryItem : MonoBehaviour
     {    
         if(other.gameObject.CompareTag("Player") && !other.isTrigger)
         {
-            // if(thisItem.CompareTag("bullets"))
-            // {
-            //     powerUpSignal.Raise();
-            // }
             canvaInventory.gameObject.SetActive(true);
             AddItemToInventory();
             this.gameObject.SetActive(false);
-            //Destroy(this.gameObject);
         }
     }
 

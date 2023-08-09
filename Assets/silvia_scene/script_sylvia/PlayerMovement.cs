@@ -141,20 +141,6 @@ public class PlayerMovement : MonoBehaviour
     public void Knock(float knockTime, float damage)
     {
         StartCoroutine(KnockCo(knockTime)); //Health: second version of health system
-        
-        //DON'T DELETE THIS COMMENTED CODE
-        //Health: first version of health system
-        /*currentHealth.RuntimeValue -= damage;
-        playerHealthSignal.Raise();
-
-        if(currentHealth.RuntimeValue > 0)
-        {
-            StartCoroutine(KnockCo(knockTime));
-        }
-        else
-        {
-            this.gameObject.SetActive(false);
-        }*/
     }
 
     private IEnumerator KnockCo(float knockTime)
