@@ -83,11 +83,13 @@ public class PlayerMovement : MonoBehaviour
 
         private IEnumerator ShotgunCo() 
     {
+        //animator.SetBool("shotgun", true);
         currentState = PlayerState.attack;
         shotgunSound.enabled = true;
         yield return null;
         MakeShotgun();
         yield return new WaitForSeconds(.3f); 
+        //animator.SetBool("shotgun", false);
         shotgunSound.enabled = false;
         currentState = PlayerState.walk;
     }

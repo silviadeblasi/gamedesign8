@@ -12164,6 +12164,10 @@ PrefabInstance:
       propertyPath: canvas_trama.Array.data[0]
       value: 
       objectReference: {fileID: 1606627059}
+    - target: {fileID: 8140712728902351529, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8140712728902351531, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: Loop
       value: 1
@@ -12797,7 +12801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7058340390840657616, guid: 0763ee0ccd44442858642c4d87563794, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 21.64
       objectReference: {fileID: 0}
     - target: {fileID: 7058340390840657616, guid: 0763ee0ccd44442858642c4d87563794, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17380,7 +17384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3402343849622885271, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.2964172
+      value: -3.2963562
       objectReference: {fileID: 0}
     - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -17392,7 +17396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.400024
+      value: -19.40001
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -17404,7 +17408,7 @@ PrefabInstance:
       objectReference: {fileID: 41825220}
     - target: {fileID: 5652127704889468912, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.3999863
+      value: -3.39999
       objectReference: {fileID: 0}
     - target: {fileID: 7556411259463964054, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
