@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   myRigidbody: {fileID: 6669843215407444136}
+  lifetime: 0.3
 --- !u!114 &64326722975974810
 MonoBehaviour:
   m_ObjectHideFlags: 0
