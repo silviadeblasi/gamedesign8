@@ -8,6 +8,7 @@ TagManager:
   - enemy
   - openable
   - Inventory
+  - bullets
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - villager_3_pistola
   - 
   - scena_finale
-  - 
+  - proiettile
   - 
   - 
   - 

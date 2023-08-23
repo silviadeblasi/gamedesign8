@@ -20,7 +20,6 @@ public class PhysicalInventoryItem : MonoBehaviour
             canvaInventory.gameObject.SetActive(true);
             AddItemToInventory();
             this.gameObject.SetActive(false);
-            //Destroy(this.gameObject);
         }
     }
 

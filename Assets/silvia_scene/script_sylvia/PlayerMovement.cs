@@ -29,6 +29,11 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource footsteps;
     public AudioSource machete1;
     public vector_value starting_position; //scriptable object per salvare la posizione del player
+    public GameObject projectile;
+    public AudioSource shotgunSound;
+    public Signal reduceShots;
+    public ShotgunsBar CurrentShots;
+
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("moveY", -1);
         footsteps.enabled = false;
         machete1.enabled = false;
+        shotgunSound.enabled = false;
         transform.position = starting_position.initialValue;
     }
 
@@ -49,11 +55,14 @@ public class PlayerMovement : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack
-            && currentState != PlayerState.stagger) 
+        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)  //spacebar
         {
             StartCoroutine(AttackCo());
         } 
+        else if (Input.GetButtonDown("shotgun") && currentState != PlayerState.attack && currentState != PlayerState.stagger)  //g
+        {
+            StartCoroutine(ShotgunCo());
+        }
         else if (currentState == PlayerState.walk || currentState == PlayerState.idle || currentState == PlayerState.run) 
         {
             UpdateAnimationAndMove();
@@ -70,6 +79,36 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(.3f); 
         machete1.enabled = false;
         currentState = PlayerState.walk;
+    }
+
+        private IEnumerator ShotgunCo() 
+    {
+        //animator.SetBool("shotgun", true);
+        currentState = PlayerState.attack;
+        shotgunSound.enabled = true;
+        yield return null;
+        MakeShotgun();
+        yield return new WaitForSeconds(.3f); 
+        //animator.SetBool("shotgun", false);
+        shotgunSound.enabled = false;
+        currentState = PlayerState.walk;
+    }
+
+    private void MakeShotgun()
+    {
+        if(CurrentShots.currentShots > 0)
+        {
+            Vector2 temp = new Vector2(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+            Shotgun shotgun = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Shotgun>();
+            shotgun.Setup(temp, ShotgunDirection());
+            reduceShots.Raise();
+        }
+    }
+
+    Vector3 ShotgunDirection ()
+    {
+        float temp = Mathf.Atan2(animator.GetFloat("moveY"), animator.GetFloat("moveX")) * Mathf.Rad2Deg;
+        return new Vector3(0, 0, temp);
     }
 
     void UpdateAnimationAndMove(){
@@ -104,20 +143,6 @@ public class PlayerMovement : MonoBehaviour
     public void Knock(float knockTime, float damage)
     {
         StartCoroutine(KnockCo(knockTime)); //Health: second version of health system
-        
-        //DON'T DELETE THIS COMMENTED CODE
-        //Health: first version of health system
-        /*currentHealth.RuntimeValue -= damage;
-        playerHealthSignal.Raise();
-
-        if(currentHealth.RuntimeValue > 0)
-        {
-            StartCoroutine(KnockCo(knockTime));
-        }
-        else
-        {
-            this.gameObject.SetActive(false);
-        }*/
     }
 
     private IEnumerator KnockCo(float knockTime)
