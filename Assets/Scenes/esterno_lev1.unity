@@ -17420,7 +17420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12.100037
+      value: -12.100029
       objectReference: {fileID: 0}
     - target: {fileID: 4499288901860561446, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -17444,11 +17444,11 @@ PrefabInstance:
       objectReference: {fileID: 41825220}
     - target: {fileID: 5652127704889468912, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.3999863
+      value: -3.399994
       objectReference: {fileID: 0}
     - target: {fileID: 6190171527742925112, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -17.300018
+      value: -17.30001
       objectReference: {fileID: 0}
     - target: {fileID: 6190171527742925112, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -17913,7 +17913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653837374}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.143055, y: -15.832132, z: 0.070049115}
+  m_LocalPosition: {x: -19.74, y: -11.58, z: 0.070049115}
   m_LocalScale: {x: 0.105, y: 0.105, z: 0.10512963}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18875,6 +18875,7 @@ GameObject:
   - component: {fileID: 706432461}
   - component: {fileID: 706432460}
   - component: {fileID: 706432457}
+  - component: {fileID: 706432462}
   m_Layer: 0
   m_Name: Munizioni_1 (1)
   m_TagString: bullets
@@ -19003,6 +19004,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &706432462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706432455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600b97118da35b14ca4a3a7875c535e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaBullets: {fileID: 2128319007}
 --- !u!1 &718611522
 GameObject:
   m_ObjectHideFlags: 0
@@ -26466,6 +26480,7 @@ GameObject:
   - component: {fileID: 880729150}
   - component: {fileID: 880729148}
   - component: {fileID: 880729146}
+  - component: {fileID: 880729151}
   m_Layer: 0
   m_Name: Munizioni_3 (1)
   m_TagString: bullets
@@ -26481,7 +26496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880729144}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.58, y: -27.72, z: 0.070049115}
+  m_LocalPosition: {x: -18.76, y: -11.97, z: 0.070049115}
   m_LocalScale: {x: 0.25754, y: 0.25754, z: 0.25754}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26594,6 +26609,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &880729151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880729144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600b97118da35b14ca4a3a7875c535e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaBullets: {fileID: 2128319007}
 --- !u!1 &889184667
 GameObject:
   m_ObjectHideFlags: 0
@@ -34243,6 +34271,7 @@ GameObject:
   - component: {fileID: 1141953324}
   - component: {fileID: 1141953326}
   - component: {fileID: 1141953328}
+  - component: {fileID: 1141953329}
   m_Layer: 0
   m_Name: Munizioni_3 (2)
   m_TagString: bullets
@@ -34371,6 +34400,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpSignal: {fileID: 11400000, guid: 769f704af303d6242932de571a0dfaa2, type: 2}
+--- !u!114 &1141953329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141953322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600b97118da35b14ca4a3a7875c535e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaBullets: {fileID: 2128319007}
 --- !u!1 &1152060391
 GameObject:
   m_ObjectHideFlags: 0
@@ -34383,6 +34425,7 @@ GameObject:
   - component: {fileID: 1152060397}
   - component: {fileID: 1152060395}
   - component: {fileID: 1152060393}
+  - component: {fileID: 1152060398}
   m_Layer: 0
   m_Name: Munizioni_2 (1)
   m_TagString: bullets
@@ -34519,6 +34562,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1152060398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152060391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600b97118da35b14ca4a3a7875c535e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaBullets: {fileID: 2128319007}
 --- !u!1 &1153699694
 GameObject:
   m_ObjectHideFlags: 0
@@ -47627,6 +47683,7 @@ GameObject:
   - component: {fileID: 1923941200}
   - component: {fileID: 1923941199}
   - component: {fileID: 1923941203}
+  - component: {fileID: 1923941204}
   m_Layer: 0
   m_Name: Munizioni_1 (2)
   m_TagString: bullets
@@ -47755,6 +47812,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpSignal: {fileID: 11400000, guid: 769f704af303d6242932de571a0dfaa2, type: 2}
+--- !u!114 &1923941204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923941197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600b97118da35b14ca4a3a7875c535e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaBullets: {fileID: 2128319007}
 --- !u!1 &1924365679
 GameObject:
   m_ObjectHideFlags: 0
@@ -47992,6 +48062,7 @@ GameObject:
   - component: {fileID: 1952640494}
   - component: {fileID: 1952640495}
   - component: {fileID: 1952640498}
+  - component: {fileID: 1952640499}
   m_Layer: 0
   m_Name: Munizioni_2 (2)
   m_TagString: bullets
@@ -48128,6 +48199,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpSignal: {fileID: 11400000, guid: 769f704af303d6242932de571a0dfaa2, type: 2}
+--- !u!114 &1952640499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952640492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600b97118da35b14ca4a3a7875c535e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvaBullets: {fileID: 2128319007}
 --- !u!1001 &1958762279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58938,7 +59022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1, y: -10.9999695}
+  m_AnchoredPosition: {x: 1, y: -10.999954}
   m_SizeDelta: {x: -680.3, y: -328.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2090682777
@@ -59180,6 +59264,7 @@ RectTransform:
   - {fileID: 1265416548}
   - {fileID: 849374906}
   - {fileID: 780606819}
+  - {fileID: 2128319008}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59753,6 +59838,82 @@ Transform:
   m_Father: {fileID: 84383899}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2128319007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2128319008}
+  - component: {fileID: 2128319010}
+  - component: {fileID: 2128319009}
+  m_Layer: 6
+  m_Name: Munizioni
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2128319008
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128319007}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2098658939}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 140.5, y: -224.94}
+  m_SizeDelta: {x: 222.42004, y: 132.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2128319009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128319007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a378cf4d610e546d98df18e7d82f9314, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2128319010
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128319007}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2136366426
 PrefabInstance:
   m_ObjectHideFlags: 0

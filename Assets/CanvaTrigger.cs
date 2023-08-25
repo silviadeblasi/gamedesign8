@@ -6,10 +6,10 @@ public class CanvaTrigger : MonoBehaviour
 {
     public GameObject canvaInventory;
 
-    void Awake()
-    {
-        canvaInventory.gameObject.SetActive(false);
-    }
+    // void Awake()
+    // {
+    //     canvaInventory.gameObject.SetActive(false);
+    // }
 
     public void Update()
     {
