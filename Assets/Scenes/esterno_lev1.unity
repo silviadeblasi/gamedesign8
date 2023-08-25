@@ -17404,7 +17404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3402343849622885271, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.2963943
+      value: -3.2963867
       objectReference: {fileID: 0}
     - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -17416,11 +17416,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.40001
+      value: -19.399963
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12.100021
+      value: -12.100037
       objectReference: {fileID: 0}
     - target: {fileID: 4499288901860561446, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -18874,8 +18874,6 @@ GameObject:
   - component: {fileID: 706432456}
   - component: {fileID: 706432461}
   - component: {fileID: 706432460}
-  - component: {fileID: 706432459}
-  - component: {fileID: 706432458}
   - component: {fileID: 706432457}
   m_Layer: 0
   m_Name: Munizioni_1 (1)
@@ -18912,34 +18910,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpSignal: {fileID: 11400000, guid: 769f704af303d6242932de571a0dfaa2, type: 2}
---- !u!114 &706432458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706432455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvaInventory: {fileID: 1265416547}
---- !u!114 &706432459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706432455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c61528a7fe7a23418f868a0c52c6436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
-  thisItem: {fileID: 11400000, guid: 18b63c62668d9a941bf61caf9e8b33be, type: 2}
-  canvaInventory: {fileID: 1265416547}
 --- !u!60 &706432460
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26494,9 +26464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 880729145}
   - component: {fileID: 880729150}
-  - component: {fileID: 880729149}
   - component: {fileID: 880729148}
-  - component: {fileID: 880729147}
   - component: {fileID: 880729146}
   m_Layer: 0
   m_Name: Munizioni_3 (1)
@@ -26533,21 +26501,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpSignal: {fileID: 11400000, guid: 769f704af303d6242932de571a0dfaa2, type: 2}
---- !u!114 &880729147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880729144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c61528a7fe7a23418f868a0c52c6436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
-  thisItem: {fileID: 11400000, guid: 67dbf539bcfe14149a8fa8368bc205e4, type: 2}
-  canvaInventory: {fileID: 1265416547}
 --- !u!60 &880729148
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26589,19 +26542,6 @@ PolygonCollider2D:
       - {x: 0.5517031, y: 0.6532046}
       - {x: 0.45163834, y: 0.6519993}
       - {x: 0.44850686, y: 0.7544288}
---- !u!114 &880729149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880729144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvaInventory: {fileID: 1265416547}
 --- !u!212 &880729150
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34301,9 +34241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1141953323}
   - component: {fileID: 1141953324}
-  - component: {fileID: 1141953325}
   - component: {fileID: 1141953326}
-  - component: {fileID: 1141953327}
   - component: {fileID: 1141953328}
   m_Layer: 0
   m_Name: Munizioni_3 (2)
@@ -34379,19 +34317,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1141953325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141953322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvaInventory: {fileID: 1265416547}
 --- !u!60 &1141953326
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -34433,21 +34358,6 @@ PolygonCollider2D:
       - {x: 0.5517031, y: 0.6532046}
       - {x: 0.45163834, y: 0.6519993}
       - {x: 0.44850686, y: 0.7544288}
---- !u!114 &1141953327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141953322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c61528a7fe7a23418f868a0c52c6436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
-  thisItem: {fileID: 11400000, guid: 67dbf539bcfe14149a8fa8368bc205e4, type: 2}
-  canvaInventory: {fileID: 1265416547}
 --- !u!114 &1141953328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34471,9 +34381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1152060392}
   - component: {fileID: 1152060397}
-  - component: {fileID: 1152060396}
   - component: {fileID: 1152060395}
-  - component: {fileID: 1152060394}
   - component: {fileID: 1152060393}
   m_Layer: 0
   m_Name: Munizioni_2 (1)
@@ -34510,21 +34418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpSignal: {fileID: 11400000, guid: 769f704af303d6242932de571a0dfaa2, type: 2}
---- !u!114 &1152060394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152060391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c61528a7fe7a23418f868a0c52c6436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
-  thisItem: {fileID: 11400000, guid: eb8f52014c0285749ada9d1c8c6a0f11, type: 2}
-  canvaInventory: {fileID: 1265416547}
 --- !u!60 &1152060395
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -34574,19 +34467,6 @@ PolygonCollider2D:
       - {x: 0.75382704, y: -0.95}
       - {x: 0.753828, y: -0.6461711}
       - {x: 0.65226346, y: -0.6477356}
---- !u!114 &1152060396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152060391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvaInventory: {fileID: 1265416547}
 --- !u!212 &1152060397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47746,8 +47626,6 @@ GameObject:
   - component: {fileID: 1923941198}
   - component: {fileID: 1923941200}
   - component: {fileID: 1923941199}
-  - component: {fileID: 1923941202}
-  - component: {fileID: 1923941201}
   - component: {fileID: 1923941203}
   m_Layer: 0
   m_Name: Munizioni_1 (2)
@@ -47864,34 +47742,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1923941201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923941197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvaInventory: {fileID: 1265416547}
---- !u!114 &1923941202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923941197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c61528a7fe7a23418f868a0c52c6436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
-  thisItem: {fileID: 11400000, guid: 18b63c62668d9a941bf61caf9e8b33be, type: 2}
-  canvaInventory: {fileID: 1265416547}
 --- !u!114 &1923941203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48140,9 +47990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1952640493}
   - component: {fileID: 1952640494}
-  - component: {fileID: 1952640496}
   - component: {fileID: 1952640495}
-  - component: {fileID: 1952640497}
   - component: {fileID: 1952640498}
   m_Layer: 0
   m_Name: Munizioni_2 (2)
@@ -48267,34 +48115,6 @@ PolygonCollider2D:
       - {x: 0.75382704, y: -0.95}
       - {x: 0.753828, y: -0.6461711}
       - {x: 0.65226346, y: -0.6477356}
---- !u!114 &1952640496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952640492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fbedcaf9c3cbe343abdc6f2b7a056bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvaInventory: {fileID: 1265416547}
---- !u!114 &1952640497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952640492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c61528a7fe7a23418f868a0c52c6436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
-  thisItem: {fileID: 11400000, guid: eb8f52014c0285749ada9d1c8c6a0f11, type: 2}
-  canvaInventory: {fileID: 1265416547}
 --- !u!114 &1952640498
 MonoBehaviour:
   m_ObjectHideFlags: 0
