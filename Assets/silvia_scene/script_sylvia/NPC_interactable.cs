@@ -43,6 +43,7 @@ public class NPC_interactable : MonoBehaviour
     private bool fine10 = false;
     private bool fine11 = false;
     private bool solve_problem = false;
+    private bool fine_combattimento = false;
 
 
     private void Start() {
@@ -315,7 +316,8 @@ public class NPC_interactable : MonoBehaviour
 
                 if(comb_5.fatto_comb_5 == true && fine3 == false){
                     dialoghiUIManager.StartDialoghi("dg_ct_comb_5_fatto"); 
-                    fine3 = true;
+                    fine3 = true; 
+                    fine_combattimento = true;
                 } else if(comb_5.fatto_comb_5 == false && fine4 == false){
                     dialoghiUIManager.StartDialoghi("dg_ct_3_1"); 
                     fine4 = true;
@@ -323,7 +325,7 @@ public class NPC_interactable : MonoBehaviour
             }
                
                     
-            if(dialoghiUIManager.FineDialogo("dg_ct_comb_5_fatto") == true && fine1 == false){
+            if(dialoghiUIManager.FineDialogo("dg_ct_comb_5_fatto") == true && fine1 == false && fine_combattimento == true){
                 Debug.Log("fine dialogo pistola");
                 canvas_pistola.SetActive(true);
                 StartCoroutine(fine_pistola());
