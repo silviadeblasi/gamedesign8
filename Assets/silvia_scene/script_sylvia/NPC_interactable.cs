@@ -287,7 +287,7 @@ public class NPC_interactable : MonoBehaviour
                
         }
 
-        if(other.gameObject.layer == 25){ //villager_3 pistola 
+        if(other.gameObject.layer == 25){ //villager_3 PISTOLA 
                 Vector3 dir = villager_1.GetComponent<BoundedNPC>().directionVector;
                 anim_villager_3.SetBool("interact", true);
                 anim_villager_3.SetFloat("moveX", dir.x);
@@ -308,22 +308,37 @@ public class NPC_interactable : MonoBehaviour
                 fine10 = false;
                 fine11 = false;
 
-                if(comb_5.fatto_comb_5 == true){
+                rb_player.constraints = RigidbodyConstraints2D.FreezeAll;
+                player.GetComponent<PlayerMovement>().enabled = false;
+                
+                Debug.Log(comb_5.fatto_comb_5 + "porco dio");
+
+                if(comb_5.fatto_comb_5 == true && fine3 == false){
                     dialoghiUIManager.StartDialoghi("dg_ct_comb_5_fatto"); 
-
-                    if(dialoghiUIManager.FineDialogo("dg_ct_comb_5_fatto") == true){
-                        canvas_pistola.SetActive(true);
-                        StartCoroutine(fine_pistola());
-                        pistola.SetActive(true);
-                    }
+                    fine3 = true;
+                } else if(comb_5.fatto_comb_5 == false && fine4 == false){
+                    dialoghiUIManager.StartDialoghi("dg_ct_3_1"); 
+                    fine4 = true;
                 }
-                else{
-                    dialoghiUIManager.StartDialoghi("dg_ct_3_1");
-
-                }
-            
-               
             }
+               
+                    
+            if(dialoghiUIManager.FineDialogo("dg_ct_comb_5_fatto") == true && fine1 == false){
+                Debug.Log("fine dialogo pistola");
+                canvas_pistola.SetActive(true);
+                StartCoroutine(fine_pistola());
+                pistola.SetActive(true);
+                fine1 = true;        
+            }
+                
+                
+            if( dialoghiUIManager.FineDialogo("dg_ct_3_1") == true && fine2 == false){
+                fine2 = true;
+                player.GetComponent<PlayerMovement>().enabled = true;
+                rb_player.constraints = RigidbodyConstraints2D.None;
+                rb_player.constraints = RigidbodyConstraints2D.FreezeRotation;
+            }
+
         }
 
 
@@ -369,6 +384,9 @@ public class NPC_interactable : MonoBehaviour
     IEnumerator fine_pistola(){
         yield return new WaitForSeconds(3f);
         canvas_pistola.SetActive(false);
+        player.GetComponent<PlayerMovement>().enabled = true;
+        rb_player.constraints = RigidbodyConstraints2D.None;
+        rb_player.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
    
