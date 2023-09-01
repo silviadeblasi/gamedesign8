@@ -45,6 +45,14 @@ public class NPC_interactable : MonoBehaviour
     private bool solve_problem = false;
     private bool fine_combattimento = false;
 
+    // munizioni da attivare quando prendo pistola
+    public GameObject munizioni_pistola1;
+    public GameObject munizioni_pistola2;
+    public GameObject munizioni_pistola3;
+    public GameObject munizioni_pistola4;
+    public GameObject munizioni_pistola5;
+    public GameObject munizioni_pistola6;
+
 
     private void Start() {
 
@@ -330,6 +338,15 @@ public class NPC_interactable : MonoBehaviour
                 canvas_pistola.SetActive(true);
                 StartCoroutine(fine_pistola());
                 pistola.SetActive(true);
+
+                //setto le munizioni visibili 
+                munizioni_pistola1.SetActive(true);
+                munizioni_pistola2.SetActive(true);
+                munizioni_pistola3.SetActive(true);
+                munizioni_pistola4.SetActive(true);
+                munizioni_pistola5.SetActive(true);
+                munizioni_pistola6.SetActive(true);
+                
                 fine1 = true;        
             }
                 

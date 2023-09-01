@@ -12256,6 +12256,12 @@ MonoBehaviour:
   canvas_pistola: {fileID: 1958762280}
   pistola: {fileID: 495743400}
   comb_5: {fileID: 1385663320}
+  munizioni_pistola1: {fileID: 706432455}
+  munizioni_pistola2: {fileID: 1923941197}
+  munizioni_pistola3: {fileID: 1152060391}
+  munizioni_pistola4: {fileID: 1952640492}
+  munizioni_pistola5: {fileID: 880729144}
+  munizioni_pistola6: {fileID: 1141953322}
 --- !u!114 &348793691 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8140712728902351521, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
@@ -19065,7 +19071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &706432456
 Transform:
   m_ObjectHideFlags: 0
@@ -26670,7 +26676,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &880729145
 Transform:
   m_ObjectHideFlags: 0
@@ -34465,7 +34471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1141953323
 Transform:
   m_ObjectHideFlags: 0
@@ -34619,7 +34625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1152060392
 Transform:
   m_ObjectHideFlags: 0
@@ -47749,7 +47755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1923941198
 Transform:
   m_ObjectHideFlags: 0
@@ -48128,7 +48134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1952640493
 Transform:
   m_ObjectHideFlags: 0
