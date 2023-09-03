@@ -13,6 +13,7 @@ public class FinalCombact : MonoBehaviour {
     private bool starting = true;
     public bool end = false;
     public GameObject tirgger_final_scene;
+    public GameObject final_combact; //canvas con il testo: final combact
     [SerializeField] private Combact_2 comb_2;
     [SerializeField] private Combact_3 comb_3;
     [SerializeField] private Combact_4 comb_4;
@@ -40,6 +41,7 @@ public class FinalCombact : MonoBehaviour {
                 if(starting == true){
                     dialoghiManager.StartDialoghi("dg_boss_final");
                     fire_battle.SetActive(true);
+                    final_combact.SetActive(true);
                     starting = false;
                 }
             //}

@@ -49,7 +49,7 @@ Canvas:
   m_GameObject: {fileID: 541027826198616667}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -160,16 +160,16 @@ RectTransform:
   m_GameObject: {fileID: 1109784474774529599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6356084, y: 0.6356084, z: 0.6356084}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5101025647336432775}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 132.84239}
-  m_SizeDelta: {x: 0, y: -265.6848}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 407, y: 391}
+  m_SizeDelta: {x: 859, y: 168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8542623382123475524
 CanvasRenderer:
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 908333ea41d212442b76dcc49de92c85, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c951ef3df7a6045138e972786329023b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

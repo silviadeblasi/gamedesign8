@@ -14,7 +14,7 @@ public class Combact_5: Combact{
     public GameObject comb_2;
     public GameObject comb_3;
     public GameObject comb_4;
-    public GameObject fifth_battle;
+    public GameObject fifth_battle; //canvas con il battle in progress
     public GameObject Muretto_final;
     public GameObject Fire_intorno;
     private bool dialogo_iniziale = false;
