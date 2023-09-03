@@ -202,7 +202,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: enemies2
+  m_Name: enemies_rock
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: moveX
@@ -318,7 +318,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: bfb21f17b8e64b84a981ca1035e49e4f, type: 2}
+    m_Motion: {fileID: 7400000, guid: 7c543923ef5ed6841826cf11a882037c, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
@@ -326,7 +326,7 @@ BlendTree:
     m_DirectBlendParameter: moveX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 44dd652957eb07f4f917b2f7d01a073b, type: 2}
+    m_Motion: {fileID: 7400000, guid: 1be5219aca32bc349bab10dede0f3f4f, type: 2}
     m_Threshold: 0.33333334
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -334,7 +334,7 @@ BlendTree:
     m_DirectBlendParameter: moveX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 7678497c5f857454c8835b2a2b6acf5f, type: 2}
+    m_Motion: {fileID: 7400000, guid: b57f307b319b3ce44bec0e64069c71b6, type: 2}
     m_Threshold: 0.6666667
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -342,7 +342,7 @@ BlendTree:
     m_DirectBlendParameter: moveX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 92345421fd5962848b319067258659d1, type: 2}
+    m_Motion: {fileID: 7400000, guid: 2227df3e0f67f1547a1dff99bd784da1, type: 2}
     m_Threshold: 1
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
