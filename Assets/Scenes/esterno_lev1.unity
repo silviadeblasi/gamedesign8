@@ -17516,7 +17516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -10.9999695
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -35441,7 +35441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 616561647748226655, guid: 48f20ff14f73c474aa727e88ed720b1b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 137.00002
+      value: 137
       objectReference: {fileID: 0}
     - target: {fileID: 891453790698186359, guid: 48f20ff14f73c474aa727e88ed720b1b, type: 3}
       propertyPath: m_Name
@@ -35454,6 +35454,22 @@ PrefabInstance:
     - target: {fileID: 2267979734842537465, guid: 48f20ff14f73c474aa727e88ed720b1b, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392114025133335411, guid: 48f20ff14f73c474aa727e88ed720b1b, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407737847191370524, guid: 48f20ff14f73c474aa727e88ed720b1b, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407737847191370524, guid: 48f20ff14f73c474aa727e88ed720b1b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407737847191370524, guid: 48f20ff14f73c474aa727e88ed720b1b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -342908891
       objectReference: {fileID: 0}
     - target: {fileID: 6115822974134674709, guid: 48f20ff14f73c474aa727e88ed720b1b, type: 3}
       propertyPath: m_Camera
@@ -36613,23 +36629,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1244255404 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2813653751945237334, guid: e1422d29c68547a4084b615ed676083c, type: 3}
-  m_PrefabInstance: {fileID: 795672635}
-  m_PrefabAsset: {fileID: 0}
---- !u!225 &1244255408
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244255404}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
 --- !u!1 &1250809527
 GameObject:
   m_ObjectHideFlags: 0
@@ -38992,6 +38991,10 @@ PrefabInstance:
     - target: {fileID: 6115822974134674709, guid: 443bf06bac69082449850c3e62278871, type: 3}
       propertyPath: m_SortingLayerID
       value: -342908891
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200140193089632063, guid: 443bf06bac69082449850c3e62278871, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 443bf06bac69082449850c3e62278871, type: 3}
