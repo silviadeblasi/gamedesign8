@@ -18,11 +18,15 @@ public class checkpoint : MonoBehaviour
     // mentre per il secondo deve comparire il messaggio hai trovato un checkpoint e salvare la posizione
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Player") && !other.isTrigger && _point.isTrigger == true){
-            //cloneDialogue =(GameObject)GameObject.Instantiate(communication_checkpoint, transform.position, Quaternion.identity); //hai trovato il canvas e questo 
-            //Destroy(cloneDialogue, 2f);
             checkpoint_position.initialValue = this.transform.position;
             checkpoint_position.Scenename = SceneManager.GetActiveScene().name;
             _point.isTrigger = false;
+            //solo il secondo check point è visibile quindi solo nel secondo mostro il canvas che spiega checkpoint
+            if(checkpoint_position.initialValue != null){
+                cloneDialogue =(GameObject)GameObject.Instantiate(communication_checkpoint, transform.position, Quaternion.identity); //hai trovato il canvas e questo 
+                Destroy(cloneDialogue, 2f);
+            }
+            
         }
     }
 }
