@@ -335,7 +335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'press E to close
+  m_text: 'press Z to close
 
 '
   m_isRightToLeft: 0

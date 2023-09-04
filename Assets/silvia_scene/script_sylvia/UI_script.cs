@@ -5,7 +5,7 @@ using UnityEngine;
 public class UI_script : MonoBehaviour {
     public bool fine_ui = false;
     private void Update() {
-        if(Input.GetKeyDown(KeyCode.E)){
+        if(Input.GetKeyDown(KeyCode.Z)){
             fine_ui = true;
             gameObject.SetActive(false);
         }
