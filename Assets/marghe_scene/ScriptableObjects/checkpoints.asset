@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b3b77e3a8164f9499f25e80eb85b87, type: 3}
   m_Name: checkpoints
   m_EditorClassIdentifier: 
-  initialValue: {x: 0, y: 0}
-  Scenename: 
+  initialValue: {x: -27, y: -16}
+  Scenename: esterno_lev1

@@ -14,10 +14,12 @@ public class FinalCombact : MonoBehaviour {
     public bool end = false;
     public GameObject tirgger_final_scene;
     public GameObject final_combact; //canvas con il testo: final combact
-    [SerializeField] private Combact_2 comb_2;
-    [SerializeField] private Combact_3 comb_3;
-    [SerializeField] private Combact_4 comb_4;
-    [SerializeField] private Combact_5 comb_5;
+    [SerializeField] private GameObject comb_1;
+    [SerializeField] private GameObject comb_2;
+    [SerializeField] private GameObject comb_3;
+    [SerializeField] private GameObject comb_4;
+    [SerializeField] private GameObject comb_5;
+    public bool finito_livello_cairo = false; 
 
 
     private void Start() {
@@ -59,6 +61,13 @@ public class FinalCombact : MonoBehaviour {
             }
             if(dialoghiManager.FineDialogo("dg_sue_final")){
                 tirgger_final_scene.SetActive(true);
+                finito_livello_cairo = true;
+                Destroy(comb_1);
+                Destroy(comb_2);
+                Destroy(comb_3);
+                Destroy(comb_4);
+                Destroy(comb_5);
+                Destroy(boss);
             }
         }
         

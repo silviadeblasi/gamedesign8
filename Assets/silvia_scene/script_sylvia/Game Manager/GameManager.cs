@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     private bool flag_tomba = false;
     private bool just_once = true;
     public interactable_object canvas_trama;
+    public FinalCombact boss_finelivello;
+    
+    public CombactManager combactManager;
 
     //private PlayerInventory playerInventory;
     //private InventoryItem machete;
@@ -76,6 +79,19 @@ public class GameManager : MonoBehaviour
                 dialoghiManager.StartDialoghi("dg_sue_tomba");
                 flag_tomba = true;
             }
+            if(boss_finelivello.finito_livello_cairo == true && just_once == true){
+                just_once = false;
+                //attivo flag casa del cairo e mi assicuro che tutti i combattimenti vengano distrutti (quindi gia fatti)
+                //incluso boss finale
+                combactManager.combactList[0].progress = GeneralCombact.CombactProgress.DONE;
+                combactManager.combactList[1].progress = GeneralCombact.CombactProgress.DONE;
+                combactManager.combactList[2].progress = GeneralCombact.CombactProgress.DONE;
+                combactManager.combactList[3].progress = GeneralCombact.CombactProgress.DONE;
+                combactManager.combactList[4].progress = GeneralCombact.CombactProgress.DONE;
+                combactManager.combactList[5].progress = GeneralCombact.CombactProgress.DONE;
+
+            }
+            
         }
         
     }
