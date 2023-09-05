@@ -10,12 +10,15 @@ public class interactable_object : MonoBehaviour
     public GameObject player; 
     public GameObject[] canvas_trama;
     public SoundManager soundManager;
+    public DialoghiUIManager dialoghiManager;
     private Animator animator;
     public bool pendant_trovato = false;
     public bool tomba_madre = false;
     public bool lettera_sfratto_trovata = false;
     public bool mappa_trovata = false; 
     public GameObject comand_m;
+    public FinalCombact boss_finelivello;
+    private bool cairo_flag = false;
 
     //private bool canvas_already_spawned = false;
     //attenzione è ontrigger se voglio chiudere il cavas devo usare ontriggerexit/stay e non oncollisionexit/stay
@@ -102,8 +105,26 @@ public class interactable_object : MonoBehaviour
                 StartCoroutine(command_M());
             }
         }
+
+        //casa del cairo se non ho finito il livello
+        if(other.gameObject.layer == 15){
+            if(boss_finelivello.finito_livello_cairo == false && cairo_flag == false){
+                cairo_flag = true;
+                player.GetComponent<PlayerMovement>().enabled = false;
+                player.GetComponent<Animator>().SetBool("moving", false);
+                dialoghiManager.StartDialoghi("dg_sue_cairo_closed");
+        }
+            
+            if(dialoghiManager.FineDialogo("dg_sue_cairo_closed")){
+                player.GetComponent<PlayerMovement>().enabled = true;
+                player.GetComponent<Animator>().SetBool("moving", true);
+                
+            }
+        }
+        
     
     }
+
 
     private GameObject FindOggetti(GameObject[] oggetti, string oggetto_name){
         foreach (GameObject oggetto in oggetti)
