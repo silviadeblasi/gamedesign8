@@ -1159,7 +1159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4893242135505043185, guid: 9bb9def1aa12346efb09dbe665a8ecc0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bb9def1aa12346efb09dbe665a8ecc0, type: 3}
@@ -2582,6 +2582,7 @@ MonoBehaviour:
   interazione_non_completa: {fileID: 0}
   opened: {fileID: 0}
   interactable: {fileID: 236182260}
+  boss_finelivello: {fileID: 0}
 --- !u!1 &2138477097
 GameObject:
   m_ObjectHideFlags: 0

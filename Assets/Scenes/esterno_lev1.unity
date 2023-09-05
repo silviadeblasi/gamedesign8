@@ -32520,6 +32520,7 @@ MonoBehaviour:
   interazione_non_completa: {fileID: 0}
   opened: {fileID: 0}
   interactable: {fileID: 0}
+  boss_finelivello: {fileID: 0}
 --- !u!1 &1047156667
 GameObject:
   m_ObjectHideFlags: 0
@@ -44945,11 +44946,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_position: {x: 0, y: 0}
-  player_storage: {fileID: 0}
-  trigger: {fileID: 0}
+  player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
+  trigger: {fileID: 1723467373}
   interazione_non_completa: {fileID: 0}
   opened: {fileID: 0}
   interactable: {fileID: 0}
+  boss_finelivello: {fileID: 405455084}
 --- !u!1 &1742611040
 GameObject:
   m_ObjectHideFlags: 0

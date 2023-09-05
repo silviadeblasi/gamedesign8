@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public FinalCombact boss_finelivello;
     
     public CombactManager combactManager;
+    private bool notalreadyhere = false;
 
     //private PlayerInventory playerInventory;
     //private InventoryItem machete;
@@ -79,7 +80,7 @@ public class GameManager : MonoBehaviour
                 dialoghiManager.StartDialoghi("dg_sue_tomba");
                 flag_tomba = true;
             }
-            if(boss_finelivello.finito_livello_cairo == true && just_once == true){
+            if(boss_finelivello.finito_livello_cairo == true && just_once == true && notalreadyhere == true){
                 just_once = false;
                 //attivo flag casa del cairo e mi assicuro che tutti i combattimenti vengano distrutti (quindi gia fatti)
                 //incluso boss finale

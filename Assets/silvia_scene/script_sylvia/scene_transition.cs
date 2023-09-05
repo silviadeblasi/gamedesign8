@@ -11,6 +11,7 @@ public class scene_transition : MonoBehaviour
     public GameObject interazione_non_completa;
     public openable opened;
     public interactable_object interactable; //verificare di aver trovato tutti i canvas prima di uscire dalla stanza
+    public FinalCombact boss_finelivello;
     private void OnTriggerEnter2D(Collider2D other) {
 
         //ingresso casa 
@@ -52,7 +53,7 @@ public class scene_transition : MonoBehaviour
             }
         }
 
-        if(other.CompareTag("Player") && !other.isTrigger && trigger.gameObject.layer == 15){
+        if(other.CompareTag("Player") && !other.isTrigger && trigger.gameObject.layer == 15 && boss_finelivello.finito_livello_cairo == true){
             Scene_Loader.Load(Scene_Loader.Scene.casa_del_cairo);
             player_storage.initialValue = player_position;
         }
