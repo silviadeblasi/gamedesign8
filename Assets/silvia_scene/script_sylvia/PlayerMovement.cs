@@ -31,9 +31,11 @@ public class PlayerMovement : MonoBehaviour
     public vector_value starting_position; //scriptable object per salvare la posizione del player
     public GameObject projectile;
     public AudioSource shotgunSound;
+    public AudioSource reloadSound;
     public Signal reduceShots;
     public ShotgunsBar CurrentShots;
     public GameObject gun;
+    private bool hasBeenActivated = false;
 
 
     // Start is called before the first frame update
@@ -47,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         footsteps.enabled = false;
         machete1.enabled = false;
         shotgunSound.enabled = false;
+        reloadSound.enabled = false;
         transform.position = starting_position.initialValue;
     }
 
@@ -56,16 +59,21 @@ public class PlayerMovement : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
+
+        // if(gun.activeSelf == true && hasBeenActivated == false)
+        // {
+        //     CurrentShots.currentShots = 10;
+        //     hasBeenActivated = true;
+        // }
+
         if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)  //spacebar
         {
             StartCoroutine(AttackCo());
         } 
-        else if (gun.activeSelf == true) 
+        else if (Input.GetButtonDown("shotgun") && currentState != PlayerState.attack && currentState != PlayerState.stagger)  //g
         {
-            if (Input.GetButtonDown("shotgun") && currentState != PlayerState.attack && currentState != PlayerState.stagger)  //g
-            {
                 StartCoroutine(ShotgunCo());
-            }
+                //if (hasBeenActivated == true) 
         }
         else if (currentState == PlayerState.walk || currentState == PlayerState.idle || currentState == PlayerState.run) 
         {
@@ -164,4 +172,18 @@ public class PlayerMovement : MonoBehaviour
     /*void Footstepsound(){
         footsteps.Play();
     }*/
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.CompareTag("bullets"))
+        {
+            StartCoroutine(RechargeSound());
+        }    
+    }
+
+    IEnumerator RechargeSound()
+    {
+        reloadSound.enabled = true;
+        yield return new WaitForSeconds(1);
+        reloadSound.enabled = false;
+    }
 }
