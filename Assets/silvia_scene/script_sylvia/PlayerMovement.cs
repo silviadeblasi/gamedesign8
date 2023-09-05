@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource shotgunSound;
     public Signal reduceShots;
     public ShotgunsBar CurrentShots;
+    public GameObject gun;
 
 
     // Start is called before the first frame update
@@ -59,9 +60,12 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(AttackCo());
         } 
-        else if (Input.GetButtonDown("shotgun") && currentState != PlayerState.attack && currentState != PlayerState.stagger)  //g
+        else if (gun.activeSelf == true) 
         {
-            StartCoroutine(ShotgunCo());
+            if (Input.GetButtonDown("shotgun") && currentState != PlayerState.attack && currentState != PlayerState.stagger)  //g
+            {
+                StartCoroutine(ShotgunCo());
+            }
         }
         else if (currentState == PlayerState.walk || currentState == PlayerState.idle || currentState == PlayerState.run) 
         {
