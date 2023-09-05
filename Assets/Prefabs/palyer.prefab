@@ -620,6 +620,10 @@ MonoBehaviour:
   footsteps: {fileID: 8140712728902351531}
   machete1: {fileID: 5299933362371079722}
   starting_position: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
+  projectile: {fileID: 0}
+  shotgunSound: {fileID: 0}
+  reduceShots: {fileID: 0}
+  CurrentShots: {fileID: 0}
 --- !u!95 &8140712728902351446
 Animator:
   serializedVersion: 4
@@ -675,7 +679,7 @@ AudioSource:
   m_GameObject: {fileID: 8140712728902351452}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -1129345424946631625, guid: cd00f80ccaa3b6c42b1eac5731820d68, type: 2}
+  OutputAudioMixerGroup: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
   m_audioClip: {fileID: 8300000, guid: 45dd3649c9f084045b0ea9aecc3e93b1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
@@ -771,7 +775,7 @@ AudioSource:
   m_GameObject: {fileID: 8140712728902351452}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -1129345424946631625, guid: cd00f80ccaa3b6c42b1eac5731820d68, type: 2}
+  OutputAudioMixerGroup: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
   m_audioClip: {fileID: 8300000, guid: 962ecb626c495459b88a087e0955cece, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
@@ -895,15 +899,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas_tomba: {fileID: 8688396363754058710, guid: 5f710492d8e9349e5acd3a23b6beafbe, type: 3}
-  Canvas_perchiusura: {fileID: 8688396363754058710, guid: 06a0c8fa49a40471abd75243df69280d, type: 3}
   player: {fileID: 8140712728902351452}
   canvas_trama: []
-  Canvas_per_chiusura: {fileID: 0}
   soundManager: {fileID: 0}
   pendant_trovato: 0
   tomba_madre: 0
   lettera_sfratto_trovata: 0
   mappa_trovata: 0
+  comand_m: {fileID: 0}
 --- !u!114 &3747286361303236666
 MonoBehaviour:
   m_ObjectHideFlags: 0

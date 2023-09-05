@@ -950,7 +950,7 @@ AudioSource:
   m_GameObject: {fileID: 258745900}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
   m_audioClip: {fileID: 8300000, guid: 6a50aec51b4fe4b2e9e2c9a76d3ed989, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -3512,6 +3512,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 279528182836724905, guid: d25c3307d907dd84086eb7f991e26c10, type: 3}
     - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: BgSlider
+      value: 
+      objectReference: {fileID: 1633939814}
+    - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: SfxSlider
+      value: 
+      objectReference: {fileID: 975640074}
+    - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: _bgSlider
       value: 
       objectReference: {fileID: 1633939814}
@@ -3588,6 +3596,10 @@ PrefabInstance:
       propertyPath: currentHealth_player
       value: 
       objectReference: {fileID: 1705235487}
+    - target: {fileID: 5299933362371079722, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
     - target: {fileID: 8140712728902351443, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
       propertyPath: MainMenu_prefab
       value: 
@@ -3648,6 +3660,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: palyer
       objectReference: {fileID: 0}
+    - target: {fileID: 8140712728902351521, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 6273590328741322016}
+    - target: {fileID: 8140712728902351531, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
 --- !u!1001 &5051550632270392174
@@ -3683,7 +3703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3402343849622885271, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.2964172
+      value: -3.2964554
       objectReference: {fileID: 0}
     - target: {fileID: 3748459754368190774, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3700,14 +3720,14 @@ PrefabInstance:
     - target: {fileID: 5281012995615496907, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6273590328741322016}
+      objectReference: {fileID: 5051550632270392175}
     - target: {fileID: 5281012995615496907, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeVolumeBG
+      value: SetVolumeBg
       objectReference: {fileID: 0}
     - target: {fileID: 5652127704889468912, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.399994
+      value: -3.3999863
       objectReference: {fileID: 0}
     - target: {fileID: 6190171527742925112, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3715,15 +3735,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6190171527742925112, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 24.600037
+      value: 24.600052
       objectReference: {fileID: 0}
     - target: {fileID: 7556411259463964054, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 6273590328741322016}
+      objectReference: {fileID: 5051550632270392175}
     - target: {fileID: 7556411259463964054, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeVolumeSFX
+      value: SetVolumeSfx
       objectReference: {fileID: 0}
     - target: {fileID: 7898025479762028152, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3843,6 +3863,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+--- !u!114 &5051550632270392175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5051550632339483107, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+  m_PrefabInstance: {fileID: 5051550632270392174}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46801b9588b02647bccc688ed4232fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5942363595206977307 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8140712728902351452, guid: b4ab18fcd18ad45608a2b2cfd8010f27, type: 3}
