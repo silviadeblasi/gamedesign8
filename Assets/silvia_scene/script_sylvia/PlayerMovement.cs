@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource reloadSound;
     public Signal reduceShots;
     public ShotgunsBar CurrentShots;
+    public ShotgunsManager shotgunsManager;
     public GameObject gun;
     private bool hasBeenActivated = false;
 
@@ -60,20 +61,22 @@ public class PlayerMovement : MonoBehaviour
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
 
-        // if(gun.activeSelf == true && hasBeenActivated == false)
-        // {
-        //     CurrentShots.currentShots = 10;
-        //     hasBeenActivated = true;
-        // }
+        if(gun.activeSelf == true && hasBeenActivated == false)
+        {
+            CurrentShots.currentShots = 2;
+            hasBeenActivated = true;
+        }
 
         if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)  //spacebar
         {
             StartCoroutine(AttackCo());
         } 
-        else if (Input.GetButtonDown("shotgun") && currentState != PlayerState.attack && currentState != PlayerState.stagger)  //g
+        else if (hasBeenActivated == true && Input.GetButtonDown("shotgun") && currentState != PlayerState.attack && currentState != PlayerState.stagger)  //g
         {
+            if(CurrentShots.currentShots > 0)
+            { 
                 StartCoroutine(ShotgunCo());
-                //if (hasBeenActivated == true) 
+            }
         }
         else if (currentState == PlayerState.walk || currentState == PlayerState.idle || currentState == PlayerState.run) 
         {
@@ -95,13 +98,11 @@ public class PlayerMovement : MonoBehaviour
 
         private IEnumerator ShotgunCo() 
     {
-        //animator.SetBool("shotgun", true);
         currentState = PlayerState.attack;
         shotgunSound.enabled = true;
         yield return null;
         MakeShotgun();
         yield return new WaitForSeconds(.3f); 
-        //animator.SetBool("shotgun", false);
         shotgunSound.enabled = false;
         currentState = PlayerState.walk;
     }
