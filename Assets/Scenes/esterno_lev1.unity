@@ -37961,6 +37961,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
     - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 131299055}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: canvas_trama
       value: 
       objectReference: {fileID: 348793691}
@@ -37968,6 +37972,14 @@ PrefabInstance:
       propertyPath: current_scene
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: combactManager
+      value: 
+      objectReference: {fileID: 41825218}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: boss_finelivello
+      value: 
+      objectReference: {fileID: 405455084}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
 --- !u!1 &1323752972

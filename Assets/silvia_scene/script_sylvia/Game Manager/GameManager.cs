@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     
     public CombactManager combactManager;
     private bool notalreadyhere = false;
+    //devo dichiarare i 5 comb + finale e rendere inattivi appena rientro nella scena 
 
     //private PlayerInventory playerInventory;
     //private InventoryItem machete;
@@ -90,7 +91,8 @@ public class GameManager : MonoBehaviour
                 combactManager.combactList[3].progress = GeneralCombact.CombactProgress.DONE;
                 combactManager.combactList[4].progress = GeneralCombact.CombactProgress.DONE;
                 combactManager.combactList[5].progress = GeneralCombact.CombactProgress.DONE;
-
+                // ok combact manager ma devo distruggere o rendere non visibili i combattimenti 
+                //devo mettere nello scriptable object che il flag nel cabmio scena rimane true!!!!!!!
             }
             
         }
