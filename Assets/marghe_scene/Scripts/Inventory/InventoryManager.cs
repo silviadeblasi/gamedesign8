@@ -19,7 +19,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Awake() 
     {
-        playerInventoryList.myInventory.Add(machete);
+        //playerInventoryList.myInventory.Add(machete);
     }
 
     public void SetTextAndButton(string description, bool buttonActive)
