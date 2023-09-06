@@ -4209,6 +4209,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 27266773}
     m_Modifications:
+    - target: {fileID: 4494224401595636415, guid: 1e3c5b8045d78411580e75b9ab927b8d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bf4c7f8849672264aacfc0a20fa9b59d, type: 3}
     - target: {fileID: 4494224402348845606, guid: 1e3c5b8045d78411580e75b9ab927b8d, type: 3}
       propertyPath: m_Camera
       value: 
@@ -4334,6 +4338,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -165
       objectReference: {fileID: 0}
+    - target: {fileID: 6708613920248054864, guid: b35edb3c0c6754909a3714214dc95992, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4dd31093b5b766a47acf5b5c82d5430b, type: 3}
     - target: {fileID: 6708613921651389640, guid: b35edb3c0c6754909a3714214dc95992, type: 3}
       propertyPath: m_Pivot.x
       value: 0
