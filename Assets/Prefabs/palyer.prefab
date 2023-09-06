@@ -86,7 +86,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8140712727543292758}
   - component: {fileID: 8140712727543292759}
-  - component: {fileID: 8140712727543292757}
   - component: {fileID: 6072652311600206880}
   m_Layer: 6
   m_Name: upHitbox
@@ -144,21 +143,6 @@ PolygonCollider2D:
       - {x: 0.09967409, y: -0.44555688}
       - {x: 0.26373777, y: -0.22865325}
       - {x: 0.34140795, y: 0.14487383}
---- !u!114 &8140712727543292757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8140712727543292761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 2
-  knockTime: 0.4
-  damage: 1
 --- !u!114 &6072652311600206880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +167,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8140712727784541971}
   - component: {fileID: 8140712727784541968}
-  - component: {fileID: 8140712727784542062}
   - component: {fileID: 3469932452092705950}
   m_Layer: 6
   m_Name: rightHitbox
@@ -241,21 +224,6 @@ PolygonCollider2D:
       - {x: 0.30767658, y: -0.6917724}
       - {x: 0.6025458, y: -0.39204383}
       - {x: 0.6819322, y: -0.24789721}
---- !u!114 &8140712727784542062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8140712727784541970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 2
-  knockTime: 0.4
-  damage: 1
 --- !u!114 &3469932452092705950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,7 +248,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8140712728628480715}
   - component: {fileID: 8140712728628480712}
-  - component: {fileID: 8140712728628480710}
   - component: {fileID: 3045839964239461476}
   m_Layer: 6
   m_Name: leftHitbox
@@ -339,21 +306,6 @@ PolygonCollider2D:
       - {x: -0.24674597, y: -0.7338516}
       - {x: -0.15337646, y: -0.49349916}
       - {x: -0.021085992, y: -0.060305312}
---- !u!114 &8140712728628480710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8140712728628480714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 2
-  knockTime: 0.4
-  damage: 1
 --- !u!114 &3045839964239461476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,7 +330,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8140712728673101085}
   - component: {fileID: 8140712728673101082}
-  - component: {fileID: 8140712728673101080}
   - component: {fileID: 8789923634949164411}
   m_Layer: 6
   m_Name: downHitbox
@@ -436,21 +387,6 @@ PolygonCollider2D:
       - {x: -0.54384637, y: 0.234465}
       - {x: -0.55461943, y: -0.24037772}
       - {x: -0.42202616, y: -0.6289441}
---- !u!114 &8140712728673101080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8140712728673101084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 2
-  knockTime: 0.4
-  damage: 1
 --- !u!114 &8789923634949164411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,8 +558,11 @@ MonoBehaviour:
   starting_position: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
   projectile: {fileID: 0}
   shotgunSound: {fileID: 0}
+  reloadSound: {fileID: 0}
   reduceShots: {fileID: 0}
   CurrentShots: {fileID: 0}
+  shotgunsManager: {fileID: 0}
+  gun: {fileID: 0}
 --- !u!95 &8140712728902351446
 Animator:
   serializedVersion: 4
@@ -902,11 +841,13 @@ MonoBehaviour:
   player: {fileID: 8140712728902351452}
   canvas_trama: []
   soundManager: {fileID: 0}
+  dialoghiManager: {fileID: 0}
   pendant_trovato: 0
   tomba_madre: 0
   lettera_sfratto_trovata: 0
   mappa_trovata: 0
   comand_m: {fileID: 0}
+  boss_finelivello: {fileID: 0}
 --- !u!114 &3747286361303236666
 MonoBehaviour:
   m_ObjectHideFlags: 0
