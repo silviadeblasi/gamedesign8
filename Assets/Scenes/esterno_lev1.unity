@@ -1759,7 +1759,7 @@ MonoBehaviour:
   currentHelath: 6
   maxHealth: 6
   enemyController1: {fileID: 66363662}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 66363666}
 --- !u!114 &66363662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3293,7 +3293,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 135027627}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 135027631}
 --- !u!114 &135027627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4397,7 +4397,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 213620692}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 213620696}
 --- !u!114 &213620692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17763,7 +17763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5652127704889468912, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.3999863
+      value: -3.399994
       objectReference: {fileID: 0}
     - target: {fileID: 6190171527742925112, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -27454,7 +27454,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 913441032}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 913441036}
 --- !u!114 &913441032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32706,7 +32706,7 @@ MonoBehaviour:
   currentHelath: 6
   maxHealth: 6
   enemyController1: {fileID: 1047156670}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1047156674}
 --- !u!114 &1047156670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34365,7 +34365,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 1139547014}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1139547018}
 --- !u!114 &1139547014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35347,7 +35347,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 1168474610}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1168474614}
 --- !u!114 &1168474610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35685,7 +35685,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 1174883981}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1174883985}
 --- !u!114 &1174883981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36962,7 +36962,7 @@ MonoBehaviour:
   currentHelath: 4
   maxHealth: 4
   enemyController1: {fileID: 1255943078}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1255943082}
 --- !u!114 &1255943078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42343,7 +42343,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 1565106846}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1565106850}
 --- !u!114 &1565106846
 MonoBehaviour:
   m_ObjectHideFlags: 0
