@@ -1715,7 +1715,6 @@ GameObject:
   - component: {fileID: 66363666}
   - component: {fileID: 66363665}
   - component: {fileID: 66363664}
-  - component: {fileID: 66363663}
   - component: {fileID: 66363662}
   - component: {fileID: 66363661}
   m_Layer: 0
@@ -1779,21 +1778,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 292069995}
   playerHealth: {fileID: 460115591}
---- !u!114 &66363663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66363659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!61 &66363664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2173,7 +2157,6 @@ GameObject:
   - component: {fileID: 84383905}
   - component: {fileID: 84383904}
   - component: {fileID: 84383903}
-  - component: {fileID: 84383902}
   - component: {fileID: 84383901}
   - component: {fileID: 84383900}
   m_Layer: 0
@@ -2237,21 +2220,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 2128194800}
   playerHealth: {fileID: 460115591}
---- !u!114 &84383902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84383898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!61 &84383903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3281,7 +3249,6 @@ GameObject:
   - component: {fileID: 135027631}
   - component: {fileID: 135027630}
   - component: {fileID: 135027629}
-  - component: {fileID: 135027628}
   - component: {fileID: 135027627}
   - component: {fileID: 135027626}
   m_Layer: 0
@@ -3345,21 +3312,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1945628052}
   playerHealth: {fileID: 460115591}
---- !u!114 &135027628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135027624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &135027629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4401,7 +4353,6 @@ GameObject:
   - component: {fileID: 213620696}
   - component: {fileID: 213620695}
   - component: {fileID: 213620694}
-  - component: {fileID: 213620693}
   - component: {fileID: 213620692}
   - component: {fileID: 213620691}
   m_Layer: 0
@@ -4465,21 +4416,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1963021764}
   playerHealth: {fileID: 460115591}
---- !u!114 &213620693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213620689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &213620694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11880,7 +11816,6 @@ GameObject:
   - component: {fileID: 312846142}
   - component: {fileID: 312846144}
   - component: {fileID: 312846146}
-  - component: {fileID: 312846147}
   - component: {fileID: 312846148}
   - component: {fileID: 312846149}
   m_Layer: 0
@@ -12029,21 +11964,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3892082, y: 0.6477078}
   m_EdgeRadius: 0
---- !u!114 &312846147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312846137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!114 &312846148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14175,7 +14095,6 @@ GameObject:
   - component: {fileID: 436144864}
   - component: {fileID: 436144863}
   - component: {fileID: 436144862}
-  - component: {fileID: 436144861}
   - component: {fileID: 436144860}
   - component: {fileID: 436144859}
   m_Layer: 0
@@ -14239,21 +14158,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1676349473}
   playerHealth: {fileID: 460115591}
---- !u!114 &436144861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436144857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!61 &436144862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16563,7 +16467,6 @@ GameObject:
   - component: {fileID: 568118612}
   - component: {fileID: 568118611}
   - component: {fileID: 568118610}
-  - component: {fileID: 568118609}
   - component: {fileID: 568118608}
   - component: {fileID: 568118607}
   m_Layer: 0
@@ -16627,21 +16530,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1559726447}
   playerHealth: {fileID: 460115591}
---- !u!114 &568118609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568118605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!61 &568118610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17509,7 +17397,6 @@ GameObject:
   - component: {fileID: 603804448}
   - component: {fileID: 603804447}
   - component: {fileID: 603804446}
-  - component: {fileID: 603804445}
   - component: {fileID: 603804444}
   - component: {fileID: 603804443}
   m_Layer: 0
@@ -17573,21 +17460,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 375657547}
   playerHealth: {fileID: 460115591}
---- !u!114 &603804445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603804441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &603804446
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17891,7 +17763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5652127704889468912, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.3999863
+      value: -3.399994
       objectReference: {fileID: 0}
     - target: {fileID: 6190171527742925112, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -19582,7 +19454,6 @@ GameObject:
   - component: {fileID: 718611529}
   - component: {fileID: 718611528}
   - component: {fileID: 718611527}
-  - component: {fileID: 718611526}
   - component: {fileID: 718611525}
   - component: {fileID: 718611524}
   m_Layer: 0
@@ -19646,21 +19517,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1121973556}
   playerHealth: {fileID: 460115591}
---- !u!114 &718611526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718611522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!61 &718611527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21239,7 +21095,6 @@ GameObject:
   - component: {fileID: 822979447}
   - component: {fileID: 822979446}
   - component: {fileID: 822979445}
-  - component: {fileID: 822979444}
   - component: {fileID: 822979443}
   - component: {fileID: 822979442}
   m_Layer: 0
@@ -21303,21 +21158,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1328533289}
   playerHealth: {fileID: 460115591}
---- !u!114 &822979444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822979440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &822979445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27566,7 +27406,6 @@ GameObject:
   - component: {fileID: 913441036}
   - component: {fileID: 913441035}
   - component: {fileID: 913441034}
-  - component: {fileID: 913441033}
   - component: {fileID: 913441032}
   - component: {fileID: 913441031}
   m_Layer: 0
@@ -27630,21 +27469,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1203110056}
   playerHealth: {fileID: 460115591}
---- !u!114 &913441033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913441029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &913441034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32062,7 +31886,6 @@ GameObject:
   - component: {fileID: 1003020420}
   - component: {fileID: 1003020419}
   - component: {fileID: 1003020418}
-  - component: {fileID: 1003020417}
   - component: {fileID: 1003020416}
   - component: {fileID: 1003020415}
   m_Layer: 0
@@ -32126,21 +31949,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1784780142}
   playerHealth: {fileID: 460115591}
---- !u!114 &1003020417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003020413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &1003020418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32850,7 +32658,6 @@ GameObject:
   - component: {fileID: 1047156674}
   - component: {fileID: 1047156673}
   - component: {fileID: 1047156672}
-  - component: {fileID: 1047156671}
   - component: {fileID: 1047156670}
   - component: {fileID: 1047156669}
   m_Layer: 0
@@ -32914,21 +32721,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 2145478025}
   playerHealth: {fileID: 460115591}
---- !u!114 &1047156671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047156667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!61 &1047156672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33061,7 +32853,6 @@ GameObject:
   - component: {fileID: 1053809789}
   - component: {fileID: 1053809788}
   - component: {fileID: 1053809787}
-  - component: {fileID: 1053809786}
   - component: {fileID: 1053809785}
   - component: {fileID: 1053809784}
   m_Layer: 0
@@ -33125,21 +32916,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1495858176}
   playerHealth: {fileID: 460115591}
---- !u!114 &1053809786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053809782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &1053809787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34541,7 +34317,6 @@ GameObject:
   - component: {fileID: 1139547018}
   - component: {fileID: 1139547017}
   - component: {fileID: 1139547016}
-  - component: {fileID: 1139547015}
   - component: {fileID: 1139547014}
   - component: {fileID: 1139547013}
   m_Layer: 0
@@ -34605,21 +34380,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 445407077}
   playerHealth: {fileID: 460115591}
---- !u!114 &1139547015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139547011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &1139547016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35539,7 +35299,6 @@ GameObject:
   - component: {fileID: 1168474614}
   - component: {fileID: 1168474613}
   - component: {fileID: 1168474612}
-  - component: {fileID: 1168474611}
   - component: {fileID: 1168474610}
   - component: {fileID: 1168474609}
   m_Layer: 0
@@ -35603,21 +35362,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1916203919}
   playerHealth: {fileID: 460115591}
---- !u!114 &1168474611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168474607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &1168474612
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35893,7 +35637,6 @@ GameObject:
   - component: {fileID: 1174883985}
   - component: {fileID: 1174883984}
   - component: {fileID: 1174883983}
-  - component: {fileID: 1174883982}
   - component: {fileID: 1174883981}
   - component: {fileID: 1174883980}
   m_Layer: 0
@@ -35957,21 +35700,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 2110442858}
   playerHealth: {fileID: 460115591}
---- !u!114 &1174883982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174883978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &1174883983
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37186,7 +36914,6 @@ GameObject:
   - component: {fileID: 1255943082}
   - component: {fileID: 1255943081}
   - component: {fileID: 1255943080}
-  - component: {fileID: 1255943079}
   - component: {fileID: 1255943078}
   - component: {fileID: 1255943077}
   m_Layer: 0
@@ -37250,21 +36977,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1918979738}
   playerHealth: {fileID: 460115591}
---- !u!114 &1255943079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255943075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!61 &1255943080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38995,7 +38707,6 @@ GameObject:
   - component: {fileID: 1372411536}
   - component: {fileID: 1372411535}
   - component: {fileID: 1372411534}
-  - component: {fileID: 1372411533}
   - component: {fileID: 1372411532}
   - component: {fileID: 1372411531}
   m_Layer: 0
@@ -39059,21 +38770,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1930001418}
   playerHealth: {fileID: 460115591}
---- !u!114 &1372411533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372411529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!61 &1372411534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40327,7 +40023,6 @@ GameObject:
   - component: {fileID: 1431422972}
   - component: {fileID: 1431422971}
   - component: {fileID: 1431422970}
-  - component: {fileID: 1431422969}
   - component: {fileID: 1431422968}
   - component: {fileID: 1431422967}
   m_Layer: 0
@@ -40391,21 +40086,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1211429075}
   playerHealth: {fileID: 460115591}
---- !u!114 &1431422969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431422965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!61 &1431422970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42615,7 +42295,6 @@ GameObject:
   - component: {fileID: 1565106850}
   - component: {fileID: 1565106849}
   - component: {fileID: 1565106848}
-  - component: {fileID: 1565106847}
   - component: {fileID: 1565106846}
   - component: {fileID: 1565106845}
   m_Layer: 0
@@ -42679,21 +42358,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 954959776}
   playerHealth: {fileID: 460115591}
---- !u!114 &1565106847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565106843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &1565106848
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45445,7 +45109,6 @@ GameObject:
   - component: {fileID: 1744618599}
   - component: {fileID: 1744618598}
   - component: {fileID: 1744618597}
-  - component: {fileID: 1744618596}
   - component: {fileID: 1744618595}
   - component: {fileID: 1744618594}
   m_Layer: 0
@@ -45509,21 +45172,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 927985544}
   playerHealth: {fileID: 460115591}
---- !u!114 &1744618596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744618592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 2
 --- !u!61 &1744618597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47901,7 +47549,6 @@ GameObject:
   - component: {fileID: 1912514599}
   - component: {fileID: 1912514598}
   - component: {fileID: 1912514597}
-  - component: {fileID: 1912514596}
   - component: {fileID: 1912514595}
   - component: {fileID: 1912514594}
   m_Layer: 0
@@ -47965,21 +47612,6 @@ MonoBehaviour:
   attackRange: 1
   homePosition: {fileID: 1644348837}
   playerHealth: {fileID: 460115591}
---- !u!114 &1912514596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912514592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1
-  knockTime: 0.2
-  damage: 1
 --- !u!61 &1912514597
 BoxCollider2D:
   m_ObjectHideFlags: 0
