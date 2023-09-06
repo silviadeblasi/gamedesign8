@@ -2218,7 +2218,7 @@ MonoBehaviour:
   currentHelath: 4
   maxHealth: 4
   enemyController1: {fileID: 84383901}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 84383905}
 --- !u!114 &84383901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12077,7 +12077,7 @@ MonoBehaviour:
   currentHelath: 4
   maxHealth: 4
   enemyController1: {fileID: 312846148}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 312846142}
 --- !u!1 &314028094
 GameObject:
   m_ObjectHideFlags: 0
@@ -14200,7 +14200,7 @@ MonoBehaviour:
   currentHelath: 6
   maxHealth: 6
   enemyController1: {fileID: 436144860}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 436144864}
 --- !u!114 &436144860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17534,7 +17534,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 603804444}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 603804448}
 --- !u!114 &603804444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21244,7 +21244,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 822979443}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 822979447}
 --- !u!114 &822979443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32067,7 +32067,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 1003020416}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1003020420}
 --- !u!114 &1003020416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33066,7 +33066,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 1053809785}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1053809789}
 --- !u!114 &1053809785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40272,7 +40272,7 @@ MonoBehaviour:
   currentHelath: 6
   maxHealth: 6
   enemyController1: {fileID: 1431422968}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1431422972}
 --- !u!114 &1431422968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45390,7 +45390,7 @@ MonoBehaviour:
   currentHelath: 8
   maxHealth: 8
   enemyController1: {fileID: 1744618595}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1744618599}
 --- !u!114 &1744618595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47846,7 +47846,7 @@ MonoBehaviour:
   currentHelath: 4
   maxHealth: 4
   enemyController1: {fileID: 1912514595}
-  myAnim: {fileID: 0}
+  myAnim: {fileID: 1912514599}
 --- !u!114 &1912514595
 MonoBehaviour:
   m_ObjectHideFlags: 0
