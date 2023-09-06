@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Syringe
   m_EditorClassIdentifier: 
   itemName: Syringe
-  itemDescription: A syringe that contains... I don't know. What do you think it
-    is? A doctor? Use it to recover full health.
+  itemDescription: A syringe that contains... I don't know. Use it to recover full
+    health.
   itemImage: {fileID: 1253124589, guid: 7adc871fbc0cc5148ac9cc7a1e344319, type: 3}
   numberHeld: 0
   usable: 1
