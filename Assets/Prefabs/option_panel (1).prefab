@@ -2308,6 +2308,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46801b9588b02647bccc688ed4232fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
+  BgMusic: {fileID: -2656644310174815327, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
+  SfxSound: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
+  backgroundSlider: {fileID: 2891800107261005538}
+  soundEffectsSlider: {fileID: 8628481135110109382}
 --- !u!1 &7511353714333311572
 GameObject:
   m_ObjectHideFlags: 0
