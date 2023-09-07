@@ -6,5 +6,5 @@ using UnityEngine;
 public class vector_value : ScriptableObject
 {
      public Vector2 initialValue;
-   
+     public bool livello_finito;
 }

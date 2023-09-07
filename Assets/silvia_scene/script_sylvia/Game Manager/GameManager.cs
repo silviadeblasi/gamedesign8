@@ -17,12 +17,19 @@ public class GameManager : MonoBehaviour
     private bool flag_tomba = false;
     private bool just_once = true;
     public interactable_object canvas_trama;
-    public FinalCombact boss_finelivello;
+    
     
     public CombactManager combactManager;
     private bool notalreadyhere = false;
-    //devo dichiarare i 5 comb + finale e rendere inattivi appena rientro nella scena 
 
+    //devo dichiarare i 5 comb + finale e rendere inattivi appena rientro nella scena 
+    public GameObject comb_1;
+    public GameObject comb_2;
+    public GameObject comb_3;
+    public GameObject comb_4;
+    public GameObject comb_5;
+    public GameObject final_combact;
+    public vector_value player_storage; //setto il bool dello scriptable object a true solo quando esco dalla casa del cairo
     //private PlayerInventory playerInventory;
     //private InventoryItem machete;
 
@@ -81,7 +88,7 @@ public class GameManager : MonoBehaviour
                 dialoghiManager.StartDialoghi("dg_sue_tomba");
                 flag_tomba = true;
             }
-            if(boss_finelivello.finito_livello_cairo == true && just_once == true && notalreadyhere == true){
+            if(player_storage.livello_finito == true){
                 just_once = false;
                 //attivo flag casa del cairo e mi assicuro che tutti i combattimenti vengano distrutti (quindi gia fatti)
                 //incluso boss finale
@@ -93,6 +100,13 @@ public class GameManager : MonoBehaviour
                 combactManager.combactList[5].progress = GeneralCombact.CombactProgress.DONE;
                 // ok combact manager ma devo distruggere o rendere non visibili i combattimenti 
                 //devo mettere nello scriptable object che il flag nel cabmio scena rimane true!!!!!!!
+                Destroy(comb_1);
+                Destroy(comb_2);
+                Destroy(comb_3);
+                Destroy(comb_4);
+                Destroy(comb_5);
+                // non facendo parte del combact manager devo eliminare il boss rendere agibile il muretto 
+                
             }
             
         }
