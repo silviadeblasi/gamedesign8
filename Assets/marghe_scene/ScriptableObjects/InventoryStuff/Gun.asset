@@ -16,7 +16,7 @@ MonoBehaviour:
   itemDescription: The villager gave you this weapon. Normally, it's a usefull item.
     Find its bullets. [Press G to shoot]]
   itemImage: {fileID: 21300000, guid: d6565a098bac0e34ab8e7ee3951e1a18, type: 3}
-  numberHeld: 1
+  numberHeld: 0
   usable: 0
   unique: 1
   thisEvent:

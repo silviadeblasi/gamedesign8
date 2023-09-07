@@ -8,6 +8,7 @@ public class BossShooting : MonoBehaviour
     public Transform projPos;
     private float timer;
     private GameObject player;
+    public bool flag = false;
 
     void Start()
     {
@@ -20,12 +21,15 @@ public class BossShooting : MonoBehaviour
 
         if(distance < 5)
         {
-            timer += Time.deltaTime;
-
-            if(timer > 2)
+            if(distance > 1.5)
             {
-                timer = 0;
-                Shoot();
+                timer += Time.deltaTime;
+
+                if(timer > 2)
+                {
+                    timer = 0;
+                    Shoot();
+                }
             }
         }
     }

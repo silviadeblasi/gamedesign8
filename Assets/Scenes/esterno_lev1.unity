@@ -15277,7 +15277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &495743401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26910,7 +26910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &880729145
 Transform:
   m_ObjectHideFlags: 0
@@ -47205,6 +47205,8 @@ MonoBehaviour:
   currentHealth: 20
   maxHealth: 20
   bossController: {fileID: 1904024220}
+  bossShooting: {fileID: 1904024222}
+  animator: {fileID: 1904024217}
 --- !u!114 &1904024222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47219,6 +47221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 2844186036182401211, guid: a4f9f297c6d593c498761fe2254e03ec, type: 3}
   projPos: {fileID: 269229344}
+  flag: 0
 --- !u!1 &1904620242
 GameObject:
   m_ObjectHideFlags: 0

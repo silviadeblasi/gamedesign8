@@ -11,8 +11,8 @@ public class BossController : MonoBehaviour
     [Header("Boss Movement")]
     private Animator myAnim;
     private Transform target;
-    [SerializeField] private float speed = 1f;
-    [SerializeField] private float walkRange = 3f;
+    public float speed = 1f;
+    public float walkRange = 3f;
     [SerializeField] private float attackRange = 1f;
     public Transform homePosition;
     
@@ -30,7 +30,7 @@ public class BossController : MonoBehaviour
         {
             FollowPlayer();
 
-            if(Vector3.Distance(transform.position, target.position) <= attackRange) //&& Vector3.Distance(transform.position, target.position) >= minRange
+            if(Vector3.Distance(transform.position, target.position) <= attackRange)
             {
                 AttackPlayer();
             }

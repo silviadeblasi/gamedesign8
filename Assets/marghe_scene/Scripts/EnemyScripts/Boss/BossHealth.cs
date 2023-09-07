@@ -7,15 +7,23 @@ public class BossHealth : MonoBehaviour
     public float currentHealth;
     public int maxHealth;
     public BossController bossController;
+    public BossShooting bossShooting;
+    public Animator animator;
     
     public void Damage(float damage)
     {
         currentHealth -= damage;
+        StartCoroutine(DamageCo());
         if (currentHealth <= 0)
         {
-            bossController.Die();
             gameObject.SetActive(false);
         }
-        
+    }
+
+    private IEnumerator DamageCo()
+    {
+        animator.SetBool("stagger", true);
+        yield return null;
+        animator.SetBool("stagger", false);
     }
 }
