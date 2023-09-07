@@ -5480,6 +5480,37 @@ PolygonCollider2D:
       - {x: -0.19683325, y: -0.42043638}
       - {x: -0.032323956, y: -0.31914765}
       - {x: 0.031282425, y: -0.20369476}
+--- !u!1 &269229343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 269229344}
+  m_Layer: 0
+  m_Name: projectilePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &269229344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269229343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1904024216}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &285175426
 GameObject:
   m_ObjectHideFlags: 0
@@ -32255,7 +32286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1036706727
 Transform:
   m_ObjectHideFlags: 0
@@ -46994,6 +47025,7 @@ GameObject:
   - component: {fileID: 1904024219}
   - component: {fileID: 1904024220}
   - component: {fileID: 1904024221}
+  - component: {fileID: 1904024222}
   m_Layer: 0
   m_Name: boss
   m_TagString: enemy
@@ -47070,6 +47102,7 @@ Transform:
   - {fileID: 1909146802}
   - {fileID: 1396972811}
   - {fileID: 1352191988}
+  - {fileID: 269229344}
   m_Father: {fileID: 405455083}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47172,6 +47205,20 @@ MonoBehaviour:
   currentHealth: 20
   maxHealth: 20
   bossController: {fileID: 1904024220}
+--- !u!114 &1904024222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904024214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dafa4ae22bd20b49b8fd3963c49d125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 2844186036182401211, guid: a4f9f297c6d593c498761fe2254e03ec, type: 3}
+  projPos: {fileID: 269229344}
 --- !u!1 &1904620242
 GameObject:
   m_ObjectHideFlags: 0
