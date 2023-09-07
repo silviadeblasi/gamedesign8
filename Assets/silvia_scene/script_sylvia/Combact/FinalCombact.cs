@@ -20,7 +20,7 @@ public class FinalCombact : MonoBehaviour {
     [SerializeField] private GameObject comb_4;
     [SerializeField] private GameObject comb_5;
     public bool finito_livello_cairo = false; 
-
+    public vector_value player_storage;
 
     private void Start() {
         anim_player = player.GetComponent<Animator>();
@@ -53,8 +53,7 @@ public class FinalCombact : MonoBehaviour {
     private void Update(){
     
         if(boss.GetComponent<BossHealth>().currentHealth <= 0){
-            fire_battle.SetActive(false);
-            fire_ending.SetActive(true);
+           
             if(end == false){
                 dialoghiManager.StartDialoghi("dg_sue_final");
                 end = true;
@@ -68,6 +67,13 @@ public class FinalCombact : MonoBehaviour {
                 Destroy(comb_4);
                 Destroy(comb_5);
                 Destroy(boss);
+            }
+
+            if(player_storage.livello_finito == true){
+                boss.SetActive(false);
+                fire_battle.SetActive(false);
+                fire_ending.SetActive(true);
+                tirgger_final_scene.SetActive(true);
             }
         }
         
