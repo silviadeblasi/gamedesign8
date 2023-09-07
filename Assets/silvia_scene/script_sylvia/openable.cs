@@ -41,9 +41,15 @@ public class openable : MonoBehaviour
                 //soundManager.PlaySoundEffect("InterazioneOggetto", 0.5f);
                 oggetto.SetActive(true);
                 oggetto2.SetActive(false);
-                comandi.SetActive(false);
-                StartCoroutine(comunicazione_ogg_trovato(comunicazione));
-              }
+                comunicazione.SetActive(true);
+                //StartCoroutine(comunicazione_ogg_trovato(comunicazione));
+                player.GetComponent<PlayerMovement>().enabled = false;
+            }
+            Debug.Log("cairo");
+            if(Input.GetKeyDown(KeyCode.Z)){
+                comunicazione.SetActive(false);
+                player.GetComponent<PlayerMovement>().enabled = true;
+            }
         }
    }
    //coroutine che utilizzo per far comparire e scomparire il canvas che mi dice che ho trovato l'oggetto
