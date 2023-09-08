@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 279528183779018270}
   lines:
-  - Hmm, this house looks abandoned.
+  - Hmm, Mr Orwell's house...looks abandoned.
   textSpeed: 0.08
   fine_dialogo: 0
   _index: 0
