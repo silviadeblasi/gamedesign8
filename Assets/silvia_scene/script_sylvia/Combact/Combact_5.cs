@@ -138,10 +138,10 @@ public class Combact_5: Combact{
         }
          // devo fare un else if che se non ha fatto il primo combattimento non posso fare gli altri 
         SetCombact(); //setto il combattimento come fatto!!
-        
-        if(player_storage.livello_finito){
+       
+        /*if(player_storage.livello_finito){
             this.gameObject.SetActive(false);
-        }
+        }*/
 
     }
     

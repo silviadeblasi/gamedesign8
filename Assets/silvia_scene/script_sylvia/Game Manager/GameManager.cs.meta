@@ -3,7 +3,21 @@ guid: ee0d8292b015242238cf1f9fa0357f2c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - player: {instanceID: 0}
+  - soundManager: {instanceID: 0}
+  - dialoghiManager: {instanceID: 0}
+  - Camera: {instanceID: 0}
+  - canvas_trama: {instanceID: 0}
+  - combactManager: {instanceID: 0}
+  - comb_1: {instanceID: 0}
+  - comb_2: {instanceID: 0}
+  - comb_3: {instanceID: 0}
+  - comb_4: {instanceID: 0}
+  - comb_5: {instanceID: 0}
+  - final_combact: {instanceID: 0}
+  - player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
+  - inventory: {fileID: 11400000, guid: 4eb326e81adfe954f94babcf18ad252f, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

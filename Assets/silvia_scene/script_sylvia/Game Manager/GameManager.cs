@@ -96,7 +96,8 @@ public class GameManager : MonoBehaviour
                 dialoghiManager.StartDialoghi("dg_sue_tomba");
                 flag_tomba = true;
             }
-            if(player_storage.livello_finito == true){
+            
+            /*if(player_storage.livello_finito == true){
                 just_once = false;
                 //attivo flag casa del cairo e mi assicuro che tutti i combattimenti vengano distrutti (quindi gia fatti)
                 //incluso boss finale
@@ -114,7 +115,7 @@ public class GameManager : MonoBehaviour
                 comb_5.SetActive(false);
                 // non facendo parte del combact manager devo eliminare il boss rendere agibile il muretto 
 
-            }
+            }*/
             
         }
         

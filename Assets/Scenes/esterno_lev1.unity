@@ -4884,7 +4884,7 @@ MonoBehaviour:
   Fire_intorno: {fileID: 1183516690}
   dialoghiManager: {fileID: 41825219}
   fatto_tutti_comb_2: 0
-  combact_2: {fileID: 229068864}
+  player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
 --- !u!60 &229068865
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14657,7 +14657,7 @@ MonoBehaviour:
   Fire_intorno: {fileID: 454597277}
   canvas_pendant_rubato: {fileID: 18530835}
   fatto_tutti_comb_4: 0
-  combact_4: {fileID: 451274524}
+  player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
 --- !u!60 &451274525
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -38646,7 +38646,7 @@ MonoBehaviour:
   Fire_intorno: {fileID: 2114570846}
   fatto_tutti_comb_5: 0
   fatto_comb_5: 0
-  combact_5: {fileID: 1385663320}
+  player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
 --- !u!60 &1385663321
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -39056,7 +39056,7 @@ MonoBehaviour:
   Muretto_final: {fileID: 1036706726}
   Fire_intorno: {fileID: 45857367}
   fatto_tutti_comb_3: 0
-  combact_3: {fileID: 1405141246}
+  player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
 --- !u!60 &1405141247
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -44330,7 +44330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1723467374
 Transform:
   m_ObjectHideFlags: 0
@@ -45081,7 +45081,7 @@ MonoBehaviour:
   comb_2: {fileID: 229068862}
   comb_4: {fileID: 451274522}
   comb_5: {fileID: 1385663318}
-  combact_1: {fileID: 1788197762}
+  player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
 --- !u!60 &1788197763
 PolygonCollider2D:
   m_ObjectHideFlags: 0
