@@ -4884,6 +4884,7 @@ MonoBehaviour:
   Fire_intorno: {fileID: 1183516690}
   dialoghiManager: {fileID: 41825219}
   fatto_tutti_comb_2: 0
+  combact_2: {fileID: 229068864}
 --- !u!60 &229068865
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13433,7 +13434,7 @@ MonoBehaviour:
   end: 0
   tirgger_final_scene: {fileID: 1042106112}
   final_combact: {fileID: 1777657255}
-  comb_1: {fileID: 0}
+  comb_1: {fileID: 1788197760}
   comb_2: {fileID: 229068862}
   comb_3: {fileID: 1405141244}
   comb_4: {fileID: 451274522}
@@ -14656,6 +14657,7 @@ MonoBehaviour:
   Fire_intorno: {fileID: 454597277}
   canvas_pendant_rubato: {fileID: 18530835}
   fatto_tutti_comb_4: 0
+  combact_4: {fileID: 451274524}
 --- !u!60 &451274525
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17265,7 +17267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -15.804199
+      value: -15.804169
       objectReference: {fileID: 0}
     - target: {fileID: 6190171527742925112, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -38644,6 +38646,7 @@ MonoBehaviour:
   Fire_intorno: {fileID: 2114570846}
   fatto_tutti_comb_5: 0
   fatto_comb_5: 0
+  combact_5: {fileID: 1385663320}
 --- !u!60 &1385663321
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -39053,6 +39056,7 @@ MonoBehaviour:
   Muretto_final: {fileID: 1036706726}
   Fire_intorno: {fileID: 45857367}
   fatto_tutti_comb_3: 0
+  combact_3: {fileID: 1405141246}
 --- !u!60 &1405141247
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -45077,6 +45081,7 @@ MonoBehaviour:
   comb_2: {fileID: 229068862}
   comb_4: {fileID: 451274522}
   comb_5: {fileID: 1385663318}
+  combact_1: {fileID: 1788197762}
 --- !u!60 &1788197763
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -59945,7 +59950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a378cf4d610e546d98df18e7d82f9314, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 988328ae01799964fa44952621a13c6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

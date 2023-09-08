@@ -69,6 +69,7 @@ public class FinalCombact : MonoBehaviour {
             }
             if(dialoghiManager.FineDialogo("dg_sue_final")){
                 tirgger_final_scene.SetActive(true);
+                final_combact.SetActive(false);
                 finito_livello_cairo = true;
                 comb_1.SetActive(false);
                 comb_2.SetActive(false);

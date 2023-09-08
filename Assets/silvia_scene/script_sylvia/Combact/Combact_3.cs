@@ -25,7 +25,7 @@ public class Combact_3: Combact{
     private bool dead_4 = false;
     private bool dead_5 = false;
     public bool fatto_tutti_comb_3 = false;
-
+    public vector_value player_storage;
     private void Start() {
         anim = player.GetComponent<Animator>();
     }
@@ -134,6 +134,9 @@ public class Combact_3: Combact{
 
         } // devo fare un else if che se non ha fatto il primo combattimento non posso fare gli altri 
         SetCombact(); //setto il combattimento come fatto!!
+        if(player_storage.livello_finito){
+            this.gameObject.SetActive(false);
+        }
 
     }
     

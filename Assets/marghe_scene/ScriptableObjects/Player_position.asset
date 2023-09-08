@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Player_position
   m_EditorClassIdentifier: 
   initialValue: {x: -26, y: -17}
+  livello_finito: 0

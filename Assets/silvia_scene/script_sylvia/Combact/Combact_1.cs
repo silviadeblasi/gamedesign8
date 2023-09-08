@@ -21,6 +21,7 @@ public class Combact_1 : Combact{
     private bool dead_2 = false;
     private bool dead_3 = false;
     private bool fine_combattimento =false ;
+    public vector_value player_storage;
     private void Start() {
         anim = player.GetComponent<Animator>();
     }
@@ -118,6 +119,9 @@ public class Combact_1 : Combact{
         }
 
         SetCombact(); //setto il combattimento come fatto!!
+        if(player_storage.livello_finito){
+            this.gameObject.SetActive(false);
+        }
 
     }
     
