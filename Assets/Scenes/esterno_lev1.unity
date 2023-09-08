@@ -13438,7 +13438,7 @@ MonoBehaviour:
   comb_4: {fileID: 451274522}
   comb_5: {fileID: 1385663318}
   finito_livello_cairo: 0
-  player_storage: {fileID: 0}
+  player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
 --- !u!60 &405455085
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17257,6 +17257,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6190171527742925112, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24.60019
+      objectReference: {fileID: 0}
     - target: {fileID: 7898025481182202944, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -37245,6 +37249,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
     - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: comb_1
+      value: 
+      objectReference: {fileID: 1788197760}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: comb_2
+      value: 
+      objectReference: {fileID: 229068862}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: comb_3
+      value: 
+      objectReference: {fileID: 1405141244}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: comb_4
+      value: 
+      objectReference: {fileID: 451274522}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: comb_5
+      value: 
+      objectReference: {fileID: 1385663318}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 131299055}
@@ -37256,6 +37280,10 @@ PrefabInstance:
       propertyPath: current_scene
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: final_combact
+      value: 
+      objectReference: {fileID: 405455082}
     - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: combactManager
       value: 
