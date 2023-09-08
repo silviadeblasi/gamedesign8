@@ -35,7 +35,7 @@ public class openable : MonoBehaviour
             GameObject oggetto = FindOggetti(oggetti_da_attivare, "mattonella_da_attivare");
             GameObject oggetto2 = FindOggetti(oggetti_da_disattivare, "mattonella_da_disattivare");
             GameObject comandi = FindOggetti(comunicazione_comandi, "Interazione");
-            GameObject comunicazione = FindOggetti(comunicazione_comandi, "comunicazione_pistola");
+            GameObject comunicazione = FindOggetti(comunicazione_comandi, "comunicazione_cairo");
             //GameObject comunicazione_utilizzo = FindOggetti(comunicazione_comandi, "porta");
             if(Input.GetKeyDown(KeyCode.X)){
                 //soundManager.PlaySoundEffect("InterazioneOggetto", 0.5f);
@@ -45,7 +45,6 @@ public class openable : MonoBehaviour
                 //StartCoroutine(comunicazione_ogg_trovato(comunicazione));
                 player.GetComponent<PlayerMovement>().enabled = false;
             }
-            Debug.Log("cairo");
             if(Input.GetKeyDown(KeyCode.Z)){
                 comunicazione.SetActive(false);
                 player.GetComponent<PlayerMovement>().enabled = true;
