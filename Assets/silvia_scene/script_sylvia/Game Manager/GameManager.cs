@@ -97,7 +97,6 @@ public class GameManager : MonoBehaviour
                 combactManager.combactList[2].progress = GeneralCombact.CombactProgress.DONE;
                 combactManager.combactList[3].progress = GeneralCombact.CombactProgress.DONE;
                 combactManager.combactList[4].progress = GeneralCombact.CombactProgress.DONE;
-                combactManager.combactList[5].progress = GeneralCombact.CombactProgress.DONE;
                 // ok combact manager ma devo distruggere o rendere non visibili i combattimenti 
                 //devo mettere nello scriptable object che il flag nel cabmio scena rimane true!!!!!!!
                 Destroy(comb_1);
@@ -106,7 +105,7 @@ public class GameManager : MonoBehaviour
                 Destroy(comb_4);
                 Destroy(comb_5);
                 // non facendo parte del combact manager devo eliminare il boss rendere agibile il muretto 
-                
+
             }
             
         }
