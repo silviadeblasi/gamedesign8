@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     private bool just_once = true;
     public interactable_object canvas_trama;
     
-    
+    private bool firstTime_Esterno = true;
     public CombactManager combactManager;
     private bool notalreadyhere = false;
 
@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     public vector_value player_storage; //setto il bool dello scriptable object a true solo quando esco dalla casa del cairo
     //private PlayerInventory playerInventory;
     //private InventoryItem machete;
+    [SerializeField] private PlayerInventory inventory;
 
     private void Update() {
 
@@ -81,6 +82,13 @@ public class GameManager : MonoBehaviour
         }
 
         if(current_scene.ToString() == "Esterno_lev1"){
+
+            if(firstTime_Esterno){
+                inventory.Awake();
+                firstTime_Esterno = false;
+            }
+
+                
             
             soundManager.PlayBackgroundMusic("TemaPrincipale2", 0.7f);
 
@@ -99,11 +107,11 @@ public class GameManager : MonoBehaviour
                 combactManager.combactList[4].progress = GeneralCombact.CombactProgress.DONE;
                 // ok combact manager ma devo distruggere o rendere non visibili i combattimenti 
                 //devo mettere nello scriptable object che il flag nel cabmio scena rimane true!!!!!!!
-                Destroy(comb_1);
-                Destroy(comb_2);
-                Destroy(comb_3);
-                Destroy(comb_4);
-                Destroy(comb_5);
+                comb_1.SetActive(false);
+                comb_2.SetActive(false);
+                comb_3.SetActive(false);
+                comb_4.SetActive(false);
+                comb_5.SetActive(false);
                 // non facendo parte del combact manager devo eliminare il boss rendere agibile il muretto 
 
             }

@@ -17,9 +17,9 @@ public class InventoryManager : MonoBehaviour
     // public static bool InventoryActive = false;
     // public GameObject Inventory;
 
-    private void Awake() 
+    public void Awake() 
     {
-        //playerInventoryList.myInventory.Add(machete);
+        //playerInventoryList.myInventory.Clear();
     }
 
     public void SetTextAndButton(string description, bool buttonActive)

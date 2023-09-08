@@ -70,12 +70,12 @@ public class FinalCombact : MonoBehaviour {
             if(dialoghiManager.FineDialogo("dg_sue_final")){
                 tirgger_final_scene.SetActive(true);
                 finito_livello_cairo = true;
-                Destroy(comb_1);
-                Destroy(comb_2);
-                Destroy(comb_3);
-                Destroy(comb_4);
-                Destroy(comb_5);
-                Destroy(boss);
+                comb_1.SetActive(false);
+                comb_2.SetActive(false);
+                comb_3.SetActive(false);
+                comb_4.SetActive(false);
+                comb_5.SetActive(false);
+                boss.SetActive(false);
             }
             
         }

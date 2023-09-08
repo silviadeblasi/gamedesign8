@@ -9,7 +9,7 @@ public class PlayerInventory : ScriptableObject
 {
     public List<InventoryItem> myInventory = new List<InventoryItem>();
 
-    private void Awake() 
+    public void Awake() 
     {
         myInventory.Clear();
     }
