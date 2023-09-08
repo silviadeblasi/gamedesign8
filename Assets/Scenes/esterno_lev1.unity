@@ -13424,6 +13424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf0ec21a586f464d8f81845948657e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalCombact: {fileID: 0}
   dialoghiManager: {fileID: 41825219}
   player: {fileID: 131299055}
   boss: {fileID: 1904024214}
@@ -13437,6 +13438,7 @@ MonoBehaviour:
   comb_3: {fileID: 1405141244}
   comb_4: {fileID: 451274522}
   comb_5: {fileID: 1385663318}
+  muretto: {fileID: 1036706726}
   finito_livello_cairo: 0
   player_storage: {fileID: 11400000, guid: 1280684928c7743faabbdade40e4d758, type: 2}
 --- !u!60 &405455085

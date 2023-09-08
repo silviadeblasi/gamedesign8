@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FinalCombact : MonoBehaviour {
-
+    public FinalCombact finalCombact;
     public DialoghiUIManager dialoghiManager;
     public GameObject player;
     private Animator anim_player;
@@ -19,9 +19,18 @@ public class FinalCombact : MonoBehaviour {
     [SerializeField] private GameObject comb_3;
     [SerializeField] private GameObject comb_4;
     [SerializeField] private GameObject comb_5;
+    public GameObject muretto;
     public bool finito_livello_cairo = false; 
     public vector_value player_storage;
 
+    private void Awake()
+    {
+        if (finalCombact == null)
+            finalCombact = this;
+        else if (finalCombact != this)
+            Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
+    }
     private void Start() {
         anim_player = player.GetComponent<Animator>();
     }
@@ -68,14 +77,16 @@ public class FinalCombact : MonoBehaviour {
                 Destroy(comb_5);
                 Destroy(boss);
             }
+            
+        }
 
-            if(player_storage.livello_finito == true){
+        if(player_storage.livello_finito == true){
                 boss.SetActive(false);
                 fire_battle.SetActive(false);
                 fire_ending.SetActive(true);
                 tirgger_final_scene.SetActive(true);
+                muretto.SetActive(false);
             }
-        }
         
     }
     /*private void OnTriggerEnter2D(Collider2D other) {
