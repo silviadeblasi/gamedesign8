@@ -17505,11 +17505,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3402343849622885271, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.2963257
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652127704889468912, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -3.399994
+      value: -3.2963562
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -17613,7 +17609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8873142883170209327, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -29.987068
+      value: -29.987076
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
@@ -50727,13 +50723,8 @@ Tilemap:
   - first: {x: 84, y: 4, z: 0}
     second:
       serializedVersion: 2
-<<<<<<< refs/remotes/origin/main
       m_TileIndex: 104
       m_TileSpriteIndex: 104
-=======
-      m_TileIndex: 106
-      m_TileSpriteIndex: 102
->>>>>>> fatto
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -52169,16 +52160,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 1f0f90c2085d8224a93408d964df2b2c, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 975f1a0718a7e264c807310891f0d8b1, type: 2}
-<<<<<<< refs/remotes/origin/main
   - m_RefCount: 1
     m_Data: {fileID: 262946529}
-=======
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
->>>>>>> fatto
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: e88932e99195e44429305ad8dc1a00d2, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 3fa72b061d1f92f4dbd25d8380ca07d5, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 3
@@ -52389,13 +52375,8 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: cb1674a80fc82e74594e2b1f9ca37484, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 95112834344fcd44799686730cc05c03, type: 3}
-<<<<<<< refs/remotes/origin/main
   - m_RefCount: 1
     m_Data: {fileID: 357391346}
-=======
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
->>>>>>> fatto
   m_TileMatrixArray:
   - m_RefCount: 221
     m_Data:
