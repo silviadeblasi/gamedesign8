@@ -52,8 +52,15 @@ MonoBehaviour:
   dialoghiManager: {fileID: 2223010519362696031}
   Camera: {fileID: 0}
   canvas_trama: {fileID: 0}
-  boss_finelivello: {fileID: 0}
   combactManager: {fileID: 0}
+  comb_1: {fileID: 0}
+  comb_2: {fileID: 0}
+  comb_3: {fileID: 0}
+  comb_4: {fileID: 0}
+  comb_5: {fileID: 0}
+  final_combact: {fileID: 0}
+  player_storage: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &5317059424758054845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,45 +73,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2314c89c3dc44060af4b256785559af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
-  BgMusic: {fileID: -2656644310174815327, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
-  SfxSound: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
-  sfx:
-  - nome: Urla
-    clip: {fileID: 8300000, guid: 9a618e1d4032546d4a40ac20d75bf68e, type: 3}
-    source: {fileID: 0}
-    volume: 0
-  - nome: Amuleto
-    clip: {fileID: 8300000, guid: d38f31dfdfb34c74ca9f582029196934, type: 3}
-    source: {fileID: 0}
-    volume: 0
-  - nome: Rottura_vetro
-    clip: {fileID: 8300000, guid: e3e994ce06591449ab0c1f981389d31c, type: 3}
-    source: {fileID: 0}
-    volume: 0
-  - nome: CartaOggetto
-    clip: {fileID: 8300000, guid: 290042f6369c842428516c0c4794f8c4, type: 3}
-    source: {fileID: 0}
-    volume: 0
-  - nome: AperturaMappa
-    clip: {fileID: 8300000, guid: 6883c7a267670314ba603812329be0c1, type: 3}
-    source: {fileID: 0}
-    volume: 0
-  bg:
-  - nome: Casa2
-    clip: {fileID: 8300000, guid: e317edef94af7684e81619674915469c, type: 3}
-    source: {fileID: 0}
-    volume: 0
-  - nome: TemaPrincipale2
-    clip: {fileID: 8300000, guid: 43f3c7c42108ce047b3239aaf8f7426e, type: 3}
-    source: {fileID: 0}
-    volume: 0
-  - nome: MenuTheme
-    clip: {fileID: 8300000, guid: 674b1d360fcad49c39546d4ea51ed55d, type: 3}
-    source: {fileID: 0}
-    volume: 0
-  BgSlider: {fileID: 0}
-  SfxSlider: {fileID: 0}
+  soundEffects:
+  - {fileID: 8300000, guid: 9a618e1d4032546d4a40ac20d75bf68e, type: 3}
+  - {fileID: 8300000, guid: e3e994ce06591449ab0c1f981389d31c, type: 3}
+  - {fileID: 8300000, guid: d38f31dfdfb34c74ca9f582029196934, type: 3}
+  - {fileID: 8300000, guid: 290042f6369c842428516c0c4794f8c4, type: 3}
+  - {fileID: 8300000, guid: 6883c7a267670314ba603812329be0c1, type: 3}
+  backgroundMusic:
+  - {fileID: 8300000, guid: 43f3c7c42108ce047b3239aaf8f7426e, type: 3}
+  - {fileID: 8300000, guid: e317edef94af7684e81619674915469c, type: 3}
+  - {fileID: 8300000, guid: 674b1d360fcad49c39546d4ea51ed55d, type: 3}
+  _bgSlider: {fileID: 0}
+  _sfxSlider: {fileID: 0}
 --- !u!114 &2223010519362696031
 MonoBehaviour:
   m_ObjectHideFlags: 0

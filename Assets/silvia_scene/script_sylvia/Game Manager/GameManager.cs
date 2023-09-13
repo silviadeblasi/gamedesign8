@@ -81,23 +81,27 @@ public class GameManager : MonoBehaviour
             dialoghiManager.FineDialogo("dg_cs_1");
         }
 
-        if(current_scene.ToString() == "Esterno_lev1"){
+        if (current_scene.ToString() == "Esterno_lev1")
+        {
 
-            if(firstTime_Esterno){
+            if (firstTime_Esterno)
+            {
                 inventory.Awake();
                 firstTime_Esterno = false;
             }
 
-                
-            
+
+
             soundManager.PlayBackgroundMusic("TemaPrincipale2", 0.7f);
 
-            if (canvas_trama.tomba_madre == true && flag_tomba == false){
+            if (canvas_trama.tomba_madre == true && flag_tomba == false)
+            {
                 dialoghiManager.StartDialoghi("dg_sue_tomba");
                 flag_tomba = true;
             }
-            
-            /*if(player_storage.livello_finito == true){
+
+            if (player_storage.livello_finito == true)
+            {
                 just_once = false;
                 //attivo flag casa del cairo e mi assicuro che tutti i combattimenti vengano distrutti (quindi gia fatti)
                 //incluso boss finale
@@ -107,19 +111,19 @@ public class GameManager : MonoBehaviour
                 combactManager.combactList[3].progress = GeneralCombact.CombactProgress.DONE;
                 combactManager.combactList[4].progress = GeneralCombact.CombactProgress.DONE;
                 // ok combact manager ma devo distruggere o rendere non visibili i combattimenti 
-                //devo mettere nello scriptable object che il flag nel cabmio scena rimane true!!!!!!!
+                /*//devo mettere nello scriptable object che il flag nel cabmio scena rimane true!!!!!!!
                 comb_1.SetActive(false);
                 comb_2.SetActive(false);
                 comb_3.SetActive(false);
                 comb_4.SetActive(false);
-                comb_5.SetActive(false);
+                comb_5.SetActive(false);*/
                 // non facendo parte del combact manager devo eliminare il boss rendere agibile il muretto 
 
-            }*/
-            
+            }
+
         }
-        
-    }
+        }
+       
     
     IEnumerator FirstScene(Camera main){
 

@@ -71,12 +71,12 @@ public class FinalCombact : MonoBehaviour {
                 tirgger_final_scene.SetActive(true);
                 final_combact.SetActive(false);
                 finito_livello_cairo = true;
-                comb_1.SetActive(false);
+              /*
                 comb_2.SetActive(false);
                 comb_3.SetActive(false);
                 comb_4.SetActive(false);
                 comb_5.SetActive(false);
-                boss.SetActive(false);
+                boss.SetActive(false);*/
             }
             
         }

@@ -11,9 +11,9 @@ public class EnemyController1 : MonoBehaviour
     [Header("Enemy Movement")]
     private Animator myAnim;
     private Transform target;
-    [SerializeField] private float speed = 1f;
-    [SerializeField] private float walkRange = 2f;
-    [SerializeField] private float attackRange = 1f;
+    public float speed = 1f;
+    public float walkRange = 4f;
+    public float attackRange = 2f;
     public Transform homePosition;
     public GameObject playerHealth;
     
@@ -28,16 +28,19 @@ public class EnemyController1 : MonoBehaviour
     {
         if(Vector3.Distance(transform.position, target.position) <= walkRange && Vector3.Distance(transform.position, target.position) > attackRange)
         {
+            myAnim.SetBool("walking", true);
             FollowPlayer();
 
             if(Vector3.Distance(transform.position, target.position) <= attackRange) //&& Vector3.Distance(transform.position, target.position) >= minRange
             {
+                myAnim.SetBool("attacking", true);
                 AttackPlayer();
             }
 
         }
         else if(Vector3.Distance(transform.position, target.position) >= walkRange)
         {
+            myAnim.SetBool("walking", true);
             ReturnHomePosition();
         }
     }

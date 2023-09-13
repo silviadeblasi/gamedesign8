@@ -119,9 +119,9 @@ public class Combact_1 : Combact{
         }
 
         SetCombact(); //setto il combattimento come fatto!!
-        /*if(player_storage.livello_finito){
+        if(player_storage.livello_finito){
             this.gameObject.SetActive(false);
-        }*/
+        }
 
     }
     

@@ -1717,6 +1717,7 @@ GameObject:
   - component: {fileID: 66363664}
   - component: {fileID: 66363662}
   - component: {fileID: 66363661}
+  - component: {fileID: 66363668}
   m_Layer: 0
   m_Name: enemies (5.1)
   m_TagString: enemy
@@ -1774,8 +1775,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Alex 5.1
   speed: 2
-  walkRange: 5
-  attackRange: 1
+  walkRange: 6
+  attackRange: 4
   homePosition: {fileID: 292069995}
   playerHealth: {fileID: 460115591}
 --- !u!61 &66363664
@@ -1897,6 +1898,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &66363668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66363659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &67982769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2159,6 +2175,7 @@ GameObject:
   - component: {fileID: 84383903}
   - component: {fileID: 84383901}
   - component: {fileID: 84383900}
+  - component: {fileID: 84383907}
   m_Layer: 0
   m_Name: enemies (2.2)
   m_TagString: enemy
@@ -2216,8 +2233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Jack 2.2
   speed: 1
-  walkRange: 2
-  attackRange: 1
+  walkRange: 5
+  attackRange: 2
   homePosition: {fileID: 2128194800}
   playerHealth: {fileID: 460115591}
 --- !u!61 &84383903
@@ -2339,6 +2356,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &84383907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84383898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &87463751
 GameObject:
   m_ObjectHideFlags: 0
@@ -3159,6 +3191,7 @@ GameObject:
   - component: {fileID: 135027629}
   - component: {fileID: 135027627}
   - component: {fileID: 135027626}
+  - component: {fileID: 135027633}
   m_Layer: 0
   m_Name: enemies (5.4)
   m_TagString: enemy
@@ -3216,8 +3249,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Aiden 5.4
   speed: 1
-  walkRange: 2
-  attackRange: 1
+  walkRange: 7
+  attackRange: 3
   homePosition: {fileID: 1945628052}
   playerHealth: {fileID: 460115591}
 --- !u!61 &135027629
@@ -3339,6 +3372,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &135027633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135027624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1 &136410742
 GameObject:
   m_ObjectHideFlags: 0
@@ -4263,6 +4311,7 @@ GameObject:
   - component: {fileID: 213620694}
   - component: {fileID: 213620692}
   - component: {fileID: 213620691}
+  - component: {fileID: 213620698}
   m_Layer: 0
   m_Name: enemies (4.2)
   m_TagString: enemy
@@ -4320,8 +4369,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Saxon 4.2
   speed: 0.9
-  walkRange: 2
-  attackRange: 1
+  walkRange: 5
+  attackRange: 2
   homePosition: {fileID: 1963021764}
   playerHealth: {fileID: 460115591}
 --- !u!61 &213620694
@@ -4443,6 +4492,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &213620698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213620689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1 &216690897
 GameObject:
   m_ObjectHideFlags: 0
@@ -11758,6 +11822,7 @@ GameObject:
   - component: {fileID: 312846146}
   - component: {fileID: 312846148}
   - component: {fileID: 312846149}
+  - component: {fileID: 312846150}
   m_Layer: 0
   m_Name: enemies (2.1)
   m_TagString: enemy
@@ -11918,7 +11983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Jim 2.1
   speed: 1
-  walkRange: 2
+  walkRange: 5
   attackRange: 1
   homePosition: {fileID: 1708836327}
   playerHealth: {fileID: 460115591}
@@ -11938,6 +12003,21 @@ MonoBehaviour:
   maxHealth: 4
   enemyController1: {fileID: 312846148}
   myAnim: {fileID: 312846142}
+--- !u!114 &312846150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312846137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &314028094
 GameObject:
   m_ObjectHideFlags: 0
@@ -14018,6 +14098,7 @@ GameObject:
   - component: {fileID: 436144862}
   - component: {fileID: 436144860}
   - component: {fileID: 436144859}
+  - component: {fileID: 436144866}
   m_Layer: 0
   m_Name: enemies (3.4)
   m_TagString: enemy
@@ -14076,7 +14157,7 @@ MonoBehaviour:
   enemyName: Ken 3.4
   speed: 2
   walkRange: 4
-  attackRange: 1
+  attackRange: 3
   homePosition: {fileID: 1676349473}
   playerHealth: {fileID: 460115591}
 --- !u!61 &436144862
@@ -14198,6 +14279,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &436144866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436144857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &442962616
 GameObject:
   m_ObjectHideFlags: 0
@@ -16057,6 +16153,7 @@ GameObject:
   - component: {fileID: 568118610}
   - component: {fileID: 568118608}
   - component: {fileID: 568118607}
+  - component: {fileID: 568118614}
   m_Layer: 0
   m_Name: enemies (1.3)
   m_TagString: enemy
@@ -16237,6 +16334,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &568118614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568118605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &571334520
 GameObject:
   m_ObjectHideFlags: 0
@@ -16987,6 +17099,7 @@ GameObject:
   - component: {fileID: 603804446}
   - component: {fileID: 603804444}
   - component: {fileID: 603804443}
+  - component: {fileID: 603804450}
   m_Layer: 0
   m_Name: enemies (3.3)
   m_TagString: enemy
@@ -17044,8 +17157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: King 3.3
   speed: 0.8
-  walkRange: 2
-  attackRange: 1
+  walkRange: 6
+  attackRange: 3
   homePosition: {fileID: 375657547}
   playerHealth: {fileID: 460115591}
 --- !u!61 &603804446
@@ -17167,6 +17280,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &603804450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603804441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!224 &612009429 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5515725868613724402, guid: 20f157415ec3f2842b83ba258b6a6cb7, type: 3}
@@ -17267,7 +17395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3798122042228401720, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -15.804169
+      value: -15.804199
       objectReference: {fileID: 0}
     - target: {fileID: 6190171527742925112, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18912,6 +19040,7 @@ GameObject:
   - component: {fileID: 718611527}
   - component: {fileID: 718611525}
   - component: {fileID: 718611524}
+  - component: {fileID: 718611531}
   m_Layer: 0
   m_Name: enemies (1.2)
   m_TagString: enemy
@@ -19092,6 +19221,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &718611531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718611522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &750742649
 GameObject:
   m_ObjectHideFlags: 0
@@ -20327,6 +20471,7 @@ GameObject:
   - component: {fileID: 822979445}
   - component: {fileID: 822979443}
   - component: {fileID: 822979442}
+  - component: {fileID: 822979449}
   m_Layer: 0
   m_Name: enemies (2.3)
   m_TagString: enemy
@@ -20384,8 +20529,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: John 2.3
   speed: 0.8
-  walkRange: 2
-  attackRange: 1
+  walkRange: 5
+  attackRange: 2
   homePosition: {fileID: 1328533289}
   playerHealth: {fileID: 460115591}
 --- !u!61 &822979445
@@ -20507,6 +20652,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &822979449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822979440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1 &831629821
 GameObject:
   m_ObjectHideFlags: 0
@@ -20565,13 +20725,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2314c89c3dc44060af4b256785559af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  BgMusic: {fileID: 0}
-  SfxSound: {fileID: 0}
-  sfx: []
-  bg: []
-  BgSlider: {fileID: 0}
-  SfxSlider: {fileID: 0}
+  soundEffects: []
+  backgroundMusic: []
+  _bgSlider: {fileID: 0}
+  _sfxSlider: {fileID: 0}
 --- !u!1 &833257725
 GameObject:
   m_ObjectHideFlags: 0
@@ -26652,6 +26809,7 @@ GameObject:
   - component: {fileID: 913441034}
   - component: {fileID: 913441032}
   - component: {fileID: 913441031}
+  - component: {fileID: 913441038}
   m_Layer: 0
   m_Name: enemies (5.3)
   m_TagString: enemy
@@ -26709,8 +26867,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Adam 5.3
   speed: 1
-  walkRange: 2
-  attackRange: 1
+  walkRange: 7
+  attackRange: 4
   homePosition: {fileID: 1203110056}
   playerHealth: {fileID: 460115591}
 --- !u!61 &913441034
@@ -26832,6 +26990,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &913441038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913441029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!114 &919534173 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7556411259463964054, guid: 57efcb159f2a647ea9f777c5e8b9e9b8, type: 3}
@@ -31132,6 +31305,7 @@ GameObject:
   - component: {fileID: 1003020418}
   - component: {fileID: 1003020416}
   - component: {fileID: 1003020415}
+  - component: {fileID: 1003020422}
   m_Layer: 0
   m_Name: enemies (3.2)
   m_TagString: enemy
@@ -31189,8 +31363,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Kevin 3.2
   speed: 0.8
-  walkRange: 2
-  attackRange: 1
+  walkRange: 5
+  attackRange: 2
   homePosition: {fileID: 1784780142}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1003020418
@@ -31312,6 +31486,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1003020422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003020413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1 &1003771969
 GameObject:
   m_ObjectHideFlags: 0
@@ -31904,6 +32093,7 @@ GameObject:
   - component: {fileID: 1047156672}
   - component: {fileID: 1047156670}
   - component: {fileID: 1047156669}
+  - component: {fileID: 1047156676}
   m_Layer: 0
   m_Name: enemies (4.5)
   m_TagString: enemy
@@ -31961,8 +32151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Sean 4.5
   speed: 2
-  walkRange: 4
-  attackRange: 1
+  walkRange: 5
+  attackRange: 3
   homePosition: {fileID: 2145478025}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1047156672
@@ -32084,6 +32274,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1047156676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047156667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &1053809782
 GameObject:
   m_ObjectHideFlags: 0
@@ -32099,6 +32304,7 @@ GameObject:
   - component: {fileID: 1053809787}
   - component: {fileID: 1053809785}
   - component: {fileID: 1053809784}
+  - component: {fileID: 1053809791}
   m_Layer: 0
   m_Name: enemies (2.5)
   m_TagString: enemy
@@ -32156,8 +32362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Jensen 2.5
   speed: 0.8
-  walkRange: 2
-  attackRange: 1
+  walkRange: 5
+  attackRange: 3
   homePosition: {fileID: 1495858176}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1053809787
@@ -32279,6 +32485,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1053809791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053809782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1 &1066693117
 GameObject:
   m_ObjectHideFlags: 0
@@ -33563,6 +33784,7 @@ GameObject:
   - component: {fileID: 1139547016}
   - component: {fileID: 1139547014}
   - component: {fileID: 1139547013}
+  - component: {fileID: 1139547020}
   m_Layer: 0
   m_Name: enemies (4.3)
   m_TagString: enemy
@@ -33620,8 +33842,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Sawyer 4.3
   speed: 0.9
-  walkRange: 2
-  attackRange: 1
+  walkRange: 5
+  attackRange: 2
   homePosition: {fileID: 445407077}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1139547016
@@ -33743,6 +33965,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1139547020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139547011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1 &1141953322
 GameObject:
   m_ObjectHideFlags: 0
@@ -34545,6 +34782,7 @@ GameObject:
   - component: {fileID: 1168474612}
   - component: {fileID: 1168474610}
   - component: {fileID: 1168474609}
+  - component: {fileID: 1168474616}
   m_Layer: 0
   m_Name: enemies (4.4)
   m_TagString: enemy
@@ -34602,8 +34840,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Scott 4.4
   speed: 0.9
-  walkRange: 2
-  attackRange: 1
+  walkRange: 5
+  attackRange: 3
   homePosition: {fileID: 1916203919}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1168474612
@@ -34725,6 +34963,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1168474616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168474607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1001 &1172594491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34883,6 +35136,7 @@ GameObject:
   - component: {fileID: 1174883983}
   - component: {fileID: 1174883981}
   - component: {fileID: 1174883980}
+  - component: {fileID: 1174883987}
   m_Layer: 0
   m_Name: enemies (5.2)
   m_TagString: enemy
@@ -34940,8 +35194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Aaron 5.2
   speed: 1
-  walkRange: 2
-  attackRange: 1
+  walkRange: 7
+  attackRange: 3
   homePosition: {fileID: 2110442858}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1174883983
@@ -35063,6 +35317,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1174883987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174883978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1 &1183516690
 GameObject:
   m_ObjectHideFlags: 0
@@ -36160,6 +36429,7 @@ GameObject:
   - component: {fileID: 1255943080}
   - component: {fileID: 1255943078}
   - component: {fileID: 1255943077}
+  - component: {fileID: 1255943084}
   m_Layer: 0
   m_Name: enemies (4.1)
   m_TagString: enemy
@@ -36217,8 +36487,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Sam 4.1
   speed: 1
-  walkRange: 2
-  attackRange: 1
+  walkRange: 6
+  attackRange: 3
   homePosition: {fileID: 1918979738}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1255943080
@@ -36340,6 +36610,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1255943084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255943075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &1257082445
 GameObject:
   m_ObjectHideFlags: 0
@@ -37278,6 +37563,14 @@ PrefabInstance:
       propertyPath: soundEffectsMixerGroup
       value: 
       objectReference: {fileID: 7685894441309472828, guid: 29aa33565ceb12842a222ab0e1c9245a, type: 2}
+    - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: backgroundMusic.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317059424758054845, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
+      propertyPath: backgroundMusic.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 43f3c7c42108ce047b3239aaf8f7426e, type: 3}
     - target: {fileID: 8517285511591171963, guid: 105cb79c3fa924f10947ba3cab5e1289, type: 3}
       propertyPath: comb_1
       value: 
@@ -37989,6 +38282,7 @@ GameObject:
   - component: {fileID: 1372411534}
   - component: {fileID: 1372411532}
   - component: {fileID: 1372411531}
+  - component: {fileID: 1372411538}
   m_Layer: 0
   m_Name: enemies (1.1)
   m_TagString: enemy
@@ -38109,7 +38403,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3e2c22ad9f594b543b2daf2a66802ad7, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -38169,6 +38463,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1372411538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372411529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &1378080435
 GameObject:
   m_ObjectHideFlags: 0
@@ -39307,6 +39616,7 @@ GameObject:
   - component: {fileID: 1431422970}
   - component: {fileID: 1431422968}
   - component: {fileID: 1431422967}
+  - component: {fileID: 1431422974}
   m_Layer: 0
   m_Name: enemies (3.5)
   m_TagString: enemy
@@ -39365,7 +39675,7 @@ MonoBehaviour:
   enemyName: Karter 3.5
   speed: 2
   walkRange: 4
-  attackRange: 1
+  attackRange: 2
   homePosition: {fileID: 1211429075}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1431422970
@@ -39487,6 +39797,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1431422974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431422965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1 &1436669690
 GameObject:
   m_ObjectHideFlags: 0
@@ -41563,6 +41888,7 @@ GameObject:
   - component: {fileID: 1565106848}
   - component: {fileID: 1565106846}
   - component: {fileID: 1565106845}
+  - component: {fileID: 1565106852}
   m_Layer: 0
   m_Name: enemies (5.5)
   m_TagString: enemy
@@ -41620,8 +41946,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Albert 5.5
   speed: 1
-  walkRange: 2
-  attackRange: 1
+  walkRange: 7
+  attackRange: 4
   homePosition: {fileID: 954959776}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1565106848
@@ -41743,6 +42069,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1565106852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565106843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1 &1568616189
 GameObject:
   m_ObjectHideFlags: 0
@@ -44330,7 +44671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1723467374
 Transform:
   m_ObjectHideFlags: 0
@@ -44487,6 +44828,7 @@ GameObject:
   - component: {fileID: 1744618597}
   - component: {fileID: 1744618595}
   - component: {fileID: 1744618594}
+  - component: {fileID: 1744618601}
   m_Layer: 0
   m_Name: enemies (2.4)
   m_TagString: enemy
@@ -44544,8 +44886,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Jason 2.4
   speed: 0.8
-  walkRange: 2
-  attackRange: 1
+  walkRange: 5
+  attackRange: 2
   homePosition: {fileID: 927985544}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1744618597
@@ -44667,6 +45009,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1744618601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744618592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 2
 --- !u!1 &1757954747
 GameObject:
   m_ObjectHideFlags: 0
@@ -46947,6 +47304,7 @@ GameObject:
   - component: {fileID: 1912514597}
   - component: {fileID: 1912514595}
   - component: {fileID: 1912514594}
+  - component: {fileID: 1912514601}
   m_Layer: 0
   m_Name: enemies (3.1)
   m_TagString: enemy
@@ -47004,8 +47362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Kim 3.1
   speed: 1
-  walkRange: 2
-  attackRange: 1
+  walkRange: 5
+  attackRange: 2
   homePosition: {fileID: 1644348837}
   playerHealth: {fileID: 460115591}
 --- !u!61 &1912514597
@@ -47127,6 +47485,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1912514601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912514592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff4abcd307c2a04d860e9ca4d970059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 1
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &1913960586
 GameObject:
   m_ObjectHideFlags: 0
